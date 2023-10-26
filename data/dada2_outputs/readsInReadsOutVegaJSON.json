@@ -1,0 +1,1262 @@
+[
+  {
+    "group": "reads.in",
+    "Number of reads": 66320,
+    "Sample name": "SRR12823315_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 43309,
+    "Sample name": "SRR12823316_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 52037,
+    "Sample name": "SRR12823317_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 55691,
+    "Sample name": "SRR12823318_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 42552,
+    "Sample name": "SRR12823319_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 47745,
+    "Sample name": "SRR12823320_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 52933,
+    "Sample name": "SRR12823321_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 56197,
+    "Sample name": "SRR12823322_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 51625,
+    "Sample name": "SRR12823323_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 61208,
+    "Sample name": "SRR12823324_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 62191,
+    "Sample name": "SRR12823325_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 61669,
+    "Sample name": "SRR12823326_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 47940,
+    "Sample name": "SRR12823327_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 19839,
+    "Sample name": "SRR12823328_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 46954,
+    "Sample name": "SRR12823329_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 48937,
+    "Sample name": "SRR12823330_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 79103,
+    "Sample name": "SRR12823331_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 60472,
+    "Sample name": "SRR12823332_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 62461,
+    "Sample name": "SRR12823333_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 64999,
+    "Sample name": "SRR12823334_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 67018,
+    "Sample name": "SRR12823335_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 48746,
+    "Sample name": "SRR12823336_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 46749,
+    "Sample name": "SRR12823337_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 48536,
+    "Sample name": "SRR12823338_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 89,
+    "Sample name": "SRR12823339_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 54849,
+    "Sample name": "SRR12823340_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 81379,
+    "Sample name": "SRR12823341_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 58865,
+    "Sample name": "SRR12823342_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 42822,
+    "Sample name": "SRR12823343_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 45618,
+    "Sample name": "SRR12823344_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 50169,
+    "Sample name": "SRR12823345_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 54925,
+    "Sample name": "SRR12823346_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 60249,
+    "Sample name": "SRR12823347_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 61135,
+    "Sample name": "SRR12823348_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 62404,
+    "Sample name": "SRR12823349_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 49379,
+    "Sample name": "SRR12823350_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 48598,
+    "Sample name": "SRR12823351_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 66668,
+    "Sample name": "SRR12823352_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 45718,
+    "Sample name": "SRR12823353_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 62248,
+    "Sample name": "SRR12823354_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 44306,
+    "Sample name": "SRR12823355_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 60727,
+    "Sample name": "SRR12823356_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 59380,
+    "Sample name": "SRR12823357_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 58394,
+    "Sample name": "SRR12823358_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 74122,
+    "Sample name": "SRR12823359_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 43219,
+    "Sample name": "SRR12823360_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 54106,
+    "Sample name": "SRR12823361_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 45671,
+    "Sample name": "SRR12823362_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 32719,
+    "Sample name": "SRR12823363_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 39821,
+    "Sample name": "SRR12823364_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 47595,
+    "Sample name": "SRR12823365_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 37070,
+    "Sample name": "SRR12823366_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 47104,
+    "Sample name": "SRR12823367_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 53753,
+    "Sample name": "SRR12823368_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 46356,
+    "Sample name": "SRR12823369_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 101412,
+    "Sample name": "SRR12823370_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 54517,
+    "Sample name": "SRR12823371_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 70476,
+    "Sample name": "SRR12823372_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 41130,
+    "Sample name": "SRR12823373_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 55496,
+    "Sample name": "SRR12823374_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 50277,
+    "Sample name": "SRR12823375_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 49011,
+    "Sample name": "SRR12823376_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 47029,
+    "Sample name": "SRR12823377_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 57107,
+    "Sample name": "SRR12823378_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 64377,
+    "Sample name": "SRR12823379_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 82392,
+    "Sample name": "SRR12823380_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 64542,
+    "Sample name": "SRR12823381_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 72261,
+    "Sample name": "SRR12823382_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 43941,
+    "Sample name": "SRR12823383_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 9003,
+    "Sample name": "SRR12823384_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 49263,
+    "Sample name": "SRR12823385_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 67154,
+    "Sample name": "SRR12823386_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 58904,
+    "Sample name": "SRR12823387_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 49469,
+    "Sample name": "SRR12823388_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 47380,
+    "Sample name": "SRR12823389_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 47862,
+    "Sample name": "SRR12823390_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 54847,
+    "Sample name": "SRR12823391_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 68402,
+    "Sample name": "SRR12823392_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 64473,
+    "Sample name": "SRR12823393_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 58006,
+    "Sample name": "SRR12823394_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 46024,
+    "Sample name": "SRR12823395_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 54914,
+    "Sample name": "SRR12823396_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 53228,
+    "Sample name": "SRR12823397_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 51841,
+    "Sample name": "SRR12823398_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 63234,
+    "Sample name": "SRR12823399_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 65177,
+    "Sample name": "SRR12823400_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 59051,
+    "Sample name": "SRR12823401_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 65360,
+    "Sample name": "SRR12823402_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 48564,
+    "Sample name": "SRR12823403_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 40095,
+    "Sample name": "SRR12823404_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 68157,
+    "Sample name": "SRR12823405_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 558,
+    "Sample name": "SRR12823406_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 65728,
+    "Sample name": "SRR12823407_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 59564,
+    "Sample name": "SRR12823408_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 57678,
+    "Sample name": "SRR12823409_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 61878,
+    "Sample name": "SRR12823410_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 53145,
+    "Sample name": "SRR12823411_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 41298,
+    "Sample name": "SRR12823412_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 51401,
+    "Sample name": "SRR12823413_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 37728,
+    "Sample name": "SRR12823414_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 54796,
+    "Sample name": "SRR12823415_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 60799,
+    "Sample name": "SRR12823416_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 53130,
+    "Sample name": "SRR12823417_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 54439,
+    "Sample name": "SRR12823418_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 50043,
+    "Sample name": "SRR12823419_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 65996,
+    "Sample name": "SRR12823420_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 170,
+    "Sample name": "SRR12823421_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 47549,
+    "Sample name": "SRR12823423_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 20406,
+    "Sample name": "SRR12823424_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 48095,
+    "Sample name": "SRR12823425_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 60349,
+    "Sample name": "SRR12823426_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 54297,
+    "Sample name": "SRR12823427_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 66347,
+    "Sample name": "SRR12823428_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 46164,
+    "Sample name": "SRR12823429_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 49612,
+    "Sample name": "SRR12823430_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 42413,
+    "Sample name": "SRR12823431_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 240,
+    "Sample name": "SRR12823432_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 52958,
+    "Sample name": "SRR12823433_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 66331,
+    "Sample name": "SRR12823434_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 45323,
+    "Sample name": "SRR12823435_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 48582,
+    "Sample name": "SRR12823436_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 48008,
+    "Sample name": "SRR12823437_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 49135,
+    "Sample name": "SRR12823438_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 62578,
+    "Sample name": "SRR12823439_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 58545,
+    "Sample name": "SRR12823440_1.fastq.gz"
+  },
+  {
+    "group": "reads.in",
+    "Number of reads": 61461,
+    "Sample name": "SRR12823441_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 52573,
+    "Sample name": "SRR12823315_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 33816,
+    "Sample name": "SRR12823316_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 40520,
+    "Sample name": "SRR12823317_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 44056,
+    "Sample name": "SRR12823318_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 33257,
+    "Sample name": "SRR12823319_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38635,
+    "Sample name": "SRR12823320_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 42370,
+    "Sample name": "SRR12823321_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 44804,
+    "Sample name": "SRR12823322_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 41349,
+    "Sample name": "SRR12823323_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 48775,
+    "Sample name": "SRR12823324_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 50165,
+    "Sample name": "SRR12823325_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 48365,
+    "Sample name": "SRR12823326_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38390,
+    "Sample name": "SRR12823327_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 15849,
+    "Sample name": "SRR12823328_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 37582,
+    "Sample name": "SRR12823329_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38837,
+    "Sample name": "SRR12823330_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 57291,
+    "Sample name": "SRR12823331_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 48663,
+    "Sample name": "SRR12823332_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 49512,
+    "Sample name": "SRR12823333_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 52056,
+    "Sample name": "SRR12823334_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 52275,
+    "Sample name": "SRR12823335_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38681,
+    "Sample name": "SRR12823336_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 36931,
+    "Sample name": "SRR12823337_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38995,
+    "Sample name": "SRR12823338_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 13,
+    "Sample name": "SRR12823339_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 42321,
+    "Sample name": "SRR12823340_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 63750,
+    "Sample name": "SRR12823341_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 44896,
+    "Sample name": "SRR12823342_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 33790,
+    "Sample name": "SRR12823343_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 36173,
+    "Sample name": "SRR12823344_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 39542,
+    "Sample name": "SRR12823345_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 43827,
+    "Sample name": "SRR12823346_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 47507,
+    "Sample name": "SRR12823347_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 47878,
+    "Sample name": "SRR12823348_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 49195,
+    "Sample name": "SRR12823349_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38616,
+    "Sample name": "SRR12823350_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38327,
+    "Sample name": "SRR12823351_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 52611,
+    "Sample name": "SRR12823352_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 36326,
+    "Sample name": "SRR12823353_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 48919,
+    "Sample name": "SRR12823354_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 32422,
+    "Sample name": "SRR12823355_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 47677,
+    "Sample name": "SRR12823356_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 47577,
+    "Sample name": "SRR12823357_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 45833,
+    "Sample name": "SRR12823358_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 51804,
+    "Sample name": "SRR12823359_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 33442,
+    "Sample name": "SRR12823360_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 42195,
+    "Sample name": "SRR12823361_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 35567,
+    "Sample name": "SRR12823362_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 26051,
+    "Sample name": "SRR12823363_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 31158,
+    "Sample name": "SRR12823364_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 37543,
+    "Sample name": "SRR12823365_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 28883,
+    "Sample name": "SRR12823366_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 37039,
+    "Sample name": "SRR12823367_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 42156,
+    "Sample name": "SRR12823368_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 36774,
+    "Sample name": "SRR12823369_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 81249,
+    "Sample name": "SRR12823370_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 43302,
+    "Sample name": "SRR12823371_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 54037,
+    "Sample name": "SRR12823372_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 32391,
+    "Sample name": "SRR12823373_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 44786,
+    "Sample name": "SRR12823374_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 40491,
+    "Sample name": "SRR12823375_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 39202,
+    "Sample name": "SRR12823376_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 37387,
+    "Sample name": "SRR12823377_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 45937,
+    "Sample name": "SRR12823378_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 50840,
+    "Sample name": "SRR12823379_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 64880,
+    "Sample name": "SRR12823380_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 50535,
+    "Sample name": "SRR12823381_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 57017,
+    "Sample name": "SRR12823382_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 34680,
+    "Sample name": "SRR12823383_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 7244,
+    "Sample name": "SRR12823384_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 39344,
+    "Sample name": "SRR12823385_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 53285,
+    "Sample name": "SRR12823386_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 46368,
+    "Sample name": "SRR12823387_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38686,
+    "Sample name": "SRR12823388_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 36039,
+    "Sample name": "SRR12823389_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 35903,
+    "Sample name": "SRR12823390_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 42859,
+    "Sample name": "SRR12823391_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 54737,
+    "Sample name": "SRR12823392_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 49220,
+    "Sample name": "SRR12823393_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 46202,
+    "Sample name": "SRR12823394_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 36374,
+    "Sample name": "SRR12823395_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 43498,
+    "Sample name": "SRR12823396_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 39733,
+    "Sample name": "SRR12823397_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 39069,
+    "Sample name": "SRR12823398_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 50030,
+    "Sample name": "SRR12823399_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 52704,
+    "Sample name": "SRR12823400_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 47092,
+    "Sample name": "SRR12823401_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 50720,
+    "Sample name": "SRR12823402_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38948,
+    "Sample name": "SRR12823403_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 31930,
+    "Sample name": "SRR12823404_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 54451,
+    "Sample name": "SRR12823405_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 382,
+    "Sample name": "SRR12823406_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 51882,
+    "Sample name": "SRR12823407_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 45989,
+    "Sample name": "SRR12823408_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 44843,
+    "Sample name": "SRR12823409_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 48466,
+    "Sample name": "SRR12823410_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 43144,
+    "Sample name": "SRR12823411_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 33179,
+    "Sample name": "SRR12823412_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 41192,
+    "Sample name": "SRR12823413_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 29543,
+    "Sample name": "SRR12823414_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 42488,
+    "Sample name": "SRR12823415_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 48415,
+    "Sample name": "SRR12823416_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 41847,
+    "Sample name": "SRR12823417_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 43359,
+    "Sample name": "SRR12823418_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 39225,
+    "Sample name": "SRR12823419_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 52135,
+    "Sample name": "SRR12823420_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 110,
+    "Sample name": "SRR12823421_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 37875,
+    "Sample name": "SRR12823423_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 16151,
+    "Sample name": "SRR12823424_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38095,
+    "Sample name": "SRR12823425_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 48133,
+    "Sample name": "SRR12823426_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 42909,
+    "Sample name": "SRR12823427_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 53029,
+    "Sample name": "SRR12823428_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 37551,
+    "Sample name": "SRR12823429_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 40067,
+    "Sample name": "SRR12823430_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 33218,
+    "Sample name": "SRR12823431_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 130,
+    "Sample name": "SRR12823432_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 42124,
+    "Sample name": "SRR12823433_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 52269,
+    "Sample name": "SRR12823434_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 36116,
+    "Sample name": "SRR12823435_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38096,
+    "Sample name": "SRR12823436_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 38465,
+    "Sample name": "SRR12823437_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 39179,
+    "Sample name": "SRR12823438_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 49992,
+    "Sample name": "SRR12823439_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 46914,
+    "Sample name": "SRR12823440_1.fastq.gz"
+  },
+  {
+    "group": "reads.out",
+    "Number of reads": 47908,
+    "Sample name": "SRR12823441_1.fastq.gz"
+  }
+]

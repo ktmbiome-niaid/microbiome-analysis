@@ -1,0 +1,4 @@
+#final.assembly: % community	Taxonomy (contained)	Taxonomy (sister lineage)
+78.7659437214842	Bacteria	Firmicutes	Bacilli	Bacillales	Staphylococcaceae	Staphylococcus	Staphylococcus_aureus
+4.779923010820447	NA
+16.454133267695354	Bacteria	Firmicutes	Bacilli	Lactobacillales	Streptococcaceae	Streptococcus	Streptococcus_dysgalactiae

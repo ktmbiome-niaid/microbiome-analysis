@@ -1,0 +1,206 @@
+	Tier1	Tier2	Tier3	Tier4
+PWY1	Cellular Processes	Cell growth and death	Apoptosis	Apoptosis
+PWY2	Cellular Processes	Cell growth and death	Apoptosis - fly	Apoptosis - fly
+PWY3	Cellular Processes	Cell growth and death	Cell cycle - Caulobacter	Cell cycle - Caulobacter
+PWY4	Cellular Processes	Cell growth and death	Meiosis - yeast	Meiosis - yeast
+PWY5	Cellular Processes	Cell motility	Bacterial chemotaxis	Bacterial chemotaxis
+PWY6	Cellular Processes	Cell motility	Flagellar assembly	Flagellar assembly
+PWY7	Cellular Processes	Cellular community - eukaryotes	Signaling pathways regulating pluripotency of stem cells	Signaling pathways regulating pluripotency of stem cells
+PWY8	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Escherichia coli	Biofilm formation - Escherichia coli
+PWY9	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Pseudomonas aeruginosa	Biofilm formation - Pseudomonas aeruginosa
+PWY10	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Vibrio cholerae	Biofilm formation - Vibrio cholerae
+PWY11	Cellular Processes	Cellular community - prokaryotes	Quorum sensing	Quorum sensing
+PWY12	Cellular Processes	Transport and catabolism	Autophagy - yeast	Autophagy - yeast
+PWY13	Cellular Processes	Transport and catabolism	Endocytosis	Endocytosis
+PWY14	Cellular Processes	Transport and catabolism	Lysosome	Lysosome
+PWY15	Cellular Processes	Transport and catabolism	Peroxisome	Peroxisome
+PWY16	Environmental Information Processing	Membrane transport	ABC transporters	ABC transporters
+PWY17	Environmental Information Processing	Membrane transport	Bacterial secretion system	Bacterial secretion system
+PWY18	Environmental Information Processing	Membrane transport	Phosphotransferase system (PTS)	Phosphotransferase system (PTS)
+PWY19	Environmental Information Processing	Signal transduction	Calcium signaling pathway	Calcium signaling pathway
+PWY20	Environmental Information Processing	Signal transduction	MAPK signaling pathway	MAPK signaling pathway
+PWY21	Environmental Information Processing	Signal transduction	MAPK signaling pathway - fly	MAPK signaling pathway - fly
+PWY22	Environmental Information Processing	Signal transduction	PI3K-Akt signaling pathway	PI3K-Akt signaling pathway
+PWY23	Environmental Information Processing	Signal transduction	Two-component system	Two-component system
+PWY24	Environmental Information Processing	Signaling molecules and interaction	Neuroactive ligand-receptor interaction	Neuroactive ligand-receptor interaction
+PWY25	Genetic Information Processing	Folding, sorting and degradation	Proteasome	Proteasome
+PWY26	Genetic Information Processing	Folding, sorting and degradation	Protein export	Protein export
+PWY27	Genetic Information Processing	Folding, sorting and degradation	Protein processing in endoplasmic reticulum	Protein processing in endoplasmic reticulum
+PWY28	Genetic Information Processing	Folding, sorting and degradation	RNA degradation	RNA degradation
+PWY29	Genetic Information Processing	Folding, sorting and degradation	Sulfur relay system	Sulfur relay system
+PWY30	Genetic Information Processing	Replication and repair	Base excision repair	Base excision repair
+PWY31	Genetic Information Processing	Replication and repair	DNA replication	DNA replication
+PWY32	Genetic Information Processing	Replication and repair	Homologous recombination	Homologous recombination
+PWY33	Genetic Information Processing	Replication and repair	Mismatch repair	Mismatch repair
+PWY34	Genetic Information Processing	Replication and repair	Non-homologous end-joining	Non-homologous end-joining
+PWY35	Genetic Information Processing	Replication and repair	Nucleotide excision repair	Nucleotide excision repair
+PWY36	Genetic Information Processing	Transcription	Basal transcription factors	Basal transcription factors
+PWY37	Genetic Information Processing	Transcription	RNA polymerase	RNA polymerase
+PWY38	Genetic Information Processing	Translation	Aminoacyl-tRNA biosynthesis	Aminoacyl-tRNA biosynthesis
+PWY39	Genetic Information Processing	Translation	Ribosome	Ribosome
+PWY40	Genetic Information Processing	Translation	Ribosome biogenesis in eukaryotes	Ribosome biogenesis in eukaryotes
+PWY41	Human Diseases	Cancer: overview	Chemical carcinogenesis - DNA adducts	Chemical carcinogenesis - DNA adducts
+PWY42	Human Diseases	Cancer: overview	Chemical carcinogenesis - reactive oxygen species	Chemical carcinogenesis - reactive oxygen species
+PWY43	Human Diseases	Cardiovascular disease	Hypertrophic cardiomyopathy	Hypertrophic cardiomyopathy
+PWY44	Human Diseases	Drug resistance: antimicrobial	beta-Lactam resistance	beta-Lactam resistance
+PWY45	Human Diseases	Drug resistance: antimicrobial	Cationic antimicrobial peptide (CAMP) resistance	Cationic antimicrobial peptide (CAMP) resistance
+PWY46	Human Diseases	Drug resistance: antimicrobial	Vancomycin resistance	Vancomycin resistance
+PWY47	Human Diseases	Drug resistance: antineoplastic	Platinum drug resistance	Platinum drug resistance
+PWY48	Human Diseases	Endocrine and metabolic disease	Insulin resistance	Insulin resistance
+PWY49	Human Diseases	Infectious disease: bacterial	Bacterial invasion of epithelial cells	Bacterial invasion of epithelial cells
+PWY50	Human Diseases	Infectious disease: bacterial	Epithelial cell signaling in Helicobacter pylori infection	Epithelial cell signaling in Helicobacter pylori infection
+PWY51	Human Diseases	Infectious disease: bacterial	Legionellosis	Legionellosis
+PWY52	Human Diseases	Infectious disease: bacterial	Pathogenic Escherichia coli infection	Pathogenic Escherichia coli infection
+PWY53	Human Diseases	Infectious disease: bacterial	Pertussis	Pertussis
+PWY54	Human Diseases	Infectious disease: bacterial	Salmonella infection	Salmonella infection
+PWY55	Human Diseases	Infectious disease: bacterial	Shigellosis	Shigellosis
+PWY56	Human Diseases	Infectious disease: bacterial	Staphylococcus aureus infection	Staphylococcus aureus infection
+PWY57	Human Diseases	Infectious disease: bacterial	Tuberculosis	Tuberculosis
+PWY58	Human Diseases	Infectious disease: bacterial	Vibrio cholerae infection	Vibrio cholerae infection
+PWY59	Human Diseases	Infectious disease: parasitic	African trypanosomiasis	African trypanosomiasis
+PWY60	Human Diseases	Infectious disease: parasitic	Amoebiasis	Amoebiasis
+PWY61	Human Diseases	Infectious disease: parasitic	Chagas disease	Chagas disease
+PWY62	Human Diseases	Infectious disease: viral	Hepatitis C	Hepatitis C
+PWY63	Human Diseases	Neurodegenerative disease	Spinocerebellar ataxia	Spinocerebellar ataxia
+PWY64	Metabolism	Amino acid metabolism	Alanine, aspartate and glutamate metabolism	Alanine, aspartate and glutamate metabolism
+PWY65	Metabolism	Amino acid metabolism	Arginine and proline metabolism	Arginine and proline metabolism
+PWY66	Metabolism	Amino acid metabolism	Arginine biosynthesis	Arginine biosynthesis
+PWY67	Metabolism	Amino acid metabolism	Cysteine and methionine metabolism	Cysteine and methionine metabolism
+PWY68	Metabolism	Amino acid metabolism	Glycine, serine and threonine metabolism	Glycine, serine and threonine metabolism
+PWY69	Metabolism	Amino acid metabolism	Histidine metabolism	Histidine metabolism
+PWY70	Metabolism	Amino acid metabolism	Lysine biosynthesis	Lysine biosynthesis
+PWY71	Metabolism	Amino acid metabolism	Lysine degradation	Lysine degradation
+PWY72	Metabolism	Amino acid metabolism	Phenylalanine metabolism	Phenylalanine metabolism
+PWY73	Metabolism	Amino acid metabolism	Phenylalanine, tyrosine and tryptophan biosynthesis	Phenylalanine, tyrosine and tryptophan biosynthesis
+PWY74	Metabolism	Amino acid metabolism	Tryptophan metabolism	Tryptophan metabolism
+PWY75	Metabolism	Amino acid metabolism	Tyrosine metabolism	Tyrosine metabolism
+PWY76	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine biosynthesis	Valine, leucine and isoleucine biosynthesis
+PWY77	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine degradation	Valine, leucine and isoleucine degradation
+PWY78	Metabolism	Biosynthesis of other secondary metabolites	Acarbose and validamycin biosynthesis	Acarbose and validamycin biosynthesis
+PWY79	Metabolism	Biosynthesis of other secondary metabolites	Betalain biosynthesis	Betalain biosynthesis
+PWY80	Metabolism	Biosynthesis of other secondary metabolites	Biosynthesis of various alkaloids	Biosynthesis of various alkaloids
+PWY81	Metabolism	Biosynthesis of other secondary metabolites	Biosynthesis of various antibiotics	Biosynthesis of various antibiotics
+PWY82	Metabolism	Biosynthesis of other secondary metabolites	Biosynthesis of various other secondary metabolites	Biosynthesis of various other secondary metabolites
+PWY83	Metabolism	Biosynthesis of other secondary metabolites	Carbapenem biosynthesis	Carbapenem biosynthesis
+PWY84	Metabolism	Biosynthesis of other secondary metabolites	Clavulanic acid biosynthesis	Clavulanic acid biosynthesis
+PWY85	Metabolism	Biosynthesis of other secondary metabolites	Indole alkaloid biosynthesis	Indole alkaloid biosynthesis
+PWY86	Metabolism	Biosynthesis of other secondary metabolites	Monobactam biosynthesis	Monobactam biosynthesis
+PWY87	Metabolism	Biosynthesis of other secondary metabolites	Penicillin and cephalosporin biosynthesis	Penicillin and cephalosporin biosynthesis
+PWY88	Metabolism	Biosynthesis of other secondary metabolites	Phenazine biosynthesis	Phenazine biosynthesis
+PWY89	Metabolism	Biosynthesis of other secondary metabolites	Phenylpropanoid biosynthesis	Phenylpropanoid biosynthesis
+PWY90	Metabolism	Biosynthesis of other secondary metabolites	Prodigiosin biosynthesis	Prodigiosin biosynthesis
+PWY91	Metabolism	Biosynthesis of other secondary metabolites	Streptomycin biosynthesis	Streptomycin biosynthesis
+PWY92	Metabolism	Biosynthesis of other secondary metabolites	Tropane, piperidine and pyridine alkaloid biosynthesis	Tropane, piperidine and pyridine alkaloid biosynthesis
+PWY93	Metabolism	Carbohydrate metabolism	Amino sugar and nucleotide sugar metabolism	Amino sugar and nucleotide sugar metabolism
+PWY94	Metabolism	Carbohydrate metabolism	Ascorbate and aldarate metabolism	Ascorbate and aldarate metabolism
+PWY95	Metabolism	Carbohydrate metabolism	Butanoate metabolism	Butanoate metabolism
+PWY96	Metabolism	Carbohydrate metabolism	C5-Branched dibasic acid metabolism	C5-Branched dibasic acid metabolism
+PWY97	Metabolism	Carbohydrate metabolism	Citrate cycle (TCA cycle)	Citrate cycle (TCA cycle)
+PWY98	Metabolism	Carbohydrate metabolism	Fructose and mannose metabolism	Fructose and mannose metabolism
+PWY99	Metabolism	Carbohydrate metabolism	Galactose metabolism	Galactose metabolism
+PWY100	Metabolism	Carbohydrate metabolism	Glycolysis / Gluconeogenesis	Glycolysis / Gluconeogenesis
+PWY101	Metabolism	Carbohydrate metabolism	Glyoxylate and dicarboxylate metabolism	Glyoxylate and dicarboxylate metabolism
+PWY102	Metabolism	Carbohydrate metabolism	Inositol phosphate metabolism	Inositol phosphate metabolism
+PWY103	Metabolism	Carbohydrate metabolism	Pentose and glucuronate interconversions	Pentose and glucuronate interconversions
+PWY104	Metabolism	Carbohydrate metabolism	Pentose phosphate pathway	Pentose phosphate pathway
+PWY105	Metabolism	Carbohydrate metabolism	Propanoate metabolism	Propanoate metabolism
+PWY106	Metabolism	Carbohydrate metabolism	Pyruvate metabolism	Pyruvate metabolism
+PWY107	Metabolism	Carbohydrate metabolism	Starch and sucrose metabolism	Starch and sucrose metabolism
+PWY108	Metabolism	Energy metabolism	Carbon fixation in photosynthetic organisms	Carbon fixation in photosynthetic organisms
+PWY109	Metabolism	Energy metabolism	Carbon fixation pathways in prokaryotes	Carbon fixation pathways in prokaryotes
+PWY110	Metabolism	Energy metabolism	Methane metabolism	Methane metabolism
+PWY111	Metabolism	Energy metabolism	Nitrogen metabolism	Nitrogen metabolism
+PWY112	Metabolism	Energy metabolism	Oxidative phosphorylation	Oxidative phosphorylation
+PWY113	Metabolism	Energy metabolism	Photosynthesis	Photosynthesis
+PWY114	Metabolism	Energy metabolism	Sulfur metabolism	Sulfur metabolism
+PWY115	Metabolism	Global and overview maps	Metabolic pathways	Metabolic pathways
+PWY116	Metabolism	Glycan biosynthesis and metabolism	Arabinogalactan biosynthesis - Mycobacterium	Arabinogalactan biosynthesis - Mycobacterium
+PWY117	Metabolism	Glycan biosynthesis and metabolism	Exopolysaccharide biosynthesis	Exopolysaccharide biosynthesis
+PWY118	Metabolism	Glycan biosynthesis and metabolism	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate
+PWY119	Metabolism	Glycan biosynthesis and metabolism	Glycosaminoglycan degradation	Glycosaminoglycan degradation
+PWY120	Metabolism	Glycan biosynthesis and metabolism	Lipoarabinomannan (LAM) biosynthesis	Lipoarabinomannan (LAM) biosynthesis
+PWY121	Metabolism	Glycan biosynthesis and metabolism	Lipopolysaccharide biosynthesis	Lipopolysaccharide biosynthesis
+PWY122	Metabolism	Glycan biosynthesis and metabolism	Mannose type O-glycan biosynthesis	Mannose type O-glycan biosynthesis
+PWY123	Metabolism	Glycan biosynthesis and metabolism	N-Glycan biosynthesis	N-Glycan biosynthesis
+PWY124	Metabolism	Glycan biosynthesis and metabolism	O-Antigen nucleotide sugar biosynthesis	O-Antigen nucleotide sugar biosynthesis
+PWY125	Metabolism	Glycan biosynthesis and metabolism	O-Antigen repeat unit biosynthesis	O-Antigen repeat unit biosynthesis
+PWY126	Metabolism	Glycan biosynthesis and metabolism	Other glycan degradation	Other glycan degradation
+PWY127	Metabolism	Glycan biosynthesis and metabolism	Other types of O-glycan biosynthesis	Other types of O-glycan biosynthesis
+PWY128	Metabolism	Glycan biosynthesis and metabolism	Peptidoglycan biosynthesis	Peptidoglycan biosynthesis
+PWY129	Metabolism	Glycan biosynthesis and metabolism	Teichoic acid biosynthesis	Teichoic acid biosynthesis
+PWY130	Metabolism	Lipid metabolism	Biosynthesis of unsaturated fatty acids	Biosynthesis of unsaturated fatty acids
+PWY131	Metabolism	Lipid metabolism	Ether lipid metabolism	Ether lipid metabolism
+PWY132	Metabolism	Lipid metabolism	Fatty acid biosynthesis	Fatty acid biosynthesis
+PWY133	Metabolism	Lipid metabolism	Fatty acid degradation	Fatty acid degradation
+PWY134	Metabolism	Lipid metabolism	Fatty acid elongation	Fatty acid elongation
+PWY135	Metabolism	Lipid metabolism	Glycerolipid metabolism	Glycerolipid metabolism
+PWY136	Metabolism	Lipid metabolism	Glycerophospholipid metabolism	Glycerophospholipid metabolism
+PWY137	Metabolism	Lipid metabolism	Linoleic acid metabolism	Linoleic acid metabolism
+PWY138	Metabolism	Lipid metabolism	Primary bile acid biosynthesis	Primary bile acid biosynthesis
+PWY139	Metabolism	Lipid metabolism	Secondary bile acid biosynthesis	Secondary bile acid biosynthesis
+PWY140	Metabolism	Lipid metabolism	Sphingolipid metabolism	Sphingolipid metabolism
+PWY141	Metabolism	Lipid metabolism	Steroid biosynthesis	Steroid biosynthesis
+PWY142	Metabolism	Lipid metabolism	Steroid hormone biosynthesis	Steroid hormone biosynthesis
+PWY143	Metabolism	Metabolism of cofactors and vitamins	Biotin metabolism	Biotin metabolism
+PWY144	Metabolism	Metabolism of cofactors and vitamins	Folate biosynthesis	Folate biosynthesis
+PWY145	Metabolism	Metabolism of cofactors and vitamins	Lipoic acid metabolism	Lipoic acid metabolism
+PWY146	Metabolism	Metabolism of cofactors and vitamins	Nicotinate and nicotinamide metabolism	Nicotinate and nicotinamide metabolism
+PWY147	Metabolism	Metabolism of cofactors and vitamins	One carbon pool by folate	One carbon pool by folate
+PWY148	Metabolism	Metabolism of cofactors and vitamins	Pantothenate and CoA biosynthesis	Pantothenate and CoA biosynthesis
+PWY149	Metabolism	Metabolism of cofactors and vitamins	Porphyrin metabolism	Porphyrin metabolism
+PWY150	Metabolism	Metabolism of cofactors and vitamins	Retinol metabolism	Retinol metabolism
+PWY151	Metabolism	Metabolism of cofactors and vitamins	Riboflavin metabolism	Riboflavin metabolism
+PWY152	Metabolism	Metabolism of cofactors and vitamins	Thiamine metabolism	Thiamine metabolism
+PWY153	Metabolism	Metabolism of cofactors and vitamins	Ubiquinone and other terpenoid-quinone biosynthesis	Ubiquinone and other terpenoid-quinone biosynthesis
+PWY154	Metabolism	Metabolism of cofactors and vitamins	Vitamin B6 metabolism	Vitamin B6 metabolism
+PWY155	Metabolism	Metabolism of other amino acids	beta-Alanine metabolism	beta-Alanine metabolism
+PWY156	Metabolism	Metabolism of other amino acids	Cyanoamino acid metabolism	Cyanoamino acid metabolism
+PWY157	Metabolism	Metabolism of other amino acids	D-Amino acid metabolism	D-Amino acid metabolism
+PWY158	Metabolism	Metabolism of other amino acids	Glutathione metabolism	Glutathione metabolism
+PWY159	Metabolism	Metabolism of other amino acids	Phosphonate and phosphinate metabolism	Phosphonate and phosphinate metabolism
+PWY160	Metabolism	Metabolism of other amino acids	Selenocompound metabolism	Selenocompound metabolism
+PWY161	Metabolism	Metabolism of other amino acids	Taurine and hypotaurine metabolism	Taurine and hypotaurine metabolism
+PWY162	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of ansamycins	Biosynthesis of ansamycins
+PWY163	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of enediyne antibiotics	Biosynthesis of enediyne antibiotics
+PWY164	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of siderophore group nonribosomal peptides	Biosynthesis of siderophore group nonribosomal peptides
+PWY165	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of type II polyketide products	Biosynthesis of type II polyketide products
+PWY166	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of vancomycin group antibiotics	Biosynthesis of vancomycin group antibiotics
+PWY167	Metabolism	Metabolism of terpenoids and polyketides	Carotenoid biosynthesis	Carotenoid biosynthesis
+PWY168	Metabolism	Metabolism of terpenoids and polyketides	Geraniol degradation	Geraniol degradation
+PWY169	Metabolism	Metabolism of terpenoids and polyketides	Limonene and pinene degradation	Limonene and pinene degradation
+PWY170	Metabolism	Metabolism of terpenoids and polyketides	Nonribosomal peptide structures	Nonribosomal peptide structures
+PWY171	Metabolism	Metabolism of terpenoids and polyketides	Polyketide sugar unit biosynthesis	Polyketide sugar unit biosynthesis
+PWY172	Metabolism	Metabolism of terpenoids and polyketides	Sesquiterpenoid and triterpenoid biosynthesis	Sesquiterpenoid and triterpenoid biosynthesis
+PWY173	Metabolism	Metabolism of terpenoids and polyketides	Terpenoid backbone biosynthesis	Terpenoid backbone biosynthesis
+PWY174	Metabolism	Metabolism of terpenoids and polyketides	Tetracycline biosynthesis	Tetracycline biosynthesis
+PWY175	Metabolism	Metabolism of terpenoids and polyketides	Zeatin biosynthesis	Zeatin biosynthesis
+PWY176	Metabolism	Nucleotide metabolism	Purine metabolism	Purine metabolism
+PWY177	Metabolism	Nucleotide metabolism	Pyrimidine metabolism	Pyrimidine metabolism
+PWY178	Metabolism	Xenobiotics biodegradation and metabolism	Aminobenzoate degradation	Aminobenzoate degradation
+PWY179	Metabolism	Xenobiotics biodegradation and metabolism	Atrazine degradation	Atrazine degradation
+PWY180	Metabolism	Xenobiotics biodegradation and metabolism	Benzoate degradation	Benzoate degradation
+PWY181	Metabolism	Xenobiotics biodegradation and metabolism	Bisphenol degradation	Bisphenol degradation
+PWY182	Metabolism	Xenobiotics biodegradation and metabolism	Caprolactam degradation	Caprolactam degradation
+PWY183	Metabolism	Xenobiotics biodegradation and metabolism	Chloroalkane and chloroalkene degradation	Chloroalkane and chloroalkene degradation
+PWY184	Metabolism	Xenobiotics biodegradation and metabolism	Chlorocyclohexane and chlorobenzene degradation	Chlorocyclohexane and chlorobenzene degradation
+PWY185	Metabolism	Xenobiotics biodegradation and metabolism	Dioxin degradation	Dioxin degradation
+PWY186	Metabolism	Xenobiotics biodegradation and metabolism	Drug metabolism - other enzymes	Drug metabolism - other enzymes
+PWY187	Metabolism	Xenobiotics biodegradation and metabolism	Ethylbenzene degradation	Ethylbenzene degradation
+PWY188	Metabolism	Xenobiotics biodegradation and metabolism	Fluorobenzoate degradation	Fluorobenzoate degradation
+PWY189	Metabolism	Xenobiotics biodegradation and metabolism	Furfural degradation	Furfural degradation
+PWY190	Metabolism	Xenobiotics biodegradation and metabolism	Metabolism of xenobiotics by cytochrome P450	Metabolism of xenobiotics by cytochrome P450
+PWY191	Metabolism	Xenobiotics biodegradation and metabolism	Naphthalene degradation	Naphthalene degradation
+PWY192	Metabolism	Xenobiotics biodegradation and metabolism	Nitrotoluene degradation	Nitrotoluene degradation
+PWY193	Metabolism	Xenobiotics biodegradation and metabolism	Polycyclic aromatic hydrocarbon degradation	Polycyclic aromatic hydrocarbon degradation
+PWY194	Metabolism	Xenobiotics biodegradation and metabolism	Steroid degradation	Steroid degradation
+PWY195	Metabolism	Xenobiotics biodegradation and metabolism	Styrene degradation	Styrene degradation
+PWY196	Metabolism	Xenobiotics biodegradation and metabolism	Toluene degradation	Toluene degradation
+PWY197	Metabolism	Xenobiotics biodegradation and metabolism	Xylene degradation	Xylene degradation
+PWY198	Organismal Systems	Aging	Longevity regulating pathway - multiple species	Longevity regulating pathway - multiple species
+PWY199	Organismal Systems	Digestive system	Mineral absorption	Mineral absorption
+PWY200	Organismal Systems	Digestive system	Protein digestion and absorption	Protein digestion and absorption
+PWY201	Organismal Systems	Endocrine system	Insulin signaling pathway	Insulin signaling pathway
+PWY202	Organismal Systems	Endocrine system	Renin-angiotensin system	Renin-angiotensin system
+PWY203	Organismal Systems	Environmental adaptation	Plant-pathogen interaction	Plant-pathogen interaction
+PWY204	Organismal Systems	Immune system	NOD-like receptor signaling pathway	NOD-like receptor signaling pathway
+PWY205	Organismal Systems	Nervous system	Cholinergic synapse	Cholinergic synapse

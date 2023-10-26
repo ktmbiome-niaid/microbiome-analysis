@@ -1,0 +1,133 @@
+2023-10-24 18:35:32,016 /var/log/job.log INFO     Reference DB (sv138.1) checksum: 6b41db7139834c71171f8ce5b5918fc6
+2023-10-24 18:35:32,953 /var/log/job.log INFO     Taxonomy assignemnt DB checksum: f21c2d97c79ff07c17949a9622371a4c
+2023-10-24 18:35:32,953 /var/log/job.log INFO     Running R script with command:
+Rscript /usr/local/src/nephele2/pipelines/DADA2/dada2nephele/R/dada2nephele.R  --datadir /nephele_data/inputs/ --outdir /nephele_data/outputs/ --mapfile /nephele_data/inputs/USAMex_Nephele_MappingFile_corrected.txt --logfilename /var/log/job.log --nthread 12 --maxEE 6 --truncQ 4 --maxMismatch 0 --chimera --data_type PE --minBoot 80 --pseudopool --trimLeft_R1 20 --trimLeft_R2 20 --truncLen_R1 270 --truncLen_R2 270 --taxmethod rdp --refdb /mnt/EFS/dbs/dada2_silva_v138.1/silva_nr99_v138.1_train_set.fa.gz --refdb_species /mnt/EFS/dbs/dada2_silva_v138.1/silva_species_assignment_v138.1.fa.gz
+$datadir
+[1] "/nephele_data/inputs/"
+
+$mapfile
+[1] "/nephele_data/inputs/USAMex_Nephele_MappingFile_corrected.txt"
+
+$outdir
+[1] "/nephele_data/outputs/"
+
+$logfilename
+[1] "/var/log/job.log"
+
+$refdb
+[1] "/mnt/EFS/dbs/dada2_silva_v138.1/silva_nr99_v138.1_train_set.fa.gz"
+
+$refdb_species
+[1] "/mnt/EFS/dbs/dada2_silva_v138.1/silva_species_assignment_v138.1.fa.gz"
+
+$nthread
+[1] 12
+
+$data_type
+[1] "PE"
+
+$chimera
+[1] TRUE
+
+$maxEE
+[1] 6
+
+$trimOverhang
+[1] FALSE
+
+$truncQ
+[1] 4
+
+$pseudopool
+[1] TRUE
+
+$maxMismatch
+[1] 0
+
+$justConcatenate
+[1] FALSE
+
+$taxmethod
+[1] "rdp"
+
+$minBoot
+[1] 80
+
+$plotquality
+[1] TRUE
+
+$allowMultipleSpecies
+[1] TRUE
+
+$trimLeft
+[1] 20 20
+
+$truncLen
+[1] 270 270
+
+[1] 0
+2023-10-24 20:06:24,560 /var/log/job.log INFO     Summarizing biom file to /nephele_data/outputs/otu_summary_table.txt.
+2023-10-24 20:06:24,866 /var/log/job.log INFO     Processing OTU summary file: /nephele_data/outputs/otu_summary_table.txt
+2023-10-24 20:06:24,866 /var/log/job.log INFO     Created files: /nephele_data/outputs/intermediate_files/otu_summary.csv, /nephele_data/outputs/intermediate_files/sample_statistics.csv, /nephele_data/outputs/intermediate_files/sample_read_counts.csv
+2023-10-24 20:06:24,866 /var/log/job.log INFO     Creating phylogenetic trees
+2023-10-24 20:06:24,867 /var/log/job.log INFO     Running command: mafft --preservecase --inputorder --thread 12 /nephele_data/outputs/seq.fasta > /nephele_data/outputs/phylo/aligned_seq.fasta
+2023-10-24 20:07:10,925 /var/log/job.log INFO     Running command: FastTreeMP -quote -nt /nephele_data/outputs/phylo/aligned_seq.fasta > /nephele_data/outputs/phylo/unrooted_tree.nwk
+2023-10-24 20:15:33,643 /var/log/job.log INFO     Finished creating trees: /nephele_data/outputs/phylo/rooted_tree.nwk, /nephele_data/outputs/phylo/unrooted_tree.nwk
+2023-10-24 20:15:33,643 /var/log/job.log INFO     Checking output file from dada2 pipeline required by data visualization pipeline.
+2023-10-24 20:15:33,917 /var/log/job.log INFO     Running data visualization pipeline
+2023-10-24 20:15:33,918 /var/log/job.log INFO     Running R script with command:
+Rscript /usr/local/src/nephele2/pipelines/datavis16s/R/graphs.R  --datafile /nephele_data/outputs/OTU_table.txt --outdir /nephele_data/outputs/ --logfilename /var/log/job.log --sampdepth 13530 --mapfile /nephele_data/inputs/USAMex_Nephele_MappingFile_corrected.txt --tsvfile
+[1] 0
+2023-10-24 20:16:59,349 /var/log/job.log INFO     Result 'otu_summary' reported
+2023-10-24 20:16:59,383 /var/log/job.log INFO     Result 'top_species_table' reported
+2023-10-24 20:16:59,450 /var/log/job.log INFO     Result 'taxonomy_table' reported
+2023-10-24 20:16:59,502 /var/log/job.log INFO     Result 'quality_profile_r1' reported
+2023-10-24 20:16:59,599 /var/log/job.log INFO     Result 'seq_fasta' reported
+2023-10-24 20:16:59,647 /var/log/job.log INFO     Result 'quality_profile_r2' reported
+2023-10-24 20:16:59,697 /var/log/job.log INFO     Result 'otu_sample_read_counts' reported
+2023-10-24 20:16:59,726 /var/log/job.log INFO     Result 'logfile_debug' reported
+2023-10-24 20:16:59,761 /var/log/job.log INFO     Result 'reads_in_reads_out' reported
+2023-10-24 20:16:59,788 /var/log/job.log INFO     Result 'ref_db' reported
+2023-10-24 20:16:59,824 /var/log/job.log INFO     Result 'otu_sample_statistics' reported
+2023-10-24 20:16:59,869 /var/log/job.log INFO     Result 'pcoa_bray' reported
+2023-10-24 20:16:59,961 /var/log/job.log INFO     Result 'otu_table' reported
+2023-10-24 20:17:00,070 /var/log/job.log INFO     Result 'biom' reported
+2023-10-24 20:17:00,070 /var/log/job.log WARNING  Optional result 'seq_heatmap' does not exist: /nephele_data/outputs/graphs/seq_heatmap.html
+2023-10-24 20:17:00,149 /var/log/job.log INFO     Result 'error_rate_r2' reported
+2023-10-24 20:17:00,200 /var/log/job.log INFO     Result 'error_rate_r1' reported
+2023-10-24 20:17:00,283 /var/log/job.log INFO     Result 'species_heatmap' reported
+2023-10-24 20:17:00,303 /var/log/job.log INFO     Result 'taxmethod' reported
+2023-10-24 20:17:00,350 /var/log/job.log INFO     Result 'pcoa_binomial' reported
+2023-10-24 20:17:00,393 /var/log/job.log INFO     Result 'alphadiv' reported
+2023-10-24 20:17:00,440 /var/log/job.log INFO     Result 'track_reads' reported
+2023-10-24 20:17:00,463 /var/log/job.log INFO     Result 'sampling_depth' reported
+2023-10-24 20:17:00,521 /var/log/job.log INFO     Result 'rooted_tree' reported
+2023-10-24 20:17:00,588 /var/log/job.log INFO     Result 'rarecurve' reported
+2023-10-24 20:17:00,676 /var/log/job.log INFO     Result 'rarefied_otu_table' reported
+2023-10-24 20:17:00,677 /var/log/job.log INFO     Results tarball does not exist: /mnt/EFS/user_uploads/c10bc93c139b_reported_results.tar.gz. Creating.
+2023-10-24 20:17:04,209 /var/log/job.log INFO     Created results tarball: /mnt/EFS/user_uploads/c10bc93c139b_reported_results.tar.gz
+2023-10-24 20:17:04,272 s3transfer.utils DEBUG    Acquiring 0
+2023-10-24 20:17:04,273 s3transfer.tasks DEBUG    UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f5033d03280>}) about to wait for the following futures []
+2023-10-24 20:17:04,273 s3transfer.tasks DEBUG    UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f5033d03280>}) done waiting for dependent futures
+2023-10-24 20:17:04,273 s3transfer.tasks DEBUG    Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f5033d03280>}) with kwargs {'client': <botocore.client.S3 object at 0x7f4faedbc850>, 'config': <boto3.s3.transfer.TransferConfig object at 0x7f5033d08340>, 'osutil': <s3transfer.utils.OSUtils object at 0x7f5033d08190>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x7f5033d08610>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f5033d03280>}
+2023-10-24 20:17:04,274 s3transfer.futures DEBUG    Submitting task PutObjectTask(transfer_id=0, {'bucket': 'main-nephele-prod-userdata', 'key': 'c10bc93c139b/c10bc93c139b_reported_results.tar.gz', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x7f5033d08610> for transfer request: 0.
+2023-10-24 20:17:04,274 s3transfer.utils DEBUG    Acquiring 0
+2023-10-24 20:17:04,274 s3transfer.tasks DEBUG    PutObjectTask(transfer_id=0, {'bucket': 'main-nephele-prod-userdata', 'key': 'c10bc93c139b/c10bc93c139b_reported_results.tar.gz', 'extra_args': {}}) about to wait for the following futures []
+2023-10-24 20:17:04,274 s3transfer.utils DEBUG    Releasing acquire 0/None
+2023-10-24 20:17:04,274 s3transfer.tasks DEBUG    PutObjectTask(transfer_id=0, {'bucket': 'main-nephele-prod-userdata', 'key': 'c10bc93c139b/c10bc93c139b_reported_results.tar.gz', 'extra_args': {}}) done waiting for dependent futures
+2023-10-24 20:17:04,275 s3transfer.tasks DEBUG    Executing task PutObjectTask(transfer_id=0, {'bucket': 'main-nephele-prod-userdata', 'key': 'c10bc93c139b/c10bc93c139b_reported_results.tar.gz', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x7f4faedbc850>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x7f5033ce10d0>, 'bucket': 'main-nephele-prod-userdata', 'key': 'c10bc93c139b/c10bc93c139b_reported_results.tar.gz', 'extra_args': {}}
+2023-10-24 20:17:04,561 s3transfer.utils DEBUG    Releasing acquire 0/None
+2023-10-24 20:17:04,561 /var/log/job.log INFO     Uploaded to S3: /mnt/EFS/user_uploads/c10bc93c139b_reported_results.tar.gz
+2023-10-24 20:17:04,577 s3transfer.utils DEBUG    Acquiring 0
+2023-10-24 20:17:04,577 s3transfer.tasks DEBUG    UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f5033d035e0>}) about to wait for the following futures []
+2023-10-24 20:17:04,578 s3transfer.tasks DEBUG    UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f5033d035e0>}) done waiting for dependent futures
+2023-10-24 20:17:04,578 s3transfer.tasks DEBUG    Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f5033d035e0>}) with kwargs {'client': <botocore.client.S3 object at 0x7f4faedbc850>, 'config': <boto3.s3.transfer.TransferConfig object at 0x7f5033ce1970>, 'osutil': <s3transfer.utils.OSUtils object at 0x7f5033ce16d0>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x7f5033ce18b0>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f5033d035e0>}
+2023-10-24 20:17:04,578 s3transfer.futures DEBUG    Submitting task PutObjectTask(transfer_id=0, {'bucket': 'main-nephele-prod-userdata', 'key': 'c10bc93c139b/c10bc93c139b_results_registry.json', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x7f5033ce18b0> for transfer request: 0.
+2023-10-24 20:17:04,578 s3transfer.utils DEBUG    Acquiring 0
+2023-10-24 20:17:04,578 s3transfer.tasks DEBUG    PutObjectTask(transfer_id=0, {'bucket': 'main-nephele-prod-userdata', 'key': 'c10bc93c139b/c10bc93c139b_results_registry.json', 'extra_args': {}}) about to wait for the following futures []
+2023-10-24 20:17:04,578 s3transfer.utils DEBUG    Releasing acquire 0/None
+2023-10-24 20:17:04,578 s3transfer.tasks DEBUG    PutObjectTask(transfer_id=0, {'bucket': 'main-nephele-prod-userdata', 'key': 'c10bc93c139b/c10bc93c139b_results_registry.json', 'extra_args': {}}) done waiting for dependent futures
+2023-10-24 20:17:04,579 s3transfer.tasks DEBUG    Executing task PutObjectTask(transfer_id=0, {'bucket': 'main-nephele-prod-userdata', 'key': 'c10bc93c139b/c10bc93c139b_results_registry.json', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x7f4faedbc850>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x7f502ef72c10>, 'bucket': 'main-nephele-prod-userdata', 'key': 'c10bc93c139b/c10bc93c139b_results_registry.json', 'extra_args': {}}
+2023-10-24 20:17:04,695 s3transfer.utils DEBUG    Releasing acquire 0/None
+2023-10-24 20:17:04,695 /var/log/job.log INFO     Uploaded to S3: /mnt/EFS/user_uploads/c10bc93c139b/outputs/c10bc93c139b_results_registry.json
+2023-10-24 20:17:04,695 /var/log/job.log INFO     DADA2 pipeline complete.

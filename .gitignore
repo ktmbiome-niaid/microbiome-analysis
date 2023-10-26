@@ -1,0 +1,6 @@
+*.Rproj
+.DS_Store
+.Rproj*/
+*_files/
+.Rhistory
+data/*_raw/

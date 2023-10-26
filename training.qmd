@@ -1,0 +1,511 @@
+---
+title: "Statistical Analysis of Microbiome Data"
+author: Katie McCauley from the Bioinformatics and Computational Biosciences Branch (BCBB)
+format: 
+  html:
+    toc: true
+    toc-location: left
+    number-sections: true
+    embed-resources: true
+    code-overflow: wrap
+    theme: yeti
+    fontsize: 0.97em
+    column: page-right
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: false
+## Just to clear the workspace before making the document
+rm(list=ls())
+```
+
+
+# Learning Objectives
+
+Our overarching goal today is to provide you with the tools to start analyzing microbiome data on your own.
+
+- Create a Phyloseq Object
+
+- Assess Contamination Based on Negative Controls
+
+- Standardize/Normalize Sequence Data for Sequencing Depth
+
+- Calculate, compare and visualize:
+
+  - Alpha Diversity (within sample)
+  
+  - Beta Diversity (between sample)
+  
+  - Individual Taxa
+
+- Identify Networks in Microbiome Data
+
+A few notes before we start:
+
+- I'm sharing the approaches I typically take for analysis and know very well. Throughout the tutorial, I'll point to alternative methods that are available. There are still active debates about which methods are "correct" or "more useful". However, I hope that the ideas I share today will at least provide you with avenues of exploration and a platform upon which you can build. And we're always available for a consult at bioinformatics@niaid.nih.gov!
+
+::: {.callout-tip appearance="simple"}
+Throughout the training, you will see callouts like this with activities and questions.
+:::
+
+# Nephele
+
+Before we start, I just wanted to remind everyone about our Nephele platform:
+
+[![The Nephele Splash Page](images/nephele_screenshot.png)](https://nephele.niaid.nih.gov)
+
+Most of the analysis we do today will use the DADA2 results, but I will also cover concepts needed for the WGSA2 results.
+
+# Making a Phyloseq Object
+
+## DADA2
+
+The data from DADA2 that we will be using today is derived from a paper examining differences in the skin microbiome of infants in the United States and Mexico^[https://journals.asm.org/doi/10.1128/msystems.00834-20].
+
+**Abstract:** Daily practices put humans in close contact with the surrounding environment, and differences in these practices have an impact on human physiology, development, and health. There is mounting evidence that the microbiome represents an interface that mediates interactions between the human body and the environment. In particular, the skin microbiome serves as the primary interface with the external environment and aids in host immune function by contributing as the first line of defense against pathogens. Despite these important connections, we have only a basic understanding of how the skin microbiome is first established, or which environmental factors contribute to its development. To this end, this study compared the skin bacterial communities of infants (n=47) living in four populations in Mexico and the United States that span the socioeconomic gradient, where we predicted that **variation in physical and social environments would shape the infant skin microbiome**. Results of 16S rRNA bacterial gene sequencing on **119 samples (armpit, hand, and forehead)** showed that infant skin bacterial diversity and composition are shaped by population-level factors, including those related to socioeconomic status and household composition, and vary by skin site and infant age. Differences in infant-environment interactions, including with other people, appear to vary across the populations, likely influencing infant microbial exposures and, in turn, the composition of infant skin bacterial communities. These findings suggest that variation in microbial exposures stemming from the local environment in infancy can impact the establishment of the skin microbiome across body sites, with implications for developmental and health outcomes.
+
+### Individual Files
+
+During the class, I'll go through all of the files in the folder. For now, I'll focus on the important files that we need for analysis.
+
+- OTU_table.txt
+
+- phylo/rooted_tree.nwk
+
+As a side note, I've removed the filtered reads (for space reasons) and renamed the folder from `outputs` to `dada2_outputs` for our practice data today. Otherwise, the folder is exactly as you would obtain it from Nephele.
+
+We'll read in our ASV table:
+
+```{r}
+library(phyloseq)
+setwd("~/Documents/training/microbiome-analysis/")
+otu <- read.table("data/dada2_outputs/OTU_table.txt", header=T, check.names=F, sep="\t", comment="", row.names=1)
+
+## We can explore this file a little bit using some basic R commands
+dim(otu)
+
+otu[1:5,1:5]
+
+names(otu)
+
+rownames(otu)[1:20]
+```
+
+::: {.callout-tip}
+## Check-in
+
+What have we learned about this file?
+:::
+
+We do indeed need to separate our taxonomy information from this table so that it can be analyzed separately.
+
+```{r}
+tax <- as.matrix(otu[, c("Kingdom","Phylum","Class","Order","Family","Genus","Species")])
+## clean up our OTU table so it no longer includes the taxonomy names
+otu[, c("Kingdom","Phylum","Class","Order","Family","Genus","Species")] <- NULL
+```
+
+
+And now our phylogenetic tree
+
+```{r}
+tree <- ape::read.tree("data/dada2_outputs/phylo/rooted_tree.nwk")
+```
+
+Finally, we want to include a table of sample data:
+
+```{r}
+sampdat <- read.table("data/webinar_demo_metadata.txt", header=T, check.names=F, sep="\t", comment="", quote="")
+head(sampdat)
+rownames(sampdat) <- sampdat$Description
+```
+
+Now we can build our phyloseq object that we'll need for analysis:
+
+```{r}
+dada2_phyloseq_object <- phyloseq(otu_table(otu, taxa_are_rows=TRUE), sample_data(sampdat), phy_tree(tree), tax_table(tax))
+```
+
+This object can then be summarized by printing it again:
+
+```{r}
+dada2_phyloseq_object
+```
+
+::: {.callout-tip}
+## Check-in
+
+How does this summary compare to some of the features we looked at earlier?
+:::
+
+
+### Importing using a BIOM file
+
+BIOM files are a special file type that includes not only your count data, but your metadata too. Nephele creates one automatically from the mapping file you provide, and phyloseq has a special function that allows you to quickly import this file.
+
+```{r}
+otu_table_from_biom <- import_biom("data/dada2_outputs/taxa.biom", treefilename = "data/dada2_outputs/phylo/rooted_tree.nwk")
+```
+
+This file can also be summarized like above.
+
+```{r}
+otu_table_from_biom
+```
+
+You'll notice that the BIOM file contains fewer sample variables. This is because it uses the mapping file submitted to Nephele, and I only submitted one (USA vs Mexico) when preparing the mapping file. If your mapping file includes more information, you can use this relatively seamless phyloseq function to bring in your data.
+
+## WGSA2
+
+### Importing from Individual Files
+
+Data from WGSA2 is differently organized.
+
+The files you'll need for this pipeline can be found under `wgsa2_outputs`. You can easily import either:
+
+- Taxonomy-based data (who's there?): TAXprofiles/readsTAX_RefDB/merged_tables
+
+```{r}
+wgsa2_otu_table <- read.table("data/wgsa2_outputs/TAXprofiles/readsTAX_RefDB/merged_tables/merged_Counts.txt", header=T, sep="\t", row.names=1)
+wgsa2_tax_table <- as.matrix(read.table("data/wgsa2_outputs/TAXprofiles/readsTAX_RefDB/merged_tables/merged_TAX.txt", header=T, sep="\t", row.names=1))
+wgsa2_sample_data <- read.table("data/wgsa2_outputs/wgsa_example_mapping_corrected.txt", header=T, sep="\t", comment="", row.names=1)
+
+wgsa2_phyloseq <- phyloseq(otu_table(wgsa2_otu_table, taxa_are_rows = T), tax_table(wgsa2_tax_table), sample_data(wgsa2_sample_data))
+wgsa2_phyloseq
+```
+
+- Pathway-based data (what potential pathways do they have?): PWYprofiles/keggPWYs.MP/merged_tables
+
+```{r}
+wgsa2_otu_table_pwy <- read.table("data/wgsa2_outputs/PWYprofiles/keggPWYs.MP/merged_tables/merged_Counts.txt", header=T, sep="\t", row.names=1)
+wgsa2_tax_table_pwy <- as.matrix(read.table("data/wgsa2_outputs/PWYprofiles/keggPWYs.MP/merged_tables/merged_allTiers.txt", header=T, sep="\t", row.names=1))
+
+wgsa2_pwy_phyloseq <- phyloseq(otu_table(wgsa2_otu_table_pwy, taxa_are_rows = T), tax_table(wgsa2_tax_table_pwy), sample_data(wgsa2_sample_data))
+wgsa2_pwy_phyloseq
+```
+
+- Gene-based data (what genes exist?): PWYprofiles/keggPWYs.MP/merged_tables
+
+```{r}
+gene_table <- read.table("data/wgsa2_outputs/PWYprofiles/keggPWYs.MP/merged_tables/merged_geneTPMtable.txt", header=T, check.names=F, sep="\t", comment="", row.names=1)
+head(gene_table)
+
+wgsa2_gene_table <- gene_table[, !names(gene_table) %in% "geneNAME"]
+wgsa2_gene_tax <- as.matrix(gene_table[, "geneNAME"])
+rownames(wgsa2_gene_tax) <- rownames(gene_table)
+colnames(wgsa2_gene_tax) <- "geneNAME"
+
+wgsa2_gene_phyloseq <- phyloseq(otu_table(wgsa2_gene_table, taxa_are_rows = T), tax_table(wgsa2_gene_tax), sample_data(wgsa2_sample_data))
+wgsa2_gene_phyloseq
+```
+
+
+For now, we will leave all of this data behind because three samples isn't enough to make major statistical comparisons from, but most of the analysis methods we use below are applicable to data derived from the WGSA2 pipeline.
+
+# Quality Assessment
+
+Before we can start answering statistical questions about our data, there are a few things we need to think about or do.
+
+## Negative Control Consideration
+
+Unfortunately the publicly available data we have today does not include the negative extraction controls that are often included during sequencing. These can help us identify sequence reads that are likely due to reagents and not biological. For now, I will point to tools like DECONTAM that can help remove signal and assume that our samples are okay.
+
+## Removal of Lower-Abundance Taxa
+
+This step is entirely project dependent -- maybe your study won't have as many ASVs or you're really interested in the lower-abundance taxa in your dataset. If that's the case, you can skip this step. We just want to make sure that the dataset isn't filled with a large number of singletons or anything that indicates artifacts, and the fact that we have 20,000 ASVs suggests this might be the case.
+
+To determine the distribution of taxa in our dataset, I like to plot a histogram of the log taxon counts within the dataset. We can see from the plot that it is mostly comprised of low-abundance taxa. There are relatively few high-abundance taxa in the dataset.
+
+```{r}
+hist(log(taxa_sums(dada2_phyloseq_object)))
+```
+
+For now, we'll filter out just the ultra-low abundance taxa before proceeding.
+
+```{r}
+critical_value <- 0.00001*sum(taxa_sums(dada2_phyloseq_object))
+dada2_phyloseq_filtered <- filter_taxa(dada2_phyloseq_object, function(x) sum(x) > critical_value, TRUE)
+```
+
+
+## Normalization/Standardization
+
+Before we jump into this question, let's look at the sequencing depth of our samples. Note that in the previous step we were looking at taxa sums and now we are looking at sample sums.
+
+```{r}
+summary(sample_sums(dada2_phyloseq_filtered))
+hist(sample_sums(dada2_phyloseq_filtered))
+```
+
+Here we can see a wide variety of sequencing depth across samples. Some samples have very few reads, while others have several thousand. We typically want to "normalize" or "standardize" this in some way because differences in sequencing effort can contribute to potential bias. This topic is an area of active, lively debate that continues to this day. In the last year, three separate articles have been written on this topic alone, falling on different sides.
+
+The two main options are:
+
+- Rarefaction: subsample all samples to an even read depth, typically one that captures the highest level of diversity for a majority of the samples and allows a majority of the samples to be retained. Alpha rarefaction curves, which are provided with the Nephele output, can help in determining a rarefaction depth.
+
+- Normalization: fit the distribution of read counts to an expected distribution, typically Negative Binomial. There are many methods from several packages you can use to perform normalization. For instance, popular transformation is the Variance Stabilized Transformation from DESeq2. There is also 
+
+My personal preference is rarefaction, which has worked well for me over several datasets, and I'll use that method today. I also prefer it because I can use the same "normalized" dataset across all of my analyses. However, you may want to consider normalization methods if you have too many lower-abundance samples that are needed for your analysis and cannot be otherwise removed.
+
+First, we'll review the alpha rarefaction curves found under `data/data2_outputs/graphs/rarecurve.html`. Given the plot, we will rarefy to 10,000 reads per sample, which is the depth that was chosen by the authors of the paper as well. At that depth, we retain a majority of the samples and have reached the asymptote of the curve for a majority of samples as well.
+
+```{r}
+dada2_rare <- rarefy_even_depth(dada2_phyloseq_filtered, sample.size = 10000, replace=F, rngseed=123)
+dada2_rare
+```
+
+# Alpha Diversity
+
+Whittaker (1972): Diversity within an ecosystem
+
+How many different types of sequences are in an environment (sample)?
+
+There are several commonly used metrics, which act as a summary statistic for a single sample.
+
+- Shannon's Index: Takes into account both species richness and evenness - typically the backbone of other diversity metrics; higher values indicate more divers and equally distributed communities, but it won't be a direct count of the number of taxa present in a sample
+
+- Pielou's Evenness: Summarizes the distribution of taxa within a sample. "Uneven" communities are highly dominated by relatively few taxa.
+
+- Chao1 Richness: Assumes that the counts of taxa within a sample estimates a Poisson distribution (a "normal" distribution for count data); takes the counts within a sample and corrects for deviations from the Poisson distribution
+
+- Faith's Phylogenetic Diversity: This metric includes additional phylogeny information in the calculation. Are there lots of taxa within one clade or do you get taxa from a variety of locations on the phylogenetic tree? This is calculated by taking the sum of the branches among taxa that occur within a sample.
+
+## Calculating Alpha Diversity
+
+Phyloseq includes a function that calculates some of the common diversity indices. This calculation must be done on rarefied data.
+
+```{r}
+phy_alphadiv <- estimate_richness(dada2_rare)
+head(phy_alphadiv)
+```
+
+This gets us pretty far, but I also want to go over how you can calculate some of the common metrics "manually" and get others that aren't in the default set for phyloseq.
+
+```{r}
+library(vegan)
+otu_table <- t(otu_table(dada2_rare)) 
+
+evenness <- diversity(otu_table)/log(specnumber(otu_table))
+chao1 <- t(estimateR(otu_table))[,2]
+phy_div <- picante::pd(t(otu_table(dada2_rare)), phy_tree(dada2_rare), include.root = TRUE)[,1]
+```
+
+And we combine them all together here:
+
+```{r}
+all_alphadivs <- data.frame(phy_alphadiv, evenness, chao1, phy_div)
+```
+
+And then add them to our phyloseq object:
+
+```{r}
+update_sample_data <- merge(sample_data(dada2_rare), all_alphadivs, by=0)
+rownames(update_sample_data) <- update_sample_data$Row.names
+update_sample_data$Row.names <- NULL
+
+sample_data(dada2_rare) <- update_sample_data
+head(sample_data(dada2_rare))
+```
+
+## Comparing Alpha Diversity
+
+I always like to say that it's easy to use code to get a p-value - it's much harder to ensure that it answers the question you had in mind.
+
+## Types of Variables
+
+Before I jump into running stats, I just want to briefly cover the main types of variables that we'll encounter today.
+
+- Continuous/Numeric/Integer: These variables tend to be any set of numbers (examples include: systolic blood pressure)
+
+- Categorical/Factor/Character: Characterized by having two or more values or categories (examples include: "floor type" in which the potential responses could be "hardwood","carpet", or "tile"; "favorite fruit" with "apples","bananas", "cherries", or "dates" as potential responses). Also, sometimes continuous variables can be turned into categorical variables (ie, numeric cups of coffee can be grouped into categories of 1-2, 3-4, 5+)
+
+- Binary: A special type of categorical variable that is typically coded as "Yes/No" or "0/1" (examples include: whether participants have the condition of interest or not, whether participants have siblings)
+
+::: {.callout-tip}
+## Check-in
+
+Review the metadata printed above and link a variable type to each variable.
+:::
+
+## Running Linear Models
+
+Our first question using this data is simple: is there a difference in phylogenetic diversity between the different body sites (armpit = AP, hand = HA, and forehead = FH)? For categorical variables, the interpretation requires that there be a reference group or comparison group. By default, when R creates factors/categorical variables it does so alphabetically by default, so in our instance, "AP" or armpit will be the reference group and both "HA" and "FH" will be compared to the "AP" group.
+
+```{r}
+# the update_sample_data object we created above actually is a nice format for our analysis here, so we will use that dataset.
+summary(lm(phy_div ~ bodysite, data=update_sample_data))
+```
+
+This result suggests that there is a highly significant difference in phylogenetic diversity between the armpit microbiome and both forehead and hand, where both forehead and hand have higher diversity than the armpit.
+
+Next, we'll want to determine if all three groups are different from each other - we currently don't have any information about whether the forehead and hand are different from each other.
+
+```{r}
+anova(lm(phy_div ~ population, data=update_sample_data))
+```
+
+One thing that's nice about linear models (and parametric models more broadly) is that they allow us to perform statistical adjustment. Let's say for the sake of argument that we saw in our data that Mexican children were enrolled slightly younger and skewed female. We can apply statistical adjustment to confirm that those factors aren't influencing our result.
+
+First, I'll just confirm that there is indeed no difference in age or sex between USA and Mexico.
+
+```{r}
+summary(lm(age_months ~ bodysite, data=update_sample_data))
+chisq.test(table(update_sample_data$bodysite, update_sample_data$sex)) ## this is a chi-square test, which can be used for two categorical variables.
+```
+
+Now I can perform my (moot) adjustment and see that there's no difference in my results. Another helpful thing is that if we over adjust for variables that we know aren't confounders (like these), we don't influence our results.
+
+```{r}
+summary(lm(phy_div ~ bodysite + age_months + sex, data=update_sample_data))
+```
+
+We can see from this result that the effect of age and sex is not significant. We can also interpret some information from the estimates for these variables. Specifically:
+
+- 0.2952 is the change in alpha diversity for every unit increase in age (ie, for every additional month of age), accounting for country and sex.
+
+- -0.11474 is the change in alpha diversity among males compared to females (males have "lower" alpha diversity than females -- though far from significant/meaningful) when removing the effects of country and age.
+
+## Visualizing Alpha Diversity
+
+Visualization of alpha diversity is relatively straight forward and is typically performed through box and whiskers plots, which are easy to create with ggplot2.
+
+```{r}
+library(ggplot2)
+ggplot(update_sample_data, aes(x=population, y=phy_div, fill=country)) +
+  geom_boxplot() +
+  geom_point()
+```
+
+We can see from this plot that the USA participants have higher diversity than participants from Mexico, which is consistent with the results from our model above.
+
+::: {.callout-tip}
+## Check-in
+
+How would you plot a continuous variable? What would you expect it to look like?
+:::
+
+# Beta Diversity
+
+Beta diversity allows us to understand effects observed across samples obtained from the population being studied, and allows us to analyze samples in the context of other samples.
+
+Samples are compared to each other based on different calculations of distances. Each distance allows us to learn something new about our data:
+
+- Bray Curtis: Weights the distances based on **higher** abundance taxa
+
+- Canberra: Weights the distances based on **lower** abundance taxa
+
+- UniFrac: uses the phylogenetic tree to help calculate the distances
+
+  - Weighted UniFrac combines phylogeny with the abundances, focusing more on the higher abundance taxa (basically Bray Curtis + phylogeny)
+  
+  - Unweighted UniFrac: simply focuses on the phylogenetic information without regard to abundance
+
+## What is a distance matrix?
+
+It is an "n x n" matrix (meaning that it has samples on the rows and the columns) that is based on a calculation of distances.
+
+This is an example built from our practice data today. You can see that each of the rows and columns is a sample that gets compared to itself.
+
+```{r}
+## note the use of the explicit call to phyloseq for the distance function -- there are many different distance functions and sometimes they can get mixed up.
+distance_matrix <- phyloseq::distance(dada2_rare, method="bray")
+as.matrix(distance_matrix)[1:5,1:5]
+```
+
+::: {.callout-tip}
+## Question
+
+Which sample pair is most similar? Most distinct?
+:::
+
+## Calculating Beta Diversity
+
+We can calculate several types of distance matrices using phyloseq through the `distance` function. Running this is exceptionally easy. UniFrac distances can be easily made because the tree is already contained within the phyloseq object.
+
+A Bray Curtis distance matrix was created above, but we can also calculate a weighted UniFrac distance matrix just as easily.
+
+```{r}
+weighted_distance <- phyloseq::distance(dada2_rare, method="wunifrac")
+as.matrix(weighted_distance)[1:5,1:5]
+```
+
+## Comparing Beta Diversity
+
+Now we want to start relating this diversity to variables of interest. Our first question will be similar to the previous question we asked: are there compositional differences in the skin microbiome between USA and Mexico?
+
+To answer this question, we'll use a special statistical method called Permutational Analysis of Variance or PERMANOVA, developed by Marti J Anderson, that specifically analyzes distance matrices.
+
+It allows us to ask whether a specific variable "explains a significant proportion of variance" across microbial communities. This is done by calculating a baseline F statistic, which is a comparison of variance (total sum of squares) both within groups and between groups.
+
+From this we can calculate a p-value by shuffling the distance matrix around many times (default = 999) and then re-calculate the F-statistic. The p-value then becomes the proportion of times that the permuted F-statistics are greater than the overall F-statistic.
+
+To perform this comparison, we actually don't need to do any of this manually. We place our distance matrix, calculated above, into the "response" variable part of a model, which can be done using the `vegan` package's `adonis2` function:
+
+```{r}
+adonis2(weighted_distance ~ sample_data(dada2_rare)$country)
+```
+
+::: {.callout-tip}
+## Small Exercise
+
+Run the `adonis2` function again. What happened? Why?
+:::
+
+
+::: {.callout-warning}
+## Caution
+
+I should say one word of warning -- I'm able to do this in a more "simple" way because I know that the order of samples in the OTU/ASV table from the phyloseq object is in the same order as the distance matrix is in the same order as the sample data. If the distance matrix comes from some other data-generating process and there is *any* chance that the samples are in a different order, you will still get an R2 and P-value and no warning will be produced, but the results are unlikely to be accurate.
+
+If you want to double check, you can try some command like:
+
+```{r}
+identical(labels(weighted_distance), rownames(sample_data(dada2_rare)))
+## TRUE
+```
+:::
+
+These results suggest that the USA and Mexico have a significantly different microbiome composition. There are a few key points of interest in this result that I also want to point out. The columns, in order, indicate: degrees of freedom, Sum of Squares (see variance calculation above), the R-squared value (or the proportion of variance explained by the variable), the critical F-statistic, and the P-value.
+
+We can also adjust for other variables that we might consider confounders, but that needs to be done in a slightly different way. We still sum the variables like we did in the linear model like below, but we need to add in a specific option for the vegan command, the `by=` option, which I'll discuss after we run the command below and discuss the results.
+
+```{r}
+adonis2(weighted_distance ~ sample_data(dada2_rare)$country + sample_data(dada2_rare)$age_months + sample_data(dada2_rare)$sex, by="margin")
+adonis2(weighted_distance ~ sample_data(dada2_rare)$country + sample_data(dada2_rare)$age_months + sample_data(dada2_rare)$sex, by="terms")
+```
+
+Much like our findings for alpha diversity, age and sex don't appear to influence the relationship between community composition and country, either way we run the adonis command.
+
+But back to the `by=` option. This option asks whether the function should look at your variables by terms or as "marginal effects". If you're familiar with different types of ANOVA, then this is the difference between a Type I and a Type III Sum of Squares. If that sounds like a foreign language, think of each variable in your PERMANOVA as a PAC-MAN that wants to eat variance. In the case of by="terms", the first variable consumes as much variance as it can, then the second variable consumes what it can after the first variable and the third variable consumes everything that it can that's left. The by="margin" method allows all three PAC-MANs to consume variance together. In the end, the same amount of variance is consumed (as you can see for the `sex` variable in both results above), but the interpretation of the two previous variables is different.
+
+## Visualizing Beta Diversity
+
+To visualize these findings, we typically use ordination. This process takes the pairwise distances that were calculated and places them into "coordinate" space so that we can plot them.
+
+- Principal Coordinates Analysis (PCoA)
+
+- Non-metric Multi-Dimensional Scaling (NMDS)
+
+Both methods try to optimize the distances so that the majority of the variance is explained in as few axes as possible. PCoA does the best that it can, and NMDS forces the distances into a pre-defined number of axes.
+
+In phyloseq, both are again straight-forward if we use the `ordinate` function:
+
+```{r}
+pcoa_ord <- ordinate(dada2_rare, method="PCoA", distance="bray")
+nmds_ord <- ordinate(dada2_rare, method="NMDS", distance="bray")
+
+plot_ordination(dada2_rare, pcoa_ord, color="country") + ggtitle("PCoA Plot")
+plot_ordination(dada2_rare, nmds_ord, color="country") + ggtitle("NMDS Plot")
+```
+
+As you can see, the red points are separate from the blue points in both ordinations.
+
+However, thing that we can see very clearly in the data is a large split between samples
+
+# Significant Taxa
+
+## Comparing Taxa
+
+## Visualizing Taxa

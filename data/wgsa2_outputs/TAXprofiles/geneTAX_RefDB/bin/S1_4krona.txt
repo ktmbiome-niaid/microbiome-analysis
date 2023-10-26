@@ -1,0 +1,261 @@
+#iTPM	TAXname	TAXid
+30	Bordetella pertussis	520
+18382	unclassified	0
+0	Bacillales	1385
+1983	Clostridium botulinum F str. Langeland	441772
+3	Enterobacter	547
+61	cellular organisms	131567
+1	Bacteroides luhongzhouii	2650158
+2	Enterobacter roggenkampii	1812935
+4	Clostridium taeniosporum	394958
+2	Bifidobacterium animalis subsp. lactis	302911
+32	Bacteroides faecium	2715212
+5	Kosakonia sacchari	1158459
+37	Bifidobacterium animalis	28025
+17	Flavobacteriales	200644
+7	Plasmodium cynomolgi strain B	1120755
+13	Comamonadaceae	80864
+113018	Bordetella	517
+11	Clostridium felsineum	36839
+161	Eubacteriales	186802
+6	Tenacibaculum ovolyticum	104270
+4009	Akkermansia muciniphila	239935
+12	Pseudomonas	286
+976	Clostridium tetani	1513
+1	Xanthomonas	338
+1134	Bacteroidaceae	815
+0	[Clostridium] colinum	36835
+178	Bacteroidota	976
+430	Clostridium beijerinckii	1520
+2	Bordetella holmesii H558	1281885
+2	Enterobacter cloacae	550
+2888	Bordetella holmesii	35814
+0	Burkholderia sp. EMB26	2854261
+3	Burkholderia seminalis	488731
+40	Burkholderiaceae	119060
+67	Clostridium tetani E88	212717
+7	Streptomyces	1883
+56059	Bordetella pertussis	520
+1020	Clostridium sporogenes	1509
+12	Achromobacter denitrificans	32002
+1	Achromobacter spanius	217203
+19	Betaproteobacteria	28216
+405	Bordetella bronchiseptica MO149	1208658
+11	Pseudomonas aeruginosa	287
+1	Salmonella enterica subsp. enterica serovar Enteritidis	149539
+30	Clostridium sp. LQ25	2992805
+5	Burkholderia ambifaria	152480
+381	Erysipelothrix rhusiopathiae	1648
+3	Erysipelothrix rhusiopathiae str. Fujisawa	650150
+1830	Clostridium autoethanogenum DSM 10061	1341692
+1	Escherichia coli O18ac:H14	2773705
+1	Salmonella enterica subsp. salamae	59202
+943	Bifidobacterium	1678
+3	Erysipelothrix piscisicarius	2485784
+470	Bordetella parapertussis Bpp5	1208660
+13	Dickeya zeae	204042
+41995	Bacteroides fragilis	817
+3167	Bacteroidales	171549
+76	Achromobacter xylosoxidans	85698
+2	Salmonella enterica subsp. enterica serovar Minnesota	70803
+5	Caldalkalibacillus thermarum TA2.A1	986075
+5690	Bordetella bronchiseptica	518
+27824	Clostridium scatologenes	1548
+9	Achromobacter sp. ES-001	2860286
+104	Clostridium sp. 001	1970093
+6	Clostridium perfringens	1502
+51	Dysgonomonadaceae	2005520
+3	Escherichia coli O85:H1	2848143
+1	Burkholderia vietnamiensis	60552
+21	Bordetella avium	521
+0	Rhodanobacter sp. FDAARGOS 1247	2778082
+6201	Clostridium acetobutylicum	1488
+19	Parabacteroides distasonis	823
+3	Roseibacterium elongatum DSM 19469	1294273
+4	Shigella flexneri	623
+6	Pandoraea pnomenusa	93220
+6630	Pseudomonadota	1224
+3379	Phocaeicola dorei	357276
+4	Butyrivibrio	830
+3	Dyella telluris	2763498
+0	Rhodococcus pseudokoreensis	2811421
+0	Calothrix sp. PCC 7507	99598
+440	Bacteria	2
+0	Clostridium formicaceticum	1497
+0	Clostridium thermarum	1716543
+60	Oscillospiraceae	216572
+6	Clostridium fermenticellae	2068654
+0	Paraburkholderia	1822464
+2	Achromobacter insolitus	217204
+188	Bacteroides thetaiotaomicron VPI-5482	226186
+28	Bacteroides faecis	674529
+5	Eubacteriaceae	186806
+2547	Ruminococcus albus 7 = DSM 20455	697329
+3	Pontibacillus sp. HMF3514	2692425
+103	Proteiniphilum propionicum	2829812
+2	Bacteroides sp. ZJ-18	2709390
+37	Bordetella genomosp. 8	1416806
+14	Clostridium tagluense	360422
+0	Halanaerobium praevalens DSM 2228	572479
+72	Clostridium sp. AWRP	2212991
+5220	Enterobacteriaceae	543
+97	Cellulosilyticum	698776
+13	Clostridium gelidum	704125
+2828	Clostridium cellulovorans 743B	573061
+3	Erysipelothrix rhusiopathiae SY1027	1313290
+3	Clostridium sp. JN-1	2483110
+2	Shigella sonnei	624
+24	Shigella boydii	621
+3	Burkholderia contaminans	488447
+1668	Butyrivibrio hungatei	185008
+15	Clostridium neonatale	137838
+13	Chryseobacterium	59732
+5	Clostridium cochlearium	1494
+15	Clostridium sp. DL-VIII	641107
+4	Cytophagales	768507
+0	Burkholderia territorii	1503055
+21801	Clostridium butyricum	1492
+23	Flavobacteriaceae	49546
+4	Phytobacter ursingii	1972431
+230	Thermoclostridium stercorarium subsp. stercorarium DSM 8532	1121335
+62	Clostridium pasteurianum BC1	86416
+10	Halobacteria	183963
+240	Burkholderia cepacia complex	87882
+0	Shewanella dokdonensis	712036
+0	Bacteroides uniformis CL03T12C37	997890
+9	Clostridium ljungdahlii DSM 13528	748727
+2282	Alcaligenaceae	506
+5677	Eubacterium callanderi	53442
+8	Escherichia marmotae	1499973
+0	Clostridium novyi NT	386415
+2	Odoribacter splanchnicus DSM 20712	709991
+106	Bordetella hinzii	103855
+2103	Clostridium botulinum 202F	1415774
+4134	Thermoclostridium stercorarium	1510
+1	Clostridium saccharobutylicum DSM 13864	1345695
+9	Clostridium saccharoperbutylacetonicum	36745
+4	Escherichia sp. E4742	2044467
+35	Terrabacteria group	1783272
+1	Achromobacter ruhlandii	72557
+6	Escherichia albertii	208962
+623	Erysipelothrix	1647
+2	Chryseobacterium paludis	2956784
+0	Ligilactobacillus salivarius	1624
+0	Paraburkholderia fungorum	134537
+5	Bacteroides xylanisolvens	371601
+26	Enterobacterales	91347
+12	Akkermansia	239934
+5	Candidatus Karelsulcia muelleri	336810
+0	Sodalis praecaptivus	1239307
+4177	Clostridium carboxidivorans P7	536227
+1	Enterobacter ludwigii	299767
+92	Clostridiaceae	31979
+0	Bordetella sp. H567	1697043
+745	Burkholderia multivorans ATCC 17616	395019
+0	Bordetella trematum	123899
+12845	Bacteroides	816
+251	Clostridium drakei	332101
+72	Proteiniphilum saccharofermentans	1642647
+1	Enterobacter sp. JBIWA003	2831890
+0	Homo sapiens	9606
+48	unclassified Clostridium	2614128
+0	Bacteroides salyersiae	291644
+2301	Burkholderia multivorans	87883
+36146	Clostridium	1485
+17	unclassified Bacteroides	2646097
+7	Salmonella enterica	28901
+1	Clostridium botulinum A2B3 87	1379740
+5	Shigella dysenteriae	622
+2278	Odoribacter splanchnicus	28118
+29	Clostridium botulinum B1 str. Okra	498213
+466	root	1
+3	Nocardioides marinisabuli	419476
+2	Cupriavidus	106589
+22	Alkaliflexus sp. Ai-910	2949635
+12	Clostridium diolis	223919
+3	Streptomyces sp. 3214.6	1882757
+2805	Burkholderiales	80840
+2	Cedecea sp. FDAARGOS_727	2545798
+19	Clostridium botulinum H04402 065	941968
+1	Bacteroides ovatus	28116
+1568	Escherichia coli	562
+3	Sordariomycetes	147550
+1	Escherichia fergusonii	564
+4	Clostridium tyrobutyricum	1519
+2	Achromobacter xylosoxidans NH44784-1996	1167634
+0	Sphingobacterium multivorum	28454
+1025	Eubacterium	1730
+187	Cellulosilyticum lentocellum DSM 5427	642492
+4	Clostridium pasteurianum DSM 525 = ATCC 6013	1262449
+3	Prevotella bryantii	77095
+5	Parabacteroides	375288
+11	Escherichia coli O157:H7	83334
+0	Riemerella anatipestifer	34085
+262	Escherichia	561
+8	Sphingobacterium daejeonense	371142
+9	Bacteroides fragilis CL03T12C07	997879
+2	Chania multitudinisentens RB-25	1441930
+28	Bordetella sp. N	1746199
+6	Rufibacter	1379908
+0	Sphingomonas sp. FARSPH	2219696
+0	Achromobacter pestifer	1353889
+95	Gammaproteobacteria	1236
+11	Clostridia	186801
+117731	Bordetella pseudohinzii	1331258
+7	Citrobacter	544
+2119	Achromobacter	222
+5	Thermoclostridium stercorarium subsp. leptospartum DSM 9219	1346611
+17	Bacteroides fragilis YCH46	295405
+2	Tannerellaceae	2005525
+22	Bacteroides nordii	291645
+10	unclassified Achromobacter	2626865
+72	Escherichia coli SE11	409438
+25	Clostridium acetobutylicum DSM 1731	991791
+24	Proteiniphilum	294702
+10	Klebsiella pneumoniae	573
+39	Bordetella genomosp. 13	463040
+2	Eubacterium limosum	1736
+63	Clostridium botulinum A3 str. Loch Maree	498214
+2	Bifidobacterium pseudolongum PV8-2	1447715
+6	Variovorax paradoxus	34073
+1	Enterobacter sp. BIDMC100	1686399
+7	Mammaliicoccus	2803850
+0	Pseudomonas sp. LRP2-20	2944234
+2535	Bordetella bronchialis	463025
+2	Achromobacter deleyi	1353891
+10	Actinomycetes	1760
+0	Paraclostridium bifermentans	1490
+0	Crassaminicella thermophila	2599308
+15	Clostridium estertheticum	238834
+18	Clostridium tetani 12124569	1231072
+7	Shigella	620
+13	Bacteroides zhangwenhongii	2650157
+259	Bacteroides fragilis 638R	862962
+28	Bordetella bronchiseptica 253	568707
+134	Bordetella genomosp. 6	463024
+2	Prevotella nigrescens	28133
+102	Petrimonas mucosa	1642646
+0	Nocardia terpenica	455432
+1818	Phocaeicola	909656
+6	Clostridium sp. BJN0001	2930219
+0	Clostridium chauvoei	46867
+4	Bacteroidia	200643
+564	Bordetella parapertussis	519
+1830	Clostridium botulinum B str. Eklund 17B (NRP)	935198
+6	Paroceanicella profunda	2579971
+274	Burkholderia	32008
+9	Clostridium kluyveri	1534
+0	Actinomycetota	201174
+0	Melaminivora jejuensis	1267217
+14	Agrobacterium tumefaciens	358
+57	Bacillota	1239
+4	Mycetohabitans rhizoxinica HKI 454	882378
+110082	Bacteroides thetaiotaomicron	818
+6829	Phocaeicola vulgatus	821
+12415	Clostridium botulinum	1491
+30924	Clostridium pasteurianum	1501
+93562	Clostridium aceticum	84022
+176748	Bordetella petrii	94624
+5832	Clostridium saccharobutylicum	169679
+6181	Lachnoclostridium phytofermentans ISDg	357809
+11875	Phocaeicola salanitronis DSM 18170	667015

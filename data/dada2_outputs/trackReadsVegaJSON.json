@@ -1,0 +1,3152 @@
+[
+  {
+    "group": "denoisedF",
+    "Number of reads": 52261,
+    "Sample name": "SRR12823315"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 33679,
+    "Sample name": "SRR12823316"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 40120,
+    "Sample name": "SRR12823317"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 43990,
+    "Sample name": "SRR12823318"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 33070,
+    "Sample name": "SRR12823319"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 38561,
+    "Sample name": "SRR12823320"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 42272,
+    "Sample name": "SRR12823321"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 44408,
+    "Sample name": "SRR12823322"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 41008,
+    "Sample name": "SRR12823323"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 48164,
+    "Sample name": "SRR12823324"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 49976,
+    "Sample name": "SRR12823325"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 47799,
+    "Sample name": "SRR12823326"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 37939,
+    "Sample name": "SRR12823327"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 15733,
+    "Sample name": "SRR12823328"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 37233,
+    "Sample name": "SRR12823329"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 38588,
+    "Sample name": "SRR12823330"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 57178,
+    "Sample name": "SRR12823331"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 48458,
+    "Sample name": "SRR12823332"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 49252,
+    "Sample name": "SRR12823333"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 51783,
+    "Sample name": "SRR12823334"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 51556,
+    "Sample name": "SRR12823335"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 38548,
+    "Sample name": "SRR12823336"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 36670,
+    "Sample name": "SRR12823337"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 38936,
+    "Sample name": "SRR12823338"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 6,
+    "Sample name": "SRR12823339"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 42069,
+    "Sample name": "SRR12823340"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 63136,
+    "Sample name": "SRR12823341"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 44697,
+    "Sample name": "SRR12823342"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 33421,
+    "Sample name": "SRR12823343"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 35999,
+    "Sample name": "SRR12823344"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 37896,
+    "Sample name": "SRR12823345"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 43532,
+    "Sample name": "SRR12823346"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 46018,
+    "Sample name": "SRR12823347"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 44855,
+    "Sample name": "SRR12823348"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 48675,
+    "Sample name": "SRR12823349"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 38216,
+    "Sample name": "SRR12823350"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 36947,
+    "Sample name": "SRR12823351"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 52479,
+    "Sample name": "SRR12823352"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 36219,
+    "Sample name": "SRR12823353"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 46148,
+    "Sample name": "SRR12823354"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 32267,
+    "Sample name": "SRR12823355"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 47582,
+    "Sample name": "SRR12823356"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 47481,
+    "Sample name": "SRR12823357"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 45486,
+    "Sample name": "SRR12823358"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 51225,
+    "Sample name": "SRR12823359"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 33119,
+    "Sample name": "SRR12823360"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 41851,
+    "Sample name": "SRR12823361"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 35461,
+    "Sample name": "SRR12823362"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 25991,
+    "Sample name": "SRR12823363"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 31037,
+    "Sample name": "SRR12823364"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 37481,
+    "Sample name": "SRR12823365"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 28843,
+    "Sample name": "SRR12823366"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 36874,
+    "Sample name": "SRR12823367"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 42027,
+    "Sample name": "SRR12823368"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 36711,
+    "Sample name": "SRR12823369"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 81010,
+    "Sample name": "SRR12823370"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 43146,
+    "Sample name": "SRR12823371"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 53874,
+    "Sample name": "SRR12823372"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 32227,
+    "Sample name": "SRR12823373"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 44592,
+    "Sample name": "SRR12823374"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 40350,
+    "Sample name": "SRR12823375"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 39126,
+    "Sample name": "SRR12823376"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 36797,
+    "Sample name": "SRR12823377"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 45789,
+    "Sample name": "SRR12823378"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 50709,
+    "Sample name": "SRR12823379"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 64779,
+    "Sample name": "SRR12823380"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 50267,
+    "Sample name": "SRR12823381"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 56537,
+    "Sample name": "SRR12823382"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 34468,
+    "Sample name": "SRR12823383"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 7055,
+    "Sample name": "SRR12823384"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 38962,
+    "Sample name": "SRR12823385"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 52238,
+    "Sample name": "SRR12823386"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 46286,
+    "Sample name": "SRR12823387"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 37927,
+    "Sample name": "SRR12823388"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 35633,
+    "Sample name": "SRR12823389"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 35647,
+    "Sample name": "SRR12823390"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 41139,
+    "Sample name": "SRR12823391"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 54225,
+    "Sample name": "SRR12823392"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 49108,
+    "Sample name": "SRR12823393"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 45904,
+    "Sample name": "SRR12823394"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 36211,
+    "Sample name": "SRR12823395"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 43367,
+    "Sample name": "SRR12823396"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 39620,
+    "Sample name": "SRR12823397"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 38413,
+    "Sample name": "SRR12823398"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 49908,
+    "Sample name": "SRR12823399"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 52595,
+    "Sample name": "SRR12823400"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 46962,
+    "Sample name": "SRR12823401"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 50456,
+    "Sample name": "SRR12823402"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 37949,
+    "Sample name": "SRR12823403"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 31817,
+    "Sample name": "SRR12823404"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 53229,
+    "Sample name": "SRR12823405"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 335,
+    "Sample name": "SRR12823406"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 51405,
+    "Sample name": "SRR12823407"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 45869,
+    "Sample name": "SRR12823408"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 44682,
+    "Sample name": "SRR12823409"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 48000,
+    "Sample name": "SRR12823410"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 42732,
+    "Sample name": "SRR12823411"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 33025,
+    "Sample name": "SRR12823412"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 41052,
+    "Sample name": "SRR12823413"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 29364,
+    "Sample name": "SRR12823414"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 42269,
+    "Sample name": "SRR12823415"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 47868,
+    "Sample name": "SRR12823416"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 41658,
+    "Sample name": "SRR12823417"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 43216,
+    "Sample name": "SRR12823418"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 38992,
+    "Sample name": "SRR12823419"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 51619,
+    "Sample name": "SRR12823420"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 103,
+    "Sample name": "SRR12823421"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 37245,
+    "Sample name": "SRR12823423"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 16021,
+    "Sample name": "SRR12823424"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 37725,
+    "Sample name": "SRR12823425"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 47963,
+    "Sample name": "SRR12823426"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 42664,
+    "Sample name": "SRR12823427"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 52546,
+    "Sample name": "SRR12823428"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 37468,
+    "Sample name": "SRR12823429"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 39529,
+    "Sample name": "SRR12823430"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 32979,
+    "Sample name": "SRR12823431"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 119,
+    "Sample name": "SRR12823432"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 41947,
+    "Sample name": "SRR12823433"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 51935,
+    "Sample name": "SRR12823434"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 35213,
+    "Sample name": "SRR12823435"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 37923,
+    "Sample name": "SRR12823436"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 36922,
+    "Sample name": "SRR12823437"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 39041,
+    "Sample name": "SRR12823438"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 49765,
+    "Sample name": "SRR12823439"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 46712,
+    "Sample name": "SRR12823440"
+  },
+  {
+    "group": "denoisedF",
+    "Number of reads": 47686,
+    "Sample name": "SRR12823441"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 52198,
+    "Sample name": "SRR12823315"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 33589,
+    "Sample name": "SRR12823316"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 39978,
+    "Sample name": "SRR12823317"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 43963,
+    "Sample name": "SRR12823318"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 32983,
+    "Sample name": "SRR12823319"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 38564,
+    "Sample name": "SRR12823320"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 42301,
+    "Sample name": "SRR12823321"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 44325,
+    "Sample name": "SRR12823322"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 41031,
+    "Sample name": "SRR12823323"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 48019,
+    "Sample name": "SRR12823324"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 50035,
+    "Sample name": "SRR12823325"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 47795,
+    "Sample name": "SRR12823326"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 37922,
+    "Sample name": "SRR12823327"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 15726,
+    "Sample name": "SRR12823328"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 37222,
+    "Sample name": "SRR12823329"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 38606,
+    "Sample name": "SRR12823330"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 57084,
+    "Sample name": "SRR12823331"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 48410,
+    "Sample name": "SRR12823332"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 49152,
+    "Sample name": "SRR12823333"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 51805,
+    "Sample name": "SRR12823334"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 51159,
+    "Sample name": "SRR12823335"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 38541,
+    "Sample name": "SRR12823336"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 36617,
+    "Sample name": "SRR12823337"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 38942,
+    "Sample name": "SRR12823338"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 5,
+    "Sample name": "SRR12823339"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 41994,
+    "Sample name": "SRR12823340"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 63093,
+    "Sample name": "SRR12823341"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 44707,
+    "Sample name": "SRR12823342"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 33442,
+    "Sample name": "SRR12823343"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 36062,
+    "Sample name": "SRR12823344"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 38040,
+    "Sample name": "SRR12823345"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 43591,
+    "Sample name": "SRR12823346"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 45943,
+    "Sample name": "SRR12823347"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 44598,
+    "Sample name": "SRR12823348"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 48640,
+    "Sample name": "SRR12823349"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 38157,
+    "Sample name": "SRR12823350"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 37219,
+    "Sample name": "SRR12823351"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 52503,
+    "Sample name": "SRR12823352"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 36202,
+    "Sample name": "SRR12823353"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 46065,
+    "Sample name": "SRR12823354"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 32232,
+    "Sample name": "SRR12823355"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 47598,
+    "Sample name": "SRR12823356"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 47449,
+    "Sample name": "SRR12823357"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 45383,
+    "Sample name": "SRR12823358"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 51095,
+    "Sample name": "SRR12823359"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 33133,
+    "Sample name": "SRR12823360"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 41782,
+    "Sample name": "SRR12823361"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 35490,
+    "Sample name": "SRR12823362"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 26005,
+    "Sample name": "SRR12823363"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 31012,
+    "Sample name": "SRR12823364"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 37335,
+    "Sample name": "SRR12823365"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 28767,
+    "Sample name": "SRR12823366"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 36897,
+    "Sample name": "SRR12823367"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 42010,
+    "Sample name": "SRR12823368"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 36731,
+    "Sample name": "SRR12823369"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 80949,
+    "Sample name": "SRR12823370"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 43125,
+    "Sample name": "SRR12823371"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 53861,
+    "Sample name": "SRR12823372"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 32232,
+    "Sample name": "SRR12823373"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 44595,
+    "Sample name": "SRR12823374"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 40291,
+    "Sample name": "SRR12823375"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 39122,
+    "Sample name": "SRR12823376"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 36776,
+    "Sample name": "SRR12823377"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 45808,
+    "Sample name": "SRR12823378"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 50622,
+    "Sample name": "SRR12823379"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 64760,
+    "Sample name": "SRR12823380"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 50193,
+    "Sample name": "SRR12823381"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 56536,
+    "Sample name": "SRR12823382"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 34528,
+    "Sample name": "SRR12823383"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 7071,
+    "Sample name": "SRR12823384"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 39038,
+    "Sample name": "SRR12823385"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 52186,
+    "Sample name": "SRR12823386"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 46221,
+    "Sample name": "SRR12823387"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 37982,
+    "Sample name": "SRR12823388"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 35598,
+    "Sample name": "SRR12823389"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 35633,
+    "Sample name": "SRR12823390"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 41390,
+    "Sample name": "SRR12823391"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 54199,
+    "Sample name": "SRR12823392"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 49054,
+    "Sample name": "SRR12823393"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 45933,
+    "Sample name": "SRR12823394"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 36216,
+    "Sample name": "SRR12823395"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 43401,
+    "Sample name": "SRR12823396"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 39602,
+    "Sample name": "SRR12823397"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 38369,
+    "Sample name": "SRR12823398"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 49920,
+    "Sample name": "SRR12823399"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 52618,
+    "Sample name": "SRR12823400"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 46999,
+    "Sample name": "SRR12823401"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 50438,
+    "Sample name": "SRR12823402"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 38047,
+    "Sample name": "SRR12823403"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 31782,
+    "Sample name": "SRR12823404"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 53159,
+    "Sample name": "SRR12823405"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 354,
+    "Sample name": "SRR12823406"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 51464,
+    "Sample name": "SRR12823407"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 45869,
+    "Sample name": "SRR12823408"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 44576,
+    "Sample name": "SRR12823409"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 47869,
+    "Sample name": "SRR12823410"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 42706,
+    "Sample name": "SRR12823411"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 33044,
+    "Sample name": "SRR12823412"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 41083,
+    "Sample name": "SRR12823413"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 29361,
+    "Sample name": "SRR12823414"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 42303,
+    "Sample name": "SRR12823415"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 47719,
+    "Sample name": "SRR12823416"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 41593,
+    "Sample name": "SRR12823417"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 43214,
+    "Sample name": "SRR12823418"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 39017,
+    "Sample name": "SRR12823419"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 51510,
+    "Sample name": "SRR12823420"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 95,
+    "Sample name": "SRR12823421"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 37135,
+    "Sample name": "SRR12823423"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 15976,
+    "Sample name": "SRR12823424"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 37699,
+    "Sample name": "SRR12823425"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 47951,
+    "Sample name": "SRR12823426"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 42641,
+    "Sample name": "SRR12823427"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 52519,
+    "Sample name": "SRR12823428"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 37465,
+    "Sample name": "SRR12823429"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 39510,
+    "Sample name": "SRR12823430"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 32987,
+    "Sample name": "SRR12823431"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 114,
+    "Sample name": "SRR12823432"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 41964,
+    "Sample name": "SRR12823433"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 51913,
+    "Sample name": "SRR12823434"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 35264,
+    "Sample name": "SRR12823435"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 37911,
+    "Sample name": "SRR12823436"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 37074,
+    "Sample name": "SRR12823437"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 39031,
+    "Sample name": "SRR12823438"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 49783,
+    "Sample name": "SRR12823439"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 46736,
+    "Sample name": "SRR12823440"
+  },
+  {
+    "group": "denoisedR",
+    "Number of reads": 47716,
+    "Sample name": "SRR12823441"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 49357,
+    "Sample name": "SRR12823315"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 32575,
+    "Sample name": "SRR12823316"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 36900,
+    "Sample name": "SRR12823317"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 37567,
+    "Sample name": "SRR12823318"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 27528,
+    "Sample name": "SRR12823319"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 37398,
+    "Sample name": "SRR12823320"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 38308,
+    "Sample name": "SRR12823321"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 42756,
+    "Sample name": "SRR12823322"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 39690,
+    "Sample name": "SRR12823323"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 45780,
+    "Sample name": "SRR12823324"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 47184,
+    "Sample name": "SRR12823325"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 45129,
+    "Sample name": "SRR12823326"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 34589,
+    "Sample name": "SRR12823327"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 15248,
+    "Sample name": "SRR12823328"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35229,
+    "Sample name": "SRR12823329"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 37541,
+    "Sample name": "SRR12823330"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 23697,
+    "Sample name": "SRR12823331"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 44682,
+    "Sample name": "SRR12823332"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 47543,
+    "Sample name": "SRR12823333"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 46118,
+    "Sample name": "SRR12823334"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 44661,
+    "Sample name": "SRR12823335"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 37644,
+    "Sample name": "SRR12823336"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35652,
+    "Sample name": "SRR12823337"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 38038,
+    "Sample name": "SRR12823338"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 5,
+    "Sample name": "SRR12823339"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 40040,
+    "Sample name": "SRR12823340"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 59080,
+    "Sample name": "SRR12823341"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 43289,
+    "Sample name": "SRR12823342"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 31441,
+    "Sample name": "SRR12823343"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35600,
+    "Sample name": "SRR12823344"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 32205,
+    "Sample name": "SRR12823345"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 36960,
+    "Sample name": "SRR12823346"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35883,
+    "Sample name": "SRR12823347"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 32068,
+    "Sample name": "SRR12823348"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 45597,
+    "Sample name": "SRR12823349"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 36719,
+    "Sample name": "SRR12823350"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 32218,
+    "Sample name": "SRR12823351"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 51616,
+    "Sample name": "SRR12823352"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35341,
+    "Sample name": "SRR12823353"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 39000,
+    "Sample name": "SRR12823354"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 28496,
+    "Sample name": "SRR12823355"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 46777,
+    "Sample name": "SRR12823356"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 46336,
+    "Sample name": "SRR12823357"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 43851,
+    "Sample name": "SRR12823358"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 48494,
+    "Sample name": "SRR12823359"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 29984,
+    "Sample name": "SRR12823360"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 39357,
+    "Sample name": "SRR12823361"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 31860,
+    "Sample name": "SRR12823362"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 25597,
+    "Sample name": "SRR12823363"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 30282,
+    "Sample name": "SRR12823364"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 37058,
+    "Sample name": "SRR12823365"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 28555,
+    "Sample name": "SRR12823366"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35914,
+    "Sample name": "SRR12823367"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 40842,
+    "Sample name": "SRR12823368"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 36175,
+    "Sample name": "SRR12823369"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 78970,
+    "Sample name": "SRR12823370"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 42219,
+    "Sample name": "SRR12823371"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 52249,
+    "Sample name": "SRR12823372"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 31252,
+    "Sample name": "SRR12823373"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 43346,
+    "Sample name": "SRR12823374"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 38403,
+    "Sample name": "SRR12823375"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 38433,
+    "Sample name": "SRR12823376"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 33842,
+    "Sample name": "SRR12823377"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 44916,
+    "Sample name": "SRR12823378"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 49164,
+    "Sample name": "SRR12823379"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 48614,
+    "Sample name": "SRR12823380"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 48173,
+    "Sample name": "SRR12823381"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 53567,
+    "Sample name": "SRR12823382"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 33958,
+    "Sample name": "SRR12823383"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 6636,
+    "Sample name": "SRR12823384"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 37382,
+    "Sample name": "SRR12823385"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 47120,
+    "Sample name": "SRR12823386"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 45354,
+    "Sample name": "SRR12823387"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35339,
+    "Sample name": "SRR12823388"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 33204,
+    "Sample name": "SRR12823389"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 31086,
+    "Sample name": "SRR12823390"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 31151,
+    "Sample name": "SRR12823391"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 51224,
+    "Sample name": "SRR12823392"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 48014,
+    "Sample name": "SRR12823393"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 44655,
+    "Sample name": "SRR12823394"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35424,
+    "Sample name": "SRR12823395"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 43163,
+    "Sample name": "SRR12823396"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 38838,
+    "Sample name": "SRR12823397"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35975,
+    "Sample name": "SRR12823398"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 47274,
+    "Sample name": "SRR12823399"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 51740,
+    "Sample name": "SRR12823400"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 46221,
+    "Sample name": "SRR12823401"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 48192,
+    "Sample name": "SRR12823402"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35148,
+    "Sample name": "SRR12823403"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 31376,
+    "Sample name": "SRR12823404"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 48048,
+    "Sample name": "SRR12823405"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 279,
+    "Sample name": "SRR12823406"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 43381,
+    "Sample name": "SRR12823407"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 34327,
+    "Sample name": "SRR12823408"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 41204,
+    "Sample name": "SRR12823409"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 45613,
+    "Sample name": "SRR12823410"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 40621,
+    "Sample name": "SRR12823411"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 32423,
+    "Sample name": "SRR12823412"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 40221,
+    "Sample name": "SRR12823413"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 28517,
+    "Sample name": "SRR12823414"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 40949,
+    "Sample name": "SRR12823415"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 44422,
+    "Sample name": "SRR12823416"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 40122,
+    "Sample name": "SRR12823417"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 42244,
+    "Sample name": "SRR12823418"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 37967,
+    "Sample name": "SRR12823419"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 49396,
+    "Sample name": "SRR12823420"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 87,
+    "Sample name": "SRR12823421"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 34808,
+    "Sample name": "SRR12823423"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 15373,
+    "Sample name": "SRR12823424"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 34853,
+    "Sample name": "SRR12823425"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 44453,
+    "Sample name": "SRR12823426"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 41342,
+    "Sample name": "SRR12823427"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 49253,
+    "Sample name": "SRR12823428"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 37081,
+    "Sample name": "SRR12823429"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 36992,
+    "Sample name": "SRR12823430"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 31726,
+    "Sample name": "SRR12823431"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 101,
+    "Sample name": "SRR12823432"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 38636,
+    "Sample name": "SRR12823433"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 49363,
+    "Sample name": "SRR12823434"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 31659,
+    "Sample name": "SRR12823435"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 33298,
+    "Sample name": "SRR12823436"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 33352,
+    "Sample name": "SRR12823437"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 35113,
+    "Sample name": "SRR12823438"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 48986,
+    "Sample name": "SRR12823439"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 45871,
+    "Sample name": "SRR12823440"
+  },
+  {
+    "group": "merged",
+    "Number of reads": 46606,
+    "Sample name": "SRR12823441"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 49357,
+    "Sample name": "SRR12823315"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 32575,
+    "Sample name": "SRR12823316"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 36900,
+    "Sample name": "SRR12823317"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 37567,
+    "Sample name": "SRR12823318"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 27528,
+    "Sample name": "SRR12823319"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 37398,
+    "Sample name": "SRR12823320"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 38308,
+    "Sample name": "SRR12823321"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 42756,
+    "Sample name": "SRR12823322"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 39690,
+    "Sample name": "SRR12823323"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 45780,
+    "Sample name": "SRR12823324"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 47184,
+    "Sample name": "SRR12823325"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 45129,
+    "Sample name": "SRR12823326"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 34589,
+    "Sample name": "SRR12823327"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 15248,
+    "Sample name": "SRR12823328"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35229,
+    "Sample name": "SRR12823329"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 37541,
+    "Sample name": "SRR12823330"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 23697,
+    "Sample name": "SRR12823331"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 44682,
+    "Sample name": "SRR12823332"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 47543,
+    "Sample name": "SRR12823333"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 46118,
+    "Sample name": "SRR12823334"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 44661,
+    "Sample name": "SRR12823335"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 37644,
+    "Sample name": "SRR12823336"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35652,
+    "Sample name": "SRR12823337"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 38038,
+    "Sample name": "SRR12823338"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 5,
+    "Sample name": "SRR12823339"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 40040,
+    "Sample name": "SRR12823340"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 59080,
+    "Sample name": "SRR12823341"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 43289,
+    "Sample name": "SRR12823342"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 31441,
+    "Sample name": "SRR12823343"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35600,
+    "Sample name": "SRR12823344"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 32205,
+    "Sample name": "SRR12823345"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 36960,
+    "Sample name": "SRR12823346"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35883,
+    "Sample name": "SRR12823347"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 32068,
+    "Sample name": "SRR12823348"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 45597,
+    "Sample name": "SRR12823349"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 36719,
+    "Sample name": "SRR12823350"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 32218,
+    "Sample name": "SRR12823351"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 51616,
+    "Sample name": "SRR12823352"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35341,
+    "Sample name": "SRR12823353"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 39000,
+    "Sample name": "SRR12823354"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 28496,
+    "Sample name": "SRR12823355"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 46777,
+    "Sample name": "SRR12823356"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 46336,
+    "Sample name": "SRR12823357"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 43851,
+    "Sample name": "SRR12823358"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 48494,
+    "Sample name": "SRR12823359"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 29984,
+    "Sample name": "SRR12823360"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 39357,
+    "Sample name": "SRR12823361"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 31860,
+    "Sample name": "SRR12823362"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 25597,
+    "Sample name": "SRR12823363"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 30282,
+    "Sample name": "SRR12823364"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 37058,
+    "Sample name": "SRR12823365"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 28555,
+    "Sample name": "SRR12823366"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35914,
+    "Sample name": "SRR12823367"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 40842,
+    "Sample name": "SRR12823368"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 36175,
+    "Sample name": "SRR12823369"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 78970,
+    "Sample name": "SRR12823370"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 42219,
+    "Sample name": "SRR12823371"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 52249,
+    "Sample name": "SRR12823372"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 31252,
+    "Sample name": "SRR12823373"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 43346,
+    "Sample name": "SRR12823374"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 38403,
+    "Sample name": "SRR12823375"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 38433,
+    "Sample name": "SRR12823376"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 33842,
+    "Sample name": "SRR12823377"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 44916,
+    "Sample name": "SRR12823378"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 49164,
+    "Sample name": "SRR12823379"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 48614,
+    "Sample name": "SRR12823380"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 48173,
+    "Sample name": "SRR12823381"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 53567,
+    "Sample name": "SRR12823382"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 33958,
+    "Sample name": "SRR12823383"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 6636,
+    "Sample name": "SRR12823384"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 37382,
+    "Sample name": "SRR12823385"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 47120,
+    "Sample name": "SRR12823386"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 45354,
+    "Sample name": "SRR12823387"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35339,
+    "Sample name": "SRR12823388"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 33204,
+    "Sample name": "SRR12823389"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 31086,
+    "Sample name": "SRR12823390"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 31151,
+    "Sample name": "SRR12823391"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 51224,
+    "Sample name": "SRR12823392"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 48014,
+    "Sample name": "SRR12823393"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 44655,
+    "Sample name": "SRR12823394"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35424,
+    "Sample name": "SRR12823395"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 43163,
+    "Sample name": "SRR12823396"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 38838,
+    "Sample name": "SRR12823397"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35975,
+    "Sample name": "SRR12823398"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 47274,
+    "Sample name": "SRR12823399"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 51740,
+    "Sample name": "SRR12823400"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 46221,
+    "Sample name": "SRR12823401"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 48192,
+    "Sample name": "SRR12823402"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35148,
+    "Sample name": "SRR12823403"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 31376,
+    "Sample name": "SRR12823404"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 48048,
+    "Sample name": "SRR12823405"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 279,
+    "Sample name": "SRR12823406"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 43381,
+    "Sample name": "SRR12823407"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 34327,
+    "Sample name": "SRR12823408"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 41204,
+    "Sample name": "SRR12823409"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 45613,
+    "Sample name": "SRR12823410"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 40621,
+    "Sample name": "SRR12823411"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 32423,
+    "Sample name": "SRR12823412"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 40221,
+    "Sample name": "SRR12823413"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 28517,
+    "Sample name": "SRR12823414"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 40949,
+    "Sample name": "SRR12823415"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 44422,
+    "Sample name": "SRR12823416"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 40122,
+    "Sample name": "SRR12823417"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 42244,
+    "Sample name": "SRR12823418"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 37967,
+    "Sample name": "SRR12823419"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 49396,
+    "Sample name": "SRR12823420"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 87,
+    "Sample name": "SRR12823421"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 34808,
+    "Sample name": "SRR12823423"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 15373,
+    "Sample name": "SRR12823424"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 34853,
+    "Sample name": "SRR12823425"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 44453,
+    "Sample name": "SRR12823426"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 41342,
+    "Sample name": "SRR12823427"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 49253,
+    "Sample name": "SRR12823428"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 37081,
+    "Sample name": "SRR12823429"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 36992,
+    "Sample name": "SRR12823430"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 31726,
+    "Sample name": "SRR12823431"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 101,
+    "Sample name": "SRR12823432"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 38636,
+    "Sample name": "SRR12823433"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 49363,
+    "Sample name": "SRR12823434"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 31659,
+    "Sample name": "SRR12823435"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 33298,
+    "Sample name": "SRR12823436"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 33352,
+    "Sample name": "SRR12823437"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 35113,
+    "Sample name": "SRR12823438"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 48986,
+    "Sample name": "SRR12823439"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 45871,
+    "Sample name": "SRR12823440"
+  },
+  {
+    "group": "filter75",
+    "Number of reads": 46606,
+    "Sample name": "SRR12823441"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 45490,
+    "Sample name": "SRR12823315"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 31701,
+    "Sample name": "SRR12823316"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 28822,
+    "Sample name": "SRR12823317"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 37463,
+    "Sample name": "SRR12823318"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 26207,
+    "Sample name": "SRR12823319"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 37370,
+    "Sample name": "SRR12823320"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 38217,
+    "Sample name": "SRR12823321"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 39798,
+    "Sample name": "SRR12823322"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 38952,
+    "Sample name": "SRR12823323"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 38961,
+    "Sample name": "SRR12823324"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 46850,
+    "Sample name": "SRR12823325"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 38974,
+    "Sample name": "SRR12823326"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 32309,
+    "Sample name": "SRR12823327"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 13530,
+    "Sample name": "SRR12823328"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 34512,
+    "Sample name": "SRR12823329"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 35689,
+    "Sample name": "SRR12823330"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 23597,
+    "Sample name": "SRR12823331"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 44300,
+    "Sample name": "SRR12823332"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 39889,
+    "Sample name": "SRR12823333"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 44524,
+    "Sample name": "SRR12823334"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 27915,
+    "Sample name": "SRR12823335"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 36489,
+    "Sample name": "SRR12823336"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 33702,
+    "Sample name": "SRR12823337"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 37965,
+    "Sample name": "SRR12823338"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 5,
+    "Sample name": "SRR12823339"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 38846,
+    "Sample name": "SRR12823340"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 44877,
+    "Sample name": "SRR12823341"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 39433,
+    "Sample name": "SRR12823342"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 31267,
+    "Sample name": "SRR12823343"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 35251,
+    "Sample name": "SRR12823344"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 29591,
+    "Sample name": "SRR12823345"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 36788,
+    "Sample name": "SRR12823346"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 34993,
+    "Sample name": "SRR12823347"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 30015,
+    "Sample name": "SRR12823348"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 39405,
+    "Sample name": "SRR12823349"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 36070,
+    "Sample name": "SRR12823350"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 28897,
+    "Sample name": "SRR12823351"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 49910,
+    "Sample name": "SRR12823352"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 34032,
+    "Sample name": "SRR12823353"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 37762,
+    "Sample name": "SRR12823354"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 28049,
+    "Sample name": "SRR12823355"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 46089,
+    "Sample name": "SRR12823356"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 45849,
+    "Sample name": "SRR12823357"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 41056,
+    "Sample name": "SRR12823358"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 43433,
+    "Sample name": "SRR12823359"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 29186,
+    "Sample name": "SRR12823360"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 36653,
+    "Sample name": "SRR12823361"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 31712,
+    "Sample name": "SRR12823362"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 25596,
+    "Sample name": "SRR12823363"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 30282,
+    "Sample name": "SRR12823364"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 37016,
+    "Sample name": "SRR12823365"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 28555,
+    "Sample name": "SRR12823366"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 33852,
+    "Sample name": "SRR12823367"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 36261,
+    "Sample name": "SRR12823368"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 36133,
+    "Sample name": "SRR12823369"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 76663,
+    "Sample name": "SRR12823370"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 40626,
+    "Sample name": "SRR12823371"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 49280,
+    "Sample name": "SRR12823372"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 30125,
+    "Sample name": "SRR12823373"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 42727,
+    "Sample name": "SRR12823374"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 38352,
+    "Sample name": "SRR12823375"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 38109,
+    "Sample name": "SRR12823376"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 28518,
+    "Sample name": "SRR12823377"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 44815,
+    "Sample name": "SRR12823378"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 48480,
+    "Sample name": "SRR12823379"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 48525,
+    "Sample name": "SRR12823380"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 38516,
+    "Sample name": "SRR12823381"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 46994,
+    "Sample name": "SRR12823382"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 33685,
+    "Sample name": "SRR12823383"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 6244,
+    "Sample name": "SRR12823384"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 34276,
+    "Sample name": "SRR12823385"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 45448,
+    "Sample name": "SRR12823386"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 42538,
+    "Sample name": "SRR12823387"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 31794,
+    "Sample name": "SRR12823388"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 32977,
+    "Sample name": "SRR12823389"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 29613,
+    "Sample name": "SRR12823390"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 30406,
+    "Sample name": "SRR12823391"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 42858,
+    "Sample name": "SRR12823392"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 45777,
+    "Sample name": "SRR12823393"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 44418,
+    "Sample name": "SRR12823394"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 34721,
+    "Sample name": "SRR12823395"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 43024,
+    "Sample name": "SRR12823396"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 37050,
+    "Sample name": "SRR12823397"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 34598,
+    "Sample name": "SRR12823398"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 47194,
+    "Sample name": "SRR12823399"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 50243,
+    "Sample name": "SRR12823400"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 45690,
+    "Sample name": "SRR12823401"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 40471,
+    "Sample name": "SRR12823402"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 34568,
+    "Sample name": "SRR12823403"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 31323,
+    "Sample name": "SRR12823404"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 45970,
+    "Sample name": "SRR12823405"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 279,
+    "Sample name": "SRR12823406"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 43055,
+    "Sample name": "SRR12823407"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 33804,
+    "Sample name": "SRR12823408"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 41027,
+    "Sample name": "SRR12823409"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 42228,
+    "Sample name": "SRR12823410"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 38729,
+    "Sample name": "SRR12823411"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 30373,
+    "Sample name": "SRR12823412"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 40027,
+    "Sample name": "SRR12823413"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 27438,
+    "Sample name": "SRR12823414"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 37666,
+    "Sample name": "SRR12823415"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 41153,
+    "Sample name": "SRR12823416"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 35660,
+    "Sample name": "SRR12823417"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 40090,
+    "Sample name": "SRR12823418"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 37398,
+    "Sample name": "SRR12823419"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 46894,
+    "Sample name": "SRR12823420"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 87,
+    "Sample name": "SRR12823421"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 32437,
+    "Sample name": "SRR12823423"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 14133,
+    "Sample name": "SRR12823424"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 25525,
+    "Sample name": "SRR12823425"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 44324,
+    "Sample name": "SRR12823426"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 41098,
+    "Sample name": "SRR12823427"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 41214,
+    "Sample name": "SRR12823428"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 36442,
+    "Sample name": "SRR12823429"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 33591,
+    "Sample name": "SRR12823430"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 31375,
+    "Sample name": "SRR12823431"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 95,
+    "Sample name": "SRR12823432"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 38508,
+    "Sample name": "SRR12823433"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 47017,
+    "Sample name": "SRR12823434"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 31091,
+    "Sample name": "SRR12823435"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 33238,
+    "Sample name": "SRR12823436"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 32356,
+    "Sample name": "SRR12823437"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 34981,
+    "Sample name": "SRR12823438"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 47929,
+    "Sample name": "SRR12823439"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 45422,
+    "Sample name": "SRR12823440"
+  },
+  {
+    "group": "nochim",
+    "Number of reads": 43270,
+    "Sample name": "SRR12823441"
+  }
+]
