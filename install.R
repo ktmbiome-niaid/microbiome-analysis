@@ -9,3 +9,6 @@ if (!require("BiocManager", quietly = TRUE))
 
 BiocManager::install("phyloseq")
 BiocManager::install("Maaslin2")
+
+install.packages("devtools")
+install_github("zdk123/SpiecEasi")

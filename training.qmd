@@ -46,6 +46,10 @@ A few notes before we start:
 
 - I'm sharing the approaches I typically take for analysis and know very well. Throughout the tutorial, I'll point to alternative methods that are available. There are still active debates about which methods are "correct" or "more useful". However, I hope that the ideas I share today will at least provide you with avenues of exploration and a platform upon which you can build. And we're always available for a consult at bioinformatics@niaid.nih.gov!
 
+- Trouble installing some of the packages? I've created a Docker container that includes preinstallations of all of the packages we'll be using today. The code you run and edits you make won't be saved, but it will let you play around with the data we have today.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ktmbiome-niaid/microbiome-analysis/HEAD?urlpath=rstudio)
+
 ::: {.callout-tip appearance="simple"}
 Throughout the training, you will see callouts like this with activities and questions.
 :::
@@ -675,7 +679,19 @@ These methods can include:
 
 - *SparCC*: Correlation using sparsity and compositionality corrections because, as we've discussed before, microbiome data is sparse which makes correlations less reliable.
 
-```{r}
+::: {.callout-tip}
+I'll show you how I typically approach network analysis using SparCC and igraph. Unfortunately, my laptop doesn't allow the installation of the SpiecEasi package (which includes SparCC), so I'll need to show you this step through the Binder included with the github repository. You can access the new container with a click at the top of the html.
 
+The code that I use is printed below, it just won't evaluate to anything.
+:::
+
+Here, I'm going to ask a slightly different question. Instead of separating out sample types, I am going to bring all of the samples back together and perform network analysis on the whole set of samples. The intention is to determine whether there are differential network structures between sample types.
+
+```{r}
+#| eval: false
+
+library(SpiecEasi)
+
+cor_net <- SpeicEasi::sparcc(otu_table(dada2_rare))
 ```
 
