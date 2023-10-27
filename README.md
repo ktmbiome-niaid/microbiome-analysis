@@ -2,8 +2,10 @@
 
 Katie McCauley
 
-Training Date: Monday, November 6th, 2023
+Date: Monday, November 6th, 2023
+
 Time: 2-5 PM ET
+
 Zoom Link: https://nih.zoomgov.com/j/1608604895?pwd=RnBLbnVhc1hsZCsvVDdoek1FNVc0Zz09
 
 ---

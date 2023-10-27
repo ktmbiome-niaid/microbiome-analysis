@@ -9,14 +9,15 @@ Once installed, please also install a few packages that we will need for the cla
 The code to install the packages needed is below. You can just copy these lines and paste them in the Console (usually on the bottom-left part of the screen, with version information and a carot).
 
 ```
+install.packages("ggplot2")
+install.packages("vegan")
+install.packages("ape")
+
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install("phyloseq")
-
-install.packages("ggplot2")
-install.packages("vegan")
-install.packages("ape")
+BiocManager::install("Maaslin2")
 ```
 
 If you have any trouble installing packages, please reach out to Katie at kathryn.mccauley@nih.gov.

@@ -1,0 +1,366 @@
+[1] "Warning: Deleting existing log file: maaslin2_results/maaslin2.log"
+2023-10-26 14:22:42.234673 INFO::Writing function arguments to log file
+2023-10-26 14:22:42.251436 INFO::Verifying options selected are valid
+2023-10-26 14:22:42.281788 INFO::Determining format of input files
+2023-10-26 14:22:42.282955 INFO::Input format is data samples as columns and metadata samples as rows
+2023-10-26 14:22:42.29875 INFO::Formula for fixed effects: expr ~  country
+2023-10-26 14:22:42.299492 INFO::Filter data based on min abundance and min prevalence
+2023-10-26 14:22:42.299958 INFO::Total samples in data: 43
+2023-10-26 14:22:42.300411 INFO::Min samples required with min abundance for a feature not to be filtered: 8.600000
+2023-10-26 14:22:42.312121 INFO::Total filtered features: 2241
+2023-10-26 14:22:42.313327 INFO::Filtered feature names from abundance and prevalence filtering: seq2327, seq2115, seq2164, seq2458, seq2047, seq379, seq1196, seq1781, seq383, seq1845, seq552, seq449, seq1625, seq863, seq2142, seq735, seq784, seq1062, seq2416, seq681, seq1087, seq892, seq939, seq716, seq1382, seq1248, seq1362, seq1265, seq1217, seq1464, seq1097, seq1543, seq507, seq1975, seq1566, seq1913, seq708, seq1815, seq773, seq637, seq1973, seq624, seq1316, seq1005, seq985, seq1903, seq1281, seq845, seq1471, seq2021, seq1662, seq630, seq1212, seq1499, seq644, seq754, seq1112, seq181, seq1523, seq965, seq1493, seq1103, seq628, seq186, seq498, seq984, seq588, seq645, seq501, seq177, seq884, seq957, seq1487, seq923, seq876, seq816, seq1820, seq396, seq2412, seq272, seq1238, seq1079, seq917, seq1043, seq1230, seq342, seq1271, seq1524, seq2133, seq1734, seq381, seq2279, seq998, seq1591, seq2177, seq971, seq2445, seq1220, seq532, seq2312, seq1860, seq1236, seq290, seq1261, seq1638, seq1457, seq410, seq448, seq2042, seq1223, seq642, seq1218, seq508, seq188, seq57, seq115, seq253, seq1346, seq524, seq365, seq256, seq592, seq776, seq1358, seq1398, seq110, seq806, seq544, seq401, seq135, seq1962, seq2043, seq1899, seq1075, seq1498, seq1546, seq2201, seq103, seq1791, seq1017, seq2018, seq1686, seq1200, seq300, seq20, seq200, seq364, seq1746, seq2186, seq1961, seq244, seq940, seq441, seq1105, seq2045, seq2143, seq354, seq597, seq258, seq371, seq962, seq1731, seq298, seq171, seq378, seq45, seq123, seq491, seq1812, seq2483, seq657, seq117, seq374, seq277, seq2163, seq1930, seq1438, seq219, seq534, seq1620, seq1469, seq29, seq2235, seq1508, seq1821, seq2487, seq2323, seq2193, seq697, seq2017, seq2468, seq1055, seq1870, seq2442, seq1056, seq1029, seq1897, seq2270, seq2319, seq722, seq2427, seq2471, seq1044, seq1548, seq1723, seq1452, seq1303, seq478, seq286, seq421, seq469, seq2321, seq758, seq705, seq608, seq1980, seq1976, seq458, seq463, seq1253, seq2307, seq1733, seq620, seq578, seq566, seq1117, seq553, seq484, seq2438, seq1612, seq1277, seq1319, seq555, seq537, seq460, seq2269, seq2423, seq787, seq1283, seq1933, seq558, seq2039, seq2141, seq2240, seq2490, seq905, seq1042, seq2337, seq2362, seq2062, seq1646, seq2001, seq2494, seq1453, seq667, seq1054, seq1194, seq1162, seq2063, seq412, seq861, seq1383, seq561, seq858, seq627, seq2248, seq2159, seq1889, seq993, seq727, seq862, seq1574, seq908, seq872, seq1555, seq590, seq2002, seq2091, seq1877, seq337, seq2358, seq743, seq1121, seq2383, seq481, seq2309, seq714, seq1997, seq898, seq1496, seq2303, seq1679, seq1919, seq1590, seq949, seq562, seq397, seq1447, seq1211, seq2234, seq1309, seq1287, seq2207, seq607, seq2359, seq955, seq2116, seq682, seq1360, seq1648, seq634, seq2217, seq2100, seq631, seq765, seq1963, seq459, seq1136, seq1088, seq1647, seq1455, seq1495, seq895, seq1123, seq1350, seq1945, seq1411, seq1851, seq2418, seq1385, seq2405, seq2496, seq345, seq309, seq393, seq23, seq2107, seq2037, seq1181, seq1359, seq2134, seq1416, seq1710, seq488, seq1688, seq1210, seq2079, seq1991, seq1947, seq1965, seq740, seq369, seq1559, seq873, seq1675, seq789, seq327, seq254, seq1522, seq1699, seq656, seq720, seq911, seq2425, seq633, seq2282, seq1128, seq619, seq202, seq505, seq2387, seq208, seq515, seq523, seq1092, seq536, seq1032, seq228, seq1898, seq961, seq746, seq867, seq1429, seq1425, seq879, seq2455, seq1027, seq513, seq1176, seq976, seq1639, seq2214, seq577, seq1262, seq270, seq531, seq385, seq315, seq262, seq852, seq1716, seq1114, seq1990, seq640, seq1651, seq893, seq138, seq1659, seq1696, seq338, seq1905, seq990, seq549, seq2453, seq2440, seq516, seq402, seq554, seq510, seq2320, seq1076, seq1833, seq1614, seq1547, seq757, seq206, seq1353, seq1533, seq431, seq587, seq195, seq1856, seq506, seq820, seq1984, seq1414, seq1802, seq1344, seq2360, seq2132, seq799, seq2244, seq1608, seq2113, seq1039, seq1868, seq2243, seq2196, seq1715, seq1408, seq571, seq756, seq728, seq1311, seq1328, seq1446, seq568, seq573, seq713, seq648, seq1189, seq1463, seq468, seq2324, seq2149, seq880, seq2491, seq1242, seq621, seq1345, seq1325, seq450, seq813, seq1204, seq1607, seq2334, seq1878, seq1049, seq2291, seq1571, seq1402, seq1332, seq1880, seq405, seq299, seq1400, seq734, seq1628, seq419, seq2035, seq2114, seq1145, seq1095, seq528, seq1247, seq2176, seq1484, seq589, seq1672, seq1243, seq1915, seq616, seq2281, seq868, seq1376, seq1070, seq909, seq1863, seq1840, seq790, seq520, seq1570, seq1773, seq860, seq418, seq1677, seq2080, seq2378, seq1730, seq1793, seq2454, seq2157, seq2465, seq2241, seq1477, seq2398, seq745, seq660, seq886, seq2231, seq2314, seq1599, seq2135, seq1816, seq2273, seq1708, seq2238, seq2125, seq2434, seq1799, seq2192, seq2051, seq2023, seq1336, seq1000, seq2025, seq2152, seq1374, seq994, seq1342, seq838, seq651, seq925, seq1958, seq1770, seq470, seq1173, seq1461, seq1916, seq1864, seq1865, seq1025, seq997, seq2153, seq2436, seq428, seq1544, seq1444, seq1419, seq2349, seq1783, seq1689, seq295, seq1536, seq2297, seq1520, seq688, seq1338, seq2366, seq2435, seq2342, seq2245, seq1693, seq2331, seq2110, seq2087, seq1096, seq2368, seq1538, seq1008, seq969, seq812, seq2200, seq2050, seq2178, seq1335, seq304, seq2393, seq1256, seq1098, seq2410, seq1388, seq1014, seq1801, seq2365, seq1528, seq1800, seq1205, seq2137, seq1314, seq2055, seq320, seq522, seq739, seq1752, seq1653, seq595, seq1596, seq1339, seq351, seq1839, seq2190, seq2166, seq750, seq1743, seq2184, seq712, seq1588, seq1155, seq1492, seq1876, seq362, seq785, seq960, seq1745, seq1986, seq2460, seq2019, seq2136, seq1156, seq932, seq248, seq1234, seq1576, seq602, seq808, seq1394, seq1666, seq1231, seq399, seq1296, seq2422, seq1507, seq2090, seq1013, seq1409, seq1120, seq2339, seq1859, seq2352, seq927, seq1439, seq646, seq2492, seq2296, seq1554, seq1946, seq340, seq999, seq1413, seq1742, seq1269, seq2054, seq2392, seq830, seq1811, seq1183, seq1048, seq1006, seq1038, seq770, seq804, seq2265, seq1918, seq888, seq1972, seq1955, seq1057, seq2022, seq2056, seq1015, seq375, seq650, seq1589, seq2356, seq2417, seq2330, seq1592, seq2473, seq1272, seq1585, seq1069, seq1293, seq641, seq622, seq2264, seq1035, seq2253, seq1911, seq2173, seq2409, seq1480, seq1872, seq1141, seq2194, seq1758, seq2131, seq1970, seq2419, seq1702, seq1099, seq709, seq1854, seq1586, seq1895, seq1835, seq1755, seq2075, seq2104, seq1951, seq2489, seq1834, seq1349, seq1887, seq1912, seq1022, seq2347, seq366, seq1433, seq583, seq224, seq1180, seq1399, seq2205, seq1090, seq1515, seq79, seq294, seq263, seq1458, seq267, seq798, seq237, seq742, seq966, seq526, seq100, seq358, seq384, seq1011, seq1846, seq663, seq1428, seq1582, seq490, seq287, seq1532, seq128, seq93, seq96, seq99, seq748, seq1771, seq86, seq851, seq2060, seq1172, seq2288, seq183, seq1163, seq457, seq664, seq1124, seq1818, seq1298, seq2443, seq1214, seq415, seq461, seq414, seq1478, seq260, seq1193, seq289, seq1869, seq2170, seq2439, seq1266, seq434, seq1138, seq1348, seq352, seq2003, seq1264, seq492, seq2477, seq104, seq1685, seq131, seq920, seq882, seq1331, seq2015, seq432, seq916, seq120, seq793, seq1037, seq1692, seq211, seq1111, seq918, seq2475, seq1082, seq1326, seq1041, seq968, seq1213, seq1804, seq1058, seq2206, seq483, seq477, seq2278, seq1329, seq1297, seq2120, seq1844, seq2092, seq2485, seq2267, seq736, seq1225, seq1581, seq1197, seq1401, seq788, seq394, seq1613, seq1567, seq2096, seq1629, seq1208, seq609, seq429, seq1519, seq1600, seq2348, seq199, seq913, seq1275, seq1305, seq1757, seq959, seq759, seq34, seq88, seq2345, seq232, seq691, seq822, seq1323, seq668, seq556, seq427, seq919, seq1705, seq910, seq1034, seq1178, seq2180, seq229, seq1146, seq547, seq1817, seq2040, seq653, seq906, seq467, seq152, seq308, seq652, seq442, seq145, seq215, seq695, seq1938, seq2274, seq389, seq1153, seq639, seq973, seq1174, seq538, seq146, seq574, seq284, seq424, seq902, seq353, seq83, seq1093, seq127, seq90, seq148, seq1089, seq71, seq223, seq118, seq102, seq726, seq184, seq1687, seq292, seq636, seq2472, seq1615, seq1937, seq559, seq85, seq611, seq1774, seq2171, seq1552, seq2466, seq2428, seq2221, seq2168, seq2041, seq1270, seq2155, seq1849, seq1611, seq1449, seq870, seq1364, seq1255, seq1982, seq2415, seq1787, seq1485, seq1047, seq471, seq2480, seq1690, seq1481, seq2424, seq1244, seq2293, seq1505, seq2379, seq349, seq1310, seq1418, seq1649, seq2093, seq1700, seq594, seq1226, seq811, seq307, seq2317, seq1643, seq1883, seq1030, seq1085, seq1904, seq1072, seq576, seq2294, seq2013, seq95, seq150, seq673, seq2311, seq953, seq2118, seq585, seq1809, seq937, seq848, seq1116, seq1459, seq2213, seq1067, seq947, seq1942, seq517, seq514, seq1650, seq1101, seq2067, seq2344, seq1132, seq2447, seq2271, seq1718, seq1357, seq2376, seq809, seq1491, seq2481, seq831, seq1511, seq1891, seq1925, seq964, seq2181, seq1805, seq2227, seq730, seq1754, seq1289, seq2449, seq1467, seq1737, seq1341, seq1018, seq836, seq1617, seq1451, seq1107, seq1393, seq2084, seq1630, seq1521, seq1778, seq1160, seq603, seq942, seq1060, seq1106, seq2065, seq1921, seq2094, seq567, seq1151, seq391, seq1139, seq2086, seq854, seq1267, seq1302, seq1572, seq1061, seq859, seq1894, seq1221, seq1268, seq844, seq1441, seq1644, seq1306, seq1330, seq936, seq1280, seq711, seq2103, seq1953, seq2144, seq1488, seq929, seq335, seq912, seq476, seq376, seq234, seq2239, seq715, seq1158, seq747, seq904, seq2377, seq1370, seq2280, seq569, seq661, seq2105, seq437, seq871, seq503, seq1240, seq2034, seq1634, seq1509, seq1187, seq2038, seq605, seq1365, seq671, seq2474, seq196, seq2209, seq1966, seq766, seq282, seq2404, seq164, seq529, seq1703, seq1203, seq693, seq2488, seq662, seq454, seq269, seq1603, seq69, seq1448, seq1169, seq2119, seq835, seq580, seq347, seq749, seq694, seq1434, seq1988, seq1510, seq1291, seq1527, seq2156, seq2286, seq1964, seq889, seq930, seq1368, seq1454, seq613, seq1542, seq774, seq2046, seq996, seq1246, seq1081, seq928, seq140, seq1886, seq875, seq874, seq951, seq2272, seq1392, seq903, seq2216, seq763, seq1798, seq1317, seq2007, seq827, seq252, seq604, seq1978, seq121, seq1142, seq1534, seq1031, seq1735, seq1853, seq445, seq991, seq1943, seq601, seq1333, seq563, seq950, seq1786, seq2250, seq1525, seq1431, seq970, seq1188, seq675, seq683, seq792, seq1587, seq1697, seq341, seq823, seq388, seq456, seq1301, seq1995, seq834, seq2212, seq1931, seq275, seq259, seq866, seq2247, seq1584, seq2219, seq204, seq575, seq672, seq84, seq1386, seq1748, seq373, seq1073, seq1053, seq242, seq395, seq1126, seq1119, seq1926, seq974, seq1354, seq978, seq1623, seq1003, seq1641, seq1340, seq1405, seq975, seq1513, seq1565, seq599, seq649, seq1738, seq2340, seq1598, seq2444, seq1654, seq1769, seq1917, seq2258, seq1954, seq2341, seq2433, seq1719, seq1668, seq2033, seq1560, seq1165, seq2346, seq1616, seq922, seq2338, seq1691, seq1167, seq2381, seq1318, seq1028, seq2395, seq732, seq943, seq967, seq778, seq1078, seq1861, seq494, seq1968, seq1440, seq1579, seq710, seq2151, seq1847, seq1764, seq744, seq1836, seq1967, seq1001, seq1695, seq1313, seq1322, seq1792, seq348, seq2388, seq2277, seq2364, seq1288, seq762, seq2101, seq2414, seq1575, seq2165, seq737, seq826, seq1292, seq1763, seq2322, seq207, seq2380, seq313, seq572, seq707, seq453, seq1470, seq2302, seq617, seq1290, seq2202, seq896, seq1026, seq952, seq1023, seq598, seq2014, seq2169, seq1577, seq1147, seq1996, seq489, seq1237, seq1118, seq1177, seq1321, seq1040, seq1250, seq1909, seq1795, seq2070, seq1161, seq1232, seq482, seq425, seq2251, seq1593, seq596, seq805, seq1744, seq724, seq1971, seq2195, seq2223, seq2167, seq1884, seq1569, seq1251, seq1417, seq2225, seq1526, seq2391, seq1950, seq1502, seq877, seq2089, seq2403, seq843, seq2310, seq2259, seq2188, seq2336, seq2011, seq2108, seq1140, seq1131, seq946, seq1682, seq1171, seq1476, seq1334, seq2464, seq1605, seq1826, seq1879, seq2182, seq1977, seq1831, seq1983, seq2355, seq2389, seq2106, seq1714, seq2117, seq1922, seq1683, seq2148, seq2183, seq1948, seq2020, seq1640, seq2289, seq1701, seq2276, seq2006, seq2268, seq2083, seq666, seq1578, seq1074, seq1785, seq2326, seq1573, seq2478, seq2463, seq1881, seq2432, seq1102, seq1850, seq1436, seq956, seq1166, seq1671, seq2061, seq1762, seq2441, seq2399, seq2350, seq283, seq1563, seq2363, seq1631, seq1133, seq1924, seq1466, seq810, seq794, seq729, seq220, seq779, seq938, seq1541, seq1557, seq1462, seq780, seq495, seq1722, seq2078, seq485, seq842, seq1228, seq2332, seq1727, seq1992, seq2012, seq1803, seq2385, seq1741, seq2032, seq1257, seq1756, seq2150, seq1779, seq1465, seq1115, seq2375, seq1110, seq1363, seq856, seq323, seq1610, seq786, seq1422, seq2233, seq2261, seq1391, seq1224, seq1568, seq1906, seq2325, seq1740, seq696, seq783, seq689, seq1545, seq1663, seq2172, seq945, seq1893, seq2498, seq1725, seq1190, seq2121, seq833, seq1135, seq1286, seq584, seq1661, seq2129, seq1002, seq479, seq1867, seq632, seq1808, seq988, seq1852, seq2027, seq1065, seq1300, seq2236, seq2287, seq1497, seq1494, seq1379, seq1506, seq914, seq1443, seq2266, seq1633, seq1252, seq1483, seq677, seq551, seq1276, seq2146, seq2255, seq1597, seq891, seq1874, seq2085, seq2099, seq2284, seq2459, seq1928, seq1667, seq2372, seq2452, seq2493, seq1751, seq1923, seq1201, seq2484, seq1020, seq2102, seq1179, seq435, seq527, seq1858, seq738, seq2467, seq769, seq1249, seq2283, seq948, seq2031, seq1957, seq2249, seq2461, seq1993, seq535, seq864, seq1206, seq703, seq900, seq1016, seq1530, seq704, seq690, seq700, seq753, seq760, seq1772, seq901, seq818, seq699, seq1198, seq2333, seq1529, seq2469, seq659, seq687, seq752, seq1109, seq525, seq2010, seq1012, seq1652, seq542, seq1064, seq1010, seq1175, seq1501, seq2222, seq2275, seq2097, seq1713, seq1775, seq1108, seq1094, seq593, seq615, seq1004, seq455, seq1535, seq987, seq1843, seq1066, seq1435, seq1531, seq1404, seq2140, seq1788, seq1556, seq293, seq355, seq2049, seq2174, seq2446, seq1377, seq2082, seq1720, seq1989, seq1468, seq413, seq1407, seq658, seq356, seq499, seq795, seq316, seq800, seq2407, seq1857, seq2076, seq1824, seq2185, seq680, seq1367, seq1539, seq496, seq1125, seq464, seq1033, seq1185, seq625, seq1157, seq1019, seq1998, seq782, seq1759, seq1749, seq2005, seq346, seq1170, seq1063, seq1282, seq1052, seq1352, seq1806, seq1981, seq1753, seq2224, seq1595, seq539, seq2254, seq325, seq832, seq1274, seq1460, seq679, seq723, seq2343, seq1900, seq685, seq1241, seq907, seq2128, seq1415, seq2285, seq2413, seq817, seq2016, seq2147, seq841, seq1927, seq2384, seq2127, seq777, seq1550, seq1324, seq2457, seq600, seq614, seq721, seq2456, seq407, seq1658, seq2000, seq343, seq1558, seq1956, seq610, seq2197, seq564, seq1618, seq2026, seq1674, seq372, seq328, seq1420, seq1307, seq1195, seq540, seq1486, seq1726, seq629, seq706, seq301, seq958, seq1051, seq1636, seq931, seq1627, seq2130, seq1184, seq2220, seq1777, seq1077, seq360, seq2008, seq1694, seq881, seq2204, seq1680, seq2175, seq2479, seq1442, seq1837, seq1902, seq1259, seq2179, seq1561, seq719, seq329, seq1474, seq1621, seq2098, seq446, seq2426, seq2048, seq1373, seq2495, seq493, seq2158, seq462, seq452, seq1768, seq2199, seq1822, seq465, seq768, seq1564, seq1381, seq1427, seq581, seq2263, seq2421, seq141, seq1512, seq1389, seq1790, seq1952, seq764, seq1209, seq332, seq883, seq147, seq1304, seq1829, seq2139, seq887, seq853, seq1009, seq1888, seq408, seq1684, seq2315, seq1361, seq655, seq1882, seq390, seq2109, seq2486, seq1796, seq1207, seq2462, seq2028, seq319, seq1540, seq1664, seq2112, seq638, seq1665, seq233, seq821, seq725, seq156, seq191, seq2305, seq1168, seq1583, seq221, seq2218, seq1914, seq1366, seq1819, seq125, seq1239, seq560, seq1371, seq2077, seq160, seq2357, seq2081, seq2246, seq1068, seq474, seq1747, seq980, seq1229, seq1278, seq2208, seq772, seq1896, seq1681, seq1437, seq899, seq1862, seq1907, seq2470, seq2215, seq1704, seq1908, seq1698, seq1642, seq1810, seq618, seq1489, seq1192, seq586, seq837, seq1113, seq981, seq2386, seq986, seq1936, seq819, seq1406, seq1215, seq1732, seq755, seq2074, seq1378, seq533, seq519, seq1164, seq1944, seq2111, seq894, seq1279, seq1669, seq1426, seq1518, seq995, seq1122, seq814, seq2430, seq1084, seq1562, seq983, seq1295, seq227, seq1712, seq1159, seq2400, seq1059, seq692, seq828, seq261, seq1760, seq430, seq1721, seq934, seq1985, seq541, seq855, seq1424, seq2198, seq1199, seq1969, seq2057, seq1473, seq1036, seq2361, seq1807, seq268, seq1660, seq504, seq802, seq2451, seq511, seq1104, seq1855, seq1932, seq717, seq678, seq2191, seq1091, seq669, seq279, seq1046, seq1445, seq741, seq439, seq203, seq545, seq1838, seq1412, seq1711, seq1430, seq370, seq676, seq839, seq1129, seq518, seq1149, seq380, seq1150, seq1823, seq1934, seq1635, seq2369, seq1315, seq167, seq368, seq1935, seq2260, seq1130, seq91, seq1410, seq2406, seq312, seq1148, seq1263, seq591, seq954, seq702, seq674, seq921, seq339, seq1024, seq1450, seq865, seq944, seq557, seq357, seq2371, seq1724, seq857, seq296, seq2313, seq582, seq1841, seq2328, seq2009, seq2401, seq897, seq2004, seq1875, seq2126, seq2229, seq846, seq1396, seq1670, seq807, seq1395, seq698, seq1222, seq1355, seq565, seq761, seq1191, seq2318, seq2351, seq1767, seq1320, seq1537, seq1776, seq2024, seq2058, seq2044, seq1127, seq1308, seq670, seq1456, seq1080, seq2161, seq1750, seq1294, seq1866, seq1873, seq1939, seq1632, seq647, seq1637, seq1216, seq1941, seq1960, seq1797, seq850, seq1254, seq2497, seq2476, seq2431, seq2394, seq2210, seq2370, seq1144, seq1137, seq1974, seq1134, seq1645, seq1516, seq1656, seq1375, seq1624, seq1994, seq480, seq2069, seq466, seq1929, seq2052, seq1987, seq2397, seq2390, seq2450, seq1432, seq1235, seq890, seq1219, seq1490, seq1717, seq1706, seq1765, seq214, seq1871, seq1327, seq1910, seq1500, seq1622, seq2354, seq2411, seq977, seq1086, seq2237, seq1517, seq1676, seq1260, seq840, seq1045, seq2437, seq796, seq2189, seq2329, seq2232, seq2071, seq2298, seq1397, seq1890, seq2373, seq2256, seq612, seq1761, seq1606, seq1154, seq2066, seq2124, seq1827, seq2072, seq1736, seq530, seq2408, seq1729, seq1071, seq1678, seq1351, seq1959, seq626, seq1285, seq1601, seq1784, seq1728, seq1100, seq1707, seq386, seq512, seq2064, seq2088, seq2059, seq972, seq1356, seq1609, seq2030, seq1739, seq1380, seq1007, seq1423, seq1842, seq989, seq2122, seq1828, seq2257, seq635, seq2029, seq1657, seq2095, seq2420, seq509, seq825, seq915, seq781, seq285, seq1848, seq2396, seq1347, seq226, seq1604, seq1403, seq1766, seq2160, seq2187, seq1626, seq377, seq1258, seq2154, seq1284, seq2262, seq686, seq447, seq2123, seq1479, seq2353, seq924, seq2448, seq1504, seq486, seq791, seq2306, seq1602, seq885, seq992, seq1390, seq392, seq1892, seq963, seq2162, seq2482, seq1337, seq1475, seq1482, seq2382, seq1387, seq1227, seq1245, seq935, seq1143, seq550, seq933, seq1369, seq1050, seq1619, seq2300, seq2228, seq2292, seq2295, seq869, seq847, seq982, seq1673, seq2299, seq1233, seq1299, seq2073, seq2138, seq1920, seq1152, seq1202, seq1421, seq1549, seq1343, seq2068, seq2429, seq1384, seq2145, seq1782, seq443, seq1655, seq2335, seq1553, seq2053, seq1901, seq1021, seq1594, seq420, seq824, seq2230, seq2242, seq1940, seq416, seq643, seq1999, seq2367, seq1830, seq2308, seq2211, seq1273, seq2374, seq1312, seq2290, seq1083, seq1794, seq1825, seq1372, seq2304, seq1503, seq1551, seq2226, seq1472, seq1813, seq2316, seq1885, seq2402, seq1949, seq2301, seq1814, seq2252, seq1832, seq1780, seq2036, seq438, seq878, seq1514, seq1186, seq1709, seq751, seq1789, seq1979, seq2203, seq1580
+2023-10-26 14:22:42.316364 INFO::Total filtered features with variance filtering: 0
+2023-10-26 14:22:42.316865 INFO::Filtered feature names from variance filtering:
+2023-10-26 14:22:42.317423 INFO::Running selected normalization method: NONE
+2023-10-26 14:22:42.322086 INFO::Applying z-score to standardize continuous metadata
+2023-10-26 14:22:42.329216 INFO::Running selected transform method: NONE
+2023-10-26 14:22:42.331656 INFO::Running selected analysis method: NEGBIN
+2023-10-26 14:22:42.338381 INFO::Fitting model to feature number 1, seq174
+2023-10-26 14:22:42.342168 INFO::Fitting model to feature number 2, seq444
+2023-10-26 14:22:42.344071 INFO::Fitting model to feature number 3, seq30
+2023-10-26 14:22:42.345844 INFO::Fitting model to feature number 4, seq225
+2023-10-26 14:22:42.347656 INFO::Fitting model to feature number 5, seq235
+2023-10-26 14:22:42.353487 INFO::Fitting model to feature number 6, seq134
+2023-10-26 14:22:42.355336 INFO::Fitting model to feature number 7, seq175
+2023-10-26 14:22:42.357141 INFO::Fitting model to feature number 8, seq382
+2023-10-26 14:22:42.359614 INFO::Fitting model to feature number 9, seq472
+2023-10-26 14:22:42.361467 INFO::Fitting model to feature number 10, seq236
+2023-10-26 14:22:42.363369 INFO::Fitting model to feature number 11, seq322
+2023-10-26 14:22:42.365246 INFO::Fitting model to feature number 12, seq55
+2023-10-26 14:22:42.367692 INFO::Fitting model to feature number 13, seq139
+2023-10-26 14:22:42.369899 INFO::Fitting model to feature number 14, seq238
+2023-10-26 14:22:42.371832 INFO::Fitting model to feature number 15, seq281
+2023-10-26 14:22:42.389176 INFO::Fitting model to feature number 16, seq422
+2023-10-26 14:22:42.391554 INFO::Fitting model to feature number 17, seq54
+2023-10-26 14:22:42.395238 INFO::Fitting model to feature number 18, seq129
+2023-10-26 14:22:42.397541 INFO::Fitting model to feature number 19, seq230
+2023-10-26 14:22:42.404081 INFO::Fitting model to feature number 20, seq61
+2023-10-26 14:22:42.405866 INFO::Fitting model to feature number 21, seq19
+2023-10-26 14:22:42.407543 INFO::Fitting model to feature number 22, seq24
+2023-10-26 14:22:42.409275 INFO::Fitting model to feature number 23, seq111
+2023-10-26 14:22:42.410912 INFO::Fitting model to feature number 24, seq170
+2023-10-26 14:22:42.416307 INFO::Fitting model to feature number 25, seq767
+2023-10-26 14:22:42.418488 INFO::Fitting model to feature number 26, seq344
+2023-10-26 14:22:42.424701 INFO::Fitting model to feature number 27, seq363
+2023-10-26 14:22:42.426438 INFO::Fitting model to feature number 28, seq72
+2023-10-26 14:22:42.429083 INFO::Fitting model to feature number 29, seq22
+2023-10-26 14:22:42.430895 INFO::Fitting model to feature number 30, seq240
+2023-10-26 14:22:42.43255 INFO::Fitting model to feature number 31, seq217
+2023-10-26 14:22:42.434368 INFO::Fitting model to feature number 32, seq12
+2023-10-26 14:22:42.436063 INFO::Fitting model to feature number 33, seq7
+2023-10-26 14:22:42.440183 INFO::Fitting model to feature number 34, seq579
+2023-10-26 14:22:42.441982 INFO::Fitting model to feature number 35, seq543
+2023-10-26 14:22:42.443695 INFO::Fitting model to feature number 36, seq398
+2023-10-26 14:22:42.445399 INFO::Fitting model to feature number 37, seq400
+2023-10-26 14:22:42.447125 INFO::Fitting model to feature number 38, seq473
+2023-10-26 14:22:42.449052 INFO::Fitting model to feature number 39, seq487
+2023-10-26 14:22:42.450904 INFO::Fitting model to feature number 40, seq173
+2023-10-26 14:22:42.452878 INFO::Fitting model to feature number 41, seq701
+2023-10-26 14:22:42.454762 INFO::Fitting model to feature number 42, seq179
+2023-10-26 14:22:42.456429 INFO::Fitting model to feature number 43, seq249
+2023-10-26 14:22:42.458177 INFO::Fitting model to feature number 44, seq334
+2023-10-26 14:22:42.459905 INFO::Fitting model to feature number 45, seq153
+2023-10-26 14:22:42.464753 INFO::Fitting model to feature number 46, seq310
+2023-10-26 14:22:42.466874 INFO::Fitting model to feature number 47, seq606
+2023-10-26 14:22:42.469528 INFO::Fitting model to feature number 48, seq271
+2023-10-26 14:22:42.483764 INFO::Fitting model to feature number 49, seq66
+2023-10-26 14:22:42.485764 INFO::Fitting model to feature number 50, seq28
+2023-10-26 14:22:42.487578 INFO::Fitting model to feature number 51, seq33
+2023-10-26 14:22:42.489356 INFO::Fitting model to feature number 52, seq56
+2023-10-26 14:22:42.491116 INFO::Fitting model to feature number 53, seq81
+2023-10-26 14:22:42.492916 INFO::Fitting model to feature number 54, seq274
+2023-10-26 14:22:42.494509 WARNING::Fitting problem for feature 54 a warning was issued
+2023-10-26 14:22:42.496692 INFO::Fitting model to feature number 55, seq142
+2023-10-26 14:22:42.498474 INFO::Fitting model to feature number 56, seq41
+2023-10-26 14:22:42.500149 INFO::Fitting model to feature number 57, seq42
+2023-10-26 14:22:42.501827 INFO::Fitting model to feature number 58, seq194
+2023-10-26 14:22:42.503579 INFO::Fitting model to feature number 59, seq119
+2023-10-26 14:22:42.505231 INFO::Fitting model to feature number 60, seq731
+2023-10-26 14:22:42.506876 INFO::Fitting model to feature number 61, seq246
+2023-10-26 14:22:42.508589 INFO::Fitting model to feature number 62, seq361
+2023-10-26 14:22:42.510285 INFO::Fitting model to feature number 63, seq330
+2023-10-26 14:22:42.513934 INFO::Fitting model to feature number 64, seq333
+2023-10-26 14:22:42.52762 WARNING::Fitting problem for feature 64 a warning was issued
+2023-10-26 14:22:42.531184 INFO::Fitting model to feature number 65, seq94
+2023-10-26 14:22:42.533739 INFO::Fitting model to feature number 66, seq78
+2023-10-26 14:22:42.53579 INFO::Fitting model to feature number 67, seq302
+2023-10-26 14:22:42.537553 INFO::Fitting model to feature number 68, seq218
+2023-10-26 14:22:42.539365 INFO::Fitting model to feature number 69, seq27
+2023-10-26 14:22:42.541205 INFO::Fitting model to feature number 70, seq189
+2023-10-26 14:22:42.543104 INFO::Fitting model to feature number 71, seq291
+2023-10-26 14:22:42.544988 INFO::Fitting model to feature number 72, seq31
+2023-10-26 14:22:42.546869 INFO::Fitting model to feature number 73, seq276
+2023-10-26 14:22:42.54876 INFO::Fitting model to feature number 74, seq475
+2023-10-26 14:22:42.550738 INFO::Fitting model to feature number 75, seq159
+2023-10-26 14:22:42.553235 INFO::Fitting model to feature number 76, seq278
+2023-10-26 14:22:42.555303 INFO::Fitting model to feature number 77, seq317
+2023-10-26 14:22:42.55751 INFO::Fitting model to feature number 78, seq423
+2023-10-26 14:22:42.559614 INFO::Fitting model to feature number 79, seq231
+2023-10-26 14:22:42.561857 INFO::Fitting model to feature number 80, seq403
+2023-10-26 14:22:42.575392 INFO::Fitting model to feature number 81, seq51
+2023-10-26 14:22:42.577415 INFO::Fitting model to feature number 82, seq2
+2023-10-26 14:22:42.579156 INFO::Fitting model to feature number 83, seq3
+2023-10-26 14:22:42.580913 INFO::Fitting model to feature number 84, seq8
+2023-10-26 14:22:42.583177 INFO::Fitting model to feature number 85, seq44
+2023-10-26 14:22:42.584937 INFO::Fitting model to feature number 86, seq404
+2023-10-26 14:22:42.586788 INFO::Fitting model to feature number 87, seq21
+2023-10-26 14:22:42.588612 INFO::Fitting model to feature number 88, seq126
+2023-10-26 14:22:42.590244 INFO::Fitting model to feature number 89, seq18
+2023-10-26 14:22:42.592573 INFO::Fitting model to feature number 90, seq14
+2023-10-26 14:22:42.594251 INFO::Fitting model to feature number 91, seq6
+2023-10-26 14:22:42.599131 INFO::Fitting model to feature number 92, seq113
+2023-10-26 14:22:42.603848 INFO::Fitting model to feature number 93, seq321
+2023-10-26 14:22:42.605403 WARNING::Fitting problem for feature 93 a warning was issued
+2023-10-26 14:22:42.607685 INFO::Fitting model to feature number 94, seq154
+2023-10-26 14:22:42.609476 INFO::Fitting model to feature number 95, seq98
+2023-10-26 14:22:42.611157 INFO::Fitting model to feature number 96, seq137
+2023-10-26 14:22:42.612917 INFO::Fitting model to feature number 97, seq409
+2023-10-26 14:22:42.614648 INFO::Fitting model to feature number 98, seq26
+2023-10-26 14:22:42.616464 INFO::Fitting model to feature number 99, seq87
+2023-10-26 14:22:42.619149 INFO::Fitting model to feature number 100, seq213
+2023-10-26 14:22:42.627058 INFO::Fitting model to feature number 101, seq239
+2023-10-26 14:22:42.629512 INFO::Fitting model to feature number 102, seq440
+2023-10-26 14:22:42.631424 INFO::Fitting model to feature number 103, seq64
+2023-10-26 14:22:42.632947 WARNING::Fitting problem for feature 103 a warning was issued
+2023-10-26 14:22:42.635264 INFO::Fitting model to feature number 104, seq15
+2023-10-26 14:22:42.637123 INFO::Fitting model to feature number 105, seq16
+2023-10-26 14:22:42.638968 INFO::Fitting model to feature number 106, seq76
+2023-10-26 14:22:42.640804 INFO::Fitting model to feature number 107, seq245
+2023-10-26 14:22:42.642658 INFO::Fitting model to feature number 108, seq105
+2023-10-26 14:22:42.644383 INFO::Fitting model to feature number 109, seq10
+2023-10-26 14:22:42.646091 INFO::Fitting model to feature number 110, seq241
+2023-10-26 14:22:42.647853 INFO::Fitting model to feature number 111, seq114
+2023-10-26 14:22:42.649646 INFO::Fitting model to feature number 112, seq157
+2023-10-26 14:22:42.651486 INFO::Fitting model to feature number 113, seq1
+2023-10-26 14:22:42.653305 INFO::Fitting model to feature number 114, seq771
+2023-10-26 14:22:42.655017 WARNING::Fitting problem for feature 114 a warning was issued
+2023-10-26 14:22:42.667127 INFO::Fitting model to feature number 115, seq165
+2023-10-26 14:22:42.673984 INFO::Fitting model to feature number 116, seq367
+2023-10-26 14:22:42.675911 INFO::Fitting model to feature number 117, seq387
+2023-10-26 14:22:42.678372 INFO::Fitting model to feature number 118, seq305
+2023-10-26 14:22:42.681215 INFO::Fitting model to feature number 119, seq926
+2023-10-26 14:22:42.682931 INFO::Fitting model to feature number 120, seq623
+2023-10-26 14:22:42.684697 INFO::Fitting model to feature number 121, seq801
+2023-10-26 14:22:42.687356 INFO::Fitting model to feature number 122, seq201
+2023-10-26 14:22:42.689103 INFO::Fitting model to feature number 123, seq266
+2023-10-26 14:22:42.69083 INFO::Fitting model to feature number 124, seq654
+2023-10-26 14:22:42.693347 WARNING::Fitting problem for feature 124 a warning was issued
+2023-10-26 14:22:42.705445 INFO::Fitting model to feature number 125, seq497
+2023-10-26 14:22:42.707463 WARNING::Fitting problem for feature 125 a warning was issued
+2023-10-26 14:22:42.717324 INFO::Fitting model to feature number 126, seq144
+2023-10-26 14:22:42.719946 INFO::Fitting model to feature number 127, seq182
+2023-10-26 14:22:42.721695 INFO::Fitting model to feature number 128, seq65
+2023-10-26 14:22:42.723444 INFO::Fitting model to feature number 129, seq324
+2023-10-26 14:22:42.725166 INFO::Fitting model to feature number 130, seq73
+2023-10-26 14:22:42.726848 INFO::Fitting model to feature number 131, seq158
+2023-10-26 14:22:42.730983 INFO::Fitting model to feature number 132, seq130
+2023-10-26 14:22:42.733922 INFO::Fitting model to feature number 133, seq210
+2023-10-26 14:22:42.743096 INFO::Fitting model to feature number 134, seq265
+2023-10-26 14:22:42.746262 INFO::Fitting model to feature number 135, seq68
+2023-10-26 14:22:42.750703 INFO::Fitting model to feature number 136, seq178
+2023-10-26 14:22:42.752568 INFO::Fitting model to feature number 137, seq48
+2023-10-26 14:22:42.754394 INFO::Fitting model to feature number 138, seq198
+2023-10-26 14:22:42.756254 INFO::Fitting model to feature number 139, seq50
+2023-10-26 14:22:42.758203 INFO::Fitting model to feature number 140, seq255
+2023-10-26 14:22:42.759888 INFO::Fitting model to feature number 141, seq70
+2023-10-26 14:22:42.761506 INFO::Fitting model to feature number 142, seq149
+2023-10-26 14:22:42.763208 INFO::Fitting model to feature number 143, seq941
+2023-10-26 14:22:42.764862 INFO::Fitting model to feature number 144, seq180
+2023-10-26 14:22:42.766505 INFO::Fitting model to feature number 145, seq106
+2023-10-26 14:22:42.768191 INFO::Fitting model to feature number 146, seq306
+2023-10-26 14:22:42.770016 INFO::Fitting model to feature number 147, seq570
+2023-10-26 14:22:42.771683 INFO::Fitting model to feature number 148, seq163
+2023-10-26 14:22:42.773313 INFO::Fitting model to feature number 149, seq169
+2023-10-26 14:22:42.774863 INFO::Fitting model to feature number 150, seq75
+2023-10-26 14:22:42.776593 INFO::Fitting model to feature number 151, seq264
+2023-10-26 14:22:42.7808 INFO::Fitting model to feature number 152, seq116
+2023-10-26 14:22:42.784937 INFO::Fitting model to feature number 153, seq436
+2023-10-26 14:22:42.788493 INFO::Fitting model to feature number 154, seq359
+2023-10-26 14:22:42.796619 INFO::Fitting model to feature number 155, seq4
+2023-10-26 14:22:42.80318 INFO::Fitting model to feature number 156, seq209
+2023-10-26 14:22:42.804939 INFO::Fitting model to feature number 157, seq411
+2023-10-26 14:22:42.806787 INFO::Fitting model to feature number 158, seq280
+2023-10-26 14:22:42.80861 INFO::Fitting model to feature number 159, seq797
+2023-10-26 14:22:42.810462 INFO::Fitting model to feature number 160, seq216
+2023-10-26 14:22:42.812268 INFO::Fitting model to feature number 161, seq331
+2023-10-26 14:22:42.824417 INFO::Fitting model to feature number 162, seq9
+2023-10-26 14:22:42.826555 INFO::Fitting model to feature number 163, seq46
+2023-10-26 14:22:42.828501 INFO::Fitting model to feature number 164, seq273
+2023-10-26 14:22:42.830496 INFO::Fitting model to feature number 165, seq133
+2023-10-26 14:22:42.832257 INFO::Fitting model to feature number 166, seq257
+2023-10-26 14:22:42.836635 WARNING::Fitting problem for feature 166 a warning was issued
+2023-10-26 14:22:42.848097 INFO::Fitting model to feature number 167, seq350
+2023-10-26 14:22:42.850037 INFO::Fitting model to feature number 168, seq500
+2023-10-26 14:22:42.851846 INFO::Fitting model to feature number 169, seq433
+2023-10-26 14:22:42.853634 INFO::Fitting model to feature number 170, seq17
+2023-10-26 14:22:42.855327 INFO::Fitting model to feature number 171, seq52
+2023-10-26 14:22:42.857042 INFO::Fitting model to feature number 172, seq11
+2023-10-26 14:22:42.858843 INFO::Fitting model to feature number 173, seq107
+2023-10-26 14:22:42.860614 INFO::Fitting model to feature number 174, seq82
+2023-10-26 14:22:42.862475 INFO::Fitting model to feature number 175, seq37
+2023-10-26 14:22:42.86424 INFO::Fitting model to feature number 176, seq185
+2023-10-26 14:22:42.86592 INFO::Fitting model to feature number 177, seq247
+2023-10-26 14:22:42.867633 INFO::Fitting model to feature number 178, seq1182
+2023-10-26 14:22:42.869386 INFO::Fitting model to feature number 179, seq80
+2023-10-26 14:22:42.871141 INFO::Fitting model to feature number 180, seq451
+2023-10-26 14:22:42.872879 INFO::Fitting model to feature number 181, seq122
+2023-10-26 14:22:42.888002 INFO::Fitting model to feature number 182, seq5
+2023-10-26 14:22:42.889847 INFO::Fitting model to feature number 183, seq314
+2023-10-26 14:22:42.892221 INFO::Fitting model to feature number 184, seq665
+2023-10-26 14:22:42.894121 INFO::Fitting model to feature number 185, seq336
+2023-10-26 14:22:42.89617 INFO::Fitting model to feature number 186, seq303
+2023-10-26 14:22:42.897972 INFO::Fitting model to feature number 187, seq108
+2023-10-26 14:22:42.899795 INFO::Fitting model to feature number 188, seq109
+2023-10-26 14:22:42.901546 INFO::Fitting model to feature number 189, seq288
+2023-10-26 14:22:42.90333 INFO::Fitting model to feature number 190, seq205
+2023-10-26 14:22:42.905183 INFO::Fitting model to feature number 191, seq251
+2023-10-26 14:22:42.906906 INFO::Fitting model to feature number 192, seq803
+2023-10-26 14:22:42.90866 INFO::Fitting model to feature number 193, seq166
+2023-10-26 14:22:42.910484 INFO::Fitting model to feature number 194, seq250
+2023-10-26 14:22:42.912229 INFO::Fitting model to feature number 195, seq190
+2023-10-26 14:22:42.91396 INFO::Fitting model to feature number 196, seq132
+2023-10-26 14:22:42.926932 INFO::Fitting model to feature number 197, seq168
+2023-10-26 14:22:42.929558 INFO::Fitting model to feature number 198, seq311
+2023-10-26 14:22:42.934064 INFO::Fitting model to feature number 199, seq89
+2023-10-26 14:22:42.93728 INFO::Fitting model to feature number 200, seq155
+2023-10-26 14:22:42.939727 INFO::Fitting model to feature number 201, seq35
+2023-10-26 14:22:42.943251 INFO::Fitting model to feature number 202, seq58
+2023-10-26 14:22:42.945203 INFO::Fitting model to feature number 203, seq546
+2023-10-26 14:22:42.947515 INFO::Fitting model to feature number 204, seq176
+2023-10-26 14:22:42.95105 INFO::Fitting model to feature number 205, seq112
+2023-10-26 14:22:42.952868 INFO::Fitting model to feature number 206, seq124
+2023-10-26 14:22:42.954664 INFO::Fitting model to feature number 207, seq39
+2023-10-26 14:22:42.956429 INFO::Fitting model to feature number 208, seq53
+2023-10-26 14:22:42.958227 INFO::Fitting model to feature number 209, seq406
+2023-10-26 14:22:42.959952 INFO::Fitting model to feature number 210, seq36
+2023-10-26 14:22:42.961736 INFO::Fitting model to feature number 211, seq92
+2023-10-26 14:22:42.963439 INFO::Fitting model to feature number 212, seq521
+2023-10-26 14:22:42.965177 INFO::Fitting model to feature number 213, seq775
+2023-10-26 14:22:42.966826 INFO::Fitting model to feature number 214, seq297
+2023-10-26 14:22:42.968586 INFO::Fitting model to feature number 215, seq172
+2023-10-26 14:22:42.971195 INFO::Fitting model to feature number 216, seq77
+2023-10-26 14:22:42.973061 INFO::Fitting model to feature number 217, seq187
+2023-10-26 14:22:42.974819 INFO::Fitting model to feature number 218, seq60
+2023-10-26 14:22:42.978292 INFO::Fitting model to feature number 219, seq43
+2023-10-26 14:22:42.990303 INFO::Fitting model to feature number 220, seq192
+2023-10-26 14:22:42.992226 INFO::Fitting model to feature number 221, seq162
+2023-10-26 14:22:42.994001 INFO::Fitting model to feature number 222, seq32
+2023-10-26 14:22:42.995754 INFO::Fitting model to feature number 223, seq49
+2023-10-26 14:22:42.998225 INFO::Fitting model to feature number 224, seq13
+2023-10-26 14:22:43.005461 INFO::Fitting model to feature number 225, seq40
+2023-10-26 14:22:43.007353 INFO::Fitting model to feature number 226, seq25
+2023-10-26 14:22:43.009261 INFO::Fitting model to feature number 227, seq67
+2023-10-26 14:22:43.011084 INFO::Fitting model to feature number 228, seq212
+2023-10-26 14:22:43.012826 INFO::Fitting model to feature number 229, seq733
+2023-10-26 14:22:43.014587 INFO::Fitting model to feature number 230, seq829
+2023-10-26 14:22:43.01635 INFO::Fitting model to feature number 231, seq815
+2023-10-26 14:22:43.018144 INFO::Fitting model to feature number 232, seq684
+2023-10-26 14:22:43.019959 WARNING::Fitting problem for feature 232 a warning was issued
+2023-10-26 14:22:43.032163 INFO::Fitting model to feature number 233, seq426
+2023-10-26 14:22:43.034257 INFO::Fitting model to feature number 234, seq849
+2023-10-26 14:22:43.035977 WARNING::Fitting problem for feature 234 a warning was issued
+2023-10-26 14:22:43.048654 INFO::Fitting model to feature number 235, seq222
+2023-10-26 14:22:43.051352 INFO::Fitting model to feature number 236, seq47
+2023-10-26 14:22:43.052996 INFO::Fitting model to feature number 237, seq193
+2023-10-26 14:22:43.054672 INFO::Fitting model to feature number 238, seq62
+2023-10-26 14:22:43.056264 INFO::Fitting model to feature number 239, seq151
+2023-10-26 14:22:43.057886 INFO::Fitting model to feature number 240, seq161
+2023-10-26 14:22:43.059597 INFO::Fitting model to feature number 241, seq59
+2023-10-26 14:22:43.061976 INFO::Fitting model to feature number 242, seq63
+2023-10-26 14:22:43.066886 INFO::Fitting model to feature number 243, seq101
+2023-10-26 14:22:43.070221 INFO::Fitting model to feature number 244, seq197
+2023-10-26 14:22:43.072986 INFO::Fitting model to feature number 245, seq38
+2023-10-26 14:22:43.075016 INFO::Fitting model to feature number 246, seq417
+2023-10-26 14:22:43.082872 INFO::Fitting model to feature number 247, seq502
+2023-10-26 14:22:43.084704 INFO::Fitting model to feature number 248, seq143
+2023-10-26 14:22:43.086444 INFO::Fitting model to feature number 249, seq318
+2023-10-26 14:22:43.088312 INFO::Fitting model to feature number 250, seq97
+2023-10-26 14:22:43.090111 INFO::Fitting model to feature number 251, seq979
+2023-10-26 14:22:43.09406 INFO::Fitting model to feature number 252, seq326
+2023-10-26 14:22:43.096277 INFO::Fitting model to feature number 253, seq243
+2023-10-26 14:22:43.098215 INFO::Fitting model to feature number 254, seq74
+2023-10-26 14:22:43.100167 INFO::Fitting model to feature number 255, seq136
+2023-10-26 14:22:43.115065 INFO::Fitting model to feature number 256, seq548
+2023-10-26 14:22:43.119859 WARNING::Fitting problem for feature 256 a warning was issued
+2023-10-26 14:22:43.130582 INFO::Fitting model to feature number 257, seq718
+2023-10-26 14:22:43.146313 INFO::Counting total values for each feature
+2023-10-26 14:22:43.151011 INFO::Writing filtered data to file maaslin2_results/features/filtered_data.tsv
+2023-10-26 14:22:43.156275 INFO::Writing filtered, normalized data to file maaslin2_results/features/filtered_data_norm.tsv
+2023-10-26 14:22:43.160946 INFO::Writing filtered, normalized, transformed data to file maaslin2_results/features/filtered_data_norm_transformed.tsv
+2023-10-26 14:22:43.165366 WARNING::Deleting existing residuals file: maaslin2_results/fits/residuals.rds
+2023-10-26 14:22:43.16638 INFO::Writing residuals to file maaslin2_results/fits/residuals.rds
+2023-10-26 14:22:43.170549 WARNING::Deleting existing fitted file: maaslin2_results/fits/fitted.rds
+2023-10-26 14:22:43.172968 INFO::Writing fitted values to file maaslin2_results/fits/fitted.rds
+2023-10-26 14:22:43.175606 INFO::Writing all results to file (ordered by increasing q-values): maaslin2_results/all_results.tsv
+2023-10-26 14:22:43.177319 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.050000 ) to file (ordered by increasing q-values): maaslin2_results/significant_results.tsv
+2023-10-26 14:22:43.179585 INFO::Writing heatmap of significant results to file: maaslin2_results/heatmap.pdf
+[1] "There is not enough metadata in the associations to create a heatmap plot. Please review the associations in text output file."
+2023-10-26 14:22:43.18273 INFO::Writing association plots (one for each significant association) to output folder: maaslin2_results
+2023-10-26 14:22:43.185193 INFO::Plotting associations from most to least significant, grouped by metadata
+2023-10-26 14:22:43.186828 INFO::Plotting data for metadata number 1, country
+2023-10-26 14:22:43.209067 INFO::Creating boxplot for categorical data, country vs seq64
+2023-10-26 14:22:43.301956 INFO::Creating boxplot for categorical data, country vs seq321
+2023-10-26 14:22:43.356521 INFO::Creating boxplot for categorical data, country vs seq105
+2023-10-26 14:22:43.410812 INFO::Creating boxplot for categorical data, country vs seq274
+2023-10-26 14:22:43.46644 INFO::Creating boxplot for categorical data, country vs seq112
+2023-10-26 14:22:43.526225 INFO::Creating boxplot for categorical data, country vs seq201
+2023-10-26 14:22:43.58083 INFO::Creating boxplot for categorical data, country vs seq182
+2023-10-26 14:22:43.649221 INFO::Creating boxplot for categorical data, country vs seq185
+2023-10-26 14:22:43.709309 INFO::Creating boxplot for categorical data, country vs seq333
+2023-10-26 14:22:43.770515 INFO::Creating boxplot for categorical data, country vs seq280
+2023-10-26 14:22:43.824094 INFO::Creating boxplot for categorical data, country vs seq266
+2023-10-26 14:22:43.878654 INFO::Creating boxplot for categorical data, country vs seq87
+2023-10-26 14:22:43.934094 INFO::Creating boxplot for categorical data, country vs seq157
+2023-10-26 14:22:43.988344 INFO::Creating boxplot for categorical data, country vs seq52
+2023-10-26 14:22:44.042321 INFO::Creating boxplot for categorical data, country vs seq49
+2023-10-26 14:22:44.098887 INFO::Creating boxplot for categorical data, country vs seq55
+2023-10-26 14:22:44.161218 INFO::Creating boxplot for categorical data, country vs seq26
+2023-10-26 14:22:44.214709 INFO::Creating boxplot for categorical data, country vs seq168
+2023-10-26 14:22:44.273453 INFO::Creating boxplot for categorical data, country vs seq247
+2023-10-26 14:22:44.329987 INFO::Creating boxplot for categorical data, country vs seq65
+2023-10-26 14:22:44.389461 INFO::Creating boxplot for categorical data, country vs seq718
+2023-10-26 14:22:44.444066 INFO::Creating boxplot for categorical data, country vs seq278
+2023-10-26 14:22:44.514939 INFO::Creating boxplot for categorical data, country vs seq318
+2023-10-26 14:22:44.571505 INFO::Creating boxplot for categorical data, country vs seq733
+2023-10-26 14:22:44.666697 INFO::Creating boxplot for categorical data, country vs seq440
+2023-10-26 14:22:44.72081 INFO::Creating boxplot for categorical data, country vs seq13
+2023-10-26 14:22:44.773752 INFO::Creating boxplot for categorical data, country vs seq797
+2023-10-26 14:22:44.829007 INFO::Creating boxplot for categorical data, country vs seq97
+2023-10-26 14:22:44.882339 INFO::Creating boxplot for categorical data, country vs seq193
+2023-10-26 14:22:44.936804 INFO::Creating boxplot for categorical data, country vs seq11
+2023-10-26 14:22:44.992935 INFO::Creating boxplot for categorical data, country vs seq136
+2023-10-26 14:22:45.052867 INFO::Creating boxplot for categorical data, country vs seq137
+2023-10-26 14:22:45.107165 INFO::Creating boxplot for categorical data, country vs seq158
+2023-10-26 14:22:45.170805 INFO::Creating boxplot for categorical data, country vs seq829
+2023-10-26 14:22:45.224459 INFO::Creating boxplot for categorical data, country vs seq288
+2023-10-26 14:22:45.278525 INFO::Creating boxplot for categorical data, country vs seq326
+2023-10-26 14:22:45.332676 INFO::Creating boxplot for categorical data, country vs seq222
+2023-10-26 14:22:45.387835 INFO::Creating boxplot for categorical data, country vs seq59
+2023-10-26 14:22:45.443927 INFO::Creating boxplot for categorical data, country vs seq411
+2023-10-26 14:22:45.504512 INFO::Creating boxplot for categorical data, country vs seq46
+2023-10-26 14:22:45.56208 INFO::Creating boxplot for categorical data, country vs seq166
+2023-10-26 14:22:45.619432 INFO::Creating boxplot for categorical data, country vs seq4
+2023-10-26 14:22:45.68388 INFO::Creating boxplot for categorical data, country vs seq322
+2023-10-26 14:22:45.738711 INFO::Creating boxplot for categorical data, country vs seq398
+2023-10-26 14:22:45.797471 INFO::Creating boxplot for categorical data, country vs seq213
+2023-10-26 14:22:45.855302 INFO::Creating boxplot for categorical data, country vs seq169
+2023-10-26 14:22:45.918015 INFO::Creating boxplot for categorical data, country vs seq803
+2023-10-26 14:22:45.97165 INFO::Creating boxplot for categorical data, country vs seq243
+2023-10-26 14:22:46.025123 INFO::Creating boxplot for categorical data, country vs seq89
+2023-10-26 14:22:46.081099 INFO::Creating boxplot for categorical data, country vs seq35
+2023-10-26 14:22:46.134671 INFO::Creating boxplot for categorical data, country vs seq240
+2023-10-26 14:22:46.191217 INFO::Creating boxplot for categorical data, country vs seq107
+2023-10-26 14:22:46.245432 INFO::Creating boxplot for categorical data, country vs seq151
+2023-10-26 14:22:46.303589 INFO::Creating boxplot for categorical data, country vs seq218
+2023-10-26 14:22:46.363333 INFO::Creating boxplot for categorical data, country vs seq7
+2023-10-26 14:22:46.417249 INFO::Creating boxplot for categorical data, country vs seq154
+2023-10-26 14:22:46.477205 INFO::Creating boxplot for categorical data, country vs seq61
+2023-10-26 14:22:46.530932 INFO::Creating boxplot for categorical data, country vs seq264
+2023-10-26 14:22:46.587985 INFO::Creating boxplot for categorical data, country vs seq230
+2023-10-26 14:22:46.644984 INFO::Creating boxplot for categorical data, country vs seq16
+2023-10-26 14:22:46.699887 INFO::Creating boxplot for categorical data, country vs seq30
+2023-10-26 14:22:46.76142 INFO::Creating boxplot for categorical data, country vs seq98
+2023-10-26 14:22:46.815031 INFO::Creating boxplot for categorical data, country vs seq44
+2023-10-26 14:22:46.869615 INFO::Creating boxplot for categorical data, country vs seq306
+2023-10-26 14:22:46.925576 INFO::Creating boxplot for categorical data, country vs seq521
+2023-10-26 14:22:46.979464 INFO::Creating boxplot for categorical data, country vs seq302
