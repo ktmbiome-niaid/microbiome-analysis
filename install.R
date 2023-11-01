@@ -1,3 +1,4 @@
+install.packages("rmarkdown")
 install.packages("ggplot2")
 install.packages("vegan")
 install.packages("ape")
