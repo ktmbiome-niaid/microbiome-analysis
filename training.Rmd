@@ -46,6 +46,10 @@ A few notes before we start:
 
 - I'm sharing the approaches I typically take for analysis and know very well. Throughout the tutorial, I'll point to alternative methods that are available. There are still active debates about which methods are "correct" or "more useful". However, I hope that the ideas I share today will at least provide you with avenues of exploration and a platform upon which you can build. And we're always available for a consult at bioinformatics@niaid.nih.gov!
 
+- Trouble installing some of the packages? I've created a Docker container that includes preinstallations of all of the packages we'll be using today. The code you run and edits you make won't be saved, but it will let you play around with the data we have today.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ktmbiome-niaid/microbiome-analysis/HEAD?urlpath=rstudio)
+
 ::: {.callout-tip appearance="simple"}
 Throughout the training, you will see callouts like this with activities and questions.
 :::
@@ -319,6 +323,18 @@ dada2_rare <- rarefy_even_depth(dada2_phyloseq_filtered, sample.size = 10000, re
 dada2_rare
 ```
 
+# Quick Stats Refresher
+
+Before jumping into analysis, I want to quickly do a refresher on some basic statistics concepts that I'm going to be mentioning throughout today and make sure everyone's on the same page.
+
+**P-value**:
+
+**Type I error/"alpha"**: 
+
+**Type II error/"beta"**:
+
+
+
 # Alpha Diversity
 
 How many different types of sequences are in an environment (sample)?
@@ -401,9 +417,6 @@ Before I jump into running stats, I just want to briefly cover the main types of
 
 Review the metadata printed above and link a variable type to each variable.
 :::
-
-### Confounding and Effect Modification
-
 
 
 ### Running Linear Models
@@ -611,7 +624,7 @@ In some methods, you might **not** analyze counts. This is because additional tr
 All of these discussions about count data are **super** important for 16s rRNA count data, but can be less important for metagenomic data. It's still somewhat sparse, but starts approaching some semblance of approximately normal, allowing more gaussian models to be used.
 :::
 
-For now, I will show you how I use one particularly flexible tool called Maaslin2 to analyze the data we're working with today. I'm still interested in the comparison of countries, and want to know what specific taxa are enriched in the hand samples in the USA vs Mexico. 
+For now, I will show you how I use one particularly flexible tool called Maaslin2 to analyze the data we're working with today. I'm still interested in the comparison of countries, and want to know what specific taxa are enriched in the forehead samples in the USA vs Mexico. 
 
 Maaslin2 was developed to be used directly in R or on the command line, and the "in-R" documentation (that you get if you run `?Maaslin`) could be better. For now, I'll point you to [the website for Maaslin](https://huttenhower.sph.harvard.edu/maaslin/) so that we can learn about which options are available.
 
@@ -630,8 +643,8 @@ capture.output(
            normalization = "NONE",
            transform="NONE",
            analysis_method="NEGBIN",
-           min_prevalence = 0.2, # a taxon needs to be in 10% of my samples to be considered/analyzed
-           min_variance = 0.4 #I also like having some variance restrictions -- taxa that don't vary much across samples can cause trouble
+           min_prevalence = 0.4, # a taxon needs to be in 40% of my samples to be considered/analyzed
+           min_variance = 0.1 #I also like having some variance restrictions -- taxa that don't vary much across samples can cause trouble
            ), file="maaslin2_results/stdout.txt"
 )
 ```
@@ -651,16 +664,16 @@ head(all_res)
 ggplot(all_res, aes(x=coef, y=-log10(pval))) + geom_point()
 ```
 
-However, its power lies in the ability to add annotations that can improve interpretability. Below, I add color and Genus-level labels to the significant taxa (separating them from the non-significant taxa which remain grey). You can get as pretty and technical as your heart desires with this plot.
+However, its power lies in the ability to add annotations. Below, I add color and Genus-level labels to the significant taxa (separating them from the non-significant taxa which remain grey). You can get as pretty and technical as your heart desires with this plot.
 
 ```{r}
-all_res_tax <- merge(all_res, tax_table(dada2_rare_ha), by.x="feature", by.y=0) #merge my differential taxa with the taxonomy information
-all_res_tax$Genus_sig <- ifelse(all_res_tax$qval < 0.01, all_res_tax$Genus, NA) # create a new variable that only focuses on the significant Genera (missing otherwise)
+all_res_tax <- merge(all_res, tax_table(dada2_rare), by.x="feature", by.y=0) #merge my differential taxa with the taxonomy information
+all_res_tax$Genus_sig <- ifelse(all_res_tax$qval < 0.05, all_res_tax$Genus, NA) # create a new variable that only focuses on the significant Genera (missing otherwise)
 
 ## Plot
 ggplot(all_res_tax, aes(x=coef, y=-log10(pval), color=Genus_sig)) +
   geom_point() +
-  ggrepel::geom_text_repel(data=subset(all_res_tax, qval < 0.01), aes(label=Genus))
+  ggrepel::geom_text_repel(data=subset(all_res_tax, qval < 0.05), aes(label=Genus))
 ```
 
 # Network Analysis
@@ -671,11 +684,45 @@ As has been true for almost everything we've discussed so far, there are several
 
 These methods can include:
 
-- *Correlation*: Use simple correlations of each taxon to all other taxa to determine which combinations reach some threshold (either correlation coefficient or p-value). Ideally, you'd want to use Spearman correlation over Pearson correlation for this because as we've mentioned before, our taxa are not normally distributed.
+- *Correlation*: Use simple correlations of each taxon to all other taxa to determine which combinations reach some threshold (either correlation coefficient or p-value). Ideally, you'd want to use Spearman correlation over Pearson correlation for this because it is a non-parametric test.
 
-- *SparCC*: Correlation using sparsity and compositionality corrections because, as we've discussed before, microbiome data is sparse which makes correlations less reliable.
+- *Distance Matrix*: Calculate distances between taxa or samples using a preferred distance calculation. This is the method that phyloseq utilizes by default.
+
+- *SparCC*^[Friedman J, Alm EJ. Inferring correlation networks from genomic survey data. PLoS Comput Biol. 2012;8(9):e1002687. doi: 10.1371/journal.pcbi.1002687. Epub 2012 Sep 20. PMID: 23028285; PMCID: PMC3447976.]: Correlation using sparsity and compositionality corrections because, as we've discussed before, microbiome data is sparse which makes correlations less reliable.
+
+- *Correlation inference for Compositional data through LASSO (CCLasso)*^[Fang H, Huang C, Zhao H, Deng M. CCLasso: correlation inference for compositional data through Lasso. Bioinformatics. 2015 Oct 1;31(19):3172-80. doi: 10.1093/bioinformatics/btv349. Epub 2015 Jun 4. PMID: 26048598; PMCID: PMC4693003.]: This 
+
+- *Weighted Gene Co-Association Network Analysis (WGCNA)*^[Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics. 2008 Dec 29;9:559. doi: 10.1186/1471-2105-9-559. PMID: 19114008; PMCID: PMC2631488.]: This method is distance-based with additional corrections. Its goal is to find clusters of highly correlated features in data and summarizes them using an "eigengene". This tool tends to be better for metagenomic data than amplicon data.
+
+If you want to read more about different network methods, I have always found the following paper to be helpful:
+
+> Layeghifard M, Hwang DM, Guttman DS. Disentangling Interactions in the Microbiome: A Network Perspective. Trends Microbiol. 2017 Mar;25(3):217-228. doi: 10.1016/j.tim.2016.11.008. Epub 2016 Dec 2. PMID: 27916383; PMCID: PMC7172547.
+
+While I won't cover it today, SparCC also offers the option to provide bootstrapped estimates and p-values. This is done in a similar manner to how PERMANOVA p-values are calculated: the correlation coefficients are re-calculated based on resampling the data with replacement and then creates p-values by determining the proportion of times the "random" value is greater than the original value.
 
 ```{r}
 
+library(SpiecEasi)
+library(igraph)
+
+dada2_rare_filt <- filter_taxa(dada2_rare_ha, function(x) (sum(x > 0)/length(x)) > 0.1, TRUE)
+dada2_rare_filt
+## These are the commands I used to create the sparCC matrix -- note that I have transposed the OTU table so that 
+# cor_df <- sparcc(t(otu_table(dada2_rare_filt)))
+# saveRDS(cor_df, "Sparcc_CorrMatrix.rds")
+cor_df <- readRDS("Sparcc_CorrMatrix.rds")
+str(cor_df)
+rownames(cor_df$Cor) <- colnames(cor_df$Cor) <- taxa_names(dada2_rare_filt)
+
+net_dist <- 1-abs(cor_df$Cor)
 ```
 
+Now that we have our network of correlation coefficients, we can use some phyloseq functions to plot the result.
+
+```{r}
+#| fig-width: 10
+#| fig-height: 12
+ig <- make_network(dada2_rare_filt, type="taxa", distance=as.dist(net_dist), max.dist=0.6)
+
+plot_network(ig, dada2_rare_filt, type="taxa", color="Order") + scale_color_viridis_d()
+```

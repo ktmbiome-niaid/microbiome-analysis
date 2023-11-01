@@ -3,10 +3,9 @@ install.packages("vegan")
 install.packages("ape")
 install.packages("ggrepel")
 install.packages("picante")
-install.pacakges("igraph")
+install.packages("igraph")
 
-if (!require("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
+install.packages("BiocManager")
 
 BiocManager::install("phyloseq")
 BiocManager::install("Maaslin2")
