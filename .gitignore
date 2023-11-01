@@ -4,3 +4,4 @@
 *_files/
 .Rhistory
 data/*_raw/
+maaslin2_results/*
