@@ -126,12 +126,7 @@ Finally, we want to include a table of sample data:
 ```{r}
 sampdat <- read.table("data/webinar_demo_metadata.txt", header=T, check.names=F, sep="\t", comment="", quote="")
 head(sampdat)
-## Before we jump into this data, I know that the subject_id variable is actually unique to each sample instead of specific to the subject, and I want to use this variable later, so I need to modify it. This can be done different ways, but this is the way I will do it here.
-table(sampdat$subject_id)
-## I'm, honestly, sub-par at regular expressions, so I often need to use cheat sheets to do them, but here, I'm just saying that I want the two characters after the dash (indicated by "-..") at the end of the string (indicated by "$") to be replaced by nothing.
-sampdat$ind_subject_id <- gsub("-..$", "", sampdat$subject_id)
-table(sampdat$ind_subject_id)
-# We also need our rownames to reflect our sample names, which are accessible in the `Description` column
+# We need our rownames to reflect our sample names, which are accessible in the `Description` column
 rownames(sampdat) <- sampdat$Description
 ```
 
@@ -259,13 +254,13 @@ We'll use some of this information later, and dive deeper into everything I just
 
 ## Negative Control Consideration
 
-Unfortunately the publicly available data we have today doesn't include the sequencing data from the extensive negative controls they used for quality control and mention in their paper. These can help us identify sequence reads that are likely arose from reagents or cross-sample contamination. Maybe barcode contamination? For now, I will point to tools like DECONTAM^[Davis, N.M., Proctor, D.M., Holmes, S.P. et al. Simple statistical identification and removal of contaminant sequences in marker-gene and metagenomics data. Microbiome 6, 226 (2018). https://doi.org/10.1186/s40168-018-0605-2], which you can read about [here](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2) and find the technical information [here](https://benjjneb.github.io/decontam/vignettes/decontam_intro.html). This package helps identify taxa that are likely to have arisen from negative controls and helps remove them.
+Unfortunately the publicly available data we have today doesn't include the sequencing data from the extensive negative controls they used for quality control and mention in their paper. These can help us identify sequence reads that are likely arose from reagents or cross-sample contamination. For now, I will point to tools like DECONTAM^[Davis, N.M., Proctor, D.M., Holmes, S.P. et al. Simple statistical identification and removal of contaminant sequences in marker-gene and metagenomics data. Microbiome 6, 226 (2018). https://doi.org/10.1186/s40168-018-0605-2], which you can read about [here](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0605-2) and find the technical information [here](https://benjjneb.github.io/decontam/vignettes/decontam_intro.html). This package helps identify taxa that are likely to have arisen from negative controls and can remove them.
 
 ## Removal of Lower-Abundance Taxa
 
 This step is intended to remove very low abundance taxa from the dataset. These can arise through potential errors and ultimately increase the sparsity of the already-sparse data we analyze.
 
-To determine how our taxa are distributed across our dataset, I like to plot a histogram of the log2 taxon counts within the dataset using a phyloseq function that can pull that information out (`taxa_sums`). 
+To determine how our taxa are distributed across our dataset, I like to plot a histogram of the log10 taxon counts within the dataset using a phyloseq function that can pull that information out (`taxa_sums`). 
 
 ```{r}
 hist(log10(taxa_sums(dada2_phyloseq_object)))
@@ -289,14 +284,14 @@ sum(taxa_sums(dada2_phyloseq_filtered))/sum(taxa_sums(dada2_phyloseq_object))
 
 ## Normalization/Standardization
 
-Before we jump into this question, let's look at the sequencing depth of our samples. Note that in the previous step we were looking at taxa sums and now we are looking at sample sums.
+One last thing we need to do before starting the core of our analysis is standardize the counts between samples. We'll start to do this by looking at the sequencing depth of our samples. Note that in the previous step we were looking at taxa sums and now we are looking at sample sums.
 
 ```{r}
 summary(sample_sums(dada2_phyloseq_filtered))
 hist(sample_sums(dada2_phyloseq_filtered))
 ```
 
-Here we can see a wide variety of sequencing depth across samples. Some samples have very few reads, while others have several thousand. We typically want to "standardize" this in some way because differences in sequencing effort can contribute to potential bias. This topic is an area of active, lively debate that continues to this day. And new methods are being developed, though I haven't seen uptake of the new methods changing very much.
+Here we can see a wide variety of sequencing depth across samples. Some samples have very few reads, while others have several thousand. We typically want to "standardize" this in some way because differences in sequencing effort can contribute to potential bias. How this happens, though, is an area of active, lively debate that continues to this day. And new methods are being developed, though I haven't seen uptake of the new methods changing very much.
 
 A few papers on the topic are listed below if you want to read more.
 
@@ -312,7 +307,7 @@ At any rate, the two main options are:
 
 - Rarefaction: subsample all samples to an even read depth, typically one that captures the greatest amount of diversity for a majority of the samples and allows a majority of the samples to be retained. Alpha rarefaction curves, which are provided with the Nephele output, can help in determining a rarefaction depth.
 
-- Normalization: fit the distribution of read counts to an expected distribution, typically Negative Binomial. There are many methods from several packages you can use to perform normalization. For instance, a popular transformation is the Variance Stabilized Transformation from the DESeq2 package. There's also the Trimmed Mean of M-component (TMM) normalization available through the edgeR package, and the limma package has normalizations as well. Note that all of the methods I've listed got their start in RNAseq data; however, the key difference between microbiome data and RNAseq data is that RNAseq data is relatively dense (few zeros) and microbiome data ends up exceedingly sparse (many zeros), changing how these tools perform.
+- Normalization: fit the distribution of read counts to an expected distribution, typically Negative Binomial. There are many methods from several packages you can use to perform normalization. For instance, a popular transformation is the Variance Stabilized Transformation from the DESeq2 package. There's also the Trimmed Mean of M-component (TMM) normalization available through the edgeR package, and the limma package has normalizations as well. Note that all of the methods I've listed got their start in RNAseq data; however, the key difference between microbiome data and RNAseq data is that RNAseq data is relatively dense (few zeros) and microbiome data ends up exceedingly sparse (many zeros), changing how these tools perform on microbiome data.
 
 My personal preference is rarefaction, which has worked well for me over several datasets, and I'll use that method today. I also prefer it because I can use the same "standardized" dataset across all of my analyses (alpha diversity, beta diversity, and significant taxa) without needing to re-normalize or change the relationships between my samples and taxa. However, you may want to consider normalization methods if you have too many lower-abundance samples that are needed for your analysis and cannot be otherwise removed.
 
@@ -325,19 +320,67 @@ dada2_rare
 
 # Quick Stats Refresher
 
-Before jumping into analysis, I want to quickly do a refresher on some basic statistics concepts that I'm going to be mentioning throughout today and make sure everyone's on the same page.
+## Vocabulary
 
-**P-value**:
+Let's first refresh some basic statistics concepts that I'm going to be mentioning throughout today and make sure everyone's on the same page.
 
-**Type I error/"alpha"**: 
+**P-value**: The probability that the relationship we are seeing is due to chance.
 
-**Type II error/"beta"**:
+**Type I error/"alpha"**: The level of false-positives that we are willing to accept. This is typically set to ~5% or 0.05, and indicates that about 5% of the time, a significant result is in fact not significant.
 
+I always like to say that it's easy to use code to get a p-value - it's much harder to ensure that it answers the question you had in mind.
 
+## Common Data Distributions
+
+The first most common data distribution we will encounter several times today is "normal" or "Gaussian". When a variable is normally-distributed, it typically takes on a bell-shaped curve that is centered around a mean.
+
+The others that will be important later are:
+
+- Poisson: a distribution for counts of events or the probability that event occurs a specific number of times within a defined interval of time. 
+
+[![Poisson Distribution](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/650px-Poisson_pmf.svg.png)](https://en.wikipedia.org/wiki/Poisson_distribution)
+
+- Negative Binomial: Similar to the Poisson distribution with an additional adjustment for *overdispersion* (too much variance)
+
+[![Negative Binomial Distribution](https://upload.wikimedia.org/wikipedia/commons/8/83/Negbinomial.gif)](https://en.wikipedia.org/wiki/Negative_binomial_distribution)
+
+- Zero-inflated Negative Binomial: A method that builds on the negative binomial model and adds on the idea that some taxa have zero counts because they are truly missing, and others just never got sequenced.
+
+[![Zero-inflated Negative Binomial Distribution](https://upload.wikimedia.org/wikipedia/commons/8/85/Zero-inflated-poisson-distribution.png)](https://en.wikipedia.org/wiki/Zero-inflated_model)
+
+All images were obtained from Wikipedia and can be seen on their original page by clicking on each of the images.
+
+## Types of Variables
+
+There are also a few core types of variables that we'll encounter today:
+
+- *Continuous/Numeric/Integer*: These variables tend to be any set of numbers (examples include: systolic blood pressure)
+
+- *Categorical/Factor/Character*: Characterized by having two or more values or categories (examples include: "floor type" in which the potential responses could be "hardwood","carpet", or "tile"; "favorite fruit" with "apples","bananas", "cherries", or "dates" as potential responses). Also, sometimes continuous variables can be turned into categorical variables (ie, numeric cups of coffee can be grouped into categories of 1-2, 3-4, 5+)
+
+- *Binary*: A special type of categorical variable that is typically coded as "Yes/No" or "0/1" (examples include: whether participants have the condition of interest or not, whether participants have siblings)
+
+::: {.callout-tip}
+## Check-in
+
+Review the metadata we printed above and link a variable type to each variable.
+:::
+
+## Common Statistical Tests and When to Use Them
+
+Using the information above, we can start now to talk about different statistical tests we can use for each type of data and for different types of distributions. I have made an attempt to describe when and where you might use different types of statistical tests in this "cheat sheet". Note that this only covers relationships between one independent/outcome variable and one or more dependent/response variable(s).
+
+![Statistical Test "Cheat Sheet"](images/StatisticalTestCheatSheet.png)
+
+General linear models are "general" because they allow us to use some of the other distribution types beyond Gaussian/normal as our outcome variable.
+
+Hopefully the workflow can serve as a general guide for which tests you might want to use. We will be unable to cover everything today, but perhaps some of the other test types can serve as bread crumbs for future exploration. We will also cover a few tests beyond those covered in the above figure for some of the multi-dimensional statistics we use in microbiome data.
+
+...Alright, let's jump into some data!
 
 # Alpha Diversity
 
-How many different types of sequences are in an environment (sample)?
+Allows us to ask: How many different types of sequences are in an environment (sample)?
 
 There are several commonly used metrics, which act as a summary statistic for a single sample.
 
@@ -356,7 +399,8 @@ Which metrics are the same between samples?
 
 Which ones are different?
 
-![Alpha Diversity Summary](images/AlphaDiversitySummary.png)
+![](images/AlphaDiversitySummary.png)
+
 :::
 
 ## Calculating Alpha Diversity
@@ -374,7 +418,7 @@ Below, I calculate evenness, Chao1 richness and phylogenetic diversity:
 
 ```{r}
 library(vegan)
-otu_table <- t(otu_table(dada2_rare)) 
+otu_table <- t(otu_table(dada2_rare))
 
 evenness <- diversity(otu_table)/log(specnumber(otu_table)) #note that rowSums(otu_table > 0) == specnumber(otu_table)
 chao1 <- t(estimateR(otu_table))[,2]
@@ -399,25 +443,6 @@ head(sample_data(dada2_rare))
 ```
 
 ## Comparing Alpha Diversity
-
-I always like to say that it's easy to use code to get a p-value - it's much harder to ensure that it answers the question you had in mind.
-
-### Types of Variables
-
-Before I jump into running stats, I just want to briefly cover the main types of variables that we'll encounter today.
-
-- Continuous/Numeric/Integer: These variables tend to be any set of numbers (examples include: systolic blood pressure)
-
-- Categorical/Factor/Character: Characterized by having two or more values or categories (examples include: "floor type" in which the potential responses could be "hardwood","carpet", or "tile"; "favorite fruit" with "apples","bananas", "cherries", or "dates" as potential responses). Also, sometimes continuous variables can be turned into categorical variables (ie, numeric cups of coffee can be grouped into categories of 1-2, 3-4, 5+)
-
-- Binary: A special type of categorical variable that is typically coded as "Yes/No" or "0/1" (examples include: whether participants have the condition of interest or not, whether participants have siblings)
-
-::: {.callout-tip}
-## Check-in
-
-Review the metadata printed above and link a variable type to each variable.
-:::
-
 
 ### Running Linear Models
 
@@ -500,9 +525,9 @@ Which sample pair is most similar? Most distinct?
 
 ## Calculating Beta Diversity
 
-We can calculate several types of distance matrices using phyloseq through the `distance` function. Running this is exceptionally easy. UniFrac distances can be easily made because the tree is already contained within the phyloseq object.
+We can calculate several types of distance matrices using phyloseq through the `distance` function. Generating this distance using phyloseq is exceptionally easy. UniFrac distances can be easily made because the tree is already contained within the phyloseq object.
 
-A Bray Curtis distance matrix was created above, but we can also calculate a weighted UniFrac distance matrix just as easily.
+A Bray Curtis distance matrix was created above, but we can also calculate a weighted UniFrac distance matrix (using the phylogenetic tree) very easily
 
 ```{r}
 weighted_distance <- phyloseq::distance(dada2_rare, method="wunifrac")
@@ -513,7 +538,7 @@ as.matrix(weighted_distance)[1:5,1:5]
 
 Now we want to start relating this diversity to variables of interest. Our first question will be similar to the previous question we asked: are there compositional differences in the skin microbiome between USA and Mexico?
 
-To answer this question, we'll use a special statistical method called Permutational Analysis of Variance or PERMANOVA, developed by Marti J Anderson, that specifically analyzes distance matrices.
+To answer this question, we'll use a special statistical method called Permutational Analysis of Variance or PERMANOVA, developed by Marti J Anderson^[Anderson, M.J. (2017). Permutational Multivariate Analysis of Variance (PERMANOVA). In Wiley StatsRef: Statistics Reference Online (eds N. Balakrishnan, T. Colton, B. Everitt, W. Piegorsch, F. Ruggeri and J.L. Teugels). https://doi.org/10.1002/9781118445112.stat07841], that specifically analyzes distance matrices.
 
 It allows us to ask whether a specific variable "explains a significant proportion of variance" across microbial communities. This is done by calculating a baseline F statistic, which is a comparison of variance (total sum of squares) both within groups and between groups.
 
@@ -602,29 +627,15 @@ I want to specifically highlight the database established by the paper below, [B
 
 > Geistlinger L, Mirzayi C, Zohra F, Azhar R, Elsafoury S, Grieve C, Wokaty J, Gamboa-Tuz SD, Sengupta P, Hecht I, Ravikrishnan A, Gonçalves RS, Franzosa E, Raman K, Carey V, Dowd JB, Jones HE, Davis S, Segata N, Huttenhower C, Waldron L. BugSigDB captures patterns of differential abundance across a broad range of host-associated microbial signatures. Nat Biotechnol. 2023 Sep 11. doi: 10.1038/s41587-023-01872-y. Epub ahead of print. PMID: 37697152.
 
-One of the important things to note about this step of analysis is that we're likely to be analyzing counts, which follow their own unique set of distributions that are typically not Gaussian/normally-distributed. The commonly-used count distributions include:
+One of the important things to note about this step of analysis is that we're likely to be analyzing counts, which follow their own unique set of distributions that are typically not Gaussian/normally-distributed, and thus we'll start to dabble in some of the other distributions I mentioned near the beginning.
 
-- Poisson: a distribution for counts of events or the probability that event occurs a specific number of times within a defined interval of time. 
-
-[![Poisson Distribution](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/650px-Poisson_pmf.svg.png)](https://en.wikipedia.org/wiki/Poisson_distribution)
-
-- Negative Binomial: Similar to the Poisson distribution with an additional adjustment for *overdispersion* (too much variance)
-
-[![Negative Binomial Distribution](https://upload.wikimedia.org/wikipedia/commons/8/83/Negbinomial.gif)](https://en.wikipedia.org/wiki/Negative_binomial_distribution)
-
-- Zero-inflated Negative Binomial: A method that builds on the negative binomial model and adds on the idea that some taxa have zero counts because they are truly missing, and others just never got sequenced.
-
-[![Zero-inflated Negative Binomial Distribution](https://upload.wikimedia.org/wikipedia/commons/8/85/Zero-inflated-poisson-distribution.png)](https://en.wikipedia.org/wiki/Zero-inflated_model)
-
-All images were obtained from Wikipedia and can be seen on their original page by clicking on each of the images.
-
-In some methods, you might **not** analyze counts. This is because additional transformations that pull the taxa into more Gaussian-like distributions are preferred.
+In some methods, you might **not** analyze actual count data. This is because additional transformations that pull the taxa into more Gaussian-like distributions are preferred.
 
 :::{callout-tip}
-All of these discussions about count data are **super** important for 16s rRNA count data, but can be less important for metagenomic data. It's still somewhat sparse, but starts approaching some semblance of approximately normal, allowing more gaussian models to be used.
+All of these discussions about count data are **super** important for 16s rRNA count data, but are often less important for metagenomic data. It's still somewhat sparse, but starts approaching some semblance of approximately normal, especially after log-transformation, allowing more gaussian models to be used.
 :::
 
-For now, I will show you how I use one particularly flexible tool called Maaslin2 to analyze the data we're working with today. I'm still interested in the comparison of countries, and want to know what specific taxa are enriched in the forehead samples in the USA vs Mexico. 
+For now, I will show you how I use one particularly flexible tool called Maaslin2 which can be used to analyze the data we're working with today. I'm still interested in the comparison of countries, and want to know what specific taxa are enriched in the forehead samples in the USA vs Mexico. 
 
 Maaslin2 was developed to be used directly in R or on the command line, and the "in-R" documentation (that you get if you run `?Maaslin`) could be better. For now, I'll point you to [the website for Maaslin](https://huttenhower.sph.harvard.edu/maaslin/) so that we can learn about which options are available.
 
@@ -651,7 +662,7 @@ capture.output(
 
 ## Visualizing Taxa
 
-Maaslin kindly produces some boxplots of significant taxa that are accessible within the output directory. I tend to use them for quick review when I need them. Otherwise, I write my own scripts so that I have a bit more control of how they look.
+Maaslin kindly produces some boxplots of significant taxa that are accessible within the output directory. I tend to use them for quick review when I need them, and we can make a few boxplots ourselves here.
 
 Another plot I generate after running any differential abundance analysis is a volcano plot. You've seen these for other types of data before and they are helpful because they can be quickly interpretable -- the most significant things rise to the top.
 
@@ -664,7 +675,7 @@ head(all_res)
 ggplot(all_res, aes(x=coef, y=-log10(pval))) + geom_point()
 ```
 
-However, its power lies in the ability to add annotations. Below, I add color and Genus-level labels to the significant taxa (separating them from the non-significant taxa which remain grey). You can get as pretty and technical as your heart desires with this plot.
+However, its power lies in the ability to add different layers of information. Below, I add color and Genus-level labels to the significant taxa (separating them from the non-significant taxa which remain grey). You can get as pretty and technical as your heart desires with this plot.
 
 ```{r}
 all_res_tax <- merge(all_res, tax_table(dada2_rare), by.x="feature", by.y=0) #merge my differential taxa with the taxonomy information
@@ -678,11 +689,9 @@ ggplot(all_res_tax, aes(x=coef, y=-log10(pval), color=Genus_sig)) +
 
 # Network Analysis
 
-Finally, I want to focus on something kind of "fun" and "different" for the end of our day. We know that bacteria often do not live on or in the human body in isolation but rather as a broader collaborative network with several other species and genera. We can therefore start to use that knowledge to ask about "cliques" or "modules" of co-occurring taxa and whether differential abundance of these broader networks provides more insight about the differences that we're interested in.
+Finally, I want to focus on something kind of "fun" and "different" for the end of our day. We know that bacteria often do not live on or in the human body in isolation but rather as a broader collaborative network with several other species and genera. We can therefore start to use that knowledge to ask about "cliques" or "networks" of co-occurring taxa and whether abundances of these broader networks provides more insight about the differences that we're interested in.
 
-As has been true for almost everything we've discussed so far, there are several methods that exist to perform network analysis, though I would say that the debate between what is right and wrong is less fraught in the network world.
-
-These methods can include:
+As has been true for almost everything we've discussed so far, there are several methods that exist to perform network analysis. These methods can include:
 
 - *Correlation*: Use simple correlations of each taxon to all other taxa to determine which combinations reach some threshold (either correlation coefficient or p-value). Ideally, you'd want to use Spearman correlation over Pearson correlation for this because it is a non-parametric test.
 
