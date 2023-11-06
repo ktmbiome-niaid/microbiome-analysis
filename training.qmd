@@ -21,14 +21,30 @@ editor_options:
 rm(list=ls())
 ```
 
+# About the BCBB
+
+- National Institute of Allergy and Infecious Diseases (NIAID)
+
+  - Office of Cyber Infrastructure and Computational Biology (OCICB)
+  
+    - Bioinformatics and Computational Biosciences Branch (BCBB)
+    
+
+We are a team of computational biologists, data scientists, bioinformatics software developers, and more! 
+
+We are available for research collaborations, short consultations for bioinformatics questions, assistance with script writing and training on methods or tools.
+
+(Plus, our services are free to the NIAID community!)
+
+You can learn more on our website: [bioinformatics.niaid.nih.gov](https://bioinformatics.niaid.nih.gov/), and if you would like to reach out to us, you can e-mail us at bioinformatics@niaid.nih.gov.
 
 # Learning Objectives
 
-Our overarching goal today is to provide you with the tools to start analyzing microbiome data on your own.
+Our overarching goal today is to provide you with the tools to start analyzing microbiome data! The specific goals today are:
 
 - Create a Phyloseq Object
 
-- Assess Contamination Based on Negative Controls
+- Assess and Explore Raw Microbiome Data
 
 - Standardize/Normalize Sequence Data for Sequencing Depth
 
@@ -44,7 +60,7 @@ Our overarching goal today is to provide you with the tools to start analyzing m
 
 A few notes before we start:
 
-- I'm sharing the approaches I typically take for analysis and know very well. Throughout the tutorial, I'll point to alternative methods that are available. There are still active debates about which methods are "correct" or "more useful". However, I hope that the ideas I share today will at least provide you with avenues of exploration and a platform upon which you can build. And we're always available for a consult at bioinformatics@niaid.nih.gov!
+- I'm sharing the approaches I typically take for analysis and know very well. Throughout the tutorial, I'll point to alternative methods that are available. There are still active debates about which methods are better. However, I hope that the ideas I share today will at least provide you with avenues of exploration and a platform upon which you can build. And we're always available for a consult at bioinformatics@niaid.nih.gov!
 
 - Trouble installing some of the packages? I've created a Docker container that includes preinstallations of all of the packages we'll be using today. The code you run and edits you make won't be saved, but it will let you play around with the data we have today.
 
@@ -60,9 +76,13 @@ Before we start, I just wanted to remind everyone about our Nephele platform:
 
 [![The Nephele Splash Page](images/nephele_screenshot.png)](https://nephele.niaid.nih.gov)
 
-Most of the analysis we do today will use the DADA2 results, but I will also cover concepts needed for the WGSA2 results.
+Most of the analysis we do today will use the Amplicon Metagenomics (DADA2) pipeline results, but I will also cover concepts needed for the Shotgun Metagenomics (WGSA2) pipeline results as well.
 
 # Making a Phyloseq Object
+
+[Phyloseq](https://joey711.github.io/phyloseq/) is an R package that allows for relatively simple exploration of microbiome data and keeps the key components you would need all in one easily accessible object^[McMurdie PJ, Holmes S. Phyloseq: a bioconductor package for handling and analysis of high-throughput phylogenetic sequence data. Pac Symp Biocomput. 2012:235-46. PMID: 22174279; PMCID: PMC3357092.]. There are then different and useful accessor functions that we will get to play around with more today. I've always found this diagram to be especially helpful.
+
+![Phyloseq Overview](images/phyloseq_overview.png)
 
 ## DADA2
 
@@ -71,6 +91,8 @@ The data from DADA2 that we will be using today is derived from a paper examinin
 > Manus MB, Kuthyar S, Perroni-Marañón AG, Núñez-de la Mora A, Amato KR. Infant Skin Bacterial Communities Vary by Skin Site and Infant Age across Populations in Mexico and the United States. mSystems. 2020 Nov 3;5(6):e00834-20. doi: 10.1128/mSystems.00834-20. PMID: 33144313; PMCID: PMC7646528.
 
 **Abstract:** Daily practices put humans in close contact with the surrounding environment, and differences in these practices have an impact on human physiology, development, and health. There is mounting evidence that the microbiome represents an interface that mediates interactions between the human body and the environment. In particular, the skin microbiome serves as the primary interface with the external environment and aids in host immune function by contributing as the first line of defense against pathogens. Despite these important connections, we have only a basic understanding of how the skin microbiome is first established, or which environmental factors contribute to its development. To this end, this study compared the skin bacterial communities of infants (n=47) living in four populations in Mexico and the United States that span the socioeconomic gradient, where we predicted that **variation in physical and social environments would shape the infant skin microbiome**. Results of 16S rRNA bacterial gene sequencing on **119 samples (armpit, hand, and forehead)** showed that infant skin bacterial diversity and composition are shaped by population-level factors, including those related to socioeconomic status and household composition, and vary by skin site and infant age. Differences in infant-environment interactions, including with other people, appear to vary across the populations, likely influencing infant microbial exposures and, in turn, the composition of infant skin bacterial communities. These findings suggest that variation in microbial exposures stemming from the local environment in infancy can impact the establishment of the skin microbiome across body sites, with implications for developmental and health outcomes.
+
+I processed the raw data with Nephele using the parameters the authors provided in their manuscript. However, the tables we analyze today are not identical to the results presented in the manuscript.
 
 ### Individual Files
 
@@ -106,7 +128,7 @@ rownames(otu)[1:20]
 What have we learned about this file?
 :::
 
-We do indeed need to separate our taxonomy information from this table so that it can be analyzed separately.
+We next need to separate our taxonomy information from this table so that it can be analyzed separately.
 
 ```{r}
 tax <- as.matrix(otu[, c("Kingdom","Phylum","Class","Order","Family","Genus","Species")])
