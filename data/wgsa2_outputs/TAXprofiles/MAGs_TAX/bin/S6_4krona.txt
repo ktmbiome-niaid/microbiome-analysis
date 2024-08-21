@@ -1,7 +1,0 @@
-#final.assembly: % community	Taxonomy (contained)	Taxonomy (sister lineage)
-41.03156224876264	Bacteria	Firmicutes	Bacilli	Lactobacillales	Streptococcaceae	Streptococcus	Streptococcus_suis
-25.28128047655561	Bacteria	Firmicutes	Bacilli	Lactobacillales
-10.357004535771969	Bacteria	Proteobacteria	Gammaproteobacteria	Pasteurellales	Pasteurellaceae	Haemophilus	Haemophilus_ducreyi
-9.973237696528928	Bacteria	Proteobacteria	Betaproteobacteria	Neisseriales	Neisseriaceae	Neisseria	Neisseria_meningitidis
-2.2606434761860785	NA
-11.096271566194774	Bacteria	Proteobacteria	Betaproteobacteria	Neisseriales	Neisseriaceae	Neisseria	Eikenella	Eikenella_corrodens

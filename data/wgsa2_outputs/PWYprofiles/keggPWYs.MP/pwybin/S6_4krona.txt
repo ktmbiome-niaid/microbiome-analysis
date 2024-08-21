@@ -1,165 +1,105 @@
 #S6	Level1	Level2	Level3	Level4
-22.65899144312887	Genetic Information Processing	Replication and repair	Nucleotide excision repair	Nucleotide excision repair
-29.394828539025387	Metabolism	Carbohydrate metabolism	Galactose metabolism	Galactose metabolism
-21.742658357646278	Metabolism	Carbohydrate metabolism	Starch and sucrose metabolism	Starch and sucrose metabolism
-24.498617986670087	Metabolism	Global and overview maps	Metabolic pathways	Metabolic pathways
-25.226161032163425	Environmental Information Processing	Membrane transport	Phosphotransferase system (PTS)	Phosphotransferase system (PTS)
-22.68092241796385	Metabolism	Carbohydrate metabolism	Fructose and mannose metabolism	Fructose and mannose metabolism
-28.236613552583975	Metabolism	Carbohydrate metabolism	Amino sugar and nucleotide sugar metabolism	Amino sugar and nucleotide sugar metabolism
-27.171798265944883	Cellular Processes	Cellular community - prokaryotes	Quorum sensing	Quorum sensing
-35.015752459104014	Genetic Information Processing	Folding, sorting and degradation	Protein export	Protein export
-27.79407030269783	Environmental Information Processing	Membrane transport	Bacterial secretion system	Bacterial secretion system
-30.47332500608177	Metabolism	Metabolism of cofactors and vitamins	Pantothenate and CoA biosynthesis	Pantothenate and CoA biosynthesis
-22.79202739289696	Metabolism	Metabolism of other amino acids	D-Amino acid metabolism	D-Amino acid metabolism
-21.160571389491185	Human Diseases	Drug resistance: antimicrobial	Vancomycin resistance	Vancomycin resistance
-23.430459620842072	Metabolism	Amino acid metabolism	Glycine, serine and threonine metabolism	Glycine, serine and threonine metabolism
-25.3161258259759	Metabolism	Biosynthesis of other secondary metabolites	Monobactam biosynthesis	Monobactam biosynthesis
-26.473191194135953	Metabolism	Amino acid metabolism	Cysteine and methionine metabolism	Cysteine and methionine metabolism
-25.963149908180828	Metabolism	Amino acid metabolism	Lysine biosynthesis	Lysine biosynthesis
-23.14986848232392	Metabolism	Amino acid metabolism	Phenylalanine metabolism	Phenylalanine metabolism
-26.766996280230394	Metabolism	Lipid metabolism	Fatty acid biosynthesis	Fatty acid biosynthesis
-36.733333333333334	Metabolism	Biosynthesis of other secondary metabolites	Biosynthesis of various antibiotics	Biosynthesis of various antibiotics
-49.18479840414289	Metabolism	Biosynthesis of other secondary metabolites	Prodigiosin biosynthesis	Prodigiosin biosynthesis
-30.69126755303935	Metabolism	Metabolism of cofactors and vitamins	Biotin metabolism	Biotin metabolism
-24.483857967132174	Metabolism	Carbohydrate metabolism	Pyruvate metabolism	Pyruvate metabolism
-20.695697710804847	Metabolism	Carbohydrate metabolism	Propanoate metabolism	Propanoate metabolism
-23.413745431303774	Metabolism	Energy metabolism	Carbon fixation pathways in prokaryotes	Carbon fixation pathways in prokaryotes
-29.57373161047289	Genetic Information Processing	Translation	Aminoacyl-tRNA biosynthesis	Aminoacyl-tRNA biosynthesis
-26.852181586591477	Metabolism	Metabolism of cofactors and vitamins	Riboflavin metabolism	Riboflavin metabolism
-25.524835710724187	Metabolism	Metabolism of cofactors and vitamins	One carbon pool by folate	One carbon pool by folate
-23.776246098609125	Metabolism	Metabolism of other amino acids	Selenocompound metabolism	Selenocompound metabolism
-28.581819158533225	Environmental Information Processing	Membrane transport	ABC transporters	ABC transporters
-24.922912695521543	Metabolism	Metabolism of terpenoids and polyketides	Terpenoid backbone biosynthesis	Terpenoid backbone biosynthesis
-23.427601837847536	Metabolism	Energy metabolism	Oxidative phosphorylation	Oxidative phosphorylation
-21.917507919921714	Metabolism	Metabolism of cofactors and vitamins	Ubiquinone and other terpenoid-quinone biosynthesis	Ubiquinone and other terpenoid-quinone biosynthesis
-23.94206549095638	Metabolism	Glycan biosynthesis and metabolism	Peptidoglycan biosynthesis	Peptidoglycan biosynthesis
-21.542346728516613	Human Diseases	Drug resistance: antimicrobial	beta-Lactam resistance	beta-Lactam resistance
-26.31096735072694	Genetic Information Processing	Folding, sorting and degradation	RNA degradation	RNA degradation
-25.77801352836421	Metabolism	Carbohydrate metabolism	Pentose phosphate pathway	Pentose phosphate pathway
-27.080634863004867	Metabolism	Metabolism of other amino acids	Glutathione metabolism	Glutathione metabolism
-26.392463092463093	Metabolism	Xenobiotics biodegradation and metabolism	Aminobenzoate degradation	Aminobenzoate degradation
-23.40481079916829	Metabolism	Glycan biosynthesis and metabolism	Teichoic acid biosynthesis	Teichoic acid biosynthesis
-24.486277774111066	Environmental Information Processing	Signal transduction	Two-component system	Two-component system
-33.62300224566549	Metabolism	Metabolism of cofactors and vitamins	Nicotinate and nicotinamide metabolism	Nicotinate and nicotinamide metabolism
-25.33863620515837	Genetic Information Processing	Replication and repair	Mismatch repair	Mismatch repair
-27.536610447016248	Metabolism	Nucleotide metabolism	Purine metabolism	Purine metabolism
-33.43177211662347	Metabolism	Nucleotide metabolism	Pyrimidine metabolism	Pyrimidine metabolism
-32.199773805690214	Genetic Information Processing	Transcription	RNA polymerase	RNA polymerase
-22.149733756513417	Metabolism	Metabolism of other amino acids	Taurine and hypotaurine metabolism	Taurine and hypotaurine metabolism
-21.218024114685353	Metabolism	Energy metabolism	Methane metabolism	Methane metabolism
-22.55359639224784	Metabolism	Metabolism of cofactors and vitamins	Folate biosynthesis	Folate biosynthesis
-24.814587666594797	Genetic Information Processing	Replication and repair	DNA replication	DNA replication
-27.3964230280478	Genetic Information Processing	Replication and repair	Homologous recombination	Homologous recombination
-22.95111825316578	Human Diseases	Infectious disease: bacterial	Legionellosis	Legionellosis
-49.502163878718285	Genetic Information Processing	Translation	Ribosome	Ribosome
-24.195103901738044	Metabolism	Carbohydrate metabolism	Glycolysis / Gluconeogenesis	Glycolysis / Gluconeogenesis
-31.06214382177267	Human Diseases	Infectious disease: bacterial	Salmonella infection	Salmonella infection
-23.729199610733556	Metabolism	Amino acid metabolism	Arginine biosynthesis	Arginine biosynthesis
-24.94379105346488	Metabolism	Amino acid metabolism	Alanine, aspartate and glutamate metabolism	Alanine, aspartate and glutamate metabolism
-22.612440039605403	Metabolism	Carbohydrate metabolism	Glyoxylate and dicarboxylate metabolism	Glyoxylate and dicarboxylate metabolism
-17.39544246480573	Metabolism	Energy metabolism	Nitrogen metabolism	Nitrogen metabolism
-26.665039130590774	Metabolism	Lipid metabolism	Glycerolipid metabolism	Glycerolipid metabolism
-17.61603154227031	Metabolism	Lipid metabolism	Sphingolipid metabolism	Sphingolipid metabolism
-17.042483660130717	Metabolism	Lipid metabolism	Secondary bile acid biosynthesis	Secondary bile acid biosynthesis
-26.933073495573495	Metabolism	Metabolism of other amino acids	Cyanoamino acid metabolism	Cyanoamino acid metabolism
-25.003348981264324	Metabolism	Carbohydrate metabolism	Ascorbate and aldarate metabolism	Ascorbate and aldarate metabolism
-28.062201326892893	Metabolism	Lipid metabolism	Glycerophospholipid metabolism	Glycerophospholipid metabolism
-21.036964260859182	Metabolism	Carbohydrate metabolism	Butanoate metabolism	Butanoate metabolism
-24.575312869391816	Metabolism	Energy metabolism	Sulfur metabolism	Sulfur metabolism
-17.029184071289333	Human Diseases	Drug resistance: antineoplastic	Platinum drug resistance	Platinum drug resistance
-46.15488721804511	Organismal Systems	Digestive system	Mineral absorption	Mineral absorption
-38.45876060445387	Organismal Systems	Immune system	NOD-like receptor signaling pathway	NOD-like receptor signaling pathway
-26.650977013475934	Human Diseases	Drug resistance: antimicrobial	Cationic antimicrobial peptide (CAMP) resistance	Cationic antimicrobial peptide (CAMP) resistance
-29.357142857142858	Metabolism	Metabolism of terpenoids and polyketides	Zeatin biosynthesis	Zeatin biosynthesis
-25.69932496997624	Genetic Information Processing	Replication and repair	Base excision repair	Base excision repair
-27.5623195751412	Metabolism	Biosynthesis of other secondary metabolites	Streptomycin biosynthesis	Streptomycin biosynthesis
-29.674092521047168	Metabolism	Metabolism of terpenoids and polyketides	Polyketide sugar unit biosynthesis	Polyketide sugar unit biosynthesis
-27.259551896660856	Metabolism	Glycan biosynthesis and metabolism	O-Antigen nucleotide sugar biosynthesis	O-Antigen nucleotide sugar biosynthesis
-27.650482962719515	Metabolism	Amino acid metabolism	Phenylalanine, tyrosine and tryptophan biosynthesis	Phenylalanine, tyrosine and tryptophan biosynthesis
-22.356060606060606	Metabolism	Biosynthesis of other secondary metabolites	Phenylpropanoid biosynthesis	Phenylpropanoid biosynthesis
-23.543067457982456	Metabolism	Carbohydrate metabolism	Citrate cycle (TCA cycle)	Citrate cycle (TCA cycle)
-20.88416201773452	Cellular Processes	Transport and catabolism	Peroxisome	Peroxisome
-30.41720044153669	Cellular Processes	Cell motility	Flagellar assembly	Flagellar assembly
-30.771736908307428	Metabolism	Carbohydrate metabolism	Pentose and glucuronate interconversions	Pentose and glucuronate interconversions
-23.32864436355602	Metabolism	Xenobiotics biodegradation and metabolism	Drug metabolism - other enzymes	Drug metabolism - other enzymes
-27.422963947508617	Metabolism	Metabolism of cofactors and vitamins	Thiamine metabolism	Thiamine metabolism
-19.62206682206682	Genetic Information Processing	Folding, sorting and degradation	Sulfur relay system	Sulfur relay system
-29.625066371066993	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Escherichia coli	Biofilm formation - Escherichia coli
-44.28	Environmental Information Processing	Signal transduction	MAPK signaling pathway - fly	MAPK signaling pathway - fly
-25.28429070758738	Organismal Systems	Aging	Longevity regulating pathway - multiple species	Longevity regulating pathway - multiple species
-31.41971436239552	Human Diseases	Cancer: overview	Chemical carcinogenesis - reactive oxygen species	Chemical carcinogenesis - reactive oxygen species
-30.39818435298601	Cellular Processes	Cell growth and death	Cell cycle - Caulobacter	Cell cycle - Caulobacter
-21.791443963915963	Metabolism	Amino acid metabolism	Arginine and proline metabolism	Arginine and proline metabolism
-14.319217491369391	Human Diseases	Infectious disease: bacterial	Epithelial cell signaling in Helicobacter pylori infection	Epithelial cell signaling in Helicobacter pylori infection
-22.430999405483014	Metabolism	Amino acid metabolism	Tryptophan metabolism	Tryptophan metabolism
-27.81154074054592	Organismal Systems	Environmental adaptation	Plant-pathogen interaction	Plant-pathogen interaction
-19.522799259563968	Metabolism	Carbohydrate metabolism	Inositol phosphate metabolism	Inositol phosphate metabolism
-22.625517159987385	Metabolism	Amino acid metabolism	Histidine metabolism	Histidine metabolism
-19.148107203572355	Metabolism	Amino acid metabolism	Tyrosine metabolism	Tyrosine metabolism
-22.034673489278752	Metabolism	Xenobiotics biodegradation and metabolism	Benzoate degradation	Benzoate degradation
-25.93993177387914	Metabolism	Glycan biosynthesis and metabolism	Glycosaminoglycan degradation	Glycosaminoglycan degradation
-26.128453354135633	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Vibrio cholerae	Biofilm formation - Vibrio cholerae
-21.053757301516153	Organismal Systems	Endocrine system	Insulin signaling pathway	Insulin signaling pathway
-20.583088235294117	Metabolism	Xenobiotics biodegradation and metabolism	Chlorocyclohexane and chlorobenzene degradation	Chlorocyclohexane and chlorobenzene degradation
-27.022594228732334	Metabolism	Xenobiotics biodegradation and metabolism	Chloroalkane and chloroalkene degradation	Chloroalkane and chloroalkene degradation
-17.87906348858125	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine degradation	Valine, leucine and isoleucine degradation
-28.385085760075466	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine biosynthesis	Valine, leucine and isoleucine biosynthesis
-35.08552631578947	Genetic Information Processing	Translation	Ribosome biogenesis in eukaryotes	Ribosome biogenesis in eukaryotes
-17.873067735736992	Metabolism	Metabolism of cofactors and vitamins	Porphyrin metabolism	Porphyrin metabolism
-21.988762626262627	Metabolism	Biosynthesis of other secondary metabolites	Carbapenem biosynthesis	Carbapenem biosynthesis
-23.020741982032305	Metabolism	Glycan biosynthesis and metabolism	Exopolysaccharide biosynthesis	Exopolysaccharide biosynthesis
-22.473478406313095	Metabolism	Carbohydrate metabolism	C5-Branched dibasic acid metabolism	C5-Branched dibasic acid metabolism
-25.985508360244673	Metabolism	Metabolism of cofactors and vitamins	Vitamin B6 metabolism	Vitamin B6 metabolism
-16.52232142857143	Metabolism	Xenobiotics biodegradation and metabolism	Styrene degradation	Styrene degradation
-36.840069124423955	Metabolism	Metabolism of cofactors and vitamins	Lipoic acid metabolism	Lipoic acid metabolism
-20.49951146674033	Metabolism	Lipid metabolism	Fatty acid degradation	Fatty acid degradation
-15.580392156862745	Human Diseases	Infectious disease: parasitic	Amoebiasis	Amoebiasis
-31.694954661706582	Metabolism	Metabolism of cofactors and vitamins	Retinol metabolism	Retinol metabolism
-78.68684210526315	Human Diseases	Infectious disease: bacterial	Bacterial invasion of epithelial cells	Bacterial invasion of epithelial cells
-57.01044973544973	Human Diseases	Infectious disease: bacterial	Staphylococcus aureus infection	Staphylococcus aureus infection
-21.298943867747695	Metabolism	Glycan biosynthesis and metabolism	Other glycan degradation	Other glycan degradation
-23.345358103195185	Cellular Processes	Cell motility	Bacterial chemotaxis	Bacterial chemotaxis
-16.46540160577266	Metabolism	Amino acid metabolism	Lysine degradation	Lysine degradation
-31.774193548387096	Metabolism	Glycan biosynthesis and metabolism	O-Antigen repeat unit biosynthesis	O-Antigen repeat unit biosynthesis
-13.670698924731184	Metabolism	Glycan biosynthesis and metabolism	Arabinogalactan biosynthesis - Mycobacterium	Arabinogalactan biosynthesis - Mycobacterium
-20.579847053531264	Metabolism	Biosynthesis of other secondary metabolites	Phenazine biosynthesis	Phenazine biosynthesis
-24.200171502474134	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Pseudomonas aeruginosa	Biofilm formation - Pseudomonas aeruginosa
-17.267032967032968	Metabolism	Metabolism of other amino acids	Phosphonate and phosphinate metabolism	Phosphonate and phosphinate metabolism
-27.583333333333332	Cellular Processes	Transport and catabolism	Autophagy - yeast	Autophagy - yeast
-22.860368389780152	Metabolism	Biosynthesis of other secondary metabolites	Penicillin and cephalosporin biosynthesis	Penicillin and cephalosporin biosynthesis
-39.70738636363637	Metabolism	Metabolism of terpenoids and polyketides	Carotenoid biosynthesis	Carotenoid biosynthesis
-40.5187969924812	Human Diseases	Infectious disease: bacterial	Pertussis	Pertussis
-28.773913043478263	Human Diseases	Infectious disease: bacterial	Shigellosis	Shigellosis
-16.718887061403507	Metabolism	Metabolism of other amino acids	beta-Alanine metabolism	beta-Alanine metabolism
-24.138522827934594	Metabolism	Glycan biosynthesis and metabolism	Lipopolysaccharide biosynthesis	Lipopolysaccharide biosynthesis
-23.27777777777778	Metabolism	Lipid metabolism	Linoleic acid metabolism	Linoleic acid metabolism
-11.729791666666667	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of siderophore group nonribosomal peptides	Biosynthesis of siderophore group nonribosomal peptides
-23.0	Metabolism	Glycan biosynthesis and metabolism	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate
-11.074999999999998	Metabolism	Lipid metabolism	Biosynthesis of unsaturated fatty acids	Biosynthesis of unsaturated fatty acids
-16.1875	Organismal Systems	Endocrine system	Renin-angiotensin system	Renin-angiotensin system
-16.357142857142858	Metabolism	Glycan biosynthesis and metabolism	N-Glycan biosynthesis	N-Glycan biosynthesis
+22.98540551538838	Genetic Information Processing	Replication and repair	Nucleotide excision repair	Nucleotide excision repair
+29.299730100971434	Metabolism	Carbohydrate metabolism	Galactose metabolism	Galactose metabolism
+21.831987391778625	Metabolism	Carbohydrate metabolism	Starch and sucrose metabolism	Starch and sucrose metabolism
+24.462689988926737	Metabolism	Global and overview maps	Metabolic pathways	Metabolic pathways
+24.52739027014395	Metabolism	Global and overview maps	Biosynthesis of secondary metabolites	Biosynthesis of secondary metabolites
+25.9515159288659	Environmental Information Processing	Membrane transport	Phosphotransferase system (PTS)	Phosphotransferase system (PTS)
+22.84174933962105	Metabolism	Carbohydrate metabolism	Fructose and mannose metabolism	Fructose and mannose metabolism
+28.39932817800058	Metabolism	Carbohydrate metabolism	Amino sugar and nucleotide sugar metabolism	Amino sugar and nucleotide sugar metabolism
+27.365917335431224	Cellular Processes	Cellular community - prokaryotes	Quorum sensing	Quorum sensing
+34.299620523855125	Genetic Information Processing	Folding, sorting and degradation	Protein export	Protein export
+26.925840447483107	Environmental Information Processing	Membrane transport	Bacterial secretion system	Bacterial secretion system
+31.033146251030175	Metabolism	Metabolism of cofactors and vitamins	Pantothenate and CoA biosynthesis	Pantothenate and CoA biosynthesis
+21.09193587627716	Human Diseases	Drug resistance: antimicrobial	Vancomycin resistance	Vancomycin resistance
+25.218719711014675	Metabolism	Amino acid metabolism	Lysine biosynthesis	Lysine biosynthesis
+22.140211020182615	Metabolism	Global and overview maps	Microbial metabolism in diverse environments	Microbial metabolism in diverse environments
+26.09662548235962	Metabolism	Global and overview maps	Biosynthesis of amino acids	Biosynthesis of amino acids
+26.871298378898132	Metabolism	Lipid metabolism	Fatty acid biosynthesis	Fatty acid biosynthesis
+31.60806730018766	Metabolism	Metabolism of cofactors and vitamins	Biotin metabolism	Biotin metabolism
+25.569237189052707	Metabolism	Global and overview maps	Biosynthesis of cofactors	Biosynthesis of cofactors
+24.632144242631767	Metabolism	Carbohydrate metabolism	Pyruvate metabolism	Pyruvate metabolism
+20.785324461627493	Metabolism	Carbohydrate metabolism	Propanoate metabolism	Propanoate metabolism
+29.500288860278843	Genetic Information Processing	Translation	Aminoacyl-tRNA biosynthesis	Aminoacyl-tRNA biosynthesis
+26.534405977807445	Metabolism	Metabolism of cofactors and vitamins	Riboflavin metabolism	Riboflavin metabolism
+23.81809518260835	Metabolism	Metabolism of other amino acids	Selenocompound metabolism	Selenocompound metabolism
+29.483847077486725	Environmental Information Processing	Membrane transport	ABC transporters	ABC transporters
+23.417898434276935	Metabolism	Energy metabolism	Oxidative phosphorylation	Oxidative phosphorylation
+24.335398230121545	Metabolism	Glycan biosynthesis and metabolism	Peptidoglycan biosynthesis	Peptidoglycan biosynthesis
+22.24634426752551	Human Diseases	Drug resistance: antimicrobial	beta-Lactam resistance	beta-Lactam resistance
+26.321740754081056	Genetic Information Processing	Folding, sorting and degradation	RNA degradation	RNA degradation
+24.01688897857376	Metabolism	Glycan biosynthesis and metabolism	Teichoic acid biosynthesis	Teichoic acid biosynthesis
+23.344546217129068	Environmental Information Processing	Signal transduction	Two-component system	Two-component system
+24.599242921674158	Genetic Information Processing	Replication and repair	Mismatch repair	Mismatch repair
+32.998051134177786	Metabolism	Nucleotide metabolism	Pyrimidine metabolism	Pyrimidine metabolism
+32.33434458620911	Genetic Information Processing	Transcription	RNA polymerase	RNA polymerase
+22.710028812539143	Metabolism	Metabolism of other amino acids	Taurine and hypotaurine metabolism	Taurine and hypotaurine metabolism
+23.918861293158617	Genetic Information Processing	Replication and repair	DNA replication	DNA replication
+26.85406653780714	Genetic Information Processing	Replication and repair	Homologous recombination	Homologous recombination
+19.43867027478414	Human Diseases	Infectious disease: bacterial	Legionellosis	Legionellosis
+49.43083450560222	Genetic Information Processing	Translation	Ribosome	Ribosome
+24.157982272275845	Metabolism	Carbohydrate metabolism	Glycolysis / Gluconeogenesis	Glycolysis / Gluconeogenesis
+22.822360892010938	Metabolism	Energy metabolism	Carbon fixation in photosynthetic organisms	Carbon fixation in photosynthetic organisms
+30.948152271704902	Human Diseases	Infectious disease: bacterial	Salmonella infection	Salmonella infection
+21.820350965065707	Metabolism	Amino acid metabolism	Arginine biosynthesis	Arginine biosynthesis
+22.962191801207936	Metabolism	Amino acid metabolism	Alanine, aspartate and glutamate metabolism	Alanine, aspartate and glutamate metabolism
+17.615935963303084	Metabolism	Energy metabolism	Nitrogen metabolism	Nitrogen metabolism
+17.113333333333333	Metabolism	Lipid metabolism	Secondary bile acid biosynthesis	Secondary bile acid biosynthesis
+29.54931396321961	Metabolism	Lipid metabolism	Glycerophospholipid metabolism	Glycerophospholipid metabolism
+41.166666666666664	Organismal Systems	Digestive system	Mineral absorption	Mineral absorption
+23.659033617839913	Metabolism	Carbohydrate metabolism	Citrate cycle (TCA cycle)	Citrate cycle (TCA cycle)
+28.36973867257595	Metabolism	Global and overview maps	Nucleotide metabolism	Nucleotide metabolism
+25.89278942025692	Human Diseases	Drug resistance: antimicrobial	Cationic antimicrobial peptide (CAMP) resistance	Cationic antimicrobial peptide (CAMP) resistance
+26.90341581841582	Metabolism	Biosynthesis of other secondary metabolites	Streptomycin biosynthesis	Streptomycin biosynthesis
+25.39757318580778	Genetic Information Processing	Replication and repair	Base excision repair	Base excision repair
+30.423948057936716	Cellular Processes	Cell motility	Flagellar assembly	Flagellar assembly
+30.71848805059265	Metabolism	Carbohydrate metabolism	Pentose and glucuronate interconversions	Pentose and glucuronate interconversions
+22.391171661954758	Metabolism	Xenobiotics biodegradation and metabolism	Drug metabolism - other enzymes	Drug metabolism - other enzymes
+27.50864657865232	Metabolism	Metabolism of cofactors and vitamins	Thiamine metabolism	Thiamine metabolism
+19.813428554081327	Genetic Information Processing	Folding, sorting and degradation	Sulfur relay system	Sulfur relay system
+30.086602122697276	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Escherichia coli	Biofilm formation - Escherichia coli
+21.129834618077194	Organismal Systems	Aging	Longevity regulating pathway - multiple species	Longevity regulating pathway - multiple species
+29.81649184149184	Human Diseases	Cancer: overview	Chemical carcinogenesis - reactive oxygen species	Chemical carcinogenesis - reactive oxygen species
+29.80664250342967	Cellular Processes	Cell growth and death	Cell cycle - Caulobacter	Cell cycle - Caulobacter
+14.371590909090909	Human Diseases	Infectious disease: bacterial	Epithelial cell signaling in Helicobacter pylori infection	Epithelial cell signaling in Helicobacter pylori infection
+28.33096546310832	Organismal Systems	Environmental adaptation	Plant-pathogen interaction	Plant-pathogen interaction
+22.02448738960149	Metabolism	Amino acid metabolism	Histidine metabolism	Histidine metabolism
+17.117522335804843	Metabolism	Amino acid metabolism	Tyrosine metabolism	Tyrosine metabolism
+26.78358817895189	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Vibrio cholerae	Biofilm formation - Vibrio cholerae
+19.554761904761904	Organismal Systems	Endocrine system	Insulin signaling pathway	Insulin signaling pathway
+29.571655178374478	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine biosynthesis	Valine, leucine and isoleucine biosynthesis
+34.76602564102564	Genetic Information Processing	Translation	Ribosome biogenesis in eukaryotes	Ribosome biogenesis in eukaryotes
+18.226790595027133	Metabolism	Metabolism of cofactors and vitamins	Porphyrin metabolism	Porphyrin metabolism
+22.634911616161617	Metabolism	Glycan biosynthesis and metabolism	Exopolysaccharide biosynthesis	Exopolysaccharide biosynthesis
+78.56	Human Diseases	Infectious disease: bacterial	Bacterial invasion of epithelial cells	Bacterial invasion of epithelial cells
+57.338112196445536	Human Diseases	Infectious disease: bacterial	Staphylococcus aureus infection	Staphylococcus aureus infection
+17.944963758203055	Metabolism	Lipid metabolism	Fatty acid degradation	Fatty acid degradation
+32.118538324420676	Metabolism	Metabolism of cofactors and vitamins	Retinol metabolism	Retinol metabolism
+15.345454545454546	Human Diseases	Infectious disease: parasitic	Amoebiasis	Amoebiasis
+20.833126683266826	Metabolism	Glycan biosynthesis and metabolism	Other glycan degradation	Other glycan degradation
+23.335082709933424	Cellular Processes	Cell motility	Bacterial chemotaxis	Bacterial chemotaxis
+13.817708333333334	Metabolism	Glycan biosynthesis and metabolism	Arabinogalactan biosynthesis - Mycobacterium	Arabinogalactan biosynthesis - Mycobacterium
+20.302680652680653	Metabolism	Metabolism of other amino acids	Phosphonate and phosphinate metabolism	Phosphonate and phosphinate metabolism
+22.968649057419114	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Pseudomonas aeruginosa	Biofilm formation - Pseudomonas aeruginosa
+30.09090909090909	Cellular Processes	Transport and catabolism	Autophagy - yeast	Autophagy - yeast
+40.80987911790831	Human Diseases	Infectious disease: bacterial	Pertussis	Pertussis
+23.737906387870503	Metabolism	Glycan biosynthesis and metabolism	Lipopolysaccharide biosynthesis	Lipopolysaccharide biosynthesis
+10.446047008547009	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of siderophore group nonribosomal peptides	Biosynthesis of siderophore group nonribosomal peptides
+10.509615384615383	Metabolism	Lipid metabolism	Biosynthesis of unsaturated fatty acids	Biosynthesis of unsaturated fatty acids
+16.25	Organismal Systems	Endocrine system	Renin-angiotensin system	Renin-angiotensin system
+11.012820512820513	Genetic Information Processing	Folding, sorting and degradation	Protein processing in endoplasmic reticulum	Protein processing in endoplasmic reticulum
 9.907142857142857	Metabolism	Glycan biosynthesis and metabolism	Lipoarabinomannan (LAM) biosynthesis	Lipoarabinomannan (LAM) biosynthesis
-12.054545454545455	Organismal Systems	Digestive system	Protein digestion and absorption	Protein digestion and absorption
-12.490476190476192	Cellular Processes	Cell growth and death	Apoptosis - fly	Apoptosis - fly
-10.130952380952381	Metabolism	Xenobiotics biodegradation and metabolism	Nitrotoluene degradation	Nitrotoluene degradation
-14.785907859078591	Genetic Information Processing	Folding, sorting and degradation	Protein processing in endoplasmic reticulum	Protein processing in endoplasmic reticulum
-14.985859465737514	Environmental Information Processing	Signal transduction	PI3K-Akt signaling pathway	PI3K-Akt signaling pathway
+12.360416666666666	Organismal Systems	Digestive system	Protein digestion and absorption	Protein digestion and absorption
+13.15151515151515	Cellular Processes	Cell growth and death	Apoptosis - fly	Apoptosis - fly
 18.6	Human Diseases	Infectious disease: bacterial	Vibrio cholerae infection	Vibrio cholerae infection
-8.866666666666667	Cellular Processes	Cell growth and death	Apoptosis	Apoptosis
-18.033333333333335	Human Diseases	Neurodegenerative disease	Spinocerebellar ataxia	Spinocerebellar ataxia
-12.2	Human Diseases	Infectious disease: viral	Hepatitis C	Hepatitis C
-9.75	Metabolism	Metabolism of terpenoids and polyketides	Geraniol degradation	Geraniol degradation
-9.25	Metabolism	Xenobiotics biodegradation and metabolism	Polycyclic aromatic hydrocarbon degradation	Polycyclic aromatic hydrocarbon degradation
-8.363636363636363	Human Diseases	Infectious disease: parasitic	Chagas disease	Chagas disease
-9.0	Metabolism	Biosynthesis of other secondary metabolites	Betalain biosynthesis	Betalain biosynthesis
-13.5	Cellular Processes	Cellular community - eukaryotes	Signaling pathways regulating pluripotency of stem cells	Signaling pathways regulating pluripotency of stem cells
-13.5	Metabolism	Biosynthesis of other secondary metabolites	Biosynthesis of various other secondary metabolites	Biosynthesis of various other secondary metabolites
-9.5	Metabolism	Glycan biosynthesis and metabolism	Other types of O-glycan biosynthesis	Other types of O-glycan biosynthesis
-13.083333333333334	Metabolism	Glycan biosynthesis and metabolism	Mannose type O-glycan biosynthesis	Mannose type O-glycan biosynthesis
-13.5	Metabolism	Lipid metabolism	Primary bile acid biosynthesis	Primary bile acid biosynthesis
-12.5	Environmental Information Processing	Signaling molecules and interaction	Neuroactive ligand-receptor interaction	Neuroactive ligand-receptor interaction
+15.388888888888891	Human Diseases	Neurodegenerative disease	Spinocerebellar ataxia	Spinocerebellar ataxia
+9.666666666666666	Cellular Processes	Cell growth and death	Apoptosis	Apoptosis
+13.0	Human Diseases	Infectious disease: viral	Hepatitis C	Hepatitis C
+12.75	Cellular Processes	Cellular community - eukaryotes	Signaling pathways regulating pluripotency of stem cells	Signaling pathways regulating pluripotency of stem cells
+8.272727272727273	Human Diseases	Infectious disease: parasitic	Chagas disease	Chagas disease
+8.25	Organismal Systems	Digestive system	Cholesterol metabolism	Cholesterol metabolism
 6.0	Genetic Information Processing	Replication and repair	Non-homologous end-joining	Non-homologous end-joining
 5.0	Genetic Information Processing	Folding, sorting and degradation	Proteasome	Proteasome
-7.0	Genetic Information Processing	Transcription	Basal transcription factors	Basal transcription factors
-8.0	Metabolism	Metabolism of terpenoids and polyketides	Tetracycline biosynthesis	Tetracycline biosynthesis
-19.0	Metabolism	Lipid metabolism	Steroid biosynthesis	Steroid biosynthesis
+9.0	Human Diseases	Cancer: specific types	Breast cancer	Breast cancer
+5.0	Cellular Processes	Cell growth and death	Oocyte meiosis	Oocyte meiosis
+22.0	Genetic Information Processing	Translation	Nucleocytoplasmic transport	Nucleocytoplasmic transport

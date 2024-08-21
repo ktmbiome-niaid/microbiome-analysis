@@ -1,0 +1,46 @@
+Read1 before filtering:
+total reads: 1000000
+total bases: 150000000
+Q20 bases: 140612931(93.742%)
+Q30 bases: 131006943(87.338%)
+
+Read2 before filtering:
+total reads: 1000000
+total bases: 150000000
+Q20 bases: 132941832(88.6279%)
+Q30 bases: 122200191(81.4668%)
+
+Read1 after filtering:
+total reads: 999880
+total bases: 149760915
+Q20 bases: 140856380(94.0542%)
+Q30 bases: 131265690(87.6502%)
+
+Read2 after filtering:
+total reads: 999880
+total bases: 149449126
+Q20 bases: 133346125(89.2251%)
+Q30 bases: 122638707(82.0605%)
+
+Filtering result:
+reads passed filter: 1999760
+reads failed due to low quality: 0
+reads failed due to too many N: 0
+reads failed due to too short: 240
+reads failed due to low complexity: 0
+reads with adapter trimmed: 784
+bases trimmed due to adapters: 50721
+reads with polyX in 3' end: 3289
+bases trimmed in polyX tail: 31206
+reads corrected by overlap analysis: 417502
+bases corrected by overlap analysis: 921300
+
+Duplication rate: 0.0118%
+
+Insert size peak (evaluated by paired-end reads): 267
+
+JSON report: /outputs/TEDreads/S28_fastp.json
+HTML report: /outputs/TEDreads/S28_fastplog.html
+
+fastp -i /inputs/S28_Skin_camiHiSeq_sub1M_R1.fastq.gz -I /inputs/S28_Skin_camiHiSeq_sub1M_R2.fastq.gz -o /outputs/TEDreads/S28_R1_te.fastq.gz -O /outputs/TEDreads/S28_R2_te.fastq.gz -h /outputs/TEDreads/S28_fastplog.html -j /outputs/TEDreads/S28_fastp.json --trim_poly_x --cut_window_size 4 --thread 16 --low_complexity_filter --correction --average_qual 10 --length_required 60 --cut_front --cut_front_mean_quality 20 --cut_tail --cut_tail_mean_quality 15 
+fastp v0.23.4, time used: 7 seconds

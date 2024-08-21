@@ -1,0 +1,4 @@
+Loading database information... done.
+999771 sequences (299.15 Mbp) processed in 5.303s (11311.2 Kseq/m, 3384.52 Mbp/m).
+  287 sequences classified (0.03%)
+  999484 sequences unclassified (99.97%)

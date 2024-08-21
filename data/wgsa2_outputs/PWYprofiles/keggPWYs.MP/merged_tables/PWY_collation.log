@@ -3,36 +3,36 @@
 [1] "Usage: my_program.R [options] \n --help              show this screen\n --binDIR PATH       hard path to bin dir [default: 'wdir/TEDreadsTAX/bin']\n --sccList NAME      hard path and name of file listing successful sample names [default: 'SccList.txt']\n --outdir NAME       path to & name of output directory to create [default: 'wdir/TEDreadsTAX/merged_tables']\n --genesDIR PATH     hard path to bin dir for KO or EC genes [default: 'wdir/PWYprofiles/keggPWY/genebin']"
 List of 10
  $ --help    : logi FALSE
- $ --binDIR  : chr "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/pwybin/"
- $ --sccList : chr "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/SccList.txt"
- $ --outdir  : chr "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/merged_tables/"
- $ --genesDIR: chr "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/genebin/"
+ $ --binDIR  : chr "/outputs/PWYprofiles/keggPWYs.MP/pwybin/"
+ $ --sccList : chr "/outputs/PWYprofiles/keggPWYs.MP/SccList.txt"
+ $ --outdir  : chr "/outputs/PWYprofiles/keggPWYs.MP/merged_tables/"
+ $ --genesDIR: chr "/outputs/PWYprofiles/keggPWYs.MP/genebin/"
  $ help      : logi FALSE
- $ binDIR    : chr "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/pwybin/"
- $ sccList   : chr "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/SccList.txt"
- $ outdir    : chr "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/merged_tables/"
- $ genesDIR  : chr "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/genebin/"
+ $ binDIR    : chr "/outputs/PWYprofiles/keggPWYs.MP/pwybin/"
+ $ sccList   : chr "/outputs/PWYprofiles/keggPWYs.MP/SccList.txt"
+ $ outdir    : chr "/outputs/PWYprofiles/keggPWYs.MP/merged_tables/"
+ $ genesDIR  : chr "/outputs/PWYprofiles/keggPWYs.MP/genebin/"
 NULL
 [1] "-----------> docopt settings------^^^^"
 [1] "------> detecting input files:"
-[1] "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/pwybin//S1_4krona.txt" 
-[2] "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/pwybin//S28_4krona.txt"
-[3] "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/pwybin//S6_4krona.txt" 
+[1] "/outputs/PWYprofiles/keggPWYs.MP/pwybin//S1_4krona.txt" 
+[2] "/outputs/PWYprofiles/keggPWYs.MP/pwybin//S28_4krona.txt"
+[3] "/outputs/PWYprofiles/keggPWYs.MP/pwybin//S6_4krona.txt" 
 [1] "------> check sccList file:"
   SampNames
 1        S1
 2       S28
 3        S6
 [1] "------> naming input files:"
-                                                                    S1 
- "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/pwybin//S1_4krona.txt" 
-                                                                   S28 
-"/nephele_data/outputs/PWYprofiles/keggPWYs.MP/pwybin//S28_4krona.txt" 
-                                                                    S6 
- "/nephele_data/outputs/PWYprofiles/keggPWYs.MP/pwybin//S6_4krona.txt" 
+                                                       S1 
+ "/outputs/PWYprofiles/keggPWYs.MP/pwybin//S1_4krona.txt" 
+                                                      S28 
+"/outputs/PWYprofiles/keggPWYs.MP/pwybin//S28_4krona.txt" 
+                                                       S6 
+ "/outputs/PWYprofiles/keggPWYs.MP/pwybin//S6_4krona.txt" 
 [1] "------> load data from files"
 [1] "------> merging PWY data"
-[1] "------> exporting PWY data at: /nephele_data/outputs/PWYprofiles/keggPWYs.MP/merged_tables/"
+[1] "------> exporting PWY data at: /outputs/PWYprofiles/keggPWYs.MP/merged_tables/"
 [1] "------> Starting work on genes files:"
 [1] "------> load GENE data from gene files"
 [1] "------> merging genedata, setting names to samples, replacing NAs with 0s, and removing rowSum==0s"

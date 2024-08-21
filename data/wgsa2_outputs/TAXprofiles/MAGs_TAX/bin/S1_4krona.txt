@@ -1,4 +1,0 @@
-#final.assembly: % community	Taxonomy (contained)	Taxonomy (sister lineage)
-53.39223872895401	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Alcaligenaceae	Bordetella	Bordetella_pertussis
-10.525645333095007	NA
-36.08211593795098	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Alcaligenaceae	Bordetella	Bordetella_petrii

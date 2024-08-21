@@ -1,0 +1,4 @@
+	SampleID	ForwardFastqFile	ReverseFastqFile	TreatmentGroup	SpRichness	Evenness	NumbReads	Shannon	InvSimpson	chao1
+S1	S1	S1_GItract_camiHiSeq_sub1M_R1.fastq.gz	S1_GItract_camiHiSeq_sub1M_R2.fastq.gz	S1	323	0.51	999327	2.92	10.48	461.79
+S28	S28	S28_Skin_camiHiSeq_sub1M_R1.fastq.gz	S28_Skin_camiHiSeq_sub1M_R2.fastq.gz	S28	389	0.39	986022	2.34	5.38	659.4
+S6	S6	S6_Oral_camiHiSeq_sub1M_R1.fastq.gz	S6_Oral_camiHiSeq_sub1M_R2.fastq.gz	S6	444	0.48	997758	2.91	8.43	669.94

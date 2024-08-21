@@ -1,206 +1,149 @@
 	Tier1	Tier2	Tier3	Tier4	S1	S28	S6
-PWY1	Cellular Processes	Cell growth and death	Apoptosis	Apoptosis	32.7380952380952	89.375	8.86666666666667
-PWY2	Cellular Processes	Cell growth and death	Apoptosis - fly	Apoptosis - fly	37.2692307692308	28.5865384615385	12.4904761904762
-PWY3	Cellular Processes	Cell growth and death	Cell cycle - Caulobacter	Cell cycle - Caulobacter	24.9373728623399	29.9290276212564	30.398184352986
-PWY4	Cellular Processes	Cell growth and death	Meiosis - yeast	Meiosis - yeast	29.4833333333333	32.6	0
-PWY5	Cellular Processes	Cell motility	Bacterial chemotaxis	Bacterial chemotaxis	23.1100597934217	20.496747311828	23.3453581031952
-PWY6	Cellular Processes	Cell motility	Flagellar assembly	Flagellar assembly	29.9408698622894	21.7204939121486	30.4172004415367
-PWY7	Cellular Processes	Cellular community - eukaryotes	Signaling pathways regulating pluripotency of stem cells	Signaling pathways regulating pluripotency of stem cells	0	0	13.5
-PWY8	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Escherichia coli	Biofilm formation - Escherichia coli	24.9613304324126	27.2830729656817	29.625066371067
-PWY9	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Pseudomonas aeruginosa	Biofilm formation - Pseudomonas aeruginosa	26.9399663821548	23.4395288087017	24.2001715024741
-PWY10	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Vibrio cholerae	Biofilm formation - Vibrio cholerae	26.4983007528545	31.1269743985261	26.1284533541356
-PWY11	Cellular Processes	Cellular community - prokaryotes	Quorum sensing	Quorum sensing	22.9052675711343	39.5248386603818	27.1717982659449
-PWY12	Cellular Processes	Transport and catabolism	Autophagy - yeast	Autophagy - yeast	30	26	27.5833333333333
-PWY13	Cellular Processes	Transport and catabolism	Endocytosis	Endocytosis	2	0	0
-PWY14	Cellular Processes	Transport and catabolism	Lysosome	Lysosome	0	21.2392636684303	0
-PWY15	Cellular Processes	Transport and catabolism	Peroxisome	Peroxisome	32.9380639916302	29.4505495778584	20.8841620177345
-PWY16	Environmental Information Processing	Membrane transport	ABC transporters	ABC transporters	22.8006957702236	31.6519489749949	28.5818191585332
-PWY17	Environmental Information Processing	Membrane transport	Bacterial secretion system	Bacterial secretion system	41.269268705376	29.6902158320148	27.7940703026978
-PWY18	Environmental Information Processing	Membrane transport	Phosphotransferase system (PTS)	Phosphotransferase system (PTS)	13.6906569624581	41.2460182757004	25.2261610321634
-PWY19	Environmental Information Processing	Signal transduction	Calcium signaling pathway	Calcium signaling pathway	31.5	0	0
-PWY20	Environmental Information Processing	Signal transduction	MAPK signaling pathway	MAPK signaling pathway	28	0	0
-PWY21	Environmental Information Processing	Signal transduction	MAPK signaling pathway - fly	MAPK signaling pathway - fly	38.7916666666667	69.68	44.28
-PWY22	Environmental Information Processing	Signal transduction	PI3K-Akt signaling pathway	PI3K-Akt signaling pathway	0	19.1217532467532	14.9858594657375
-PWY23	Environmental Information Processing	Signal transduction	Two-component system	Two-component system	23.5967183585996	35.1041188403634	24.4862777741111
-PWY24	Environmental Information Processing	Signaling molecules and interaction	Neuroactive ligand-receptor interaction	Neuroactive ligand-receptor interaction	19.5	14.25	12.5
-PWY25	Genetic Information Processing	Folding, sorting and degradation	Proteasome	Proteasome	0	12.4989898989899	5
-PWY26	Genetic Information Processing	Folding, sorting and degradation	Protein export	Protein export	26.6730498626701	36.4643996515777	35.015752459104
-PWY27	Genetic Information Processing	Folding, sorting and degradation	Protein processing in endoplasmic reticulum	Protein processing in endoplasmic reticulum	15.5702671312427	37.975	14.7859078590786
-PWY28	Genetic Information Processing	Folding, sorting and degradation	RNA degradation	RNA degradation	24.072615302466	31.3588314851425	26.3109673507269
-PWY29	Genetic Information Processing	Folding, sorting and degradation	Sulfur relay system	Sulfur relay system	23.9451642696572	29.1050946956471	19.6220668220668
-PWY30	Genetic Information Processing	Replication and repair	Base excision repair	Base excision repair	25.0902487902348	27.5736209594748	25.6993249699762
-PWY31	Genetic Information Processing	Replication and repair	DNA replication	DNA replication	22.2085764018729	30.7554783941424	24.8145876665948
-PWY32	Genetic Information Processing	Replication and repair	Homologous recombination	Homologous recombination	23.4480318255648	29.250719754382	27.3964230280478
-PWY33	Genetic Information Processing	Replication and repair	Mismatch repair	Mismatch repair	21.0405567683081	27.9970694159139	25.3386362051584
-PWY34	Genetic Information Processing	Replication and repair	Non-homologous end-joining	Non-homologous end-joining	34.0428571428571	13.5952380952381	6
-PWY35	Genetic Information Processing	Replication and repair	Nucleotide excision repair	Nucleotide excision repair	19.6522158206162	25.7194736145836	22.6589914431289
-PWY36	Genetic Information Processing	Transcription	Basal transcription factors	Basal transcription factors	16.0606060606061	21.6	7
-PWY37	Genetic Information Processing	Transcription	RNA polymerase	RNA polymerase	29.7526210160556	48.058878968254	32.1997738056902
-PWY38	Genetic Information Processing	Translation	Aminoacyl-tRNA biosynthesis	Aminoacyl-tRNA biosynthesis	23.7531214579032	29.2004249374461	29.5737316104729
-PWY39	Genetic Information Processing	Translation	Ribosome	Ribosome	30.5161254433863	51.2979193316717	49.5021638787183
-PWY40	Genetic Information Processing	Translation	Ribosome biogenesis in eukaryotes	Ribosome biogenesis in eukaryotes	35.19	26.084126984127	35.0855263157895
-PWY41	Human Diseases	Cancer: overview	Chemical carcinogenesis - DNA adducts	Chemical carcinogenesis - DNA adducts	25.9126984126984	0	0
-PWY42	Human Diseases	Cancer: overview	Chemical carcinogenesis - reactive oxygen species	Chemical carcinogenesis - reactive oxygen species	36.282643976394	31.640153256705	31.4197143623955
-PWY43	Human Diseases	Cardiovascular disease	Hypertrophic cardiomyopathy	Hypertrophic cardiomyopathy	21	0	0
-PWY44	Human Diseases	Drug resistance: antimicrobial	beta-Lactam resistance	beta-Lactam resistance	21.5295808391315	48.622741231126	21.5423467285166
-PWY45	Human Diseases	Drug resistance: antimicrobial	Cationic antimicrobial peptide (CAMP) resistance	Cationic antimicrobial peptide (CAMP) resistance	19.9536762922572	53.8490405929753	26.6509770134759
-PWY46	Human Diseases	Drug resistance: antimicrobial	Vancomycin resistance	Vancomycin resistance	18.1824031069872	24.2244234569488	21.1605713894912
-PWY47	Human Diseases	Drug resistance: antineoplastic	Platinum drug resistance	Platinum drug resistance	38.0108645399908	28.3825757575758	17.0291840712893
-PWY48	Human Diseases	Endocrine and metabolic disease	Insulin resistance	Insulin resistance	19.4704798710344	0	0
-PWY49	Human Diseases	Infectious disease: bacterial	Bacterial invasion of epithelial cells	Bacterial invasion of epithelial cells	7.65882352941177	37.2338899196042	78.6868421052632
-PWY50	Human Diseases	Infectious disease: bacterial	Epithelial cell signaling in Helicobacter pylori infection	Epithelial cell signaling in Helicobacter pylori infection	45.8779569892473	32.6266109369558	14.3192174913694
-PWY51	Human Diseases	Infectious disease: bacterial	Legionellosis	Legionellosis	23.7322110812894	31.6911190424295	22.9511182531658
-PWY52	Human Diseases	Infectious disease: bacterial	Pathogenic Escherichia coli infection	Pathogenic Escherichia coli infection	28.5157894736842	0	0
-PWY53	Human Diseases	Infectious disease: bacterial	Pertussis	Pertussis	55.8319449465009	21.9857142857143	40.5187969924812
-PWY54	Human Diseases	Infectious disease: bacterial	Salmonella infection	Salmonella infection	37.6741029874313	0	31.0621438217727
-PWY55	Human Diseases	Infectious disease: bacterial	Shigellosis	Shigellosis	38.9313172043011	0	28.7739130434783
-PWY56	Human Diseases	Infectious disease: bacterial	Staphylococcus aureus infection	Staphylococcus aureus infection	21.2954395604396	117.604547206156	57.0104497354497
-PWY57	Human Diseases	Infectious disease: bacterial	Tuberculosis	Tuberculosis	28.301672564187	27.1386031192483	0
-PWY58	Human Diseases	Infectious disease: bacterial	Vibrio cholerae infection	Vibrio cholerae infection	13.8	0	18.6
-PWY59	Human Diseases	Infectious disease: parasitic	African trypanosomiasis	African trypanosomiasis	9.375	23.2142857142857	0
-PWY60	Human Diseases	Infectious disease: parasitic	Amoebiasis	Amoebiasis	21.2152777777778	34.6950046904315	15.5803921568627
-PWY61	Human Diseases	Infectious disease: parasitic	Chagas disease	Chagas disease	9	19	8.36363636363636
-PWY62	Human Diseases	Infectious disease: viral	Hepatitis C	Hepatitis C	0	0	12.2
-PWY63	Human Diseases	Neurodegenerative disease	Spinocerebellar ataxia	Spinocerebellar ataxia	28.0454545454545	17.8	18.0333333333333
-PWY64	Metabolism	Amino acid metabolism	Alanine, aspartate and glutamate metabolism	Alanine, aspartate and glutamate metabolism	23.8836446538789	27.9160964507247	24.9437910534649
-PWY65	Metabolism	Amino acid metabolism	Arginine and proline metabolism	Arginine and proline metabolism	23.5558193397938	28.7006639654561	21.791443963916
-PWY66	Metabolism	Amino acid metabolism	Arginine biosynthesis	Arginine biosynthesis	24.1799145440875	32.4299666960995	23.7291996107336
-PWY67	Metabolism	Amino acid metabolism	Cysteine and methionine metabolism	Cysteine and methionine metabolism	22.3623737294802	31.0729989043661	26.473191194136
-PWY68	Metabolism	Amino acid metabolism	Glycine, serine and threonine metabolism	Glycine, serine and threonine metabolism	30.7355814347665	29.7922129393401	23.4304596208421
-PWY69	Metabolism	Amino acid metabolism	Histidine metabolism	Histidine metabolism	24.0370749480036	29.0860634127008	22.6255171599874
-PWY70	Metabolism	Amino acid metabolism	Lysine biosynthesis	Lysine biosynthesis	21.1111656769353	28.7651364300661	25.9631499081808
-PWY71	Metabolism	Amino acid metabolism	Lysine degradation	Lysine degradation	25.7009230351109	28.2035054753055	16.4654016057727
-PWY72	Metabolism	Amino acid metabolism	Phenylalanine metabolism	Phenylalanine metabolism	27.5909047145952	22.3720636514136	23.1498684823239
-PWY73	Metabolism	Amino acid metabolism	Phenylalanine, tyrosine and tryptophan biosynthesis	Phenylalanine, tyrosine and tryptophan biosynthesis	21.1487484119353	32.1050178639956	27.6504829627195
-PWY74	Metabolism	Amino acid metabolism	Tryptophan metabolism	Tryptophan metabolism	30.8981109058316	26.1923234676696	22.430999405483
-PWY75	Metabolism	Amino acid metabolism	Tyrosine metabolism	Tyrosine metabolism	25.2391774061023	26.334485222727	19.1481072035724
-PWY76	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine biosynthesis	Valine, leucine and isoleucine biosynthesis	21.5211286329392	30.8185962544774	28.3850857600755
-PWY77	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine degradation	Valine, leucine and isoleucine degradation	35.89600196426	25.2440309960875	17.8790634885812
-PWY78	Metabolism	Biosynthesis of other secondary metabolites	Acarbose and validamycin biosynthesis	Acarbose and validamycin biosynthesis	29.4232362232362	24.2421707421707	0
-PWY79	Metabolism	Biosynthesis of other secondary metabolites	Betalain biosynthesis	Betalain biosynthesis	27.25	19.1428571428571	9
-PWY80	Metabolism	Biosynthesis of other secondary metabolites	Biosynthesis of various alkaloids	Biosynthesis of various alkaloids	2	0	0
-PWY81	Metabolism	Biosynthesis of other secondary metabolites	Biosynthesis of various antibiotics	Biosynthesis of various antibiotics	15.9120588235294	56.2184523809524	36.7333333333333
-PWY82	Metabolism	Biosynthesis of other secondary metabolites	Biosynthesis of various other secondary metabolites	Biosynthesis of various other secondary metabolites	33.8888888888889	58.0952380952381	13.5
-PWY83	Metabolism	Biosynthesis of other secondary metabolites	Carbapenem biosynthesis	Carbapenem biosynthesis	0	20.0708333333333	21.9887626262626
-PWY84	Metabolism	Biosynthesis of other secondary metabolites	Clavulanic acid biosynthesis	Clavulanic acid biosynthesis	31	23.5	0
-PWY85	Metabolism	Biosynthesis of other secondary metabolites	Indole alkaloid biosynthesis	Indole alkaloid biosynthesis	0	11.3333333333333	0
-PWY86	Metabolism	Biosynthesis of other secondary metabolites	Monobactam biosynthesis	Monobactam biosynthesis	20.1812851391409	24.6983691733104	25.3161258259759
-PWY87	Metabolism	Biosynthesis of other secondary metabolites	Penicillin and cephalosporin biosynthesis	Penicillin and cephalosporin biosynthesis	26.9747474747475	34.6495726495726	22.8603683897802
-PWY88	Metabolism	Biosynthesis of other secondary metabolites	Phenazine biosynthesis	Phenazine biosynthesis	26.4104910714286	28.7211988304094	20.5798470535313
-PWY89	Metabolism	Biosynthesis of other secondary metabolites	Phenylpropanoid biosynthesis	Phenylpropanoid biosynthesis	28.5666666666667	37.3875	22.3560606060606
-PWY90	Metabolism	Biosynthesis of other secondary metabolites	Prodigiosin biosynthesis	Prodigiosin biosynthesis	0	0	49.1847984041429
-PWY91	Metabolism	Biosynthesis of other secondary metabolites	Streptomycin biosynthesis	Streptomycin biosynthesis	22.970939343727	24.5208402311313	27.5623195751412
-PWY92	Metabolism	Biosynthesis of other secondary metabolites	Tropane, piperidine and pyridine alkaloid biosynthesis	Tropane, piperidine and pyridine alkaloid biosynthesis	22.5019296607532	0	0
-PWY93	Metabolism	Carbohydrate metabolism	Amino sugar and nucleotide sugar metabolism	Amino sugar and nucleotide sugar metabolism	19.605160608342	32.7353959160142	28.236613552584
-PWY94	Metabolism	Carbohydrate metabolism	Ascorbate and aldarate metabolism	Ascorbate and aldarate metabolism	22.3823691492751	25.7407565877972	25.0033489812643
-PWY95	Metabolism	Carbohydrate metabolism	Butanoate metabolism	Butanoate metabolism	27.3992370670166	28.0958503220039	21.0369642608592
-PWY96	Metabolism	Carbohydrate metabolism	C5-Branched dibasic acid metabolism	C5-Branched dibasic acid metabolism	30.3725245225907	0	22.4734784063131
-PWY97	Metabolism	Carbohydrate metabolism	Citrate cycle (TCA cycle)	Citrate cycle (TCA cycle)	26.8119119805984	28.8166966528784	23.5430674579825
-PWY98	Metabolism	Carbohydrate metabolism	Fructose and mannose metabolism	Fructose and mannose metabolism	17.2279898555865	30.5360645702909	22.6809224179638
-PWY99	Metabolism	Carbohydrate metabolism	Galactose metabolism	Galactose metabolism	13.8669331468627	44.5327424241498	29.3948285390254
-PWY100	Metabolism	Carbohydrate metabolism	Glycolysis / Gluconeogenesis	Glycolysis / Gluconeogenesis	21.327013546321	31.7493715670867	24.195103901738
-PWY101	Metabolism	Carbohydrate metabolism	Glyoxylate and dicarboxylate metabolism	Glyoxylate and dicarboxylate metabolism	28.5151144680587	34.2868103237571	22.6124400396054
-PWY102	Metabolism	Carbohydrate metabolism	Inositol phosphate metabolism	Inositol phosphate metabolism	19.7950184584389	61.0078925159808	19.522799259564
-PWY103	Metabolism	Carbohydrate metabolism	Pentose and glucuronate interconversions	Pentose and glucuronate interconversions	19.2695422775042	30.7083356559407	30.7717369083074
-PWY104	Metabolism	Carbohydrate metabolism	Pentose phosphate pathway	Pentose phosphate pathway	19.8825544899716	31.0483622706704	25.7780135283642
-PWY105	Metabolism	Carbohydrate metabolism	Propanoate metabolism	Propanoate metabolism	26.3649134372616	27.6376300556223	20.6956977108048
-PWY106	Metabolism	Carbohydrate metabolism	Pyruvate metabolism	Pyruvate metabolism	25.177409493034	31.2103679290005	24.4838579671322
-PWY107	Metabolism	Carbohydrate metabolism	Starch and sucrose metabolism	Starch and sucrose metabolism	18.1045546539262	25.4396168416434	21.7426583576463
-PWY108	Metabolism	Energy metabolism	Carbon fixation in photosynthetic organisms	Carbon fixation in photosynthetic organisms	22.3850341749787	0	0
-PWY109	Metabolism	Energy metabolism	Carbon fixation pathways in prokaryotes	Carbon fixation pathways in prokaryotes	25.9355681900629	0	23.4137454313038
-PWY110	Metabolism	Energy metabolism	Methane metabolism	Methane metabolism	22.8872221139267	34.8075045077977	21.2180241146854
-PWY111	Metabolism	Energy metabolism	Nitrogen metabolism	Nitrogen metabolism	30.5297173684596	31.287802970214	17.3954424648057
-PWY112	Metabolism	Energy metabolism	Oxidative phosphorylation	Oxidative phosphorylation	30.1984251371941	28.3109718196825	23.4276018378475
-PWY113	Metabolism	Energy metabolism	Photosynthesis	Photosynthesis	31.0512641367695	33.3628305199878	0
-PWY114	Metabolism	Energy metabolism	Sulfur metabolism	Sulfur metabolism	25.7970587531625	31.4598366801905	24.5753128693918
-PWY115	Metabolism	Global and overview maps	Metabolic pathways	Metabolic pathways	24.6264781777817	0	24.4986179866701
-PWY116	Metabolism	Glycan biosynthesis and metabolism	Arabinogalactan biosynthesis - Mycobacterium	Arabinogalactan biosynthesis - Mycobacterium	0	21.9441027926322	13.6706989247312
-PWY117	Metabolism	Glycan biosynthesis and metabolism	Exopolysaccharide biosynthesis	Exopolysaccharide biosynthesis	14.2234576820548	44.3221936109867	23.0207419820323
-PWY118	Metabolism	Glycan biosynthesis and metabolism	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate	0	0	23
-PWY119	Metabolism	Glycan biosynthesis and metabolism	Glycosaminoglycan degradation	Glycosaminoglycan degradation	17.1560473760474	24.1186507936508	25.9399317738791
-PWY120	Metabolism	Glycan biosynthesis and metabolism	Lipoarabinomannan (LAM) biosynthesis	Lipoarabinomannan (LAM) biosynthesis	12.24	21.7379763821793	9.90714285714286
-PWY121	Metabolism	Glycan biosynthesis and metabolism	Lipopolysaccharide biosynthesis	Lipopolysaccharide biosynthesis	27.1173579180768	22.1128747795414	24.1385228279346
-PWY122	Metabolism	Glycan biosynthesis and metabolism	Mannose type O-glycan biosynthesis	Mannose type O-glycan biosynthesis	0	0	13.0833333333333
-PWY123	Metabolism	Glycan biosynthesis and metabolism	N-Glycan biosynthesis	N-Glycan biosynthesis	13	22.2727272727273	16.3571428571429
-PWY124	Metabolism	Glycan biosynthesis and metabolism	O-Antigen nucleotide sugar biosynthesis	O-Antigen nucleotide sugar biosynthesis	20.5507423833266	44.7470900368963	27.2595518966609
-PWY125	Metabolism	Glycan biosynthesis and metabolism	O-Antigen repeat unit biosynthesis	O-Antigen repeat unit biosynthesis	21.8474576271186	33.9090909090909	31.7741935483871
-PWY126	Metabolism	Glycan biosynthesis and metabolism	Other glycan degradation	Other glycan degradation	15.1329205092044	27.8713516761286	21.2989438677477
-PWY127	Metabolism	Glycan biosynthesis and metabolism	Other types of O-glycan biosynthesis	Other types of O-glycan biosynthesis	13.3333333333333	23.1	9.5
-PWY128	Metabolism	Glycan biosynthesis and metabolism	Peptidoglycan biosynthesis	Peptidoglycan biosynthesis	18.8459673624085	37.4413420701836	23.9420654909564
-PWY129	Metabolism	Glycan biosynthesis and metabolism	Teichoic acid biosynthesis	Teichoic acid biosynthesis	20.3541996578437	47.7677957476571	23.4048107991683
-PWY130	Metabolism	Lipid metabolism	Biosynthesis of unsaturated fatty acids	Biosynthesis of unsaturated fatty acids	41.3	19.8920175438596	11.075
-PWY131	Metabolism	Lipid metabolism	Ether lipid metabolism	Ether lipid metabolism	9.2140625	59.6773504273504	0
-PWY132	Metabolism	Lipid metabolism	Fatty acid biosynthesis	Fatty acid biosynthesis	22.5282183645007	30.1423601414745	26.7669962802304
-PWY133	Metabolism	Lipid metabolism	Fatty acid degradation	Fatty acid degradation	28.7441942672272	26.8314254824126	20.4995114667403
-PWY134	Metabolism	Lipid metabolism	Fatty acid elongation	Fatty acid elongation	0	28	0
-PWY135	Metabolism	Lipid metabolism	Glycerolipid metabolism	Glycerolipid metabolism	15.526339453513	35.5496632542986	26.6650391305908
-PWY136	Metabolism	Lipid metabolism	Glycerophospholipid metabolism	Glycerophospholipid metabolism	19.4859438162107	36.4264372426694	28.0622013268929
-PWY137	Metabolism	Lipid metabolism	Linoleic acid metabolism	Linoleic acid metabolism	0	17.2279411764706	23.2777777777778
-PWY138	Metabolism	Lipid metabolism	Primary bile acid biosynthesis	Primary bile acid biosynthesis	31.5757575757576	32.71875	13.5
-PWY139	Metabolism	Lipid metabolism	Secondary bile acid biosynthesis	Secondary bile acid biosynthesis	23.0405844155844	34.2013888888889	17.0424836601307
-PWY140	Metabolism	Lipid metabolism	Sphingolipid metabolism	Sphingolipid metabolism	18.6569595922201	36.5009623259623	17.6160315422703
-PWY141	Metabolism	Lipid metabolism	Steroid biosynthesis	Steroid biosynthesis	14	22.8333333333333	19
-PWY142	Metabolism	Lipid metabolism	Steroid hormone biosynthesis	Steroid hormone biosynthesis	33.3333333333333	25.0083333333333	0
-PWY143	Metabolism	Metabolism of cofactors and vitamins	Biotin metabolism	Biotin metabolism	30.1081937612247	34.4665883605109	30.6912675530393
-PWY144	Metabolism	Metabolism of cofactors and vitamins	Folate biosynthesis	Folate biosynthesis	24.6188524859786	29.8053837080538	22.5535963922478
-PWY145	Metabolism	Metabolism of cofactors and vitamins	Lipoic acid metabolism	Lipoic acid metabolism	25.7396825396825	37.5790264191801	36.840069124424
-PWY146	Metabolism	Metabolism of cofactors and vitamins	Nicotinate and nicotinamide metabolism	Nicotinate and nicotinamide metabolism	24.0958063176148	27.1433718912985	33.6230022456655
-PWY147	Metabolism	Metabolism of cofactors and vitamins	One carbon pool by folate	One carbon pool by folate	26.0658332579558	30.8019948463188	25.5248357107242
-PWY148	Metabolism	Metabolism of cofactors and vitamins	Pantothenate and CoA biosynthesis	Pantothenate and CoA biosynthesis	21.5524193598871	30.9979438509726	30.4733250060818
-PWY149	Metabolism	Metabolism of cofactors and vitamins	Porphyrin metabolism	Porphyrin metabolism	20.9674287718221	28.2453409482539	17.873067735737
-PWY150	Metabolism	Metabolism of cofactors and vitamins	Retinol metabolism	Retinol metabolism	0	30.4029411764706	31.6949546617066
-PWY151	Metabolism	Metabolism of cofactors and vitamins	Riboflavin metabolism	Riboflavin metabolism	24.0308777539675	36.9343748458919	26.8521815865915
-PWY152	Metabolism	Metabolism of cofactors and vitamins	Thiamine metabolism	Thiamine metabolism	17.1291580434708	31.3126715523947	27.4229639475086
-PWY153	Metabolism	Metabolism of cofactors and vitamins	Ubiquinone and other terpenoid-quinone biosynthesis	Ubiquinone and other terpenoid-quinone biosynthesis	24.5484661654135	25.0729672462968	21.9175079199217
-PWY154	Metabolism	Metabolism of cofactors and vitamins	Vitamin B6 metabolism	Vitamin B6 metabolism	24.6372097693475	26.86079488126	25.9855083602447
-PWY155	Metabolism	Metabolism of other amino acids	beta-Alanine metabolism	beta-Alanine metabolism	26.7131882023342	24.9726177927381	16.7188870614035
-PWY156	Metabolism	Metabolism of other amino acids	Cyanoamino acid metabolism	Cyanoamino acid metabolism	34.9624547001311	27.2153599472748	26.9330734955735
-PWY157	Metabolism	Metabolism of other amino acids	D-Amino acid metabolism	D-Amino acid metabolism	27.1820555792166	28.5748152001927	22.792027392897
-PWY158	Metabolism	Metabolism of other amino acids	Glutathione metabolism	Glutathione metabolism	30.8253454764896	28.3455510472847	27.0806348630049
-PWY159	Metabolism	Metabolism of other amino acids	Phosphonate and phosphinate metabolism	Phosphonate and phosphinate metabolism	27.3519326727727	34.950974025974	17.267032967033
-PWY160	Metabolism	Metabolism of other amino acids	Selenocompound metabolism	Selenocompound metabolism	20.5980293986677	23.086700942419	23.7762460986091
-PWY161	Metabolism	Metabolism of other amino acids	Taurine and hypotaurine metabolism	Taurine and hypotaurine metabolism	22.9373029923161	25.5759338629543	22.1497337565134
-PWY162	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of ansamycins	Biosynthesis of ansamycins	0	24.8804632867133	0
-PWY163	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of enediyne antibiotics	Biosynthesis of enediyne antibiotics	0	29.8333333333333	0
-PWY164	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of siderophore group nonribosomal peptides	Biosynthesis of siderophore group nonribosomal peptides	18.6610547572086	18.3836898395722	11.7297916666667
-PWY165	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of type II polyketide products	Biosynthesis of type II polyketide products	0	54	0
-PWY166	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of vancomycin group antibiotics	Biosynthesis of vancomycin group antibiotics	0	24.2142857142857	0
-PWY167	Metabolism	Metabolism of terpenoids and polyketides	Carotenoid biosynthesis	Carotenoid biosynthesis	19.5833333333333	127.703262786596	39.7073863636364
-PWY168	Metabolism	Metabolism of terpenoids and polyketides	Geraniol degradation	Geraniol degradation	41.1272968825654	24.0003532524789	9.75
-PWY169	Metabolism	Metabolism of terpenoids and polyketides	Limonene and pinene degradation	Limonene and pinene degradation	32.8399393161396	21.3287890595021	0
-PWY170	Metabolism	Metabolism of terpenoids and polyketides	Nonribosomal peptide structures	Nonribosomal peptide structures	17.1994047619048	0	0
-PWY171	Metabolism	Metabolism of terpenoids and polyketides	Polyketide sugar unit biosynthesis	Polyketide sugar unit biosynthesis	14.1555538055538	33.0514065085494	29.6740925210472
-PWY172	Metabolism	Metabolism of terpenoids and polyketides	Sesquiterpenoid and triterpenoid biosynthesis	Sesquiterpenoid and triterpenoid biosynthesis	14.25	0	0
-PWY173	Metabolism	Metabolism of terpenoids and polyketides	Terpenoid backbone biosynthesis	Terpenoid backbone biosynthesis	25.5343062482999	30.5980929216516	24.9229126955215
-PWY174	Metabolism	Metabolism of terpenoids and polyketides	Tetracycline biosynthesis	Tetracycline biosynthesis	22	0	8
-PWY175	Metabolism	Metabolism of terpenoids and polyketides	Zeatin biosynthesis	Zeatin biosynthesis	22.4255319148936	31.8139534883721	29.3571428571429
-PWY176	Metabolism	Nucleotide metabolism	Purine metabolism	Purine metabolism	23.1935861013007	30.5990118783191	27.5366104470162
-PWY177	Metabolism	Nucleotide metabolism	Pyrimidine metabolism	Pyrimidine metabolism	20.6666389355448	31.4737373702709	33.4317721166235
-PWY178	Metabolism	Xenobiotics biodegradation and metabolism	Aminobenzoate degradation	Aminobenzoate degradation	32.3261433683551	26.1006637806638	26.3924630924631
-PWY179	Metabolism	Xenobiotics biodegradation and metabolism	Atrazine degradation	Atrazine degradation	27.2683234584156	38.3680877742947	0
-PWY180	Metabolism	Xenobiotics biodegradation and metabolism	Benzoate degradation	Benzoate degradation	33.7595684779439	25.3804632454136	22.0346734892788
-PWY181	Metabolism	Xenobiotics biodegradation and metabolism	Bisphenol degradation	Bisphenol degradation	43.1428571428571	18	0
-PWY182	Metabolism	Xenobiotics biodegradation and metabolism	Caprolactam degradation	Caprolactam degradation	28.0806559011164	19.9714882818331	0
-PWY183	Metabolism	Xenobiotics biodegradation and metabolism	Chloroalkane and chloroalkene degradation	Chloroalkane and chloroalkene degradation	27.8712198063708	31.4831727378839	27.0225942287323
-PWY184	Metabolism	Xenobiotics biodegradation and metabolism	Chlorocyclohexane and chlorobenzene degradation	Chlorocyclohexane and chlorobenzene degradation	39.1177477725097	23.1802712842713	20.5830882352941
-PWY185	Metabolism	Xenobiotics biodegradation and metabolism	Dioxin degradation	Dioxin degradation	30.9178571428571	29.1080705009276	0
-PWY186	Metabolism	Xenobiotics biodegradation and metabolism	Drug metabolism - other enzymes	Drug metabolism - other enzymes	24.4527414986974	0	23.328644363556
-PWY187	Metabolism	Xenobiotics biodegradation and metabolism	Ethylbenzene degradation	Ethylbenzene degradation	29.0526610644258	0	0
-PWY188	Metabolism	Xenobiotics biodegradation and metabolism	Fluorobenzoate degradation	Fluorobenzoate degradation	43.8080878226712	21.2947474747475	0
-PWY189	Metabolism	Xenobiotics biodegradation and metabolism	Furfural degradation	Furfural degradation	7.66666666666667	14.1111111111111	0
-PWY190	Metabolism	Xenobiotics biodegradation and metabolism	Metabolism of xenobiotics by cytochrome P450	Metabolism of xenobiotics by cytochrome P450	23.9606671106671	0	0
-PWY191	Metabolism	Xenobiotics biodegradation and metabolism	Naphthalene degradation	Naphthalene degradation	31.6809580895295	29.922818883651	0
-PWY192	Metabolism	Xenobiotics biodegradation and metabolism	Nitrotoluene degradation	Nitrotoluene degradation	20.1445897143478	26.2238636363636	10.1309523809524
-PWY193	Metabolism	Xenobiotics biodegradation and metabolism	Polycyclic aromatic hydrocarbon degradation	Polycyclic aromatic hydrocarbon degradation	52.7636752136752	26.7333333333333	9.25
-PWY194	Metabolism	Xenobiotics biodegradation and metabolism	Steroid degradation	Steroid degradation	37.7	21.2206276814972	0
-PWY195	Metabolism	Xenobiotics biodegradation and metabolism	Styrene degradation	Styrene degradation	40.5088888888889	26.8678436621858	16.5223214285714
-PWY196	Metabolism	Xenobiotics biodegradation and metabolism	Toluene degradation	Toluene degradation	49.5119415442945	25.3867564534231	0
-PWY197	Metabolism	Xenobiotics biodegradation and metabolism	Xylene degradation	Xylene degradation	37.0567226890756	24.711892393321	0
-PWY198	Organismal Systems	Aging	Longevity regulating pathway - multiple species	Longevity regulating pathway - multiple species	33.804397993311	36.747196253725	25.2842907075874
-PWY199	Organismal Systems	Digestive system	Mineral absorption	Mineral absorption	33.6169461606355	47.7159090909091	46.1548872180451
-PWY200	Organismal Systems	Digestive system	Protein digestion and absorption	Protein digestion and absorption	12.3289473684211	19.8433333333333	12.0545454545455
-PWY201	Organismal Systems	Endocrine system	Insulin signaling pathway	Insulin signaling pathway	26.0297125668449	18.7465692640693	21.0537573015162
-PWY202	Organismal Systems	Endocrine system	Renin-angiotensin system	Renin-angiotensin system	13.1388888888889	22.3865079365079	16.1875
-PWY203	Organismal Systems	Environmental adaptation	Plant-pathogen interaction	Plant-pathogen interaction	19.9558748405405	25.556146572104	27.8115407405459
-PWY204	Organismal Systems	Immune system	NOD-like receptor signaling pathway	NOD-like receptor signaling pathway	24.8799245145327	31.7777777777778	38.4587606044539
-PWY205	Organismal Systems	Nervous system	Cholinergic synapse	Cholinergic synapse	20	0	0
+PWY1	Cellular Processes	Cell growth and death	Apoptosis	Apoptosis	23.9545454545455	80	9.66666666666667
+PWY2	Cellular Processes	Cell growth and death	Apoptosis - fly	Apoptosis - fly	37.6025641025641	28.5865384615385	13.1515151515152
+PWY3	Cellular Processes	Cell growth and death	Cell cycle - Caulobacter	Cell cycle - Caulobacter	24.1734819201649	30.5143385023585	29.8066425034297
+PWY4	Cellular Processes	Cell growth and death	Meiosis - yeast	Meiosis - yeast	29.2	31.7875	0
+PWY5	Cellular Processes	Cell growth and death	Oocyte meiosis	Oocyte meiosis	0	0	5
+PWY6	Cellular Processes	Cell motility	Bacterial chemotaxis	Bacterial chemotaxis	23.9133805239014	21.0812186379928	23.3350827099334
+PWY7	Cellular Processes	Cell motility	Flagellar assembly	Flagellar assembly	30.0523282862005	21.1200452803901	30.4239480579367
+PWY8	Cellular Processes	Cellular community - eukaryotes	Signaling pathways regulating pluripotency of stem cells	Signaling pathways regulating pluripotency of stem cells	0	0	12.75
+PWY9	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Escherichia coli	Biofilm formation - Escherichia coli	24.9723493843334	26.5904153387757	30.0866021226973
+PWY10	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Pseudomonas aeruginosa	Biofilm formation - Pseudomonas aeruginosa	28.5180544957988	22.4366612554113	22.9686490574191
+PWY11	Cellular Processes	Cellular community - prokaryotes	Biofilm formation - Vibrio cholerae	Biofilm formation - Vibrio cholerae	26.0558071577355	30.578089710809	26.7835881789519
+PWY12	Cellular Processes	Cellular community - prokaryotes	Quorum sensing	Quorum sensing	23.751671379893	39.0058009585769	27.3659173354312
+PWY13	Cellular Processes	Transport and catabolism	Autophagy - yeast	Autophagy - yeast	29.8666666666667	26.2857142857143	30.0909090909091
+PWY14	Cellular Processes	Transport and catabolism	Endocytosis	Endocytosis	2	0	0
+PWY15	Cellular Processes	Transport and catabolism	Lysosome	Lysosome	0	21.2797868643505	0
+PWY16	Cellular Processes	Transport and catabolism	Peroxisome	Peroxisome	32.7503654466975	0	0
+PWY17	Environmental Information Processing	Membrane transport	ABC transporters	ABC transporters	22.4911834622165	31.7073674455234	29.4838470774867
+PWY18	Environmental Information Processing	Membrane transport	Bacterial secretion system	Bacterial secretion system	41.6598822151485	29.2332698567281	26.9258404474831
+PWY19	Environmental Information Processing	Membrane transport	Phosphotransferase system (PTS)	Phosphotransferase system (PTS)	14.2261683759514	40.9645890904124	25.9515159288659
+PWY20	Environmental Information Processing	Signal transduction	Calcium signaling pathway	Calcium signaling pathway	31.5	0	0
+PWY21	Environmental Information Processing	Signal transduction	Two-component system	Two-component system	23.5032017378703	35.0938463038615	23.3445462171291
+PWY22	Genetic Information Processing	Folding, sorting and degradation	Proteasome	Proteasome	0	12.3212121212121	5
+PWY23	Genetic Information Processing	Folding, sorting and degradation	Protein export	Protein export	26.5657618445881	35.3615701393178	34.2996205238551
+PWY24	Genetic Information Processing	Folding, sorting and degradation	Protein processing in endoplasmic reticulum	Protein processing in endoplasmic reticulum	15.493031358885	32.0294117647059	11.0128205128205
+PWY25	Genetic Information Processing	Folding, sorting and degradation	RNA degradation	RNA degradation	24.8041839372755	31.3707294489057	26.3217407540811
+PWY26	Genetic Information Processing	Folding, sorting and degradation	Sulfur relay system	Sulfur relay system	23.0597184070487	28.5544816008029	19.8134285540813
+PWY27	Genetic Information Processing	Replication and repair	Base excision repair	Base excision repair	24.014151589777	27.3118631963084	25.3975731858078
+PWY28	Genetic Information Processing	Replication and repair	DNA replication	DNA replication	22.4273522231377	30.1940083671711	23.9188612931586
+PWY29	Genetic Information Processing	Replication and repair	Homologous recombination	Homologous recombination	24.3471802859886	28.8909027698519	26.8540665378071
+PWY30	Genetic Information Processing	Replication and repair	Mismatch repair	Mismatch repair	21.179823157778	27.4528498879626	24.5992429216742
+PWY31	Genetic Information Processing	Replication and repair	Non-homologous end-joining	Non-homologous end-joining	33.7318181818182	13.7291666666667	6
+PWY32	Genetic Information Processing	Replication and repair	Nucleotide excision repair	Nucleotide excision repair	19.4332747539534	25.5347969399894	22.9854055153884
+PWY33	Genetic Information Processing	Transcription	RNA polymerase	RNA polymerase	20.5098531303857	46.583435665933	32.3343445862091
+PWY34	Genetic Information Processing	Transcription	Spliceosome	Spliceosome	30	0	0
+PWY35	Genetic Information Processing	Translation	Aminoacyl-tRNA biosynthesis	Aminoacyl-tRNA biosynthesis	23.625059956384	29.0191770147277	29.5002888602788
+PWY36	Genetic Information Processing	Translation	Nucleocytoplasmic transport	Nucleocytoplasmic transport	0	0	22
+PWY37	Genetic Information Processing	Translation	Ribosome	Ribosome	31.0591972680509	51.3051333590094	49.4308345056022
+PWY38	Genetic Information Processing	Translation	Ribosome biogenesis in eukaryotes	Ribosome biogenesis in eukaryotes	34.5625	26.9243386243386	34.7660256410256
+PWY39	Human Diseases	Cancer: overview	Chemical carcinogenesis - DNA adducts	Chemical carcinogenesis - DNA adducts	36.4696202531646	0	0
+PWY40	Human Diseases	Cancer: overview	Chemical carcinogenesis - reactive oxygen species	Chemical carcinogenesis - reactive oxygen species	28.7282786152842	32.2587723499361	29.8164918414918
+PWY41	Human Diseases	Cancer: overview	MicroRNAs in cancer	MicroRNAs in cancer	11.2959595959596	0	0
+PWY42	Human Diseases	Cancer: specific types	Breast cancer	Breast cancer	0	0	9
+PWY43	Human Diseases	Cardiovascular disease	Hypertrophic cardiomyopathy	Hypertrophic cardiomyopathy	24	0	0
+PWY44	Human Diseases	Drug resistance: antimicrobial	beta-Lactam resistance	beta-Lactam resistance	20.8927749228205	51.2050314749784	22.2463442675255
+PWY45	Human Diseases	Drug resistance: antimicrobial	Cationic antimicrobial peptide (CAMP) resistance	Cationic antimicrobial peptide (CAMP) resistance	20.0889180923373	52.4772013956916	25.8927894202569
+PWY46	Human Diseases	Drug resistance: antimicrobial	Vancomycin resistance	Vancomycin resistance	18.2993233236375	24.4229775694061	21.0919358762772
+PWY47	Human Diseases	Drug resistance: antineoplastic	Endocrine resistance	Endocrine resistance	0	32	0
+PWY48	Human Diseases	Endocrine and metabolic disease	Insulin resistance	Insulin resistance	19.5310201149425	0	0
+PWY49	Human Diseases	Infectious disease: bacterial	Bacterial invasion of epithelial cells	Bacterial invasion of epithelial cells	7.51666666666667	37.9731909641494	78.56
+PWY50	Human Diseases	Infectious disease: bacterial	Epithelial cell signaling in Helicobacter pylori infection	Epithelial cell signaling in Helicobacter pylori infection	36.9239926739927	32.9534632034632	14.3715909090909
+PWY51	Human Diseases	Infectious disease: bacterial	Legionellosis	Legionellosis	23.6293897300974	30.5928422619048	19.4386702747841
+PWY52	Human Diseases	Infectious disease: bacterial	Pathogenic Escherichia coli infection	Pathogenic Escherichia coli infection	28.2923076923077	0	0
+PWY53	Human Diseases	Infectious disease: bacterial	Pertussis	Pertussis	56.0504003062151	22.5227272727273	40.8098791179083
+PWY54	Human Diseases	Infectious disease: bacterial	Salmonella infection	Salmonella infection	0	0	30.9481522717049
+PWY55	Human Diseases	Infectious disease: bacterial	Staphylococcus aureus infection	Staphylococcus aureus infection	21.3333928571429	115.721839342429	57.3381121964455
+PWY56	Human Diseases	Infectious disease: bacterial	Tuberculosis	Tuberculosis	28.2713971742543	25.6759696745926	0
+PWY57	Human Diseases	Infectious disease: bacterial	Vibrio cholerae infection	Vibrio cholerae infection	11.6	0	18.6
+PWY58	Human Diseases	Infectious disease: parasitic	African trypanosomiasis	African trypanosomiasis	9.2	23.9495238095238	0
+PWY59	Human Diseases	Infectious disease: parasitic	Amoebiasis	Amoebiasis	23.1042452830189	34.0440900562852	15.3454545454545
+PWY60	Human Diseases	Infectious disease: parasitic	Chagas disease	Chagas disease	0	0	8.27272727272727
+PWY61	Human Diseases	Infectious disease: viral	Hepatitis C	Hepatitis C	0	0	13
+PWY62	Human Diseases	Neurodegenerative disease	Spinocerebellar ataxia	Spinocerebellar ataxia	19.3030303030303	17.8	15.3888888888889
+PWY63	Metabolism	Amino acid metabolism	Alanine, aspartate and glutamate metabolism	Alanine, aspartate and glutamate metabolism	22.9202164463854	27.2644819478058	22.9621918012079
+PWY64	Metabolism	Amino acid metabolism	Arginine and proline metabolism	Arginine and proline metabolism	23.0406388577715	0	0
+PWY65	Metabolism	Amino acid metabolism	Arginine biosynthesis	Arginine biosynthesis	24.8923591693772	31.8794421829575	21.8203509650657
+PWY66	Metabolism	Amino acid metabolism	Glycine, serine and threonine metabolism	Glycine, serine and threonine metabolism	30.6832077423764	0	0
+PWY67	Metabolism	Amino acid metabolism	Histidine metabolism	Histidine metabolism	22.381754296724	28.7490231583575	22.0244873896015
+PWY68	Metabolism	Amino acid metabolism	Lysine biosynthesis	Lysine biosynthesis	20.1960861446646	0	25.2187197110147
+PWY69	Metabolism	Amino acid metabolism	Phenylalanine metabolism	Phenylalanine metabolism	27.8288050139406	0	0
+PWY70	Metabolism	Amino acid metabolism	Phenylalanine, tyrosine and tryptophan biosynthesis	Phenylalanine, tyrosine and tryptophan biosynthesis	20.6336206068699	30.0008049048553	0
+PWY71	Metabolism	Amino acid metabolism	Tyrosine metabolism	Tyrosine metabolism	0	0	17.1175223358048
+PWY72	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine biosynthesis	Valine, leucine and isoleucine biosynthesis	21.5662089404417	31.368911073347	29.5716551783745
+PWY73	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine degradation	Valine, leucine and isoleucine degradation	35.1702825256173	24.5438398060117	0
+PWY74	Metabolism	Biosynthesis of other secondary metabolites	Streptomycin biosynthesis	Streptomycin biosynthesis	23.0933972954542	0	26.9034158184158
+PWY75	Metabolism	Carbohydrate metabolism	Amino sugar and nucleotide sugar metabolism	Amino sugar and nucleotide sugar metabolism	19.4864852385802	0	28.3993281780006
+PWY76	Metabolism	Carbohydrate metabolism	Butanoate metabolism	Butanoate metabolism	26.7349755052041	0	0
+PWY77	Metabolism	Carbohydrate metabolism	C5-Branched dibasic acid metabolism	C5-Branched dibasic acid metabolism	28.4216428451729	0	0
+PWY78	Metabolism	Carbohydrate metabolism	Citrate cycle (TCA cycle)	Citrate cycle (TCA cycle)	26.1742472036745	28.9989898627777	23.6590336178399
+PWY79	Metabolism	Carbohydrate metabolism	Fructose and mannose metabolism	Fructose and mannose metabolism	17.122287314642	30.7722206624462	22.841749339621
+PWY80	Metabolism	Carbohydrate metabolism	Galactose metabolism	Galactose metabolism	14.4763417813849	44.9692949484065	29.2997301009714
+PWY81	Metabolism	Carbohydrate metabolism	Glycolysis / Gluconeogenesis	Glycolysis / Gluconeogenesis	20.619799162898	31.7388083552221	24.1579822722758
+PWY82	Metabolism	Carbohydrate metabolism	Glyoxylate and dicarboxylate metabolism	Glyoxylate and dicarboxylate metabolism	29.2359418006042	0	0
+PWY83	Metabolism	Carbohydrate metabolism	Pentose and glucuronate interconversions	Pentose and glucuronate interconversions	19.2788193696125	0	30.7184880505927
+PWY84	Metabolism	Carbohydrate metabolism	Pentose phosphate pathway	Pentose phosphate pathway	19.5621924256299	0	0
+PWY85	Metabolism	Carbohydrate metabolism	Propanoate metabolism	Propanoate metabolism	26.4465627961485	27.5244718233104	20.7853244616275
+PWY86	Metabolism	Carbohydrate metabolism	Pyruvate metabolism	Pyruvate metabolism	24.9642880074839	30.9205598169953	24.6321442426318
+PWY87	Metabolism	Carbohydrate metabolism	Starch and sucrose metabolism	Starch and sucrose metabolism	18.352054689012	26.0194400651825	21.8319873917786
+PWY88	Metabolism	Energy metabolism	Carbon fixation in photosynthetic organisms	Carbon fixation in photosynthetic organisms	22.1420642206698	31.697719846612	22.8223608920109
+PWY89	Metabolism	Energy metabolism	Carbon fixation pathways in prokaryotes	Carbon fixation pathways in prokaryotes	25.1669570716963	0	0
+PWY90	Metabolism	Energy metabolism	Nitrogen metabolism	Nitrogen metabolism	29.9414599270976	30.3056609472219	17.6159359633031
+PWY91	Metabolism	Energy metabolism	Oxidative phosphorylation	Oxidative phosphorylation	28.3942736184402	27.7354961186651	23.4178984342769
+PWY92	Metabolism	Energy metabolism	Sulfur metabolism	Sulfur metabolism	25.8626112015479	31.671820750378	0
+PWY93	Metabolism	Global and overview maps	Biosynthesis of amino acids	Biosynthesis of amino acids	22.3705939222011	30.6084564565234	26.0966254823596
+PWY94	Metabolism	Global and overview maps	Biosynthesis of cofactors	Biosynthesis of cofactors	22.7853737049817	29.637946864405	25.5692371890527
+PWY95	Metabolism	Global and overview maps	Biosynthesis of secondary metabolites	Biosynthesis of secondary metabolites	24.0201677388636	32.0844606397687	24.527390270144
+PWY96	Metabolism	Global and overview maps	Carbon metabolism	Carbon metabolism	24.7322357791618	0	0
+PWY97	Metabolism	Global and overview maps	Metabolic pathways	Metabolic pathways	24.5097967202868	30.1113739272894	24.4626899889267
+PWY98	Metabolism	Global and overview maps	Microbial metabolism in diverse environments	Microbial metabolism in diverse environments	27.1415923845211	28.7468849929095	22.1402110201826
+PWY99	Metabolism	Global and overview maps	Nucleotide metabolism	Nucleotide metabolism	22.7980609838841	31.9112599454569	28.3697386725759
+PWY100	Metabolism	Glycan biosynthesis and metabolism	Arabinogalactan biosynthesis - Mycobacterium	Arabinogalactan biosynthesis - Mycobacterium	0	0	13.8177083333333
+PWY101	Metabolism	Glycan biosynthesis and metabolism	Exopolysaccharide biosynthesis	Exopolysaccharide biosynthesis	14.9133382333776	44.5867153679654	22.6349116161616
+PWY102	Metabolism	Glycan biosynthesis and metabolism	Lipoarabinomannan (LAM) biosynthesis	Lipoarabinomannan (LAM) biosynthesis	0	20.5706439393939	9.90714285714286
+PWY103	Metabolism	Glycan biosynthesis and metabolism	Lipopolysaccharide biosynthesis	Lipopolysaccharide biosynthesis	27.1839164014221	22.6864870509607	23.7379063878705
+PWY104	Metabolism	Glycan biosynthesis and metabolism	O-Antigen repeat unit biosynthesis	O-Antigen repeat unit biosynthesis	0	27.5909090909091	0
+PWY105	Metabolism	Glycan biosynthesis and metabolism	Other glycan degradation	Other glycan degradation	14.9956001620524	27.6546417905997	20.8331266832668
+PWY106	Metabolism	Glycan biosynthesis and metabolism	Peptidoglycan biosynthesis	Peptidoglycan biosynthesis	17.8693084088304	37.5710514694553	24.3353982301215
+PWY107	Metabolism	Glycan biosynthesis and metabolism	Teichoic acid biosynthesis	Teichoic acid biosynthesis	20.1626494136417	47.3534130951411	24.0168889785738
+PWY108	Metabolism	Lipid metabolism	Biosynthesis of unsaturated fatty acids	Biosynthesis of unsaturated fatty acids	46.3333333333333	20.0329365079365	10.5096153846154
+PWY109	Metabolism	Lipid metabolism	Fatty acid biosynthesis	Fatty acid biosynthesis	0	29.4748768863039	26.8712983788981
+PWY110	Metabolism	Lipid metabolism	Fatty acid degradation	Fatty acid degradation	27.0378900967304	27.0309876232848	17.9449637582031
+PWY111	Metabolism	Lipid metabolism	Glycerolipid metabolism	Glycerolipid metabolism	14.9742854231261	0	0
+PWY112	Metabolism	Lipid metabolism	Glycerophospholipid metabolism	Glycerophospholipid metabolism	19.3508328032826	36.1967920069421	29.5493139632196
+PWY113	Metabolism	Lipid metabolism	Secondary bile acid biosynthesis	Secondary bile acid biosynthesis	22.855303030303	34.8666666666667	17.1133333333333
+PWY114	Metabolism	Metabolism of cofactors and vitamins	Biotin metabolism	Biotin metabolism	29.7306118307559	34.8070986791846	31.6080673001877
+PWY115	Metabolism	Metabolism of cofactors and vitamins	Pantothenate and CoA biosynthesis	Pantothenate and CoA biosynthesis	21.3880185376544	32.8553800275989	31.0331462510302
+PWY116	Metabolism	Metabolism of cofactors and vitamins	Porphyrin metabolism	Porphyrin metabolism	20.8534202027663	28.4867939093844	18.2267905950271
+PWY117	Metabolism	Metabolism of cofactors and vitamins	Retinol metabolism	Retinol metabolism	0	0	32.1185383244207
+PWY118	Metabolism	Metabolism of cofactors and vitamins	Riboflavin metabolism	Riboflavin metabolism	25.5021294341491	30.8484229909366	26.5344059778074
+PWY119	Metabolism	Metabolism of cofactors and vitamins	Thiamine metabolism	Thiamine metabolism	17.2744692346661	30.2173949789602	27.5086465786523
+PWY120	Metabolism	Metabolism of other amino acids	D-Amino acid metabolism	D-Amino acid metabolism	26.0154188558778	0	0
+PWY121	Metabolism	Metabolism of other amino acids	Phosphonate and phosphinate metabolism	Phosphonate and phosphinate metabolism	27.0891077898551	36.1094696969697	20.3026806526807
+PWY122	Metabolism	Metabolism of other amino acids	Selenocompound metabolism	Selenocompound metabolism	23.3522064398695	23.3088144566888	23.8180951826083
+PWY123	Metabolism	Metabolism of other amino acids	Taurine and hypotaurine metabolism	Taurine and hypotaurine metabolism	24.4238923801424	0	22.7100288125391
+PWY124	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of enediyne antibiotics	Biosynthesis of enediyne antibiotics	0	27.4583333333333	0
+PWY125	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of siderophore group nonribosomal peptides	Biosynthesis of siderophore group nonribosomal peptides	12.3928571428571	23.3302521008403	10.446047008547
+PWY126	Metabolism	Metabolism of terpenoids and polyketides	Geraniol degradation	Geraniol degradation	40.9004094883405	0	0
+PWY127	Metabolism	Metabolism of terpenoids and polyketides	Limonene and pinene degradation	Limonene and pinene degradation	0	21.1206838359381	0
+PWY128	Metabolism	Metabolism of terpenoids and polyketides	Nonribosomal peptide structures	Nonribosomal peptide structures	14.6742788461538	0	0
+PWY129	Metabolism	Metabolism of terpenoids and polyketides	Type I polyketide structures	Type I polyketide structures	23.5	22	0
+PWY130	Metabolism	Nucleotide metabolism	Pyrimidine metabolism	Pyrimidine metabolism	20.1134581588276	31.3605579598902	32.9980511341778
+PWY131	Metabolism	Xenobiotics biodegradation and metabolism	Benzoate degradation	Benzoate degradation	33.8532132272205	0	0
+PWY132	Metabolism	Xenobiotics biodegradation and metabolism	Bisphenol degradation	Bisphenol degradation	43.4761904761905	18	0
+PWY133	Metabolism	Xenobiotics biodegradation and metabolism	Caprolactam degradation	Caprolactam degradation	27.2383452439373	0	0
+PWY134	Metabolism	Xenobiotics biodegradation and metabolism	Drug metabolism - other enzymes	Drug metabolism - other enzymes	24.5561950642084	0	22.3911716619548
+PWY135	Metabolism	Xenobiotics biodegradation and metabolism	Fluorobenzoate degradation	Fluorobenzoate degradation	44.2652182539682	21.1288888888889	0
+PWY136	Metabolism	Xenobiotics biodegradation and metabolism	Nitrotoluene degradation	Nitrotoluene degradation	21.3429298771404	0	0
+PWY137	Metabolism	Xenobiotics biodegradation and metabolism	Steroid degradation	Steroid degradation	0	21.2140987105562	0
+PWY138	Metabolism	Xenobiotics biodegradation and metabolism	Styrene degradation	Styrene degradation	37.6183222158694	0	0
+PWY139	Metabolism	Xenobiotics biodegradation and metabolism	Xylene degradation	Xylene degradation	36.4894257703081	0	0
+PWY140	Organismal Systems	Aging	Longevity regulating pathway - multiple species	Longevity regulating pathway - multiple species	33.0555089647195	35.786196253725	21.1298346180772
+PWY141	Organismal Systems	Digestive system	Cholesterol metabolism	Cholesterol metabolism	0	0	8.25
+PWY142	Organismal Systems	Digestive system	Mineral absorption	Mineral absorption	32.548433048433	49.763078470825	41.1666666666667
+PWY143	Organismal Systems	Digestive system	Protein digestion and absorption	Protein digestion and absorption	16.0028571428571	20.1055555555556	12.3604166666667
+PWY144	Organismal Systems	Endocrine system	Insulin signaling pathway	Insulin signaling pathway	25.9983333333333	18.721408393866	19.5547619047619
+PWY145	Organismal Systems	Endocrine system	Renin-angiotensin system	Renin-angiotensin system	13.4375	23.6446115288221	16.25
+PWY146	Organismal Systems	Environmental adaptation	Plant-pathogen interaction	Plant-pathogen interaction	20.6855618171309	25.7447950247152	28.3309654631083
+PWY147	Organismal Systems	Immune system	Antigen processing and presentation	Antigen processing and presentation	0	29.25	0
+PWY148	Organismal Systems	Immune system	NOD-like receptor signaling pathway	NOD-like receptor signaling pathway	20.5121028646951	32.1888888888889	0

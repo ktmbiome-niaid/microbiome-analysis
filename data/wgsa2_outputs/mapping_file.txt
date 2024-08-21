@@ -1,0 +1,4 @@
+#SampleID	ForwardFastqFile	ReverseFastqFile	TreatmentGroup
+S1	S1_GItract_camiHiSeq_sub1M_R1.fastq.gz	S1_GItract_camiHiSeq_sub1M_R2.fastq.gz	S1
+S6	S6_Oral_camiHiSeq_sub1M_R1.fastq.gz	S6_Oral_camiHiSeq_sub1M_R2.fastq.gz	S6
+S28	S28_Skin_camiHiSeq_sub1M_R1.fastq.gz	S28_Skin_camiHiSeq_sub1M_R2.fastq.gz	S28

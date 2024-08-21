@@ -1,0 +1,65 @@
+[1] "Usage: my_program.R [options]\n--help           show this screen\n--binDIR PATH    hard path to bin dir [default: 'getwd()/TEDreadsTAX/bin']\n--sccList NAME   hard path and name of file listing successful sample names [default: 'SccList.txt']\n--outdir NAME    path to & name of output directory to create [default: 'getwd()/TEDreadsTAX/merged_tables']\n--genesDIR PATH  hard path to bin dir for KO/EC genes [None for TAX mode, but flag is needed]"
+List of 10
+ $ --help    : logi FALSE
+ $ --binDIR  : chr "/outputs/TAXprofiles/readsTAX_plusPFV/bin/"
+ $ --sccList : chr "/outputs/TAXprofiles/readsTAX_plusPFV/SccList.txt"
+ $ --outdir  : chr "/outputs/TAXprofiles/readsTAX_plusPFV/merged_tables/"
+ $ --genesDIR: chr "NA"
+ $ help      : logi FALSE
+ $ binDIR    : chr "/outputs/TAXprofiles/readsTAX_plusPFV/bin/"
+ $ sccList   : chr "/outputs/TAXprofiles/readsTAX_plusPFV/SccList.txt"
+ $ outdir    : chr "/outputs/TAXprofiles/readsTAX_plusPFV/merged_tables/"
+ $ genesDIR  : chr "NA"
+NULL
+[1] "------> detecting input files:"
+[1] "/outputs/TAXprofiles/readsTAX_plusPFV/bin//S1_wTAXid_4krona.txt" 
+[2] "/outputs/TAXprofiles/readsTAX_plusPFV/bin//S28_wTAXid_4krona.txt"
+[3] "/outputs/TAXprofiles/readsTAX_plusPFV/bin//S6_wTAXid_4krona.txt" 
+[1] "------> naming input files:"
+                                                                S1 
+ "/outputs/TAXprofiles/readsTAX_plusPFV/bin//S1_wTAXid_4krona.txt" 
+                                                               S28 
+"/outputs/TAXprofiles/readsTAX_plusPFV/bin//S28_wTAXid_4krona.txt" 
+                                                                S6 
+ "/outputs/TAXprofiles/readsTAX_plusPFV/bin//S6_wTAXid_4krona.txt" 
+[1] "------> load data from files"
+[1] "------> checking data loading objects:"
+# A tibble: 6 × 10
+# Groups:   Kingdom, Phylum, Class, Order, Family, Genus, Species [6]
+  Counts Kingdom  Phylum         Class  Order Family Genus Species TAXid Lineage
+   <int> <chr>    <chr>          <chr>  <chr> <chr>  <chr> <chr>   <int> <chr>  
+1   1733 Bacteria Actinomycetota Actin… Bifi… Bifid… Bifi… Bifido…  1678 Bacter…
+2     56 Bacteria Actinomycetota Actin… Bifi… Bifid… Bifi… Bifido… 28025 Bacter…
+3      2 Bacteria Actinomycetota Actin… Bifi… Bifid… Bifi… Bifido…  1694 Bacter…
+4      0 Bacteria Actinomycetota Actin… Bifi… Bifid… <NA>  Bifido… 31953 Bacter…
+5      0 Bacteria Actinomycetota Actin… Bifi… <NA>   <NA>  Bifido… 85004 Bacter…
+6      3 Bacteria Actinomycetota Actin… <NA>  <NA>   <NA>  Actino…  1760 Bacter…
+# A tibble: 6 × 10
+# Groups:   Kingdom, Phylum, Class, Order, Family, Genus, Species [6]
+  Counts Kingdom      Phylum     Class Order Family Genus Species  TAXid Lineage
+   <int> <chr>        <chr>      <chr> <chr> <chr>  <chr> <chr>    <int> <chr>  
+1      0 Bacteria     Verrucomi… Verr… Verr… Akker… <NA>  Akkerm… 1.65e6 Bacter…
+2      0 Bacteria     Verrucomi… Verr… Verr… <NA>   <NA>  Verruc… 4.85e4 Bacter…
+3      0 Bacteria     Verrucomi… Verr… <NA>  <NA>   <NA>  Verruc… 2.03e5 Bacter…
+4      0 Bacteria     Verrucomi… <NA>  <NA>  <NA>   <NA>  Verruc… 7.42e4 Bacter…
+5    838 Bacteria     <NA>       <NA>  <NA>  <NA>   <NA>  Bacter… 2   e0 Bacter…
+6   8074 Unclassified Unclassif… Uncl… Uncl… Uncla… Uncl… Unclas… 0      Unclas…
+[1] "S1"  "S28" "S6" 
+[1] "------> merging data"
+[1] "------> checking merged object:"
+           Kingdom         Phylum         Class           Order
+id2789425 Bacteria Actinomycetota Actinomycetes Actinomycetales
+id1655    Bacteria Actinomycetota Actinomycetes Actinomycetales
+id712116  Bacteria Actinomycetota Actinomycetes Actinomycetales
+id706438  Bacteria Actinomycetota Actinomycetes Actinomycetales
+id544580  Bacteria Actinomycetota Actinomycetes Actinomycetales
+id111015  Bacteria Actinomycetota Actinomycetes Actinomycetales
+                    Family       Genus                    Species S1 S28   S6
+id2789425 Actinomycetaceae Actinomyces        Actinomyces_HMT_175  0   0    1
+id1655    Actinomycetaceae Actinomyces     Actinomyces_naeslundii  0   0    5
+id712116  Actinomycetaceae Actinomyces Actinomyces_oral_taxon_169  0   0    5
+id706438  Actinomycetaceae Actinomyces Actinomyces_oral_taxon_171  0   0    3
+id544580  Actinomycetaceae Actinomyces           Actinomyces_oris  0   0 3883
+id111015  Actinomycetaceae Actinomyces   Actinomyces_radicidentis  0   1    0
+[1] 961  11
+[1] "------> exporting data at: /outputs/TAXprofiles/readsTAX_plusPFV/merged_tables/"

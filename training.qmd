@@ -8,7 +8,7 @@ format:
     number-sections: true
     embed-resources: true
     code-overflow: wrap
-    theme: yeti
+    theme: pulse
     fontsize: 0.97em
     column: page-right
 editor_options: 
@@ -72,7 +72,7 @@ Throughout the training, you will see callouts like this with activities and que
 
 # Nephele
 
-Before we start, I just wanted to remind everyone about our Nephele platform:
+Before we start, I just wanted to let everyone know about our Nephele platform:
 
 [![The Nephele Splash Page](images/nephele_screenshot.png)](https://nephele.niaid.nih.gov)
 
@@ -92,7 +92,13 @@ The data from DADA2 that we will be using today is derived from a paper examinin
 
 **Abstract:** Daily practices put humans in close contact with the surrounding environment, and differences in these practices have an impact on human physiology, development, and health. There is mounting evidence that the microbiome represents an interface that mediates interactions between the human body and the environment. In particular, the skin microbiome serves as the primary interface with the external environment and aids in host immune function by contributing as the first line of defense against pathogens. Despite these important connections, we have only a basic understanding of how the skin microbiome is first established, or which environmental factors contribute to its development. To this end, this study compared the skin bacterial communities of infants (n=47) living in four populations in Mexico and the United States that span the socioeconomic gradient, where we predicted that **variation in physical and social environments would shape the infant skin microbiome**. Results of 16S rRNA bacterial gene sequencing on **119 samples (armpit, hand, and forehead)** showed that infant skin bacterial diversity and composition are shaped by population-level factors, including those related to socioeconomic status and household composition, and vary by skin site and infant age. Differences in infant-environment interactions, including with other people, appear to vary across the populations, likely influencing infant microbial exposures and, in turn, the composition of infant skin bacterial communities. These findings suggest that variation in microbial exposures stemming from the local environment in infancy can impact the establishment of the skin microbiome across body sites, with implications for developmental and health outcomes.
 
-I processed the raw data with Nephele using the parameters the authors provided in their manuscript. However, the tables we analyze today are not identical to the results presented in the manuscript.
+::: {.callout-tip}
+## Activity
+
+Reviewing the abstract, what are the main conclusions of the authors?
+:::
+
+I processed the raw data with Nephele using the parameters the authors provided in their manuscript. However, the tables we analyze today are not identical to the version that the authors generated.
 
 ### Individual Files
 
@@ -104,31 +110,34 @@ During the class, I'll go through all of the files in the `dada2_outputs` folder
 
 As a side note, I've removed the filtered reads (for space reasons) and renamed the folder from `outputs` to `dada2_outputs` for our practice data today. Otherwise, the folder is exactly as you would obtain it from Nephele.
 
-We'll read in our ASV table:
+We'll read in our ASV table, which tells us the counts of reads that were found for each sequence variant within each sample.
 
 ```{r}
 library(phyloseq)
 library(ggplot2)
-setwd("~/Documents/training/microbiome-analysis/")
+setwd("~/OneDrive/training/microbiome-analysis/")
 otu <- read.table("data/dada2_outputs/OTU_table.txt", header=T, check.names=F, sep="\t", comment="", quote="", row.names=1)
+```
 
-## We can explore this file a little bit using some basic R commands
+We can explore this file (data frame) using a few basic R commands. I like to do this because it can tell me valuable information about the dataset I have just brought into R, and might help me if I run into issues later.
+
+```{r}
 dim(otu)
 
 otu[1:5,1:5]
-
-names(otu)
-
-rownames(otu)[1:20]
 ```
 
 ::: {.callout-tip}
-## Check-in
+## Activity
 
-What have we learned about this file?
+How many rows and columns are in the data?
+
+What is the ASV identifier like?
+
+How many seq2 reads does SRR12823315 have?
 :::
 
-We next need to separate our taxonomy information from this table so that it can be analyzed separately.
+We first next need to remove the taxonomy information from this table so that it can be added to the phyloseq object separately as the `tax_table` object.
 
 ```{r}
 tax <- as.matrix(otu[, c("Kingdom","Phylum","Class","Order","Family","Genus","Species")])
@@ -136,14 +145,14 @@ tax <- as.matrix(otu[, c("Kingdom","Phylum","Class","Order","Family","Genus","Sp
 otu[, c("Kingdom","Phylum","Class","Order","Family","Genus","Species")] <- NULL
 ```
 
-And now our phylogenetic tree
+Next, we read in a phylogenetic tree. This file tells us the approximate distance between ASVs, which is calculated through multiple sequence alignment. In most shotgun metagenomic settings, it's much more difficult to get computationally-meaningful phylogenetic trees for the taxa identified, so you are unlikely to use them in that context.
 
 ```{r}
 library(ape)
 tree <- read.tree("data/dada2_outputs/phylo/rooted_tree.nwk")
 ```
 
-Finally, we want to include a table of sample data:
+Finally, we want to include a table of data about each of the samples.
 
 ```{r}
 sampdat <- read.table("data/webinar_demo_metadata.txt", header=T, check.names=F, sep="\t", comment="", quote="")
@@ -152,28 +161,21 @@ head(sampdat)
 rownames(sampdat) <- sampdat$Description
 ```
 
-Now we can build our phyloseq object that we'll need for analysis:
+Now we can build our phyloseq object that we'll need for analysis. Note how each of the four components we just read into R has been included in the function.
 
 ```{r}
 dada2_phyloseq_object <- phyloseq(otu_table(otu, taxa_are_rows=TRUE), sample_data(sampdat), phy_tree(tree), tax_table(tax))
 ```
 
-This object can then be summarized by printing it again:
+This object can then be summarized by printing it:
 
 ```{r}
 dada2_phyloseq_object
 ```
 
-::: {.callout-tip}
-## Check-in
-
-How does this summary compare to some of the features we looked at earlier?
-:::
-
-
 ### Importing using a BIOM file
 
-BIOM files are a special file type that includes not only your count data, but your metadata too. Nephele creates one automatically from the mapping file you provide, and phyloseq has a special function that allows you to quickly import this file.
+BIOM files are a special file type that includes not only your count data, but your metadata too. Nephele creates one automatically for several pipelines, including DADA2, QIIME2, WGSA2, and, more recently, BioBakery. Phyloseq has a special function that allows you to quickly import this file.
 
 ```{r}
 otu_table_from_biom <- import_biom("data/dada2_outputs/taxa.biom", treefilename = "data/dada2_outputs/phylo/rooted_tree.nwk")
@@ -185,7 +187,7 @@ This file can also be summarized like above.
 otu_table_from_biom
 ```
 
-You'll notice that the BIOM file contains fewer sample variables. This is because it uses the mapping file submitted to Nephele, and I only submitted one (USA vs Mexico) when preparing the mapping file. If your mapping file includes more information, you can use this relatively seamless phyloseq function to bring in your data.
+You'll notice that the BIOM file contains fewer sample variables. This is because it uses the mapping file submitted to Nephele, and I only submitted one variable (USA vs Mexico) when preparing the mapping file. If your mapping file includes more information, you can use this relatively seamless phyloseq function to bring in your data.
 
 ## WGSA2
 
@@ -195,12 +197,12 @@ Data from WGSA2 is organized differently. Also, as I had removed larger files fr
 
 At any rate, the files you'll need to make the files below can be found under `wgsa2_outputs`. You can easily import either:
 
-- Taxonomy-based data (who's there?): TAXprofiles/readsTAX_RefDB/merged_tables
+- Taxonomy-based data: TAXprofiles/readsTAX_RefDB/merged_tables
 
 ```{r}
-wgsa2_otu_table <- read.table("data/wgsa2_outputs/TAXprofiles/readsTAX_RefDB/merged_tables/merged_Counts.txt", header=T, sep="\t", row.names=1)
-wgsa2_tax_table <- as.matrix(read.table("data/wgsa2_outputs/TAXprofiles/readsTAX_RefDB/merged_tables/merged_TAX.txt", header=T, sep="\t", row.names=1))
-wgsa2_sample_data <- read.table("data/wgsa2_outputs/wgsa_example_mapping_corrected.txt", header=T, sep="\t", comment="", row.names=1)
+wgsa2_otu_table <- read.table("data/wgsa2_outputs/TAXprofiles/readsTAX_plusPFV/merged_tables/merged_Counts.txt", header=T, sep="\t", row.names=1)
+wgsa2_tax_table <- as.matrix(read.table("data/wgsa2_outputs/TAXprofiles/readsTAX_plusPFV/merged_tables/merged_TAX.txt", header=T, sep="\t", row.names=1))
+wgsa2_sample_data <- read.table("data/wgsa2_outputs/mapping_file.txt", header=T, sep="\t", comment="", row.names=1)
 
 wgsa2_phyloseq <- phyloseq(otu_table(wgsa2_otu_table, taxa_are_rows = T), tax_table(wgsa2_tax_table), sample_data(wgsa2_sample_data))
 wgsa2_phyloseq
@@ -342,35 +344,6 @@ dada2_rare
 
 # Quick Stats Refresher
 
-## Vocabulary
-
-Let's first refresh some basic statistics concepts that I'm going to be mentioning throughout today and make sure everyone's on the same page.
-
-**P-value**: The probability that the relationship we are seeing is due to chance.
-
-**Type I error/"alpha"**: The level of false-positives that we are willing to accept. This is typically set to ~5% or 0.05, and indicates that about 5% of the time, a significant result is in fact not significant.
-
-I always like to say that it's easy to use code to get a p-value - it's much harder to ensure that it answers the question you had in mind.
-
-## Common Data Distributions
-
-The first most common data distribution we will encounter several times today is "normal" or "Gaussian". When a variable is normally-distributed, it typically takes on a bell-shaped curve that is centered around a mean.
-
-The others that will be important later are:
-
-- Poisson: a distribution for counts of events or the probability that event occurs a specific number of times within a defined interval of time. 
-
-[![Poisson Distribution](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/650px-Poisson_pmf.svg.png)](https://en.wikipedia.org/wiki/Poisson_distribution)
-
-- Negative Binomial: Similar to the Poisson distribution with an additional adjustment for *overdispersion* (too much variance)
-
-[![Negative Binomial Distribution](https://upload.wikimedia.org/wikipedia/commons/8/83/Negbinomial.gif)](https://en.wikipedia.org/wiki/Negative_binomial_distribution)
-
-- Zero-inflated Negative Binomial: A method that builds on the negative binomial model and adds on the idea that some taxa have zero counts because they are truly missing, and others just never got sequenced.
-
-[![Zero-inflated Negative Binomial Distribution](https://upload.wikimedia.org/wikipedia/commons/8/85/Zero-inflated-poisson-distribution.png)](https://en.wikipedia.org/wiki/Zero-inflated_model)
-
-All images were obtained from Wikipedia and can be seen on their original page by clicking on each of the images.
 
 ## Types of Variables
 
@@ -382,8 +355,10 @@ There are also a few core types of variables that we'll encounter today:
 
 - *Binary*: A special type of categorical variable that is typically coded as "Yes/No" or "0/1" (examples include: whether participants have the condition of interest or not, whether participants have siblings)
 
+The type of variable you are analyzing has impacts for how the variable can be analyzed as well as how it is interpreted, so being aware of this throughout your analysis is vital.
+
 ::: {.callout-tip}
-## Check-in
+## Activity
 
 Review the metadata we printed above and link a variable type to each variable.
 :::
@@ -392,11 +367,11 @@ Review the metadata we printed above and link a variable type to each variable.
 
 Using the information above, we can start now to talk about different statistical tests we can use for each type of data and for different types of distributions. I have made an attempt to describe when and where you might use different types of statistical tests in this "cheat sheet". Note that this only covers relationships between one independent/outcome variable and one or more dependent/response variable(s).
 
-![Statistical Test "Cheat Sheet"](images/StatisticalTestCheatSheet.png)
+![Statistical Test "Cheat Sheet"](images/statistical_test_cheat_sheet.png)
 
 General linear models are "general" because they allow us to use some of the other distribution types beyond Gaussian/normal as our outcome variable.
 
-Hopefully the workflow can serve as a general guide for which tests you might want to use. We will be unable to cover everything today, but perhaps some of the other test types can serve as bread crumbs for future exploration. We will also cover a few tests beyond those covered in the above figure for some of the multi-dimensional statistics we use in microbiome data.
+Hopefully the workflow can serve as a general guide for which tests you might want to use. We are unable to cover everything today, but perhaps some of the other test types can serve as bread crumbs for future exploration. We will also cover a few tests beyond those covered in the above figure for some of the multi-dimensional statistics we use in microbiome data.
 
 ...Alright, let's jump into some data!
 
@@ -406,7 +381,7 @@ Allows us to ask: How many different types of sequences are in an environment (s
 
 There are several commonly used metrics, which act as a summary statistic for a single sample.
 
-- Shannon's Index: Takes into account both species richness and evenness - typically the backbone of other diversity metrics; higher values indicate more divers and equally distributed communities, but it won't be a direct count of the number of taxa present in a sample
+- Shannon's Index: Takes into account both species richness and evenness - typically the backbone of other diversity metrics; higher values indicate more diverse and equally distributed communities, but it won't be a direct count of the number of taxa present in a sample
 
 - Pielou's Evenness: Summarizes the distribution of taxa within a sample. "Uneven" communities are highly dominated by relatively few taxa.
 
@@ -415,11 +390,9 @@ There are several commonly used metrics, which act as a summary statistic for a 
 - Faith's Phylogenetic Diversity: This metric includes additional phylogeny information in the calculation. Are there lots of taxa within one clade or do you get taxa from a variety of locations on the phylogenetic tree? This is calculated by taking the sum of the branches among taxa that occur within a sample.
 
 ::: {.callout-tip}
-In the image below, how would you characterize the alpha diversity of the two samples?
+## Activity
 
-Which metrics are the same between samples?
-
-Which ones are different?
+If the two large circles below indicate two samples, which sample has higher Evenness? Which sample has higher richness?
 
 ![](images/AlphaDiversitySummary.png)
 
@@ -468,7 +441,7 @@ head(sample_data(dada2_rare))
 
 ### Running Linear Models
 
-Our first question using this data is simple: is there a difference in phylogenetic diversity between countries at each body site? We already know that the composition between body sites is quite distinct, so this represents a nice place to start.
+Our first question using this data is simple: is there a difference in phylogenetic diversity between countries at each body site? We already know that the composition between body sites is quite distinct, so this presents a nice place to start.
 
 We can do this using linear models which allow us to perform this comparison. Note that I'm using the subset function to iteratively focus on each body site.
 
@@ -483,7 +456,7 @@ summary(lm(phy_div ~ country, data=subset(update_sample_data, bodysite == "FH"))
 
 These results suggest that when comparing countries, only the phylogenetic diversity of the hand and forehead are significantly different, and both exhibit lower phylogenetic diversity in the USA compared to Mexico.
 
-At this point, we should also ask the same question other variables in our dataset at each body site, which can help us identify potential *confounders*.
+Let's explore another interesting, *linear* variable: **age**. In these results, we no longer have a reference group, but calculate the coefficient as the unit change in phylogenetic diversity for every unit-increase in age. In other words, for the first statistical test we do below, there is a 0.2983-unit increase in phylogenetic diversity for every month of life increase, which is significant (P=0.00925).
 
 ```{r}
 summary(lm(phy_div ~ age_months, data=subset(update_sample_data, bodysite == "AP")))
@@ -491,24 +464,22 @@ summary(lm(phy_div ~ age_months, data=subset(update_sample_data, bodysite == "HA
 summary(lm(phy_div ~ age_months, data=subset(update_sample_data, bodysite == "FH")))
 ```
 
-
 ## Visualizing Alpha Diversity
 
 Visualization of alpha diversity is relatively straight forward and is typically performed through box and whiskers plots, which are easy to create with ggplot2.
 
 ```{r}
 library(ggplot2)
-ggplot(update_sample_data, aes(x=population, y=phy_div, fill=country)) +
-  geom_boxplot() +
-  geom_point()
+ggplot(update_sample_data, aes(x=bodysite, y=phy_div, fill=country)) +
+  geom_boxplot()
 ```
 
-We can see from this plot that the USA participants have higher diversity than participants from Mexico, which is consistent with the results from our model above.
+We can see from this plot that forehead and hand samples differ in diversity between Mexico and USA, with Mexico typically having higher diversity.
 
 ::: {.callout-tip}
-## Check-in
+## Activity
 
-How would you plot a continuous variable? What would you expect it to look like?
+Repeat the process for `age_months`.
 :::
 
 # Beta Diversity
@@ -540,7 +511,7 @@ as.matrix(distance_matrix)[1:5,1:5]
 ```
 
 ::: {.callout-tip}
-## Question
+## Activity
 
 Which sample pair is most similar? Most distinct?
 :::
@@ -564,7 +535,7 @@ To answer this question, we'll use a special statistical method called Permutati
 
 It allows us to ask whether a specific variable "explains a significant proportion of variance" across microbial communities. This is done by calculating a baseline F statistic, which is a comparison of variance (total sum of squares) both within groups and between groups.
 
-From this we can calculate a p-value by shuffling the distance matrix around many times (default = 999) and then re-calculate the F-statistic. The p-value then becomes the proportion of times that the permuted F-statistics are greater than the overall F-statistic.
+From this we can calculate a p-value by shuffling the distance matrix around many times (default = 999) and then re-calculate the F-statistic. The p-value then becomes the proportion of times that the permuted F-statistics are greater than the overall F-statistic (aka, the literal definition of a p-value).
 
 To perform this comparison, we actually don't need to do any of this manually. We place our calculated distance matrix into the "response" variable part of a model, which can be done using the `vegan` package's `adonis2` function. I am also subsetting this data first to focus on the community composition differences at each body site.
 
@@ -580,21 +551,21 @@ adonis2(phyloseq::distance(dada2_rare_fh, method="wunifrac") ~ sample_data(dada2
 The results we got above suggest that the USA and Mexico have a significantly different microbiome composition at each body site. There are a few key points of interest in this result that I also want to point out. The columns, in order, indicate: degrees of freedom, Sum of Squares (see variance calculation above), the R-squared value (or the proportion of variance explained by the variable), the critical F-statistic, and the P-value.
 
 ::: {.callout-tip}
-## Exercise #1
+## Question
 
 Run an `adonis2` function a second time. What happened? Why?
 :::
 
 ::: {.callout-tip}
-## Exercise #2
+## Question
 
-Keeping in mind the results from Exercise #1, try comparing composition using a different distance matrix. Can we learn anything new? What about another variable?
+Keeping in mind the results from above, try comparing composition using a different distance matrix. Can we learn anything new? What about another variable?
 :::
 
 ::: {.callout-warning}
 ## Caution
 
-I should say one word of warning -- I'm able to do this in a more "simple" way because I know that the order of samples in the OTU/ASV table from the phyloseq object is in the same order as it will be in the distance matrix is in the same order as the sample data. If the distance matrix comes from some other data-generating process and there is *any* chance that the samples are in a different order, you will still get an R2 and P-value and no warning will be produced, but the results are unlikely to be accurate.
+I should say one word of warning -- I'm able to do this in a more "simple" way because I know that the order of samples in the OTU/ASV table from the phyloseq object is in the same order as it will be in the distance matrix, which is in the same order as the sample data. If the distance matrix comes from some other data-generating process and there is *any* chance that the samples are in a different order, you will still get an R2 and P-value and no warning will be produced, but the results are unlikely to be accurate.
 
 If you want to double check, you can try something like this:
 
@@ -635,7 +606,7 @@ Here, I'm using a 20% "confidence level" for the ellipses, and it's typically th
 
 # Significant Taxa
 
-Another very standard analysis that we'll focus on today is comparing the abundance of taxa. It's all fine and good that we see large compositional differences between the USA and Mexico, but until we know specifically what taxa appear to be differentially abundant, it's hard to know what is important.
+Another very standard analysis that we'll focus on today is comparing the abundance of taxa. It's all fine and good that we see large compositional differences between the USA and Mexico, but until we know specifically what taxa appear to be differentially abundant, it's hard to speculate about the biological importance of that difference.
 
 ## Comparing Taxa
 
@@ -649,17 +620,28 @@ I want to specifically highlight the database established by the paper below, [B
 
 > Geistlinger L, Mirzayi C, Zohra F, Azhar R, Elsafoury S, Grieve C, Wokaty J, Gamboa-Tuz SD, Sengupta P, Hecht I, Ravikrishnan A, Gonçalves RS, Franzosa E, Raman K, Carey V, Dowd JB, Jones HE, Davis S, Segata N, Huttenhower C, Waldron L. BugSigDB captures patterns of differential abundance across a broad range of host-associated microbial signatures. Nat Biotechnol. 2023 Sep 11. doi: 10.1038/s41587-023-01872-y. Epub ahead of print. PMID: 37697152.
 
-One of the important things to note about this step of analysis is that we're likely to be analyzing counts, which follow their own unique set of distributions that are typically not Gaussian/normally-distributed, and thus we'll start to dabble in some of the other distributions I mentioned near the beginning.
+For now, I will show you how I use one particularly flexible tool called **Maaslin2**. I'm still interested in the comparison of countries, and want to know what specific taxa are enriched among the forehead samples in the USA vs Mexico. 
 
-In some methods, you might **not** analyze actual count data. This is because additional transformations that pull the taxa into more Gaussian-like distributions are preferred.
+Maaslin2 was developed to be used directly in R or on the command line, but the "in-R" documentation (that you get if you run `?Maaslin`) could be better. For now, I'll point you to [the website for Maaslin](https://huttenhower.sph.harvard.edu/maaslin/) so that we can learn about which options are available.
 
-:::{callout-tip}
-All of these discussions about count data are **super** important for 16s rRNA count data, but are often less important for metagenomic data. It's still somewhat sparse, but starts approaching some semblance of approximately normal, especially after log-transformation, allowing more gaussian models to be used.
-:::
+### Filtering for Differential Abundance 
 
-For now, I will show you how I use one particularly flexible tool called Maaslin2 which can be used to analyze the data we're working with today. I'm still interested in the comparison of countries, and want to know what specific taxa are enriched in the forehead samples in the USA vs Mexico. 
+Sometimes, datasets can have immense diversity, and it is important to focus on features that are likely to be the most relevant. In addition, when we perform so many statistical tests, we run the risk of "Type I error", or having a significant finding that is in fact only significant by chance (because so many tests were performed).
 
-Maaslin2 was developed to be used directly in R or on the command line, and the "in-R" documentation (that you get if you run `?Maaslin`) could be better. For now, I'll point you to [the website for Maaslin](https://huttenhower.sph.harvard.edu/maaslin/) so that we can learn about which options are available.
+We can use **prevalence** to filter down to taxa that could be most informative. Prevalence is the proportion of samples with any counts for a taxon. Therefore, an ASV present in 4 of 10 samples is 40% prevalent.
+
+Maaslin2 has a few other parameters that you can use to filter down to taxa that are likely to be more important before a single p-value is generated, but we won't cover them today.
+
+When we're reviewing our results, we use a False Discovery Rate (FDR)-corrected p-value, sometimes called a q-value, to rank our findings. There are a handful of different methods for calculating q-values, but I won't go into them here. Their primary goal is to help us avoid the "Type I error" of performing a large number of statistical tests and comparing them.
+
+## Running Maaslin2
+
+In example I'm working with today, I'm:
+
+- using the forehead dataset to compare taxa between our two countries of interest
+- considering a q-value of 0.25 to be considered "significant" by the software (though we'll set our own limits later)
+- using no normalization of my rarefied data, but log-transforming it and analyzing with a linear model ^[For my "model-fit tests", I took the sum of the residuals (which is the difference between the model's prediction and the actual value) using `rowSums(run_maaslin$residuals)` for each taxon and saw that the linear model with a log transformation provided the lowest values (ie, the lowest difference between prediction and actual values)]
+- enforcing a minimum prevalence of 40%, which means a taxon must be present in ~15 samples for it to be analyze.
 
 ```{r}
 #| label: maaslin2
@@ -668,32 +650,56 @@ Maaslin2 was developed to be used directly in R or on the command line, and the 
 
 library(Maaslin2)
 capture.output(
-  run_maaslin <- Maaslin2(input_data= data.frame(otu_table(dada2_rare_ha)),
-           input_metadata = data.frame(sample_data(dada2_rare_ha)),
+  run_maaslin <- Maaslin2(input_data= data.frame(otu_table(dada2_rare_fh)),
+           input_metadata = data.frame(sample_data(dada2_rare_fh)),
            output="maaslin2_results",
            fixed_effects = c("country"),
-           max_significance = 0.05,
+           max_significance = 0.25,
            normalization = "NONE",
-           transform="NONE",
-           analysis_method="NEGBIN",
-           min_prevalence = 0.4, # a taxon needs to be in 40% of my samples to be considered/analyzed
-           min_variance = 0.1 #I also like having some variance restrictions -- taxa that don't vary much across samples can cause trouble
+           transform="LOG",
+           analysis_method="LM",
+           min_prevalence = 0.4,
            ), file="maaslin2_results/stdout.txt"
 )
 ```
 
-## Visualizing Taxa
-
-Maaslin kindly produces some boxplots of significant taxa that are accessible within the output directory. I tend to use them for quick review when I need them, and we can make a few boxplots ourselves here.
-
-Another plot I generate after running any differential abundance analysis is a volcano plot. You've seen these for other types of data before and they are helpful because they can be quickly interpretable -- the most significant things rise to the top.
-
-In its most basic form, a volcano plot can still be interesting.
+Running Maaslin2 creates the following table:
 
 ```{r}
 all_res <- run_maaslin$results
 head(all_res)
+```
 
+Here, we can see:
+
+- "feature": the feature of interest
+- "metadata":
+- "value": the comparator category (since it's a categorical variable) - the reference would be the category not mentioned
+- "coef": the coefficient indicating the effect size of the relationship
+- "stderr": standard error/variation around the mean for that taxon/feature
+- "pval: the raw, unadjusted p-value
+- "name": combination of metadata and value
+- "qval": a p-value adjusted for the multiple comparisons performed
+- "N": number of samples that contributed to the analysis
+- "N.not.zero": number of non-zero values for that taxon; it can help identify "zero-inflated" taxa
+
+**Maaslin2** went through each taxon individually and related it to whether it was higher or lower in the USA vs Mexico. Positive `coef` values indicate the taxon was higher in the USA compared to Mexico, while negative values indicate the taxon was higher in Mexico compared to USA. 
+
+## Visualizing Taxa
+
+Maaslin kindly produces some boxplots of significant taxa that are accessible within the output directory. I tend to use them for quick review when I need them (ie, if I need to see how stable my results appear to be), and we can make a few boxplots ourselves here:
+
+```{r}
+combined_counts <- merge(t(otu_table(dada2_rare_fh)), sample_data(dada2_rare_fh), by=0)
+
+ggplot(combined_counts, aes(x=country, y=seq73, color=country)) + geom_boxplot() + geom_point()
+```
+
+Another plot I generate after running any differential abundance analysis is a volcano plot. You've seen these for other types of data before and they are helpful because they can be quickly interpretable -- the most significant ASVs rise to the top.
+
+In its most basic form, a volcano plot can still be interesting.
+
+```{r}
 ggplot(all_res, aes(x=coef, y=-log10(pval))) + geom_point()
 ```
 
@@ -709,52 +715,16 @@ ggplot(all_res_tax, aes(x=coef, y=-log10(pval), color=Genus_sig)) +
   ggrepel::geom_text_repel(data=subset(all_res_tax, qval < 0.05), aes(label=Genus))
 ```
 
-# Network Analysis
+::: callout-tip
 
-Finally, I want to focus on something kind of "fun" and "different" for the end of our day. We know that bacteria often do not live on or in the human body in isolation but rather as a broader collaborative network with several other species and genera. We can therefore start to use that knowledge to ask about "cliques" or "networks" of co-occurring taxa and whether abundances of these broader networks provides more insight about the differences that we're interested in.
+Using what we've learned, perform differential abundance analysis:
 
-As has been true for almost everything we've discussed so far, there are several methods that exist to perform network analysis. These methods can include:
+- using a different body site
+- comparing forehead vs hand among participants from Mexico
+- devise your own question based on what we've explored today
 
-- *Correlation*: Use simple correlations of each taxon to all other taxa to determine which combinations reach some threshold (either correlation coefficient or p-value). Ideally, you'd want to use Spearman correlation over Pearson correlation for this because it is a non-parametric test.
+:::
 
-- *Distance Matrix*: Calculate distances between taxa or samples using a preferred distance calculation. This is the method that phyloseq utilizes by default.
+## Wrap-up
 
-- *SparCC*^[Friedman J, Alm EJ. Inferring correlation networks from genomic survey data. PLoS Comput Biol. 2012;8(9):e1002687. doi: 10.1371/journal.pcbi.1002687. Epub 2012 Sep 20. PMID: 23028285; PMCID: PMC3447976.]: Correlation using sparsity and compositionality corrections because, as we've discussed before, microbiome data is sparse which makes correlations less reliable.
-
-- *Correlation inference for Compositional data through LASSO (CCLasso)*^[Fang H, Huang C, Zhao H, Deng M. CCLasso: correlation inference for compositional data through Lasso. Bioinformatics. 2015 Oct 1;31(19):3172-80. doi: 10.1093/bioinformatics/btv349. Epub 2015 Jun 4. PMID: 26048598; PMCID: PMC4693003.]: This 
-
-- *Weighted Gene Co-Association Network Analysis (WGCNA)*^[Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics. 2008 Dec 29;9:559. doi: 10.1186/1471-2105-9-559. PMID: 19114008; PMCID: PMC2631488.]: This method is distance-based with additional corrections. Its goal is to find clusters of highly correlated features in data and summarizes them using an "eigengene". This tool tends to be better for metagenomic data than amplicon data.
-
-If you want to read more about different network methods, I have always found the following paper to be helpful:
-
-> Layeghifard M, Hwang DM, Guttman DS. Disentangling Interactions in the Microbiome: A Network Perspective. Trends Microbiol. 2017 Mar;25(3):217-228. doi: 10.1016/j.tim.2016.11.008. Epub 2016 Dec 2. PMID: 27916383; PMCID: PMC7172547.
-
-While I won't cover it today, SparCC also offers the option to provide bootstrapped estimates and p-values. This is done in a similar manner to how PERMANOVA p-values are calculated: the correlation coefficients are re-calculated based on resampling the data with replacement and then creates p-values by determining the proportion of times the "random" value is greater than the original value.
-
-```{r}
-
-library(SpiecEasi)
-library(igraph)
-
-dada2_rare_filt <- filter_taxa(dada2_rare_ha, function(x) (sum(x > 0)/length(x)) > 0.1, TRUE)
-dada2_rare_filt
-## These are the commands I used to create the sparCC matrix -- note that I have transposed the OTU table so that 
-# cor_df <- sparcc(t(otu_table(dada2_rare_filt)))
-# saveRDS(cor_df, "Sparcc_CorrMatrix.rds")
-cor_df <- readRDS("Sparcc_CorrMatrix.rds")
-str(cor_df)
-rownames(cor_df$Cor) <- colnames(cor_df$Cor) <- taxa_names(dada2_rare_filt)
-
-net_dist <- 1-abs(cor_df$Cor)
-```
-
-Now that we have our network of correlation coefficients, we can use some phyloseq functions to plot the result.
-
-```{r}
-#| fig-width: 10
-#| fig-height: 12
-ig <- make_network(dada2_rare_filt, type="taxa", distance=as.dist(net_dist), max.dist=0.6)
-
-plot_network(ig, dada2_rare_filt, type="taxa", color="Order") + scale_color_viridis_d()
-```
-
+Thank you for joining today! If you have feedback, ideas for additional sessions, questions about your own project, etc, feel free to reach out to me (kathryn.mccauley@nih.gov) or make a ticket to work with the Bioinformatics team (https://niaid-amp.powerappsportals.us/) and we would be happy to assist.

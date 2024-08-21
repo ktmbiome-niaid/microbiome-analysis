@@ -6084,10 +6084,10 @@ function snapshot()
 	snapshotMode = false;
 	
 	svg += svgFooter();
-	
-	var snapshotWindow = window.open('', '_blank', '', 'replace=false');
-	snapshotWindow.document.write('<html><body><a href="data:image/svg+xml,' + encodeURIComponent(svg) + '" download="snapshot.svg">Download Snapshot</a></html></body>');
-	snapshotWindow.document.write(svg);
+	var dataUri = 'data:image/svg+xml,' + encodeURIComponent(svg)
+	var string = '<html><body><iframe src="' + dataUri + '" frameborder="0" style="position:absolute; border:0; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%;" allowfullscreen></iframe><a style="position:absolute" href="' + dataUri + '" download="snapshot.svg">Download Snapshot</a></html></body>';
+    var win = window.open();
+    win.document.write(string)
 }
 
 function save()
@@ -6628,1368 +6628,1023 @@ function zoomOut()
     <dataset>S28_4krona</dataset>
    </datasets>
 <node name="all">
- <magnitude><val>4719.39254652018</val><val>3906.57096697308</val><val>5525.56797739683</val></magnitude>
- <node name="Human Diseases">
-  <magnitude><val>569.597337698218</val><val>463.902636861981</val><val>549.708709210156</val></magnitude>
-  <node name="Infectious disease: viral">
-   <magnitude><val></val><val>12.2</val></magnitude>
-   <node name="Hepatitis C">
-    <magnitude><val></val><val>12.2</val></magnitude>
-    <node name="Hepatitis C">
-     <magnitude><val></val><val>12.2</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Neurodegenerative disease">
-   <magnitude><val>28.0454545454545</val><val>18.0333333333333</val><val>17.8</val></magnitude>
-   <node name="Spinocerebellar ataxia">
-    <magnitude><val>28.0454545454545</val><val>18.0333333333333</val><val>17.8</val></magnitude>
-    <node name="Spinocerebellar ataxia">
-     <magnitude><val>28.0454545454545</val><val>18.0333333333333</val><val>17.8</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Infectious disease: bacterial">
-   <magnitude><val>301.619258336492</val><val>291.92248144298</val><val>268.280484510108</val></magnitude>
-   <node name="Salmonella infection">
-    <magnitude><val>37.6741029874313</val><val>31.0621438217727</val></magnitude>
-    <node name="Salmonella infection">
-     <magnitude><val>37.6741029874313</val><val>31.0621438217727</val></magnitude>
-    </node>
-   </node>
-   <node name="Vibrio cholerae infection">
-    <magnitude><val>13.8</val><val>18.6</val></magnitude>
-    <node name="Vibrio cholerae infection">
-     <magnitude><val>13.8</val><val>18.6</val></magnitude>
-    </node>
-   </node>
-   <node name="Pathogenic Escherichia coli infection">
-    <magnitude><val>28.5157894736842</val></magnitude>
-    <node name="Pathogenic Escherichia coli infection">
-     <magnitude><val>28.5157894736842</val></magnitude>
-    </node>
-   </node>
-   <node name="Legionellosis">
-    <magnitude><val>23.7322110812894</val><val>22.9511182531658</val><val>31.6911190424295</val></magnitude>
-    <node name="Legionellosis">
-     <magnitude><val>23.7322110812894</val><val>22.9511182531658</val><val>31.6911190424295</val></magnitude>
-    </node>
-   </node>
-   <node name="Staphylococcus aureus infection">
-    <magnitude><val>21.2954395604396</val><val>57.0104497354497</val><val>117.604547206156</val></magnitude>
-    <node name="Staphylococcus aureus infection">
-     <magnitude><val>21.2954395604396</val><val>57.0104497354497</val><val>117.604547206156</val></magnitude>
-    </node>
-   </node>
-   <node name="Pertussis">
-    <magnitude><val>55.8319449465009</val><val>40.5187969924812</val><val>21.9857142857143</val></magnitude>
-    <node name="Pertussis">
-     <magnitude><val>55.8319449465009</val><val>40.5187969924812</val><val>21.9857142857143</val></magnitude>
-    </node>
-   </node>
-   <node name="Epithelial cell signaling in Helicobacter pylori infection">
-    <magnitude><val>45.8779569892473</val><val>14.3192174913694</val><val>32.6266109369558</val></magnitude>
-    <node name="Epithelial cell signaling in Helicobacter pylori infection">
-     <magnitude><val>45.8779569892473</val><val>14.3192174913694</val><val>32.6266109369558</val></magnitude>
-    </node>
-   </node>
-   <node name="Shigellosis">
-    <magnitude><val>38.9313172043011</val><val>28.7739130434783</val></magnitude>
-    <node name="Shigellosis">
-     <magnitude><val>38.9313172043011</val><val>28.7739130434783</val></magnitude>
-    </node>
-   </node>
-   <node name="Tuberculosis">
-    <magnitude><val>28.301672564187</val><val></val><val>27.1386031192483</val></magnitude>
-    <node name="Tuberculosis">
-     <magnitude><val>28.301672564187</val><val></val><val>27.1386031192483</val></magnitude>
-    </node>
-   </node>
-   <node name="Bacterial invasion of epithelial cells">
-    <magnitude><val>7.65882352941177</val><val>78.6868421052632</val><val>37.2338899196042</val></magnitude>
-    <node name="Bacterial invasion of epithelial cells">
-     <magnitude><val>7.65882352941177</val><val>78.6868421052632</val><val>37.2338899196042</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Infectious disease: parasitic">
-   <magnitude><val>39.5902777777778</val><val>23.9440285204991</val><val>76.9092904047172</val></magnitude>
-   <node name="African trypanosomiasis">
-    <magnitude><val>9.375</val><val></val><val>23.2142857142857</val></magnitude>
-    <node name="African trypanosomiasis">
-     <magnitude><val>9.375</val><val></val><val>23.2142857142857</val></magnitude>
-    </node>
-   </node>
-   <node name="Amoebiasis">
-    <magnitude><val>21.2152777777778</val><val>15.5803921568627</val><val>34.6950046904315</val></magnitude>
-    <node name="Amoebiasis">
-     <magnitude><val>21.2152777777778</val><val>15.5803921568627</val><val>34.6950046904315</val></magnitude>
-    </node>
-   </node>
-   <node name="Chagas disease">
-    <magnitude><val>9</val><val>8.36363636363636</val><val>19</val></magnitude>
-    <node name="Chagas disease">
-     <magnitude><val>9</val><val>8.36363636363636</val><val>19</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Drug resistance: antineoplastic">
-   <magnitude><val>38.0108645399908</val><val>17.0291840712893</val><val>28.3825757575758</val></magnitude>
-   <node name="Platinum drug resistance">
-    <magnitude><val>38.0108645399908</val><val>17.0291840712893</val><val>28.3825757575758</val></magnitude>
-    <node name="Platinum drug resistance">
-     <magnitude><val>38.0108645399908</val><val>17.0291840712893</val><val>28.3825757575758</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Cancer: overview">
-   <magnitude><val>62.1953423890924</val><val>31.4197143623955</val><val>31.640153256705</val></magnitude>
-   <node name="Chemical carcinogenesis - DNA adducts">
-    <magnitude><val>25.9126984126984</val></magnitude>
-    <node name="Chemical carcinogenesis - DNA adducts">
-     <magnitude><val>25.9126984126984</val></magnitude>
-    </node>
-   </node>
-   <node name="Chemical carcinogenesis - reactive oxygen species">
-    <magnitude><val>36.282643976394</val><val>31.4197143623955</val><val>31.640153256705</val></magnitude>
-    <node name="Chemical carcinogenesis - reactive oxygen species">
-     <magnitude><val>36.282643976394</val><val>31.4197143623955</val><val>31.640153256705</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Drug resistance: antimicrobial">
-   <magnitude><val>59.6656602383759</val><val>69.3538951314837</val><val>126.69620528105</val></magnitude>
-   <node name="Vancomycin resistance">
-    <magnitude><val>18.1824031069872</val><val>21.1605713894912</val><val>24.2244234569488</val></magnitude>
-    <node name="Vancomycin resistance">
-     <magnitude><val>18.1824031069872</val><val>21.1605713894912</val><val>24.2244234569488</val></magnitude>
-    </node>
-   </node>
-   <node name="Cationic antimicrobial peptide (CAMP) resistance">
-    <magnitude><val>19.9536762922572</val><val>26.6509770134759</val><val>53.8490405929753</val></magnitude>
-    <node name="Cationic antimicrobial peptide (CAMP) resistance">
-     <magnitude><val>19.9536762922572</val><val>26.6509770134759</val><val>53.8490405929753</val></magnitude>
-    </node>
-   </node>
-   <node name="beta-Lactam resistance">
-    <magnitude><val>21.5295808391315</val><val>21.5423467285166</val><val>48.622741231126</val></magnitude>
-    <node name="beta-Lactam resistance">
-     <magnitude><val>21.5295808391315</val><val>21.5423467285166</val><val>48.622741231126</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Cardiovascular disease">
-   <magnitude><val>21</val></magnitude>
-   <node name="Hypertrophic cardiomyopathy">
-    <magnitude><val>21</val></magnitude>
-    <node name="Hypertrophic cardiomyopathy">
-     <magnitude><val>21</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Endocrine and metabolic disease">
-   <magnitude><val>19.4704798710344</val></magnitude>
-   <node name="Insulin resistance">
-    <magnitude><val>19.4704798710344</val></magnitude>
-    <node name="Insulin resistance">
-     <magnitude><val>19.4704798710344</val></magnitude>
-    </node>
-   </node>
-  </node>
- </node>
- <node name="Genetic Information Processing">
-  <magnitude><val>371.016057293441</val><val>386.003853414553</val><val>478.535266186591</val></magnitude>
-  <node name="Replication and repair">
-   <magnitude><val>145.482486749454</val><val>131.907963312906</val><val>154.891600233735</val></magnitude>
-   <node name="Base excision repair">
-    <magnitude><val>25.0902487902348</val><val>25.6993249699762</val><val>27.5736209594748</val></magnitude>
-    <node name="Base excision repair">
-     <magnitude><val>25.0902487902348</val><val>25.6993249699762</val><val>27.5736209594748</val></magnitude>
-    </node>
-   </node>
-   <node name="Homologous recombination">
-    <magnitude><val>23.4480318255648</val><val>27.3964230280478</val><val>29.250719754382</val></magnitude>
-    <node name="Homologous recombination">
-     <magnitude><val>23.4480318255648</val><val>27.3964230280478</val><val>29.250719754382</val></magnitude>
-    </node>
-   </node>
-   <node name="Non-homologous end-joining">
-    <magnitude><val>34.0428571428571</val><val>6</val><val>13.5952380952381</val></magnitude>
-    <node name="Non-homologous end-joining">
-     <magnitude><val>34.0428571428571</val><val>6</val><val>13.5952380952381</val></magnitude>
-    </node>
-   </node>
-   <node name="Mismatch repair">
-    <magnitude><val>21.0405567683081</val><val>25.3386362051584</val><val>27.9970694159139</val></magnitude>
-    <node name="Mismatch repair">
-     <magnitude><val>21.0405567683081</val><val>25.3386362051584</val><val>27.9970694159139</val></magnitude>
-    </node>
-   </node>
-   <node name="DNA replication">
-    <magnitude><val>22.2085764018729</val><val>24.8145876665948</val><val>30.7554783941424</val></magnitude>
-    <node name="DNA replication">
-     <magnitude><val>22.2085764018729</val><val>24.8145876665948</val><val>30.7554783941424</val></magnitude>
-    </node>
-   </node>
-   <node name="Nucleotide excision repair">
-    <magnitude><val>19.6522158206162</val><val>22.6589914431289</val><val>25.7194736145836</val></magnitude>
-    <node name="Nucleotide excision repair">
-     <magnitude><val>19.6522158206162</val><val>22.6589914431289</val><val>25.7194736145836</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Translation">
-   <magnitude><val>89.4592469012895</val><val>114.161421804981</val><val>106.582471253245</val></magnitude>
-   <node name="Aminoacyl-tRNA biosynthesis">
-    <magnitude><val>23.7531214579032</val><val>29.5737316104729</val><val>29.2004249374461</val></magnitude>
-    <node name="Aminoacyl-tRNA biosynthesis">
-     <magnitude><val>23.7531214579032</val><val>29.5737316104729</val><val>29.2004249374461</val></magnitude>
-    </node>
-   </node>
-   <node name="Ribosome">
-    <magnitude><val>30.5161254433863</val><val>49.5021638787183</val><val>51.2979193316717</val></magnitude>
-    <node name="Ribosome">
-     <magnitude><val>30.5161254433863</val><val>49.5021638787183</val><val>51.2979193316717</val></magnitude>
-    </node>
-   </node>
-   <node name="Ribosome biogenesis in eukaryotes">
-    <magnitude><val>35.19</val><val>35.0855263157895</val><val>26.084126984127</val></magnitude>
-    <node name="Ribosome biogenesis in eukaryotes">
-     <magnitude><val>35.19</val><val>35.0855263157895</val><val>26.084126984127</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Transcription">
-   <magnitude><val>45.8132270766617</val><val>39.1997738056902</val><val>69.658878968254</val></magnitude>
-   <node name="RNA polymerase">
-    <magnitude><val>29.7526210160556</val><val>32.1997738056902</val><val>48.058878968254</val></magnitude>
-    <node name="RNA polymerase">
-     <magnitude><val>29.7526210160556</val><val>32.1997738056902</val><val>48.058878968254</val></magnitude>
-    </node>
-   </node>
-   <node name="Basal transcription factors">
-    <magnitude><val>16.0606060606061</val><val>7</val><val>21.6</val></magnitude>
-    <node name="Basal transcription factors">
-     <magnitude><val>16.0606060606061</val><val>7</val><val>21.6</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Folding, sorting and degradation">
-   <magnitude><val>90.261096566036</val><val>100.734694490976</val><val>147.402315731357</val></magnitude>
-   <node name="Protein processing in endoplasmic reticulum">
-    <magnitude><val>15.5702671312427</val><val>14.7859078590786</val><val>37.975</val></magnitude>
-    <node name="Protein processing in endoplasmic reticulum">
-     <magnitude><val>15.5702671312427</val><val>14.7859078590786</val><val>37.975</val></magnitude>
-    </node>
-   </node>
-   <node name="RNA degradation">
-    <magnitude><val>24.072615302466</val><val>26.3109673507269</val><val>31.3588314851425</val></magnitude>
-    <node name="RNA degradation">
-     <magnitude><val>24.072615302466</val><val>26.3109673507269</val><val>31.3588314851425</val></magnitude>
-    </node>
-   </node>
-   <node name="Proteasome">
-    <magnitude><val></val><val>5</val><val>12.4989898989899</val></magnitude>
-    <node name="Proteasome">
-     <magnitude><val></val><val>5</val><val>12.4989898989899</val></magnitude>
-    </node>
-   </node>
-   <node name="Sulfur relay system">
-    <magnitude><val>23.9451642696572</val><val>19.6220668220668</val><val>29.1050946956471</val></magnitude>
-    <node name="Sulfur relay system">
-     <magnitude><val>23.9451642696572</val><val>19.6220668220668</val><val>29.1050946956471</val></magnitude>
-    </node>
-   </node>
-   <node name="Protein export">
-    <magnitude><val>26.6730498626701</val><val>35.015752459104</val><val>36.4643996515777</val></magnitude>
-    <node name="Protein export">
-     <magnitude><val>26.6730498626701</val><val>35.015752459104</val><val>36.4643996515777</val></magnitude>
-    </node>
-   </node>
-  </node>
- </node>
- <node name="Metabolism">
-  <magnitude><val>3032.15356174313</val><val>2417.19413633706</val><val>3633.03447121548</val></magnitude>
-  <node name="Global and overview maps">
-   <magnitude><val>24.6264781777817</val><val>24.4986179866701</val></magnitude>
-   <node name="Metabolic pathways">
-    <magnitude><val>24.6264781777817</val><val>24.4986179866701</val></magnitude>
-    <node name="Metabolic pathways">
-     <magnitude><val>24.6264781777817</val><val>24.4986179866701</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Carbohydrate metabolism">
-   <magnitude><val>336.102247154788</val><val>362.171531289155</val><val>463.545893632836</val></magnitude>
-   <node name="Ascorbate and aldarate metabolism">
-    <magnitude><val>22.3823691492751</val><val>25.0033489812643</val><val>25.7407565877972</val></magnitude>
-    <node name="Ascorbate and aldarate metabolism">
-     <magnitude><val>22.3823691492751</val><val>25.0033489812643</val><val>25.7407565877972</val></magnitude>
-    </node>
-   </node>
-   <node name="Glyoxylate and dicarboxylate metabolism">
-    <magnitude><val>28.5151144680587</val><val>22.6124400396054</val><val>34.2868103237571</val></magnitude>
-    <node name="Glyoxylate and dicarboxylate metabolism">
-     <magnitude><val>28.5151144680587</val><val>22.6124400396054</val><val>34.2868103237571</val></magnitude>
-    </node>
-   </node>
-   <node name="Pentose and glucuronate interconversions">
-    <magnitude><val>19.2695422775042</val><val>30.7717369083074</val><val>30.7083356559407</val></magnitude>
-    <node name="Pentose and glucuronate interconversions">
-     <magnitude><val>19.2695422775042</val><val>30.7717369083074</val><val>30.7083356559407</val></magnitude>
-    </node>
-   </node>
-   <node name="Butanoate metabolism">
-    <magnitude><val>27.3992370670166</val><val>21.0369642608592</val><val>28.0958503220039</val></magnitude>
-    <node name="Butanoate metabolism">
-     <magnitude><val>27.3992370670166</val><val>21.0369642608592</val><val>28.0958503220039</val></magnitude>
-    </node>
-   </node>
-   <node name="Inositol phosphate metabolism">
-    <magnitude><val>19.7950184584389</val><val>19.522799259564</val><val>61.0078925159808</val></magnitude>
-    <node name="Inositol phosphate metabolism">
-     <magnitude><val>19.7950184584389</val><val>19.522799259564</val><val>61.0078925159808</val></magnitude>
-    </node>
-   </node>
-   <node name="C5-Branched dibasic acid metabolism">
-    <magnitude><val>30.3725245225907</val><val>22.4734784063131</val></magnitude>
-    <node name="C5-Branched dibasic acid metabolism">
-     <magnitude><val>30.3725245225907</val><val>22.4734784063131</val></magnitude>
-    </node>
-   </node>
-   <node name="Pyruvate metabolism">
-    <magnitude><val>25.177409493034</val><val>24.4838579671322</val><val>31.2103679290005</val></magnitude>
-    <node name="Pyruvate metabolism">
-     <magnitude><val>25.177409493034</val><val>24.4838579671322</val><val>31.2103679290005</val></magnitude>
-    </node>
-   </node>
-   <node name="Galactose metabolism">
-    <magnitude><val>13.8669331468627</val><val>29.3948285390254</val><val>44.5327424241498</val></magnitude>
-    <node name="Galactose metabolism">
-     <magnitude><val>13.8669331468627</val><val>29.3948285390254</val><val>44.5327424241498</val></magnitude>
-    </node>
-   </node>
-   <node name="Fructose and mannose metabolism">
-    <magnitude><val>17.2279898555865</val><val>22.6809224179638</val><val>30.5360645702909</val></magnitude>
-    <node name="Fructose and mannose metabolism">
-     <magnitude><val>17.2279898555865</val><val>22.6809224179638</val><val>30.5360645702909</val></magnitude>
-    </node>
-   </node>
-   <node name="Glycolysis / Gluconeogenesis">
-    <magnitude><val>21.327013546321</val><val>24.195103901738</val><val>31.7493715670867</val></magnitude>
-    <node name="Glycolysis / Gluconeogenesis">
-     <magnitude><val>21.327013546321</val><val>24.195103901738</val><val>31.7493715670867</val></magnitude>
-    </node>
-   </node>
-   <node name="Pentose phosphate pathway">
-    <magnitude><val>19.8825544899716</val><val>25.7780135283642</val><val>31.0483622706704</val></magnitude>
-    <node name="Pentose phosphate pathway">
-     <magnitude><val>19.8825544899716</val><val>25.7780135283642</val><val>31.0483622706704</val></magnitude>
-    </node>
-   </node>
-   <node name="Starch and sucrose metabolism">
-    <magnitude><val>18.1045546539262</val><val>21.7426583576463</val><val>25.4396168416434</val></magnitude>
-    <node name="Starch and sucrose metabolism">
-     <magnitude><val>18.1045546539262</val><val>21.7426583576463</val><val>25.4396168416434</val></magnitude>
-    </node>
-   </node>
-   <node name="Amino sugar and nucleotide sugar metabolism">
-    <magnitude><val>19.605160608342</val><val>28.236613552584</val><val>32.7353959160142</val></magnitude>
-    <node name="Amino sugar and nucleotide sugar metabolism">
-     <magnitude><val>19.605160608342</val><val>28.236613552584</val><val>32.7353959160142</val></magnitude>
-    </node>
-   </node>
-   <node name="Propanoate metabolism">
-    <magnitude><val>26.3649134372616</val><val>20.6956977108048</val><val>27.6376300556223</val></magnitude>
-    <node name="Propanoate metabolism">
-     <magnitude><val>26.3649134372616</val><val>20.6956977108048</val><val>27.6376300556223</val></magnitude>
-    </node>
-   </node>
-   <node name="Citrate cycle (TCA cycle)">
-    <magnitude><val>26.8119119805984</val><val>23.5430674579825</val><val>28.8166966528784</val></magnitude>
-    <node name="Citrate cycle (TCA cycle)">
-     <magnitude><val>26.8119119805984</val><val>23.5430674579825</val><val>28.8166966528784</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Lipid metabolism">
-   <magnitude><val>257.405393318347</val><val>203.505041184633</val><val>405.009963150054</val></magnitude>
-   <node name="Ether lipid metabolism">
-    <magnitude><val>9.2140625</val><val></val><val>59.6773504273504</val></magnitude>
-    <node name="Ether lipid metabolism">
-     <magnitude><val>9.2140625</val><val></val><val>59.6773504273504</val></magnitude>
-    </node>
-   </node>
-   <node name="Glycerolipid metabolism">
-    <magnitude><val>15.526339453513</val><val>26.6650391305908</val><val>35.5496632542986</val></magnitude>
-    <node name="Glycerolipid metabolism">
-     <magnitude><val>15.526339453513</val><val>26.6650391305908</val><val>35.5496632542986</val></magnitude>
-    </node>
-   </node>
-   <node name="Fatty acid biosynthesis">
-    <magnitude><val>22.5282183645007</val><val>26.7669962802304</val><val>30.1423601414745</val></magnitude>
-    <node name="Fatty acid biosynthesis">
-     <magnitude><val>22.5282183645007</val><val>26.7669962802304</val><val>30.1423601414745</val></magnitude>
-    </node>
-   </node>
-   <node name="Glycerophospholipid metabolism">
-    <magnitude><val>19.4859438162107</val><val>28.0622013268929</val><val>36.4264372426694</val></magnitude>
-    <node name="Glycerophospholipid metabolism">
-     <magnitude><val>19.4859438162107</val><val>28.0622013268929</val><val>36.4264372426694</val></magnitude>
-    </node>
-   </node>
-   <node name="Biosynthesis of unsaturated fatty acids">
-    <magnitude><val>41.3</val><val>11.075</val><val>19.8920175438596</val></magnitude>
-    <node name="Biosynthesis of unsaturated fatty acids">
-     <magnitude><val>41.3</val><val>11.075</val><val>19.8920175438596</val></magnitude>
-    </node>
-   </node>
-   <node name="Secondary bile acid biosynthesis">
-    <magnitude><val>23.0405844155844</val><val>17.0424836601307</val><val>34.2013888888889</val></magnitude>
-    <node name="Secondary bile acid biosynthesis">
-     <magnitude><val>23.0405844155844</val><val>17.0424836601307</val><val>34.2013888888889</val></magnitude>
-    </node>
-   </node>
-   <node name="Primary bile acid biosynthesis">
-    <magnitude><val>31.5757575757576</val><val>13.5</val><val>32.71875</val></magnitude>
-    <node name="Primary bile acid biosynthesis">
-     <magnitude><val>31.5757575757576</val><val>13.5</val><val>32.71875</val></magnitude>
-    </node>
-   </node>
-   <node name="Fatty acid elongation">
-    <magnitude><val></val><val></val><val>28</val></magnitude>
-    <node name="Fatty acid elongation">
-     <magnitude><val></val><val></val><val>28</val></magnitude>
-    </node>
-   </node>
-   <node name="Linoleic acid metabolism">
-    <magnitude><val></val><val>23.2777777777778</val><val>17.2279411764706</val></magnitude>
-    <node name="Linoleic acid metabolism">
-     <magnitude><val></val><val>23.2777777777778</val><val>17.2279411764706</val></magnitude>
-    </node>
-   </node>
-   <node name="Steroid biosynthesis">
-    <magnitude><val>14</val><val>19</val><val>22.8333333333333</val></magnitude>
-    <node name="Steroid biosynthesis">
-     <magnitude><val>14</val><val>19</val><val>22.8333333333333</val></magnitude>
-    </node>
-   </node>
-   <node name="Steroid hormone biosynthesis">
-    <magnitude><val>33.3333333333333</val><val></val><val>25.0083333333333</val></magnitude>
-    <node name="Steroid hormone biosynthesis">
-     <magnitude><val>33.3333333333333</val><val></val><val>25.0083333333333</val></magnitude>
-    </node>
-   </node>
-   <node name="Fatty acid degradation">
-    <magnitude><val>28.7441942672272</val><val>20.4995114667403</val><val>26.8314254824126</val></magnitude>
-    <node name="Fatty acid degradation">
-     <magnitude><val>28.7441942672272</val><val>20.4995114667403</val><val>26.8314254824126</val></magnitude>
-    </node>
-   </node>
-   <node name="Sphingolipid metabolism">
-    <magnitude><val>18.6569595922201</val><val>17.6160315422703</val><val>36.5009623259623</val></magnitude>
-    <node name="Sphingolipid metabolism">
-     <magnitude><val>18.6569595922201</val><val>17.6160315422703</val><val>36.5009623259623</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Biosynthesis of other secondary metabolites">
-   <magnitude><val>287.080243292118</val><val>249.081615814228</val><val>362.580365912309</val></magnitude>
-   <node name="Biosynthesis of various alkaloids">
-    <magnitude><val>2</val></magnitude>
-    <node name="Biosynthesis of various alkaloids">
-     <magnitude><val>2</val></magnitude>
-    </node>
-   </node>
-   <node name="Acarbose and validamycin biosynthesis">
-    <magnitude><val>29.4232362232362</val><val></val><val>24.2421707421707</val></magnitude>
-    <node name="Acarbose and validamycin biosynthesis">
-     <magnitude><val>29.4232362232362</val><val></val><val>24.2421707421707</val></magnitude>
-    </node>
-   </node>
-   <node name="Indole alkaloid biosynthesis">
-    <magnitude><val></val><val></val><val>11.3333333333333</val></magnitude>
-    <node name="Indole alkaloid biosynthesis">
-     <magnitude><val></val><val></val><val>11.3333333333333</val></magnitude>
-    </node>
-   </node>
-   <node name="Monobactam biosynthesis">
-    <magnitude><val>20.1812851391409</val><val>25.3161258259759</val><val>24.6983691733104</val></magnitude>
-    <node name="Monobactam biosynthesis">
-     <magnitude><val>20.1812851391409</val><val>25.3161258259759</val><val>24.6983691733104</val></magnitude>
-    </node>
-   </node>
-   <node name="Streptomycin biosynthesis">
-    <magnitude><val>22.970939343727</val><val>27.5623195751412</val><val>24.5208402311313</val></magnitude>
-    <node name="Streptomycin biosynthesis">
-     <magnitude><val>22.970939343727</val><val>27.5623195751412</val><val>24.5208402311313</val></magnitude>
-    </node>
-   </node>
-   <node name="Tropane, piperidine and pyridine alkaloid biosynthesis">
-    <magnitude><val>22.5019296607532</val></magnitude>
-    <node name="Tropane, piperidine and pyridine alkaloid biosynthesis">
-     <magnitude><val>22.5019296607532</val></magnitude>
-    </node>
-   </node>
-   <node name="Betalain biosynthesis">
-    <magnitude><val>27.25</val><val>9</val><val>19.1428571428571</val></magnitude>
-    <node name="Betalain biosynthesis">
-     <magnitude><val>27.25</val><val>9</val><val>19.1428571428571</val></magnitude>
-    </node>
-   </node>
-   <node name="Biosynthesis of various antibiotics">
-    <magnitude><val>15.9120588235294</val><val>36.7333333333333</val><val>56.2184523809524</val></magnitude>
-    <node name="Biosynthesis of various antibiotics">
-     <magnitude><val>15.9120588235294</val><val>36.7333333333333</val><val>56.2184523809524</val></magnitude>
-    </node>
-   </node>
-   <node name="Penicillin and cephalosporin biosynthesis">
-    <magnitude><val>26.9747474747475</val><val>22.8603683897802</val><val>34.6495726495726</val></magnitude>
-    <node name="Penicillin and cephalosporin biosynthesis">
-     <magnitude><val>26.9747474747475</val><val>22.8603683897802</val><val>34.6495726495726</val></magnitude>
-    </node>
-   </node>
-   <node name="Phenylpropanoid biosynthesis">
-    <magnitude><val>28.5666666666667</val><val>22.3560606060606</val><val>37.3875</val></magnitude>
-    <node name="Phenylpropanoid biosynthesis">
-     <magnitude><val>28.5666666666667</val><val>22.3560606060606</val><val>37.3875</val></magnitude>
-    </node>
-   </node>
-   <node name="Carbapenem biosynthesis">
-    <magnitude><val></val><val>21.9887626262626</val><val>20.0708333333333</val></magnitude>
-    <node name="Carbapenem biosynthesis">
-     <magnitude><val></val><val>21.9887626262626</val><val>20.0708333333333</val></magnitude>
-    </node>
-   </node>
-   <node name="Clavulanic acid biosynthesis">
-    <magnitude><val>31</val><val></val><val>23.5</val></magnitude>
-    <node name="Clavulanic acid biosynthesis">
-     <magnitude><val>31</val><val></val><val>23.5</val></magnitude>
-    </node>
-   </node>
-   <node name="Biosynthesis of various other secondary metabolites">
-    <magnitude><val>33.8888888888889</val><val>13.5</val><val>58.0952380952381</val></magnitude>
-    <node name="Biosynthesis of various other secondary metabolites">
-     <magnitude><val>33.8888888888889</val><val>13.5</val><val>58.0952380952381</val></magnitude>
-    </node>
-   </node>
-   <node name="Prodigiosin biosynthesis">
-    <magnitude><val></val><val>49.1847984041429</val></magnitude>
-    <node name="Prodigiosin biosynthesis">
-     <magnitude><val></val><val>49.1847984041429</val></magnitude>
-    </node>
-   </node>
-   <node name="Phenazine biosynthesis">
-    <magnitude><val>26.4104910714286</val><val>20.5798470535313</val><val>28.7211988304094</val></magnitude>
-    <node name="Phenazine biosynthesis">
-     <magnitude><val>26.4104910714286</val><val>20.5798470535313</val><val>28.7211988304094</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Metabolism of cofactors and vitamins">
-   <magnitude><val>263.493928226365</val><val>331.452280243893</val><val>369.623399726903</val></magnitude>
-   <node name="Folate biosynthesis">
-    <magnitude><val>24.6188524859786</val><val>22.5535963922478</val><val>29.8053837080538</val></magnitude>
-    <node name="Folate biosynthesis">
-     <magnitude><val>24.6188524859786</val><val>22.5535963922478</val><val>29.8053837080538</val></magnitude>
-    </node>
-   </node>
-   <node name="Thiamine metabolism">
-    <magnitude><val>17.1291580434708</val><val>27.4229639475086</val><val>31.3126715523947</val></magnitude>
-    <node name="Thiamine metabolism">
-     <magnitude><val>17.1291580434708</val><val>27.4229639475086</val><val>31.3126715523947</val></magnitude>
-    </node>
-   </node>
-   <node name="Lipoic acid metabolism">
-    <magnitude><val>25.7396825396825</val><val>36.840069124424</val><val>37.5790264191801</val></magnitude>
-    <node name="Lipoic acid metabolism">
-     <magnitude><val>25.7396825396825</val><val>36.840069124424</val><val>37.5790264191801</val></magnitude>
-    </node>
-   </node>
-   <node name="Vitamin B6 metabolism">
-    <magnitude><val>24.6372097693475</val><val>25.9855083602447</val><val>26.86079488126</val></magnitude>
-    <node name="Vitamin B6 metabolism">
-     <magnitude><val>24.6372097693475</val><val>25.9855083602447</val><val>26.86079488126</val></magnitude>
-    </node>
-   </node>
-   <node name="Porphyrin metabolism">
-    <magnitude><val>20.9674287718221</val><val>17.873067735737</val><val>28.2453409482539</val></magnitude>
-    <node name="Porphyrin metabolism">
-     <magnitude><val>20.9674287718221</val><val>17.873067735737</val><val>28.2453409482539</val></magnitude>
-    </node>
-   </node>
-   <node name="One carbon pool by folate">
-    <magnitude><val>26.0658332579558</val><val>25.5248357107242</val><val>30.8019948463188</val></magnitude>
-    <node name="One carbon pool by folate">
-     <magnitude><val>26.0658332579558</val><val>25.5248357107242</val><val>30.8019948463188</val></magnitude>
-    </node>
-   </node>
-   <node name="Retinol metabolism">
-    <magnitude><val></val><val>31.6949546617066</val><val>30.4029411764706</val></magnitude>
-    <node name="Retinol metabolism">
-     <magnitude><val></val><val>31.6949546617066</val><val>30.4029411764706</val></magnitude>
-    </node>
-   </node>
-   <node name="Riboflavin metabolism">
-    <magnitude><val>24.0308777539675</val><val>26.8521815865915</val><val>36.9343748458919</val></magnitude>
-    <node name="Riboflavin metabolism">
-     <magnitude><val>24.0308777539675</val><val>26.8521815865915</val><val>36.9343748458919</val></magnitude>
-    </node>
-   </node>
-   <node name="Nicotinate and nicotinamide metabolism">
-    <magnitude><val>24.0958063176148</val><val>33.6230022456655</val><val>27.1433718912985</val></magnitude>
-    <node name="Nicotinate and nicotinamide metabolism">
-     <magnitude><val>24.0958063176148</val><val>33.6230022456655</val><val>27.1433718912985</val></magnitude>
-    </node>
-   </node>
-   <node name="Pantothenate and CoA biosynthesis">
-    <magnitude><val>21.5524193598871</val><val>30.4733250060818</val><val>30.9979438509726</val></magnitude>
-    <node name="Pantothenate and CoA biosynthesis">
-     <magnitude><val>21.5524193598871</val><val>30.4733250060818</val><val>30.9979438509726</val></magnitude>
-    </node>
-   </node>
-   <node name="Biotin metabolism">
-    <magnitude><val>30.1081937612247</val><val>30.6912675530393</val><val>34.4665883605109</val></magnitude>
-    <node name="Biotin metabolism">
-     <magnitude><val>30.1081937612247</val><val>30.6912675530393</val><val>34.4665883605109</val></magnitude>
-    </node>
-   </node>
-   <node name="Ubiquinone and other terpenoid-quinone biosynthesis">
-    <magnitude><val>24.5484661654135</val><val>21.9175079199217</val><val>25.0729672462968</val></magnitude>
-    <node name="Ubiquinone and other terpenoid-quinone biosynthesis">
-     <magnitude><val>24.5484661654135</val><val>21.9175079199217</val><val>25.0729672462968</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Nucleotide metabolism">
-   <magnitude><val>43.8602250368456</val><val>60.9683825636397</val><val>62.07274924859</val></magnitude>
-   <node name="Pyrimidine metabolism">
-    <magnitude><val>20.6666389355448</val><val>33.4317721166235</val><val>31.4737373702709</val></magnitude>
-    <node name="Pyrimidine metabolism">
-     <magnitude><val>20.6666389355448</val><val>33.4317721166235</val><val>31.4737373702709</val></magnitude>
-    </node>
-   </node>
-   <node name="Purine metabolism">
-    <magnitude><val>23.1935861013007</val><val>27.5366104470162</val><val>30.5990118783191</val></magnitude>
-    <node name="Purine metabolism">
-     <magnitude><val>23.1935861013007</val><val>27.5366104470162</val><val>30.5990118783191</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Energy metabolism">
-   <magnitude><val>188.784289874554</val><val>110.030126718034</val><val>159.228946497872</val></magnitude>
-   <node name="Nitrogen metabolism">
-    <magnitude><val>30.5297173684596</val><val>17.3954424648057</val><val>31.287802970214</val></magnitude>
-    <node name="Nitrogen metabolism">
-     <magnitude><val>30.5297173684596</val><val>17.3954424648057</val><val>31.287802970214</val></magnitude>
-    </node>
-   </node>
-   <node name="Photosynthesis">
-    <magnitude><val>31.0512641367695</val><val></val><val>33.3628305199878</val></magnitude>
-    <node name="Photosynthesis">
-     <magnitude><val>31.0512641367695</val><val></val><val>33.3628305199878</val></magnitude>
-    </node>
-   </node>
-   <node name="Carbon fixation in photosynthetic organisms">
-    <magnitude><val>22.3850341749787</val></magnitude>
-    <node name="Carbon fixation in photosynthetic organisms">
-     <magnitude><val>22.3850341749787</val></magnitude>
-    </node>
-   </node>
-   <node name="Carbon fixation pathways in prokaryotes">
-    <magnitude><val>25.9355681900629</val><val>23.4137454313038</val></magnitude>
-    <node name="Carbon fixation pathways in prokaryotes">
-     <magnitude><val>25.9355681900629</val><val>23.4137454313038</val></magnitude>
-    </node>
-   </node>
-   <node name="Methane metabolism">
-    <magnitude><val>22.8872221139267</val><val>21.2180241146854</val><val>34.8075045077977</val></magnitude>
-    <node name="Methane metabolism">
-     <magnitude><val>22.8872221139267</val><val>21.2180241146854</val><val>34.8075045077977</val></magnitude>
-    </node>
-   </node>
-   <node name="Oxidative phosphorylation">
-    <magnitude><val>30.1984251371941</val><val>23.4276018378475</val><val>28.3109718196825</val></magnitude>
-    <node name="Oxidative phosphorylation">
-     <magnitude><val>30.1984251371941</val><val>23.4276018378475</val><val>28.3109718196825</val></magnitude>
-    </node>
-   </node>
-   <node name="Sulfur metabolism">
-    <magnitude><val>25.7970587531625</val><val>24.5753128693918</val><val>31.4598366801905</val></magnitude>
-    <node name="Sulfur metabolism">
-     <magnitude><val>25.7970587531625</val><val>24.5753128693918</val><val>31.4598366801905</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Glycan biosynthesis and metabolism">
-   <magnitude><val>193.801483849414</val><val>286.297080159117</val><val>371.345196071674</val></magnitude>
-   <node name="N-Glycan biosynthesis">
-    <magnitude><val>13</val><val>16.3571428571429</val><val>22.2727272727273</val></magnitude>
-    <node name="N-Glycan biosynthesis">
-     <magnitude><val>13</val><val>16.3571428571429</val><val>22.2727272727273</val></magnitude>
-    </node>
-   </node>
-   <node name="Mannose type O-glycan biosynthesis">
-    <magnitude><val></val><val>13.0833333333333</val></magnitude>
-    <node name="Mannose type O-glycan biosynthesis">
-     <magnitude><val></val><val>13.0833333333333</val></magnitude>
-    </node>
-   </node>
-   <node name="Teichoic acid biosynthesis">
-    <magnitude><val>20.3541996578437</val><val>23.4048107991683</val><val>47.7677957476571</val></magnitude>
-    <node name="Teichoic acid biosynthesis">
-     <magnitude><val>20.3541996578437</val><val>23.4048107991683</val><val>47.7677957476571</val></magnitude>
-    </node>
-   </node>
-   <node name="Other types of O-glycan biosynthesis">
-    <magnitude><val>13.3333333333333</val><val>9.5</val><val>23.1</val></magnitude>
-    <node name="Other types of O-glycan biosynthesis">
-     <magnitude><val>13.3333333333333</val><val>9.5</val><val>23.1</val></magnitude>
-    </node>
-   </node>
-   <node name="Lipoarabinomannan (LAM) biosynthesis">
-    <magnitude><val>12.24</val><val>9.90714285714286</val><val>21.7379763821793</val></magnitude>
-    <node name="Lipoarabinomannan (LAM) biosynthesis">
-     <magnitude><val>12.24</val><val>9.90714285714286</val><val>21.7379763821793</val></magnitude>
-    </node>
-   </node>
-   <node name="O-Antigen nucleotide sugar biosynthesis">
-    <magnitude><val>20.5507423833266</val><val>27.2595518966609</val><val>44.7470900368963</val></magnitude>
-    <node name="O-Antigen nucleotide sugar biosynthesis">
-     <magnitude><val>20.5507423833266</val><val>27.2595518966609</val><val>44.7470900368963</val></magnitude>
-    </node>
-   </node>
-   <node name="Other glycan degradation">
-    <magnitude><val>15.1329205092044</val><val>21.2989438677477</val><val>27.8713516761286</val></magnitude>
-    <node name="Other glycan degradation">
-     <magnitude><val>15.1329205092044</val><val>21.2989438677477</val><val>27.8713516761286</val></magnitude>
-    </node>
-   </node>
-   <node name="Lipopolysaccharide biosynthesis">
-    <magnitude><val>27.1173579180768</val><val>24.1385228279346</val><val>22.1128747795414</val></magnitude>
-    <node name="Lipopolysaccharide biosynthesis">
-     <magnitude><val>27.1173579180768</val><val>24.1385228279346</val><val>22.1128747795414</val></magnitude>
-    </node>
-   </node>
-   <node name="Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate">
-    <magnitude><val></val><val>23</val></magnitude>
-    <node name="Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate">
-     <magnitude><val></val><val>23</val></magnitude>
-    </node>
-   </node>
-   <node name="Exopolysaccharide biosynthesis">
-    <magnitude><val>14.2234576820548</val><val>23.0207419820323</val><val>44.3221936109867</val></magnitude>
-    <node name="Exopolysaccharide biosynthesis">
-     <magnitude><val>14.2234576820548</val><val>23.0207419820323</val><val>44.3221936109867</val></magnitude>
-    </node>
-   </node>
-   <node name="Glycosaminoglycan degradation">
-    <magnitude><val>17.1560473760474</val><val>25.9399317738791</val><val>24.1186507936508</val></magnitude>
-    <node name="Glycosaminoglycan degradation">
-     <magnitude><val>17.1560473760474</val><val>25.9399317738791</val><val>24.1186507936508</val></magnitude>
-    </node>
-   </node>
-   <node name="Arabinogalactan biosynthesis - Mycobacterium">
-    <magnitude><val></val><val>13.6706989247312</val><val>21.9441027926322</val></magnitude>
-    <node name="Arabinogalactan biosynthesis - Mycobacterium">
-     <magnitude><val></val><val>13.6706989247312</val><val>21.9441027926322</val></magnitude>
-    </node>
-   </node>
-   <node name="Peptidoglycan biosynthesis">
-    <magnitude><val>18.8459673624085</val><val>23.9420654909564</val><val>37.4413420701836</val></magnitude>
-    <node name="Peptidoglycan biosynthesis">
-     <magnitude><val>18.8459673624085</val><val>23.9420654909564</val><val>37.4413420701836</val></magnitude>
-    </node>
-   </node>
-   <node name="O-Antigen repeat unit biosynthesis">
-    <magnitude><val>21.8474576271186</val><val>31.7741935483871</val><val>33.9090909090909</val></magnitude>
-    <node name="O-Antigen repeat unit biosynthesis">
-     <magnitude><val>21.8474576271186</val><val>31.7741935483871</val><val>33.9090909090909</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Xenobiotics biodegradation and metabolism">
-   <magnitude><val>660.791973373365</val><val>155.264737218848</val><val>428.065212234922</val></magnitude>
-   <node name="Polycyclic aromatic hydrocarbon degradation">
-    <magnitude><val>52.7636752136752</val><val>9.25</val><val>26.7333333333333</val></magnitude>
-    <node name="Polycyclic aromatic hydrocarbon degradation">
-     <magnitude><val>52.7636752136752</val><val>9.25</val><val>26.7333333333333</val></magnitude>
-    </node>
-   </node>
-   <node name="Drug metabolism - other enzymes">
-    <magnitude><val>24.4527414986974</val><val>23.328644363556</val></magnitude>
-    <node name="Drug metabolism - other enzymes">
-     <magnitude><val>24.4527414986974</val><val>23.328644363556</val></magnitude>
-    </node>
-   </node>
-   <node name="Xylene degradation">
-    <magnitude><val>37.0567226890756</val><val></val><val>24.711892393321</val></magnitude>
-    <node name="Xylene degradation">
-     <magnitude><val>37.0567226890756</val><val></val><val>24.711892393321</val></magnitude>
-    </node>
-   </node>
-   <node name="Nitrotoluene degradation">
-    <magnitude><val>20.1445897143478</val><val>10.1309523809524</val><val>26.2238636363636</val></magnitude>
-    <node name="Nitrotoluene degradation">
-     <magnitude><val>20.1445897143478</val><val>10.1309523809524</val><val>26.2238636363636</val></magnitude>
-    </node>
-   </node>
-   <node name="Furfural degradation">
-    <magnitude><val>7.66666666666667</val><val></val><val>14.1111111111111</val></magnitude>
-    <node name="Furfural degradation">
-     <magnitude><val>7.66666666666667</val><val></val><val>14.1111111111111</val></magnitude>
-    </node>
-   </node>
-   <node name="Aminobenzoate degradation">
-    <magnitude><val>32.3261433683551</val><val>26.3924630924631</val><val>26.1006637806638</val></magnitude>
-    <node name="Aminobenzoate degradation">
-     <magnitude><val>32.3261433683551</val><val>26.3924630924631</val><val>26.1006637806638</val></magnitude>
-    </node>
-   </node>
-   <node name="Toluene degradation">
-    <magnitude><val>49.5119415442945</val><val></val><val>25.3867564534231</val></magnitude>
-    <node name="Toluene degradation">
-     <magnitude><val>49.5119415442945</val><val></val><val>25.3867564534231</val></magnitude>
-    </node>
-   </node>
-   <node name="Chlorocyclohexane and chlorobenzene degradation">
-    <magnitude><val>39.1177477725097</val><val>20.5830882352941</val><val>23.1802712842713</val></magnitude>
-    <node name="Chlorocyclohexane and chlorobenzene degradation">
-     <magnitude><val>39.1177477725097</val><val>20.5830882352941</val><val>23.1802712842713</val></magnitude>
-    </node>
-   </node>
-   <node name="Steroid degradation">
-    <magnitude><val>37.7</val><val></val><val>21.2206276814972</val></magnitude>
-    <node name="Steroid degradation">
-     <magnitude><val>37.7</val><val></val><val>21.2206276814972</val></magnitude>
-    </node>
-   </node>
-   <node name="Caprolactam degradation">
-    <magnitude><val>28.0806559011164</val><val></val><val>19.9714882818331</val></magnitude>
-    <node name="Caprolactam degradation">
-     <magnitude><val>28.0806559011164</val><val></val><val>19.9714882818331</val></magnitude>
-    </node>
-   </node>
-   <node name="Bisphenol degradation">
-    <magnitude><val>43.1428571428571</val><val></val><val>18</val></magnitude>
-    <node name="Bisphenol degradation">
-     <magnitude><val>43.1428571428571</val><val></val><val>18</val></magnitude>
-    </node>
-   </node>
-   <node name="Styrene degradation">
-    <magnitude><val>40.5088888888889</val><val>16.5223214285714</val><val>26.8678436621858</val></magnitude>
-    <node name="Styrene degradation">
-     <magnitude><val>40.5088888888889</val><val>16.5223214285714</val><val>26.8678436621858</val></magnitude>
-    </node>
-   </node>
-   <node name="Ethylbenzene degradation">
-    <magnitude><val>29.0526610644258</val></magnitude>
-    <node name="Ethylbenzene degradation">
-     <magnitude><val>29.0526610644258</val></magnitude>
-    </node>
-   </node>
-   <node name="Naphthalene degradation">
-    <magnitude><val>31.6809580895295</val><val></val><val>29.922818883651</val></magnitude>
-    <node name="Naphthalene degradation">
-     <magnitude><val>31.6809580895295</val><val></val><val>29.922818883651</val></magnitude>
-    </node>
-   </node>
-   <node name="Dioxin degradation">
-    <magnitude><val>30.9178571428571</val><val></val><val>29.1080705009276</val></magnitude>
-    <node name="Dioxin degradation">
-     <magnitude><val>30.9178571428571</val><val></val><val>29.1080705009276</val></magnitude>
-    </node>
-   </node>
-   <node name="Chloroalkane and chloroalkene degradation">
-    <magnitude><val>27.8712198063708</val><val>27.0225942287323</val><val>31.4831727378839</val></magnitude>
-    <node name="Chloroalkane and chloroalkene degradation">
-     <magnitude><val>27.8712198063708</val><val>27.0225942287323</val><val>31.4831727378839</val></magnitude>
-    </node>
-   </node>
-   <node name="Atrazine degradation">
-    <magnitude><val>27.2683234584156</val><val></val><val>38.3680877742947</val></magnitude>
-    <node name="Atrazine degradation">
-     <magnitude><val>27.2683234584156</val><val></val><val>38.3680877742947</val></magnitude>
-    </node>
-   </node>
-   <node name="Benzoate degradation">
-    <magnitude><val>33.7595684779439</val><val>22.0346734892788</val><val>25.3804632454136</val></magnitude>
-    <node name="Benzoate degradation">
-     <magnitude><val>33.7595684779439</val><val>22.0346734892788</val><val>25.3804632454136</val></magnitude>
-    </node>
-   </node>
-   <node name="Fluorobenzoate degradation">
-    <magnitude><val>43.8080878226712</val><val></val><val>21.2947474747475</val></magnitude>
-    <node name="Fluorobenzoate degradation">
-     <magnitude><val>43.8080878226712</val><val></val><val>21.2947474747475</val></magnitude>
-    </node>
-   </node>
-   <node name="Metabolism of xenobiotics by cytochrome P450">
-    <magnitude><val>23.9606671106671</val></magnitude>
-    <node name="Metabolism of xenobiotics by cytochrome P450">
-     <magnitude><val>23.9606671106671</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Amino acid metabolism">
-   <magnitude><val>357.86056939772</val><val>324.065761419789</val><val>399.03316173043</val></magnitude>
-   <node name="Glycine, serine and threonine metabolism">
-    <magnitude><val>30.7355814347665</val><val>23.4304596208421</val><val>29.7922129393401</val></magnitude>
-    <node name="Glycine, serine and threonine metabolism">
-     <magnitude><val>30.7355814347665</val><val>23.4304596208421</val><val>29.7922129393401</val></magnitude>
-    </node>
-   </node>
-   <node name="Phenylalanine, tyrosine and tryptophan biosynthesis">
-    <magnitude><val>21.1487484119353</val><val>27.6504829627195</val><val>32.1050178639956</val></magnitude>
-    <node name="Phenylalanine, tyrosine and tryptophan biosynthesis">
-     <magnitude><val>21.1487484119353</val><val>27.6504829627195</val><val>32.1050178639956</val></magnitude>
-    </node>
-   </node>
-   <node name="Alanine, aspartate and glutamate metabolism">
-    <magnitude><val>23.8836446538789</val><val>24.9437910534649</val><val>27.9160964507247</val></magnitude>
-    <node name="Alanine, aspartate and glutamate metabolism">
-     <magnitude><val>23.8836446538789</val><val>24.9437910534649</val><val>27.9160964507247</val></magnitude>
-    </node>
-   </node>
-   <node name="Arginine biosynthesis">
-    <magnitude><val>24.1799145440875</val><val>23.7291996107336</val><val>32.4299666960995</val></magnitude>
-    <node name="Arginine biosynthesis">
-     <magnitude><val>24.1799145440875</val><val>23.7291996107336</val><val>32.4299666960995</val></magnitude>
-    </node>
-   </node>
-   <node name="Arginine and proline metabolism">
-    <magnitude><val>23.5558193397938</val><val>21.791443963916</val><val>28.7006639654561</val></magnitude>
-    <node name="Arginine and proline metabolism">
-     <magnitude><val>23.5558193397938</val><val>21.791443963916</val><val>28.7006639654561</val></magnitude>
-    </node>
-   </node>
-   <node name="Tryptophan metabolism">
-    <magnitude><val>30.8981109058316</val><val>22.430999405483</val><val>26.1923234676696</val></magnitude>
-    <node name="Tryptophan metabolism">
-     <magnitude><val>30.8981109058316</val><val>22.430999405483</val><val>26.1923234676696</val></magnitude>
-    </node>
-   </node>
-   <node name="Cysteine and methionine metabolism">
-    <magnitude><val>22.3623737294802</val><val>26.473191194136</val><val>31.0729989043661</val></magnitude>
-    <node name="Cysteine and methionine metabolism">
-     <magnitude><val>22.3623737294802</val><val>26.473191194136</val><val>31.0729989043661</val></magnitude>
-    </node>
-   </node>
-   <node name="Lysine degradation">
-    <magnitude><val>25.7009230351109</val><val>16.4654016057727</val><val>28.2035054753055</val></magnitude>
-    <node name="Lysine degradation">
-     <magnitude><val>25.7009230351109</val><val>16.4654016057727</val><val>28.2035054753055</val></magnitude>
-    </node>
-   </node>
-   <node name="Histidine metabolism">
-    <magnitude><val>24.0370749480036</val><val>22.6255171599874</val><val>29.0860634127008</val></magnitude>
-    <node name="Histidine metabolism">
-     <magnitude><val>24.0370749480036</val><val>22.6255171599874</val><val>29.0860634127008</val></magnitude>
-    </node>
-   </node>
-   <node name="Valine, leucine and isoleucine biosynthesis">
-    <magnitude><val>21.5211286329392</val><val>28.3850857600755</val><val>30.8185962544774</val></magnitude>
-    <node name="Valine, leucine and isoleucine biosynthesis">
-     <magnitude><val>21.5211286329392</val><val>28.3850857600755</val><val>30.8185962544774</val></magnitude>
-    </node>
-   </node>
-   <node name="Tyrosine metabolism">
-    <magnitude><val>25.2391774061023</val><val>19.1481072035724</val><val>26.334485222727</val></magnitude>
-    <node name="Tyrosine metabolism">
-     <magnitude><val>25.2391774061023</val><val>19.1481072035724</val><val>26.334485222727</val></magnitude>
-    </node>
-   </node>
-   <node name="Phenylalanine metabolism">
-    <magnitude><val>27.5909047145952</val><val>23.1498684823239</val><val>22.3720636514136</val></magnitude>
-    <node name="Phenylalanine metabolism">
-     <magnitude><val>27.5909047145952</val><val>23.1498684823239</val><val>22.3720636514136</val></magnitude>
-    </node>
-   </node>
-   <node name="Lysine biosynthesis">
-    <magnitude><val>21.1111656769353</val><val>25.9631499081808</val><val>28.7651364300661</val></magnitude>
-    <node name="Lysine biosynthesis">
-     <magnitude><val>21.1111656769353</val><val>25.9631499081808</val><val>28.7651364300661</val></magnitude>
-    </node>
-   </node>
-   <node name="Valine, leucine and isoleucine degradation">
-    <magnitude><val>35.89600196426</val><val>17.8790634885812</val><val>25.2440309960875</val></magnitude>
-    <node name="Valine, leucine and isoleucine degradation">
-     <magnitude><val>35.89600196426</val><val>17.8790634885812</val><val>25.2440309960875</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Metabolism of terpenoids and polyketides">
-   <magnitude><val>227.776421019899</val><val>153.141326104015</val><val>419.807630191055</val></magnitude>
-   <node name="Sesquiterpenoid and triterpenoid biosynthesis">
-    <magnitude><val>14.25</val></magnitude>
-    <node name="Sesquiterpenoid and triterpenoid biosynthesis">
-     <magnitude><val>14.25</val></magnitude>
-    </node>
-   </node>
-   <node name="Biosynthesis of type II polyketide products">
-    <magnitude><val></val><val></val><val>54</val></magnitude>
-    <node name="Biosynthesis of type II polyketide products">
-     <magnitude><val></val><val></val><val>54</val></magnitude>
-    </node>
-   </node>
-   <node name="Polyketide sugar unit biosynthesis">
-    <magnitude><val>14.1555538055538</val><val>29.6740925210472</val><val>33.0514065085494</val></magnitude>
-    <node name="Polyketide sugar unit biosynthesis">
-     <magnitude><val>14.1555538055538</val><val>29.6740925210472</val><val>33.0514065085494</val></magnitude>
-    </node>
-   </node>
-   <node name="Biosynthesis of enediyne antibiotics">
-    <magnitude><val></val><val></val><val>29.8333333333333</val></magnitude>
-    <node name="Biosynthesis of enediyne antibiotics">
-     <magnitude><val></val><val></val><val>29.8333333333333</val></magnitude>
-    </node>
-   </node>
-   <node name="Tetracycline biosynthesis">
-    <magnitude><val>22</val><val>8</val></magnitude>
-    <node name="Tetracycline biosynthesis">
-     <magnitude><val>22</val><val>8</val></magnitude>
-    </node>
-   </node>
-   <node name="Biosynthesis of ansamycins">
-    <magnitude><val></val><val></val><val>24.8804632867133</val></magnitude>
-    <node name="Biosynthesis of ansamycins">
-     <magnitude><val></val><val></val><val>24.8804632867133</val></magnitude>
-    </node>
-   </node>
-   <node name="Limonene and pinene degradation">
-    <magnitude><val>32.8399393161396</val><val></val><val>21.3287890595021</val></magnitude>
-    <node name="Limonene and pinene degradation">
-     <magnitude><val>32.8399393161396</val><val></val><val>21.3287890595021</val></magnitude>
-    </node>
-   </node>
-   <node name="Nonribosomal peptide structures">
-    <magnitude><val>17.1994047619048</val></magnitude>
-    <node name="Nonribosomal peptide structures">
-     <magnitude><val>17.1994047619048</val></magnitude>
-    </node>
-   </node>
-   <node name="Biosynthesis of siderophore group nonribosomal peptides">
-    <magnitude><val>18.6610547572086</val><val>11.7297916666667</val><val>18.3836898395722</val></magnitude>
-    <node name="Biosynthesis of siderophore group nonribosomal peptides">
-     <magnitude><val>18.6610547572086</val><val>11.7297916666667</val><val>18.3836898395722</val></magnitude>
-    </node>
-   </node>
-   <node name="Terpenoid backbone biosynthesis">
-    <magnitude><val>25.5343062482999</val><val>24.9229126955215</val><val>30.5980929216516</val></magnitude>
-    <node name="Terpenoid backbone biosynthesis">
-     <magnitude><val>25.5343062482999</val><val>24.9229126955215</val><val>30.5980929216516</val></magnitude>
-    </node>
-   </node>
-   <node name="Geraniol degradation">
-    <magnitude><val>41.1272968825654</val><val>9.75</val><val>24.0003532524789</val></magnitude>
-    <node name="Geraniol degradation">
-     <magnitude><val>41.1272968825654</val><val>9.75</val><val>24.0003532524789</val></magnitude>
-    </node>
-   </node>
-   <node name="Carotenoid biosynthesis">
-    <magnitude><val>19.5833333333333</val><val>39.7073863636364</val><val>127.703262786596</val></magnitude>
-    <node name="Carotenoid biosynthesis">
-     <magnitude><val>19.5833333333333</val><val>39.7073863636364</val><val>127.703262786596</val></magnitude>
-    </node>
-   </node>
-   <node name="Zeatin biosynthesis">
-    <magnitude><val>22.4255319148936</val><val>29.3571428571429</val><val>31.8139534883721</val></magnitude>
-    <node name="Zeatin biosynthesis">
-     <magnitude><val>22.4255319148936</val><val>29.3571428571429</val><val>31.8139534883721</val></magnitude>
-    </node>
-   </node>
-   <node name="Biosynthesis of vancomycin group antibiotics">
-    <magnitude><val></val><val></val><val>24.2142857142857</val></magnitude>
-    <node name="Biosynthesis of vancomycin group antibiotics">
-     <magnitude><val></val><val></val><val>24.2142857142857</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Metabolism of other amino acids">
-   <magnitude><val>190.570309021928</val><val>156.717635635034</val><val>192.721952818838</val></magnitude>
-   <node name="Selenocompound metabolism">
-    <magnitude><val>20.5980293986677</val><val>23.7762460986091</val><val>23.086700942419</val></magnitude>
-    <node name="Selenocompound metabolism">
-     <magnitude><val>20.5980293986677</val><val>23.7762460986091</val><val>23.086700942419</val></magnitude>
-    </node>
-   </node>
-   <node name="Taurine and hypotaurine metabolism">
-    <magnitude><val>22.9373029923161</val><val>22.1497337565134</val><val>25.5759338629543</val></magnitude>
-    <node name="Taurine and hypotaurine metabolism">
-     <magnitude><val>22.9373029923161</val><val>22.1497337565134</val><val>25.5759338629543</val></magnitude>
-    </node>
-   </node>
-   <node name="Glutathione metabolism">
-    <magnitude><val>30.8253454764896</val><val>27.0806348630049</val><val>28.3455510472847</val></magnitude>
-    <node name="Glutathione metabolism">
-     <magnitude><val>30.8253454764896</val><val>27.0806348630049</val><val>28.3455510472847</val></magnitude>
-    </node>
-   </node>
-   <node name="Phosphonate and phosphinate metabolism">
-    <magnitude><val>27.3519326727727</val><val>17.267032967033</val><val>34.950974025974</val></magnitude>
-    <node name="Phosphonate and phosphinate metabolism">
-     <magnitude><val>27.3519326727727</val><val>17.267032967033</val><val>34.950974025974</val></magnitude>
-    </node>
-   </node>
-   <node name="beta-Alanine metabolism">
-    <magnitude><val>26.7131882023342</val><val>16.7188870614035</val><val>24.9726177927381</val></magnitude>
-    <node name="beta-Alanine metabolism">
-     <magnitude><val>26.7131882023342</val><val>16.7188870614035</val><val>24.9726177927381</val></magnitude>
-    </node>
-   </node>
-   <node name="Cyanoamino acid metabolism">
-    <magnitude><val>34.9624547001311</val><val>26.9330734955735</val><val>27.2153599472748</val></magnitude>
-    <node name="Cyanoamino acid metabolism">
-     <magnitude><val>34.9624547001311</val><val>26.9330734955735</val><val>27.2153599472748</val></magnitude>
-    </node>
-   </node>
-   <node name="D-Amino acid metabolism">
-    <magnitude><val>27.1820555792166</val><val>22.792027392897</val><val>28.5748152001927</val></magnitude>
-    <node name="D-Amino acid metabolism">
-     <magnitude><val>27.1820555792166</val><val>22.792027392897</val><val>28.5748152001927</val></magnitude>
-    </node>
-   </node>
-  </node>
- </node>
- <node name="Organismal Systems">
-  <magnitude><val>183.754692333175</val><val>187.005282026694</val><val>202.773440228426</val></magnitude>
-  <node name="Aging">
-   <magnitude><val>33.804397993311</val><val>25.2842907075874</val><val>36.747196253725</val></magnitude>
-   <node name="Longevity regulating pathway - multiple species">
-    <magnitude><val>33.804397993311</val><val>25.2842907075874</val><val>36.747196253725</val></magnitude>
-    <node name="Longevity regulating pathway - multiple species">
-     <magnitude><val>33.804397993311</val><val>25.2842907075874</val><val>36.747196253725</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Immune system">
-   <magnitude><val>24.8799245145327</val><val>38.4587606044539</val><val>31.7777777777778</val></magnitude>
-   <node name="NOD-like receptor signaling pathway">
-    <magnitude><val>24.8799245145327</val><val>38.4587606044539</val><val>31.7777777777778</val></magnitude>
-    <node name="NOD-like receptor signaling pathway">
-     <magnitude><val>24.8799245145327</val><val>38.4587606044539</val><val>31.7777777777778</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Environmental adaptation">
-   <magnitude><val>19.9558748405405</val><val>27.8115407405459</val><val>25.556146572104</val></magnitude>
-   <node name="Plant-pathogen interaction">
-    <magnitude><val>19.9558748405405</val><val>27.8115407405459</val><val>25.556146572104</val></magnitude>
-    <node name="Plant-pathogen interaction">
-     <magnitude><val>19.9558748405405</val><val>27.8115407405459</val><val>25.556146572104</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Endocrine system">
-   <magnitude><val>39.1686014557338</val><val>37.2412573015162</val><val>41.1330772005772</val></magnitude>
-   <node name="Insulin signaling pathway">
-    <magnitude><val>26.0297125668449</val><val>21.0537573015162</val><val>18.7465692640693</val></magnitude>
-    <node name="Insulin signaling pathway">
-     <magnitude><val>26.0297125668449</val><val>21.0537573015162</val><val>18.7465692640693</val></magnitude>
-    </node>
-   </node>
-   <node name="Renin-angiotensin system">
-    <magnitude><val>13.1388888888889</val><val>16.1875</val><val>22.3865079365079</val></magnitude>
-    <node name="Renin-angiotensin system">
-     <magnitude><val>13.1388888888889</val><val>16.1875</val><val>22.3865079365079</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Digestive system">
-   <magnitude><val>45.9458935290565</val><val>58.2094326725906</val><val>67.5592424242424</val></magnitude>
-   <node name="Mineral absorption">
-    <magnitude><val>33.6169461606355</val><val>46.1548872180451</val><val>47.7159090909091</val></magnitude>
-    <node name="Mineral absorption">
-     <magnitude><val>33.6169461606355</val><val>46.1548872180451</val><val>47.7159090909091</val></magnitude>
-    </node>
-   </node>
-   <node name="Protein digestion and absorption">
-    <magnitude><val>12.3289473684211</val><val>12.0545454545455</val><val>19.8433333333333</val></magnitude>
-    <node name="Protein digestion and absorption">
-     <magnitude><val>12.3289473684211</val><val>12.0545454545455</val><val>19.8433333333333</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Nervous system">
-   <magnitude><val>20</val></magnitude>
-   <node name="Cholinergic synapse">
-    <magnitude><val>20</val></magnitude>
-    <node name="Cholinergic synapse">
-     <magnitude><val>20</val></magnitude>
-    </node>
-   </node>
-  </node>
- </node>
- <node name="Environmental Information Processing">
-  <magnitude><val>219.149006463324</val><val>177.854187733243</val><val>240.744055169827</val></magnitude>
-  <node name="Membrane transport">
-   <magnitude><val>77.7606214380578</val><val>81.6020504933945</val><val>102.58818308271</val></magnitude>
-   <node name="ABC transporters">
-    <magnitude><val>22.8006957702236</val><val>28.5818191585332</val><val>31.6519489749949</val></magnitude>
-    <node name="ABC transporters">
-     <magnitude><val>22.8006957702236</val><val>28.5818191585332</val><val>31.6519489749949</val></magnitude>
-    </node>
-   </node>
-   <node name="Phosphotransferase system (PTS)">
-    <magnitude><val>13.6906569624581</val><val>25.2261610321634</val><val>41.2460182757004</val></magnitude>
-    <node name="Phosphotransferase system (PTS)">
-     <magnitude><val>13.6906569624581</val><val>25.2261610321634</val><val>41.2460182757004</val></magnitude>
-    </node>
-   </node>
-   <node name="Bacterial secretion system">
-    <magnitude><val>41.269268705376</val><val>27.7940703026978</val><val>29.6902158320148</val></magnitude>
-    <node name="Bacterial secretion system">
-     <magnitude><val>41.269268705376</val><val>27.7940703026978</val><val>29.6902158320148</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Signaling molecules and interaction">
-   <magnitude><val>19.5</val><val>12.5</val><val>14.25</val></magnitude>
-   <node name="Neuroactive ligand-receptor interaction">
-    <magnitude><val>19.5</val><val>12.5</val><val>14.25</val></magnitude>
-    <node name="Neuroactive ligand-receptor interaction">
-     <magnitude><val>19.5</val><val>12.5</val><val>14.25</val></magnitude>
-    </node>
-   </node>
-  </node>
-  <node name="Signal transduction">
-   <magnitude><val>121.888385025266</val><val>83.7521372398486</val><val>123.905872087117</val></magnitude>
-   <node name="PI3K-Akt signaling pathway">
-    <magnitude><val></val><val>14.9858594657375</val><val>19.1217532467532</val></magnitude>
-    <node name="PI3K-Akt signaling pathway">
-     <magnitude><val></val><val>14.9858594657375</val><val>19.1217532467532</val></magnitude>
-    </node>
-   </node>
-   <node name="MAPK signaling pathway">
-    <magnitude><val>28</val></magnitude>
-    <node name="MAPK signaling pathway">
-     <magnitude><val>28</val></magnitude>
-    </node>
-   </node>
-   <node name="Two-component system">
-    <magnitude><val>23.5967183585996</val><val>24.4862777741111</val><val>35.1041188403634</val></magnitude>
-    <node name="Two-component system">
-     <magnitude><val>23.5967183585996</val><val>24.4862777741111</val><val>35.1041188403634</val></magnitude>
-    </node>
-   </node>
-   <node name="Calcium signaling pathway">
-    <magnitude><val>31.5</val></magnitude>
-    <node name="Calcium signaling pathway">
-     <magnitude><val>31.5</val></magnitude>
-    </node>
-   </node>
-   <node name="MAPK signaling pathway - fly">
-    <magnitude><val>38.7916666666667</val><val>44.28</val><val>69.68</val></magnitude>
-    <node name="MAPK signaling pathway - fly">
-     <magnitude><val>38.7916666666667</val><val>44.28</val><val>69.68</val></magnitude>
-    </node>
-   </node>
-  </node>
- </node>
+ <magnitude><val>3136.64954971068</val><val>2476.46668229151</val><val>3208.77410321247</val></magnitude>
  <node name="Cellular Processes">
-  <magnitude><val>343.721890988897</val><val>274.61087059955</val><val>420.772035386352</val></magnitude>
-  <node name="Cellular community - eukaryotes">
-   <magnitude><val></val><val>13.5</val></magnitude>
-   <node name="Signaling pathways regulating pluripotency of stem cells">
-    <magnitude><val></val><val>13.5</val></magnitude>
-    <node name="Signaling pathways regulating pluripotency of stem cells">
-     <magnitude><val></val><val>13.5</val></magnitude>
+  <magnitude><val>336.811214818501</val><val>261.42952087489</val><val>379.266109295917</val></magnitude>
+  <node name="Cellular community - prokaryotes">
+   <magnitude><val>103.297882417761</val><val>107.2047566945</val><val>118.610967263573</val></magnitude>
+   <node name="Biofilm formation - Vibrio cholerae">
+    <magnitude><val>26.0558071577355</val><val>26.7835881789519</val><val>30.578089710809</val></magnitude>
+    <node name="Biofilm formation - Vibrio cholerae">
+     <magnitude><val>26.0558071577355</val><val>26.7835881789519</val><val>30.578089710809</val></magnitude>
     </node>
    </node>
-  </node>
-  <node name="Cell motility">
-   <magnitude><val>53.0509296557111</val><val>53.7625585447319</val><val>42.2172412239765</val></magnitude>
-   <node name="Bacterial chemotaxis">
-    <magnitude><val>23.1100597934217</val><val>23.3453581031952</val><val>20.496747311828</val></magnitude>
-    <node name="Bacterial chemotaxis">
-     <magnitude><val>23.1100597934217</val><val>23.3453581031952</val><val>20.496747311828</val></magnitude>
+   <node name="Biofilm formation - Pseudomonas aeruginosa">
+    <magnitude><val>28.5180544957988</val><val>22.9686490574191</val><val>22.4366612554113</val></magnitude>
+    <node name="Biofilm formation - Pseudomonas aeruginosa">
+     <magnitude><val>28.5180544957988</val><val>22.9686490574191</val><val>22.4366612554113</val></magnitude>
     </node>
    </node>
-   <node name="Flagellar assembly">
-    <magnitude><val>29.9408698622894</val><val>30.4172004415367</val><val>21.7204939121486</val></magnitude>
-    <node name="Flagellar assembly">
-     <magnitude><val>29.9408698622894</val><val>30.4172004415367</val><val>21.7204939121486</val></magnitude>
+   <node name="Biofilm formation - Escherichia coli">
+    <magnitude><val>24.9723493843334</val><val>30.0866021226973</val><val>26.5904153387757</val></magnitude>
+    <node name="Biofilm formation - Escherichia coli">
+     <magnitude><val>24.9723493843334</val><val>30.0866021226973</val><val>26.5904153387757</val></magnitude>
+    </node>
+   </node>
+   <node name="Quorum sensing">
+    <magnitude><val>23.751671379893</val><val>27.3659173354312</val><val>39.0058009585769</val></magnitude>
+    <node name="Quorum sensing">
+     <magnitude><val>23.751671379893</val><val>27.3659173354312</val><val>39.0058009585769</val></magnitude>
     </node>
    </node>
   </node>
   <node name="Transport and catabolism">
-   <magnitude><val>64.9380639916302</val><val>48.4674953510679</val><val>76.6898132462888</val></magnitude>
-   <node name="Lysosome">
-    <magnitude><val></val><val></val><val>21.2392636684303</val></magnitude>
-    <node name="Lysosome">
-     <magnitude><val></val><val></val><val>21.2392636684303</val></magnitude>
-    </node>
-   </node>
-   <node name="Peroxisome">
-    <magnitude><val>32.9380639916302</val><val>20.8841620177345</val><val>29.4505495778584</val></magnitude>
-    <node name="Peroxisome">
-     <magnitude><val>32.9380639916302</val><val>20.8841620177345</val><val>29.4505495778584</val></magnitude>
-    </node>
-   </node>
+   <magnitude><val>64.6170321133642</val><val>30.0909090909091</val><val>47.5655011500648</val></magnitude>
    <node name="Endocytosis">
     <magnitude><val>2</val></magnitude>
     <node name="Endocytosis">
      <magnitude><val>2</val></magnitude>
     </node>
    </node>
+   <node name="Peroxisome">
+    <magnitude><val>32.7503654466975</val></magnitude>
+    <node name="Peroxisome">
+     <magnitude><val>32.7503654466975</val></magnitude>
+    </node>
+   </node>
    <node name="Autophagy - yeast">
-    <magnitude><val>30</val><val>27.5833333333333</val><val>26</val></magnitude>
+    <magnitude><val>29.8666666666667</val><val>30.0909090909091</val><val>26.2857142857143</val></magnitude>
     <node name="Autophagy - yeast">
-     <magnitude><val>30</val><val>27.5833333333333</val><val>26</val></magnitude>
+     <magnitude><val>29.8666666666667</val><val>30.0909090909091</val><val>26.2857142857143</val></magnitude>
     </node>
    </node>
-  </node>
-  <node name="Cellular community - prokaryotes">
-   <magnitude><val>101.304865138556</val><val>107.125489493622</val><val>121.374414833291</val></magnitude>
-   <node name="Biofilm formation - Pseudomonas aeruginosa">
-    <magnitude><val>26.9399663821548</val><val>24.2001715024741</val><val>23.4395288087017</val></magnitude>
-    <node name="Biofilm formation - Pseudomonas aeruginosa">
-     <magnitude><val>26.9399663821548</val><val>24.2001715024741</val><val>23.4395288087017</val></magnitude>
-    </node>
-   </node>
-   <node name="Quorum sensing">
-    <magnitude><val>22.9052675711343</val><val>27.1717982659449</val><val>39.5248386603818</val></magnitude>
-    <node name="Quorum sensing">
-     <magnitude><val>22.9052675711343</val><val>27.1717982659449</val><val>39.5248386603818</val></magnitude>
-    </node>
-   </node>
-   <node name="Biofilm formation - Escherichia coli">
-    <magnitude><val>24.9613304324126</val><val>29.625066371067</val><val>27.2830729656817</val></magnitude>
-    <node name="Biofilm formation - Escherichia coli">
-     <magnitude><val>24.9613304324126</val><val>29.625066371067</val><val>27.2830729656817</val></magnitude>
-    </node>
-   </node>
-   <node name="Biofilm formation - Vibrio cholerae">
-    <magnitude><val>26.4983007528545</val><val>26.1284533541356</val><val>31.1269743985261</val></magnitude>
-    <node name="Biofilm formation - Vibrio cholerae">
-     <magnitude><val>26.4983007528545</val><val>26.1284533541356</val><val>31.1269743985261</val></magnitude>
+   <node name="Lysosome">
+    <magnitude><val></val><val></val><val>21.2797868643505</val></magnitude>
+    <node name="Lysosome">
+     <magnitude><val></val><val></val><val>21.2797868643505</val></magnitude>
     </node>
    </node>
   </node>
   <node name="Cell growth and death">
-   <magnitude><val>124.428032202999</val><val>51.7553272101289</val><val>180.490566082795</val></magnitude>
-   <node name="Apoptosis - fly">
-    <magnitude><val>37.2692307692308</val><val>12.4904761904762</val><val>28.5865384615385</val></magnitude>
-    <node name="Apoptosis - fly">
-     <magnitude><val>37.2692307692308</val><val>12.4904761904762</val><val>28.5865384615385</val></magnitude>
-    </node>
-   </node>
-   <node name="Apoptosis">
-    <magnitude><val>32.7380952380952</val><val>8.86666666666667</val><val>89.375</val></magnitude>
-    <node name="Apoptosis">
-     <magnitude><val>32.7380952380952</val><val>8.86666666666667</val><val>89.375</val></magnitude>
+   <magnitude><val>114.930591477274</val><val>57.6248243216115</val><val>170.888376963897</val></magnitude>
+   <node name="Oocyte meiosis">
+    <magnitude><val></val><val>5</val></magnitude>
+    <node name="Oocyte meiosis">
+     <magnitude><val></val><val>5</val></magnitude>
     </node>
    </node>
    <node name="Cell cycle - Caulobacter">
-    <magnitude><val>24.9373728623399</val><val>30.398184352986</val><val>29.9290276212564</val></magnitude>
+    <magnitude><val>24.1734819201649</val><val>29.8066425034297</val><val>30.5143385023585</val></magnitude>
     <node name="Cell cycle - Caulobacter">
-     <magnitude><val>24.9373728623399</val><val>30.398184352986</val><val>29.9290276212564</val></magnitude>
+     <magnitude><val>24.1734819201649</val><val>29.8066425034297</val><val>30.5143385023585</val></magnitude>
+    </node>
+   </node>
+   <node name="Apoptosis">
+    <magnitude><val>23.9545454545455</val><val>9.66666666666667</val><val>80</val></magnitude>
+    <node name="Apoptosis">
+     <magnitude><val>23.9545454545455</val><val>9.66666666666667</val><val>80</val></magnitude>
     </node>
    </node>
    <node name="Meiosis - yeast">
-    <magnitude><val>29.4833333333333</val><val></val><val>32.6</val></magnitude>
+    <magnitude><val>29.2</val><val></val><val>31.7875</val></magnitude>
     <node name="Meiosis - yeast">
-     <magnitude><val>29.4833333333333</val><val></val><val>32.6</val></magnitude>
+     <magnitude><val>29.2</val><val></val><val>31.7875</val></magnitude>
+    </node>
+   </node>
+   <node name="Apoptosis - fly">
+    <magnitude><val>37.6025641025641</val><val>13.1515151515152</val><val>28.5865384615385</val></magnitude>
+    <node name="Apoptosis - fly">
+     <magnitude><val>37.6025641025641</val><val>13.1515151515152</val><val>28.5865384615385</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Cellular community - eukaryotes">
+   <magnitude><val></val><val>12.75</val></magnitude>
+   <node name="Signaling pathways regulating pluripotency of stem cells">
+    <magnitude><val></val><val>12.75</val></magnitude>
+    <node name="Signaling pathways regulating pluripotency of stem cells">
+     <magnitude><val></val><val>12.75</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Cell motility">
+   <magnitude><val>53.965708810102</val><val>53.7590307678701</val><val>42.2012639183829</val></magnitude>
+   <node name="Flagellar assembly">
+    <magnitude><val>30.0523282862005</val><val>30.4239480579367</val><val>21.1200452803901</val></magnitude>
+    <node name="Flagellar assembly">
+     <magnitude><val>30.0523282862005</val><val>30.4239480579367</val><val>21.1200452803901</val></magnitude>
+    </node>
+   </node>
+   <node name="Bacterial chemotaxis">
+    <magnitude><val>23.9133805239014</val><val>23.3350827099334</val><val>21.0812186379928</val></magnitude>
+    <node name="Bacterial chemotaxis">
+     <magnitude><val>23.9133805239014</val><val>23.3350827099334</val><val>21.0812186379928</val></magnitude>
+    </node>
+   </node>
+  </node>
+ </node>
+ <node name="Genetic Information Processing">
+  <magnitude><val>374.812906095071</val><val>394.23425339179</val><val>446.583077566903</val></magnitude>
+  <node name="Replication and repair">
+   <magnitude><val>145.133600192453</val><val>129.755149453836</val><val>153.11358782795</val></magnitude>
+   <node name="Mismatch repair">
+    <magnitude><val>21.179823157778</val><val>24.5992429216742</val><val>27.4528498879626</val></magnitude>
+    <node name="Mismatch repair">
+     <magnitude><val>21.179823157778</val><val>24.5992429216742</val><val>27.4528498879626</val></magnitude>
+    </node>
+   </node>
+   <node name="DNA replication">
+    <magnitude><val>22.4273522231377</val><val>23.9188612931586</val><val>30.1940083671711</val></magnitude>
+    <node name="DNA replication">
+     <magnitude><val>22.4273522231377</val><val>23.9188612931586</val><val>30.1940083671711</val></magnitude>
+    </node>
+   </node>
+   <node name="Nucleotide excision repair">
+    <magnitude><val>19.4332747539534</val><val>22.9854055153884</val><val>25.5347969399894</val></magnitude>
+    <node name="Nucleotide excision repair">
+     <magnitude><val>19.4332747539534</val><val>22.9854055153884</val><val>25.5347969399894</val></magnitude>
+    </node>
+   </node>
+   <node name="Non-homologous end-joining">
+    <magnitude><val>33.7318181818182</val><val>6</val><val>13.7291666666667</val></magnitude>
+    <node name="Non-homologous end-joining">
+     <magnitude><val>33.7318181818182</val><val>6</val><val>13.7291666666667</val></magnitude>
+    </node>
+   </node>
+   <node name="Homologous recombination">
+    <magnitude><val>24.3471802859886</val><val>26.8540665378071</val><val>28.8909027698519</val></magnitude>
+    <node name="Homologous recombination">
+     <magnitude><val>24.3471802859886</val><val>26.8540665378071</val><val>28.8909027698519</val></magnitude>
+    </node>
+   </node>
+   <node name="Base excision repair">
+    <magnitude><val>24.014151589777</val><val>25.3975731858078</val><val>27.3118631963084</val></magnitude>
+    <node name="Base excision repair">
+     <magnitude><val>24.014151589777</val><val>25.3975731858078</val><val>27.3118631963084</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Folding, sorting and degradation">
+   <magnitude><val>89.9226955477973</val><val>96.447610344838</val><val>139.637405074944</val></magnitude>
+   <node name="Sulfur relay system">
+    <magnitude><val>23.0597184070487</val><val>19.8134285540813</val><val>28.5544816008029</val></magnitude>
+    <node name="Sulfur relay system">
+     <magnitude><val>23.0597184070487</val><val>19.8134285540813</val><val>28.5544816008029</val></magnitude>
+    </node>
+   </node>
+   <node name="Protein processing in endoplasmic reticulum">
+    <magnitude><val>15.493031358885</val><val>11.0128205128205</val><val>32.0294117647059</val></magnitude>
+    <node name="Protein processing in endoplasmic reticulum">
+     <magnitude><val>15.493031358885</val><val>11.0128205128205</val><val>32.0294117647059</val></magnitude>
+    </node>
+   </node>
+   <node name="Protein export">
+    <magnitude><val>26.5657618445881</val><val>34.2996205238551</val><val>35.3615701393178</val></magnitude>
+    <node name="Protein export">
+     <magnitude><val>26.5657618445881</val><val>34.2996205238551</val><val>35.3615701393178</val></magnitude>
+    </node>
+   </node>
+   <node name="Proteasome">
+    <magnitude><val></val><val>5</val><val>12.3212121212121</val></magnitude>
+    <node name="Proteasome">
+     <magnitude><val></val><val>5</val><val>12.3212121212121</val></magnitude>
+    </node>
+   </node>
+   <node name="RNA degradation">
+    <magnitude><val>24.8041839372755</val><val>26.3217407540811</val><val>31.3707294489057</val></magnitude>
+    <node name="RNA degradation">
+     <magnitude><val>24.8041839372755</val><val>26.3217407540811</val><val>31.3707294489057</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Transcription">
+   <magnitude><val>50.5098531303857</val><val>32.3343445862091</val><val>46.583435665933</val></magnitude>
+   <node name="Spliceosome">
+    <magnitude><val>30</val></magnitude>
+    <node name="Spliceosome">
+     <magnitude><val>30</val></magnitude>
+    </node>
+   </node>
+   <node name="RNA polymerase">
+    <magnitude><val>20.5098531303857</val><val>32.3343445862091</val><val>46.583435665933</val></magnitude>
+    <node name="RNA polymerase">
+     <magnitude><val>20.5098531303857</val><val>32.3343445862091</val><val>46.583435665933</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Translation">
+   <magnitude><val>89.2467572244348</val><val>135.697149006907</val><val>107.248648998076</val></magnitude>
+   <node name="Ribosome biogenesis in eukaryotes">
+    <magnitude><val>34.5625</val><val>34.7660256410256</val><val>26.9243386243386</val></magnitude>
+    <node name="Ribosome biogenesis in eukaryotes">
+     <magnitude><val>34.5625</val><val>34.7660256410256</val><val>26.9243386243386</val></magnitude>
+    </node>
+   </node>
+   <node name="Ribosome">
+    <magnitude><val>31.0591972680509</val><val>49.4308345056022</val><val>51.3051333590094</val></magnitude>
+    <node name="Ribosome">
+     <magnitude><val>31.0591972680509</val><val>49.4308345056022</val><val>51.3051333590094</val></magnitude>
+    </node>
+   </node>
+   <node name="Nucleocytoplasmic transport">
+    <magnitude><val></val><val>22</val></magnitude>
+    <node name="Nucleocytoplasmic transport">
+     <magnitude><val></val><val>22</val></magnitude>
+    </node>
+   </node>
+   <node name="Aminoacyl-tRNA biosynthesis">
+    <magnitude><val>23.625059956384</val><val>29.5002888602788</val><val>29.0191770147277</val></magnitude>
+    <node name="Aminoacyl-tRNA biosynthesis">
+     <magnitude><val>23.625059956384</val><val>29.5002888602788</val><val>29.0191770147277</val></magnitude>
+    </node>
+   </node>
+  </node>
+ </node>
+ <node name="Human Diseases">
+  <magnitude><val>444.530717604872</val><val>420.121036882556</val><val>533.597629375087</val></magnitude>
+  <node name="Infectious disease: parasitic">
+   <magnitude><val>32.3042452830189</val><val>23.6181818181818</val><val>57.993613865809</val></magnitude>
+   <node name="African trypanosomiasis">
+    <magnitude><val>9.2</val><val></val><val>23.9495238095238</val></magnitude>
+    <node name="African trypanosomiasis">
+     <magnitude><val>9.2</val><val></val><val>23.9495238095238</val></magnitude>
+    </node>
+   </node>
+   <node name="Chagas disease">
+    <magnitude><val></val><val>8.27272727272727</val></magnitude>
+    <node name="Chagas disease">
+     <magnitude><val></val><val>8.27272727272727</val></magnitude>
+    </node>
+   </node>
+   <node name="Amoebiasis">
+    <magnitude><val>23.1042452830189</val><val>15.3454545454545</val><val>34.0440900562852</val></magnitude>
+    <node name="Amoebiasis">
+     <magnitude><val>23.1042452830189</val><val>15.3454545454545</val><val>34.0440900562852</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Cancer: specific types">
+   <magnitude><val></val><val>9</val></magnitude>
+   <node name="Breast cancer">
+    <magnitude><val></val><val>9</val></magnitude>
+    <node name="Breast cancer">
+     <magnitude><val></val><val>9</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Drug resistance: antineoplastic">
+   <magnitude><val></val><val></val><val>32</val></magnitude>
+   <node name="Endocrine resistance">
+    <magnitude><val></val><val></val><val>32</val></magnitude>
+    <node name="Endocrine resistance">
+     <magnitude><val></val><val></val><val>32</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Infectious disease: bacterial">
+   <magnitude><val>213.617547100677</val><val>260.066404769934</val><val>265.440032719266</val></magnitude>
+   <node name="Salmonella infection">
+    <magnitude><val></val><val>30.9481522717049</val></magnitude>
+    <node name="Salmonella infection">
+     <magnitude><val></val><val>30.9481522717049</val></magnitude>
+    </node>
+   </node>
+   <node name="Epithelial cell signaling in Helicobacter pylori infection">
+    <magnitude><val>36.9239926739927</val><val>14.3715909090909</val><val>32.9534632034632</val></magnitude>
+    <node name="Epithelial cell signaling in Helicobacter pylori infection">
+     <magnitude><val>36.9239926739927</val><val>14.3715909090909</val><val>32.9534632034632</val></magnitude>
+    </node>
+   </node>
+   <node name="Legionellosis">
+    <magnitude><val>23.6293897300974</val><val>19.4386702747841</val><val>30.5928422619048</val></magnitude>
+    <node name="Legionellosis">
+     <magnitude><val>23.6293897300974</val><val>19.4386702747841</val><val>30.5928422619048</val></magnitude>
+    </node>
+   </node>
+   <node name="Staphylococcus aureus infection">
+    <magnitude><val>21.3333928571429</val><val>57.3381121964455</val><val>115.721839342429</val></magnitude>
+    <node name="Staphylococcus aureus infection">
+     <magnitude><val>21.3333928571429</val><val>57.3381121964455</val><val>115.721839342429</val></magnitude>
+    </node>
+   </node>
+   <node name="Vibrio cholerae infection">
+    <magnitude><val>11.6</val><val>18.6</val></magnitude>
+    <node name="Vibrio cholerae infection">
+     <magnitude><val>11.6</val><val>18.6</val></magnitude>
+    </node>
+   </node>
+   <node name="Pertussis">
+    <magnitude><val>56.0504003062151</val><val>40.8098791179083</val><val>22.5227272727273</val></magnitude>
+    <node name="Pertussis">
+     <magnitude><val>56.0504003062151</val><val>40.8098791179083</val><val>22.5227272727273</val></magnitude>
+    </node>
+   </node>
+   <node name="Pathogenic Escherichia coli infection">
+    <magnitude><val>28.2923076923077</val></magnitude>
+    <node name="Pathogenic Escherichia coli infection">
+     <magnitude><val>28.2923076923077</val></magnitude>
+    </node>
+   </node>
+   <node name="Tuberculosis">
+    <magnitude><val>28.2713971742543</val><val></val><val>25.6759696745926</val></magnitude>
+    <node name="Tuberculosis">
+     <magnitude><val>28.2713971742543</val><val></val><val>25.6759696745926</val></magnitude>
+    </node>
+   </node>
+   <node name="Bacterial invasion of epithelial cells">
+    <magnitude><val>7.51666666666667</val><val>78.56</val><val>37.9731909641494</val></magnitude>
+    <node name="Bacterial invasion of epithelial cells">
+     <magnitude><val>7.51666666666667</val><val>78.56</val><val>37.9731909641494</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Neurodegenerative disease">
+   <magnitude><val>19.3030303030303</val><val>15.3888888888889</val><val>17.8</val></magnitude>
+   <node name="Spinocerebellar ataxia">
+    <magnitude><val>19.3030303030303</val><val>15.3888888888889</val><val>17.8</val></magnitude>
+    <node name="Spinocerebellar ataxia">
+     <magnitude><val>19.3030303030303</val><val>15.3888888888889</val><val>17.8</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Drug resistance: antimicrobial">
+   <magnitude><val>59.2810163387953</val><val>69.2310695640596</val><val>128.105210440076</val></magnitude>
+   <node name="Cationic antimicrobial peptide (CAMP) resistance">
+    <magnitude><val>20.0889180923373</val><val>25.8927894202569</val><val>52.4772013956916</val></magnitude>
+    <node name="Cationic antimicrobial peptide (CAMP) resistance">
+     <magnitude><val>20.0889180923373</val><val>25.8927894202569</val><val>52.4772013956916</val></magnitude>
+    </node>
+   </node>
+   <node name="Vancomycin resistance">
+    <magnitude><val>18.2993233236375</val><val>21.0919358762772</val><val>24.4229775694061</val></magnitude>
+    <node name="Vancomycin resistance">
+     <magnitude><val>18.2993233236375</val><val>21.0919358762772</val><val>24.4229775694061</val></magnitude>
+    </node>
+   </node>
+   <node name="beta-Lactam resistance">
+    <magnitude><val>20.8927749228205</val><val>22.2463442675255</val><val>51.2050314749784</val></magnitude>
+    <node name="beta-Lactam resistance">
+     <magnitude><val>20.8927749228205</val><val>22.2463442675255</val><val>51.2050314749784</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Infectious disease: viral">
+   <magnitude><val></val><val>13</val></magnitude>
+   <node name="Hepatitis C">
+    <magnitude><val></val><val>13</val></magnitude>
+    <node name="Hepatitis C">
+     <magnitude><val></val><val>13</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Cancer: overview">
+   <magnitude><val>76.4938584644083</val><val>29.8164918414918</val><val>32.2587723499361</val></magnitude>
+   <node name="Chemical carcinogenesis - DNA adducts">
+    <magnitude><val>36.4696202531646</val></magnitude>
+    <node name="Chemical carcinogenesis - DNA adducts">
+     <magnitude><val>36.4696202531646</val></magnitude>
+    </node>
+   </node>
+   <node name="MicroRNAs in cancer">
+    <magnitude><val>11.2959595959596</val></magnitude>
+    <node name="MicroRNAs in cancer">
+     <magnitude><val>11.2959595959596</val></magnitude>
+    </node>
+   </node>
+   <node name="Chemical carcinogenesis - reactive oxygen species">
+    <magnitude><val>28.7282786152842</val><val>29.8164918414918</val><val>32.2587723499361</val></magnitude>
+    <node name="Chemical carcinogenesis - reactive oxygen species">
+     <magnitude><val>28.7282786152842</val><val>29.8164918414918</val><val>32.2587723499361</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Cardiovascular disease">
+   <magnitude><val>24</val></magnitude>
+   <node name="Hypertrophic cardiomyopathy">
+    <magnitude><val>24</val></magnitude>
+    <node name="Hypertrophic cardiomyopathy">
+     <magnitude><val>24</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Endocrine and metabolic disease">
+   <magnitude><val>19.5310201149425</val></magnitude>
+   <node name="Insulin resistance">
+    <magnitude><val>19.5310201149425</val></magnitude>
+    <node name="Insulin resistance">
+     <magnitude><val>19.5310201149425</val></magnitude>
+    </node>
+   </node>
+  </node>
+ </node>
+ <node name="Organismal Systems">
+  <magnitude><val>162.240297171169</val><val>147.042645319281</val><val>235.204534116398</val></magnitude>
+  <node name="Immune system">
+   <magnitude><val>20.5121028646951</val><val></val><val>61.4388888888889</val></magnitude>
+   <node name="Antigen processing and presentation">
+    <magnitude><val></val><val></val><val>29.25</val></magnitude>
+    <node name="Antigen processing and presentation">
+     <magnitude><val></val><val></val><val>29.25</val></magnitude>
+    </node>
+   </node>
+   <node name="NOD-like receptor signaling pathway">
+    <magnitude><val>20.5121028646951</val><val></val><val>32.1888888888889</val></magnitude>
+    <node name="NOD-like receptor signaling pathway">
+     <magnitude><val>20.5121028646951</val><val></val><val>32.1888888888889</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Digestive system">
+   <magnitude><val>48.5512901912902</val><val>61.7770833333333</val><val>69.8686340263805</val></magnitude>
+   <node name="Cholesterol metabolism">
+    <magnitude><val></val><val>8.25</val></magnitude>
+    <node name="Cholesterol metabolism">
+     <magnitude><val></val><val>8.25</val></magnitude>
+    </node>
+   </node>
+   <node name="Mineral absorption">
+    <magnitude><val>32.548433048433</val><val>41.1666666666667</val><val>49.763078470825</val></magnitude>
+    <node name="Mineral absorption">
+     <magnitude><val>32.548433048433</val><val>41.1666666666667</val><val>49.763078470825</val></magnitude>
+    </node>
+   </node>
+   <node name="Protein digestion and absorption">
+    <magnitude><val>16.0028571428571</val><val>12.3604166666667</val><val>20.1055555555556</val></magnitude>
+    <node name="Protein digestion and absorption">
+     <magnitude><val>16.0028571428571</val><val>12.3604166666667</val><val>20.1055555555556</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Aging">
+   <magnitude><val>33.0555089647195</val><val>21.1298346180772</val><val>35.786196253725</val></magnitude>
+   <node name="Longevity regulating pathway - multiple species">
+    <magnitude><val>33.0555089647195</val><val>21.1298346180772</val><val>35.786196253725</val></magnitude>
+    <node name="Longevity regulating pathway - multiple species">
+     <magnitude><val>33.0555089647195</val><val>21.1298346180772</val><val>35.786196253725</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Environmental adaptation">
+   <magnitude><val>20.6855618171309</val><val>28.3309654631083</val><val>25.7447950247152</val></magnitude>
+   <node name="Plant-pathogen interaction">
+    <magnitude><val>20.6855618171309</val><val>28.3309654631083</val><val>25.7447950247152</val></magnitude>
+    <node name="Plant-pathogen interaction">
+     <magnitude><val>20.6855618171309</val><val>28.3309654631083</val><val>25.7447950247152</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Endocrine system">
+   <magnitude><val>39.4358333333333</val><val>35.8047619047619</val><val>42.3660199226881</val></magnitude>
+   <node name="Insulin signaling pathway">
+    <magnitude><val>25.9983333333333</val><val>19.5547619047619</val><val>18.721408393866</val></magnitude>
+    <node name="Insulin signaling pathway">
+     <magnitude><val>25.9983333333333</val><val>19.5547619047619</val><val>18.721408393866</val></magnitude>
+    </node>
+   </node>
+   <node name="Renin-angiotensin system">
+    <magnitude><val>13.4375</val><val>16.25</val><val>23.6446115288221</val></magnitude>
+    <node name="Renin-angiotensin system">
+     <magnitude><val>13.4375</val><val>16.25</val><val>23.6446115288221</val></magnitude>
+    </node>
+   </node>
+  </node>
+ </node>
+ <node name="Metabolism">
+  <magnitude><val>1684.87397822988</val><val>1147.93347615203</val><val>1477.12368016163</val></magnitude>
+  <node name="Metabolism of other amino acids">
+   <magnitude><val>100.880625465745</val><val>66.8308046478281</val><val>59.4182841536585</val></magnitude>
+   <node name="Phosphonate and phosphinate metabolism">
+    <magnitude><val>27.0891077898551</val><val>20.3026806526807</val><val>36.1094696969697</val></magnitude>
+    <node name="Phosphonate and phosphinate metabolism">
+     <magnitude><val>27.0891077898551</val><val>20.3026806526807</val><val>36.1094696969697</val></magnitude>
+    </node>
+   </node>
+   <node name="D-Amino acid metabolism">
+    <magnitude><val>26.0154188558778</val></magnitude>
+    <node name="D-Amino acid metabolism">
+     <magnitude><val>26.0154188558778</val></magnitude>
+    </node>
+   </node>
+   <node name="Taurine and hypotaurine metabolism">
+    <magnitude><val>24.4238923801424</val><val>22.7100288125391</val></magnitude>
+    <node name="Taurine and hypotaurine metabolism">
+     <magnitude><val>24.4238923801424</val><val>22.7100288125391</val></magnitude>
+    </node>
+   </node>
+   <node name="Selenocompound metabolism">
+    <magnitude><val>23.3522064398695</val><val>23.8180951826083</val><val>23.3088144566888</val></magnitude>
+    <node name="Selenocompound metabolism">
+     <magnitude><val>23.3522064398695</val><val>23.8180951826083</val><val>23.3088144566888</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Glycan biosynthesis and metabolism">
+   <magnitude><val>95.1248126193242</val><val>139.28308308647</val><val>228.013861804425</val></magnitude>
+   <node name="Arabinogalactan biosynthesis - Mycobacterium">
+    <magnitude><val></val><val>13.8177083333333</val></magnitude>
+    <node name="Arabinogalactan biosynthesis - Mycobacterium">
+     <magnitude><val></val><val>13.8177083333333</val></magnitude>
+    </node>
+   </node>
+   <node name="Other glycan degradation">
+    <magnitude><val>14.9956001620524</val><val>20.8331266832668</val><val>27.6546417905997</val></magnitude>
+    <node name="Other glycan degradation">
+     <magnitude><val>14.9956001620524</val><val>20.8331266832668</val><val>27.6546417905997</val></magnitude>
+    </node>
+   </node>
+   <node name="Exopolysaccharide biosynthesis">
+    <magnitude><val>14.9133382333776</val><val>22.6349116161616</val><val>44.5867153679654</val></magnitude>
+    <node name="Exopolysaccharide biosynthesis">
+     <magnitude><val>14.9133382333776</val><val>22.6349116161616</val><val>44.5867153679654</val></magnitude>
+    </node>
+   </node>
+   <node name="Lipoarabinomannan (LAM) biosynthesis">
+    <magnitude><val></val><val>9.90714285714286</val><val>20.5706439393939</val></magnitude>
+    <node name="Lipoarabinomannan (LAM) biosynthesis">
+     <magnitude><val></val><val>9.90714285714286</val><val>20.5706439393939</val></magnitude>
+    </node>
+   </node>
+   <node name="Lipopolysaccharide biosynthesis">
+    <magnitude><val>27.1839164014221</val><val>23.7379063878705</val><val>22.6864870509607</val></magnitude>
+    <node name="Lipopolysaccharide biosynthesis">
+     <magnitude><val>27.1839164014221</val><val>23.7379063878705</val><val>22.6864870509607</val></magnitude>
+    </node>
+   </node>
+   <node name="Peptidoglycan biosynthesis">
+    <magnitude><val>17.8693084088304</val><val>24.3353982301215</val><val>37.5710514694553</val></magnitude>
+    <node name="Peptidoglycan biosynthesis">
+     <magnitude><val>17.8693084088304</val><val>24.3353982301215</val><val>37.5710514694553</val></magnitude>
+    </node>
+   </node>
+   <node name="Teichoic acid biosynthesis">
+    <magnitude><val>20.1626494136417</val><val>24.0168889785738</val><val>47.3534130951411</val></magnitude>
+    <node name="Teichoic acid biosynthesis">
+     <magnitude><val>20.1626494136417</val><val>24.0168889785738</val><val>47.3534130951411</val></magnitude>
+    </node>
+   </node>
+   <node name="O-Antigen repeat unit biosynthesis">
+    <magnitude><val></val><val></val><val>27.5909090909091</val></magnitude>
+    <node name="O-Antigen repeat unit biosynthesis">
+     <magnitude><val></val><val></val><val>27.5909090909091</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Energy metabolism">
+   <magnitude><val>131.507366039452</val><val>63.856195289591</val><val>121.410697662877</val></magnitude>
+   <node name="Sulfur metabolism">
+    <magnitude><val>25.8626112015479</val><val></val><val>31.671820750378</val></magnitude>
+    <node name="Sulfur metabolism">
+     <magnitude><val>25.8626112015479</val><val></val><val>31.671820750378</val></magnitude>
+    </node>
+   </node>
+   <node name="Nitrogen metabolism">
+    <magnitude><val>29.9414599270976</val><val>17.6159359633031</val><val>30.3056609472219</val></magnitude>
+    <node name="Nitrogen metabolism">
+     <magnitude><val>29.9414599270976</val><val>17.6159359633031</val><val>30.3056609472219</val></magnitude>
+    </node>
+   </node>
+   <node name="Oxidative phosphorylation">
+    <magnitude><val>28.3942736184402</val><val>23.4178984342769</val><val>27.7354961186651</val></magnitude>
+    <node name="Oxidative phosphorylation">
+     <magnitude><val>28.3942736184402</val><val>23.4178984342769</val><val>27.7354961186651</val></magnitude>
+    </node>
+   </node>
+   <node name="Carbon fixation pathways in prokaryotes">
+    <magnitude><val>25.1669570716963</val></magnitude>
+    <node name="Carbon fixation pathways in prokaryotes">
+     <magnitude><val>25.1669570716963</val></magnitude>
+    </node>
+   </node>
+   <node name="Carbon fixation in photosynthetic organisms">
+    <magnitude><val>22.1420642206698</val><val>22.8223608920109</val><val>31.697719846612</val></magnitude>
+    <node name="Carbon fixation in photosynthetic organisms">
+     <magnitude><val>22.1420642206698</val><val>22.8223608920109</val><val>31.697719846612</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Global and overview maps">
+   <magnitude><val>168.3578212339</val><val>151.165892623242</val><val>183.100382826353</val></magnitude>
+   <node name="Biosynthesis of amino acids">
+    <magnitude><val>22.3705939222011</val><val>26.0966254823596</val><val>30.6084564565234</val></magnitude>
+    <node name="Biosynthesis of amino acids">
+     <magnitude><val>22.3705939222011</val><val>26.0966254823596</val><val>30.6084564565234</val></magnitude>
+    </node>
+   </node>
+   <node name="Biosynthesis of cofactors">
+    <magnitude><val>22.7853737049817</val><val>25.5692371890527</val><val>29.637946864405</val></magnitude>
+    <node name="Biosynthesis of cofactors">
+     <magnitude><val>22.7853737049817</val><val>25.5692371890527</val><val>29.637946864405</val></magnitude>
+    </node>
+   </node>
+   <node name="Nucleotide metabolism">
+    <magnitude><val>22.7980609838841</val><val>28.3697386725759</val><val>31.9112599454569</val></magnitude>
+    <node name="Nucleotide metabolism">
+     <magnitude><val>22.7980609838841</val><val>28.3697386725759</val><val>31.9112599454569</val></magnitude>
+    </node>
+   </node>
+   <node name="Carbon metabolism">
+    <magnitude><val>24.7322357791618</val></magnitude>
+    <node name="Carbon metabolism">
+     <magnitude><val>24.7322357791618</val></magnitude>
+    </node>
+   </node>
+   <node name="Biosynthesis of secondary metabolites">
+    <magnitude><val>24.0201677388636</val><val>24.527390270144</val><val>32.0844606397687</val></magnitude>
+    <node name="Biosynthesis of secondary metabolites">
+     <magnitude><val>24.0201677388636</val><val>24.527390270144</val><val>32.0844606397687</val></magnitude>
+    </node>
+   </node>
+   <node name="Microbial metabolism in diverse environments">
+    <magnitude><val>27.1415923845211</val><val>22.1402110201826</val><val>28.7468849929095</val></magnitude>
+    <node name="Microbial metabolism in diverse environments">
+     <magnitude><val>27.1415923845211</val><val>22.1402110201826</val><val>28.7468849929095</val></magnitude>
+    </node>
+   </node>
+   <node name="Metabolic pathways">
+    <magnitude><val>24.5097967202868</val><val>24.4626899889267</val><val>30.1113739272894</val></magnitude>
+    <node name="Metabolic pathways">
+     <magnitude><val>24.5097967202868</val><val>24.4626899889267</val><val>30.1113739272894</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Lipid metabolism">
+   <magnitude><val>130.551644686776</val><val>101.98852481827</val><val>147.602259691134</val></magnitude>
+   <node name="Secondary bile acid biosynthesis">
+    <magnitude><val>22.855303030303</val><val>17.1133333333333</val><val>34.8666666666667</val></magnitude>
+    <node name="Secondary bile acid biosynthesis">
+     <magnitude><val>22.855303030303</val><val>17.1133333333333</val><val>34.8666666666667</val></magnitude>
+    </node>
+   </node>
+   <node name="Biosynthesis of unsaturated fatty acids">
+    <magnitude><val>46.3333333333333</val><val>10.5096153846154</val><val>20.0329365079365</val></magnitude>
+    <node name="Biosynthesis of unsaturated fatty acids">
+     <magnitude><val>46.3333333333333</val><val>10.5096153846154</val><val>20.0329365079365</val></magnitude>
+    </node>
+   </node>
+   <node name="Fatty acid biosynthesis">
+    <magnitude><val></val><val>26.8712983788981</val><val>29.4748768863039</val></magnitude>
+    <node name="Fatty acid biosynthesis">
+     <magnitude><val></val><val>26.8712983788981</val><val>29.4748768863039</val></magnitude>
+    </node>
+   </node>
+   <node name="Glycerophospholipid metabolism">
+    <magnitude><val>19.3508328032826</val><val>29.5493139632196</val><val>36.1967920069421</val></magnitude>
+    <node name="Glycerophospholipid metabolism">
+     <magnitude><val>19.3508328032826</val><val>29.5493139632196</val><val>36.1967920069421</val></magnitude>
+    </node>
+   </node>
+   <node name="Fatty acid degradation">
+    <magnitude><val>27.0378900967304</val><val>17.9449637582031</val><val>27.0309876232848</val></magnitude>
+    <node name="Fatty acid degradation">
+     <magnitude><val>27.0378900967304</val><val>17.9449637582031</val><val>27.0309876232848</val></magnitude>
+    </node>
+   </node>
+   <node name="Glycerolipid metabolism">
+    <magnitude><val>14.9742854231261</val></magnitude>
+    <node name="Glycerolipid metabolism">
+     <magnitude><val>14.9742854231261</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Metabolism of cofactors and vitamins">
+   <magnitude><val>114.748649239992</val><val>167.029595027125</val><val>157.215090586065</val></magnitude>
+   <node name="Porphyrin metabolism">
+    <magnitude><val>20.8534202027663</val><val>18.2267905950271</val><val>28.4867939093844</val></magnitude>
+    <node name="Porphyrin metabolism">
+     <magnitude><val>20.8534202027663</val><val>18.2267905950271</val><val>28.4867939093844</val></magnitude>
+    </node>
+   </node>
+   <node name="Thiamine metabolism">
+    <magnitude><val>17.2744692346661</val><val>27.5086465786523</val><val>30.2173949789602</val></magnitude>
+    <node name="Thiamine metabolism">
+     <magnitude><val>17.2744692346661</val><val>27.5086465786523</val><val>30.2173949789602</val></magnitude>
+    </node>
+   </node>
+   <node name="Biotin metabolism">
+    <magnitude><val>29.7306118307559</val><val>31.6080673001877</val><val>34.8070986791846</val></magnitude>
+    <node name="Biotin metabolism">
+     <magnitude><val>29.7306118307559</val><val>31.6080673001877</val><val>34.8070986791846</val></magnitude>
+    </node>
+   </node>
+   <node name="Riboflavin metabolism">
+    <magnitude><val>25.5021294341491</val><val>26.5344059778074</val><val>30.8484229909366</val></magnitude>
+    <node name="Riboflavin metabolism">
+     <magnitude><val>25.5021294341491</val><val>26.5344059778074</val><val>30.8484229909366</val></magnitude>
+    </node>
+   </node>
+   <node name="Pantothenate and CoA biosynthesis">
+    <magnitude><val>21.3880185376544</val><val>31.0331462510302</val><val>32.8553800275989</val></magnitude>
+    <node name="Pantothenate and CoA biosynthesis">
+     <magnitude><val>21.3880185376544</val><val>31.0331462510302</val><val>32.8553800275989</val></magnitude>
+    </node>
+   </node>
+   <node name="Retinol metabolism">
+    <magnitude><val></val><val>32.1185383244207</val></magnitude>
+    <node name="Retinol metabolism">
+     <magnitude><val></val><val>32.1185383244207</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Xenobiotics biodegradation and metabolism">
+   <magnitude><val>268.839840128843</val><val>22.3911716619548</val><val>60.3429875994451</val></magnitude>
+   <node name="Xylene degradation">
+    <magnitude><val>36.4894257703081</val></magnitude>
+    <node name="Xylene degradation">
+     <magnitude><val>36.4894257703081</val></magnitude>
+    </node>
+   </node>
+   <node name="Bisphenol degradation">
+    <magnitude><val>43.4761904761905</val><val></val><val>18</val></magnitude>
+    <node name="Bisphenol degradation">
+     <magnitude><val>43.4761904761905</val><val></val><val>18</val></magnitude>
+    </node>
+   </node>
+   <node name="Benzoate degradation">
+    <magnitude><val>33.8532132272205</val></magnitude>
+    <node name="Benzoate degradation">
+     <magnitude><val>33.8532132272205</val></magnitude>
+    </node>
+   </node>
+   <node name="Styrene degradation">
+    <magnitude><val>37.6183222158694</val></magnitude>
+    <node name="Styrene degradation">
+     <magnitude><val>37.6183222158694</val></magnitude>
+    </node>
+   </node>
+   <node name="Fluorobenzoate degradation">
+    <magnitude><val>44.2652182539682</val><val></val><val>21.1288888888889</val></magnitude>
+    <node name="Fluorobenzoate degradation">
+     <magnitude><val>44.2652182539682</val><val></val><val>21.1288888888889</val></magnitude>
+    </node>
+   </node>
+   <node name="Nitrotoluene degradation">
+    <magnitude><val>21.3429298771404</val></magnitude>
+    <node name="Nitrotoluene degradation">
+     <magnitude><val>21.3429298771404</val></magnitude>
+    </node>
+   </node>
+   <node name="Steroid degradation">
+    <magnitude><val></val><val></val><val>21.2140987105562</val></magnitude>
+    <node name="Steroid degradation">
+     <magnitude><val></val><val></val><val>21.2140987105562</val></magnitude>
+    </node>
+   </node>
+   <node name="Drug metabolism - other enzymes">
+    <magnitude><val>24.5561950642084</val><val>22.3911716619548</val></magnitude>
+    <node name="Drug metabolism - other enzymes">
+     <magnitude><val>24.5561950642084</val><val>22.3911716619548</val></magnitude>
+    </node>
+   </node>
+   <node name="Caprolactam degradation">
+    <magnitude><val>27.2383452439373</val></magnitude>
+    <node name="Caprolactam degradation">
+     <magnitude><val>27.2383452439373</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Nucleotide metabolism">
+   <magnitude><val>20.1134581588276</val><val>32.9980511341778</val><val>31.3605579598902</val></magnitude>
+   <node name="Pyrimidine metabolism">
+    <magnitude><val>20.1134581588276</val><val>32.9980511341778</val><val>31.3605579598902</val></magnitude>
+    <node name="Pyrimidine metabolism">
+     <magnitude><val>20.1134581588276</val><val>32.9980511341778</val><val>31.3605579598902</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Biosynthesis of other secondary metabolites">
+   <magnitude><val>23.0933972954542</val><val>26.9034158184158</val></magnitude>
+   <node name="Streptomycin biosynthesis">
+    <magnitude><val>23.0933972954542</val><val>26.9034158184158</val></magnitude>
+    <node name="Streptomycin biosynthesis">
+     <magnitude><val>23.0933972954542</val><val>26.9034158184158</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Metabolism of terpenoids and polyketides">
+   <magnitude><val>91.4675454773515</val><val>10.446047008547</val><val>93.9092692701117</val></magnitude>
+   <node name="Biosynthesis of enediyne antibiotics">
+    <magnitude><val></val><val></val><val>27.4583333333333</val></magnitude>
+    <node name="Biosynthesis of enediyne antibiotics">
+     <magnitude><val></val><val></val><val>27.4583333333333</val></magnitude>
+    </node>
+   </node>
+   <node name="Limonene and pinene degradation">
+    <magnitude><val></val><val></val><val>21.1206838359381</val></magnitude>
+    <node name="Limonene and pinene degradation">
+     <magnitude><val></val><val></val><val>21.1206838359381</val></magnitude>
+    </node>
+   </node>
+   <node name="Nonribosomal peptide structures">
+    <magnitude><val>14.6742788461538</val></magnitude>
+    <node name="Nonribosomal peptide structures">
+     <magnitude><val>14.6742788461538</val></magnitude>
+    </node>
+   </node>
+   <node name="Geraniol degradation">
+    <magnitude><val>40.9004094883405</val></magnitude>
+    <node name="Geraniol degradation">
+     <magnitude><val>40.9004094883405</val></magnitude>
+    </node>
+   </node>
+   <node name="Biosynthesis of siderophore group nonribosomal peptides">
+    <magnitude><val>12.3928571428571</val><val>10.446047008547</val><val>23.3302521008403</val></magnitude>
+    <node name="Biosynthesis of siderophore group nonribosomal peptides">
+     <magnitude><val>12.3928571428571</val><val>10.446047008547</val><val>23.3302521008403</val></magnitude>
+    </node>
+   </node>
+   <node name="Type I polyketide structures">
+    <magnitude><val>23.5</val><val></val><val>22</val></magnitude>
+    <node name="Type I polyketide structures">
+     <magnitude><val>23.5</val><val></val><val>22</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Carbohydrate metabolism">
+   <magnitude><val>290.875638140047</val><val>226.325767655339</val><val>220.943785534341</val></magnitude>
+   <node name="Butanoate metabolism">
+    <magnitude><val>26.7349755052041</val></magnitude>
+    <node name="Butanoate metabolism">
+     <magnitude><val>26.7349755052041</val></magnitude>
+    </node>
+   </node>
+   <node name="Citrate cycle (TCA cycle)">
+    <magnitude><val>26.1742472036745</val><val>23.6590336178399</val><val>28.9989898627777</val></magnitude>
+    <node name="Citrate cycle (TCA cycle)">
+     <magnitude><val>26.1742472036745</val><val>23.6590336178399</val><val>28.9989898627777</val></magnitude>
+    </node>
+   </node>
+   <node name="Glyoxylate and dicarboxylate metabolism">
+    <magnitude><val>29.2359418006042</val></magnitude>
+    <node name="Glyoxylate and dicarboxylate metabolism">
+     <magnitude><val>29.2359418006042</val></magnitude>
+    </node>
+   </node>
+   <node name="C5-Branched dibasic acid metabolism">
+    <magnitude><val>28.4216428451729</val></magnitude>
+    <node name="C5-Branched dibasic acid metabolism">
+     <magnitude><val>28.4216428451729</val></magnitude>
+    </node>
+   </node>
+   <node name="Pentose phosphate pathway">
+    <magnitude><val>19.5621924256299</val></magnitude>
+    <node name="Pentose phosphate pathway">
+     <magnitude><val>19.5621924256299</val></magnitude>
+    </node>
+   </node>
+   <node name="Propanoate metabolism">
+    <magnitude><val>26.4465627961485</val><val>20.7853244616275</val><val>27.5244718233104</val></magnitude>
+    <node name="Propanoate metabolism">
+     <magnitude><val>26.4465627961485</val><val>20.7853244616275</val><val>27.5244718233104</val></magnitude>
+    </node>
+   </node>
+   <node name="Fructose and mannose metabolism">
+    <magnitude><val>17.122287314642</val><val>22.841749339621</val><val>30.7722206624462</val></magnitude>
+    <node name="Fructose and mannose metabolism">
+     <magnitude><val>17.122287314642</val><val>22.841749339621</val><val>30.7722206624462</val></magnitude>
+    </node>
+   </node>
+   <node name="Glycolysis / Gluconeogenesis">
+    <magnitude><val>20.619799162898</val><val>24.1579822722758</val><val>31.7388083552221</val></magnitude>
+    <node name="Glycolysis / Gluconeogenesis">
+     <magnitude><val>20.619799162898</val><val>24.1579822722758</val><val>31.7388083552221</val></magnitude>
+    </node>
+   </node>
+   <node name="Amino sugar and nucleotide sugar metabolism">
+    <magnitude><val>19.4864852385802</val><val>28.3993281780006</val></magnitude>
+    <node name="Amino sugar and nucleotide sugar metabolism">
+     <magnitude><val>19.4864852385802</val><val>28.3993281780006</val></magnitude>
+    </node>
+   </node>
+   <node name="Pentose and glucuronate interconversions">
+    <magnitude><val>19.2788193696125</val><val>30.7184880505927</val></magnitude>
+    <node name="Pentose and glucuronate interconversions">
+     <magnitude><val>19.2788193696125</val><val>30.7184880505927</val></magnitude>
+    </node>
+   </node>
+   <node name="Galactose metabolism">
+    <magnitude><val>14.4763417813849</val><val>29.2997301009714</val><val>44.9692949484065</val></magnitude>
+    <node name="Galactose metabolism">
+     <magnitude><val>14.4763417813849</val><val>29.2997301009714</val><val>44.9692949484065</val></magnitude>
+    </node>
+   </node>
+   <node name="Pyruvate metabolism">
+    <magnitude><val>24.9642880074839</val><val>24.6321442426318</val><val>30.9205598169953</val></magnitude>
+    <node name="Pyruvate metabolism">
+     <magnitude><val>24.9642880074839</val><val>24.6321442426318</val><val>30.9205598169953</val></magnitude>
+    </node>
+   </node>
+   <node name="Starch and sucrose metabolism">
+    <magnitude><val>18.352054689012</val><val>21.8319873917786</val><val>26.0194400651825</val></magnitude>
+    <node name="Starch and sucrose metabolism">
+     <magnitude><val>18.352054689012</val><val>21.8319873917786</val><val>26.0194400651825</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Amino acid metabolism">
+   <magnitude><val>249.313179744169</val><val>138.714927381069</val><val>173.806503073335</val></magnitude>
+   <node name="Tyrosine metabolism">
+    <magnitude><val></val><val>17.1175223358048</val></magnitude>
+    <node name="Tyrosine metabolism">
+     <magnitude><val></val><val>17.1175223358048</val></magnitude>
+    </node>
+   </node>
+   <node name="Phenylalanine metabolism">
+    <magnitude><val>27.8288050139406</val></magnitude>
+    <node name="Phenylalanine metabolism">
+     <magnitude><val>27.8288050139406</val></magnitude>
+    </node>
+   </node>
+   <node name="Histidine metabolism">
+    <magnitude><val>22.381754296724</val><val>22.0244873896015</val><val>28.7490231583575</val></magnitude>
+    <node name="Histidine metabolism">
+     <magnitude><val>22.381754296724</val><val>22.0244873896015</val><val>28.7490231583575</val></magnitude>
+    </node>
+   </node>
+   <node name="Valine, leucine and isoleucine biosynthesis">
+    <magnitude><val>21.5662089404417</val><val>29.5716551783745</val><val>31.368911073347</val></magnitude>
+    <node name="Valine, leucine and isoleucine biosynthesis">
+     <magnitude><val>21.5662089404417</val><val>29.5716551783745</val><val>31.368911073347</val></magnitude>
+    </node>
+   </node>
+   <node name="Phenylalanine, tyrosine and tryptophan biosynthesis">
+    <magnitude><val>20.6336206068699</val><val></val><val>30.0008049048553</val></magnitude>
+    <node name="Phenylalanine, tyrosine and tryptophan biosynthesis">
+     <magnitude><val>20.6336206068699</val><val></val><val>30.0008049048553</val></magnitude>
+    </node>
+   </node>
+   <node name="Lysine biosynthesis">
+    <magnitude><val>20.1960861446646</val><val>25.2187197110147</val></magnitude>
+    <node name="Lysine biosynthesis">
+     <magnitude><val>20.1960861446646</val><val>25.2187197110147</val></magnitude>
+    </node>
+   </node>
+   <node name="Glycine, serine and threonine metabolism">
+    <magnitude><val>30.6832077423764</val></magnitude>
+    <node name="Glycine, serine and threonine metabolism">
+     <magnitude><val>30.6832077423764</val></magnitude>
+    </node>
+   </node>
+   <node name="Arginine biosynthesis">
+    <magnitude><val>24.8923591693772</val><val>21.8203509650657</val><val>31.8794421829575</val></magnitude>
+    <node name="Arginine biosynthesis">
+     <magnitude><val>24.8923591693772</val><val>21.8203509650657</val><val>31.8794421829575</val></magnitude>
+    </node>
+   </node>
+   <node name="Alanine, aspartate and glutamate metabolism">
+    <magnitude><val>22.9202164463854</val><val>22.9621918012079</val><val>27.2644819478058</val></magnitude>
+    <node name="Alanine, aspartate and glutamate metabolism">
+     <magnitude><val>22.9202164463854</val><val>22.9621918012079</val><val>27.2644819478058</val></magnitude>
+    </node>
+   </node>
+   <node name="Arginine and proline metabolism">
+    <magnitude><val>23.0406388577715</val></magnitude>
+    <node name="Arginine and proline metabolism">
+     <magnitude><val>23.0406388577715</val></magnitude>
+    </node>
+   </node>
+   <node name="Valine, leucine and isoleucine degradation">
+    <magnitude><val>35.1702825256173</val><val></val><val>24.5438398060117</val></magnitude>
+    <node name="Valine, leucine and isoleucine degradation">
+     <magnitude><val>35.1702825256173</val><val></val><val>24.5438398060117</val></magnitude>
+    </node>
+   </node>
+  </node>
+ </node>
+ <node name="Environmental Information Processing">
+  <magnitude><val>133.380435791187</val><val>105.705749670965</val><val>136.999072696525</val></magnitude>
+  <node name="Signal transduction">
+   <magnitude><val>55.0032017378703</val><val>23.3445462171291</val><val>35.0938463038615</val></magnitude>
+   <node name="Calcium signaling pathway">
+    <magnitude><val>31.5</val></magnitude>
+    <node name="Calcium signaling pathway">
+     <magnitude><val>31.5</val></magnitude>
+    </node>
+   </node>
+   <node name="Two-component system">
+    <magnitude><val>23.5032017378703</val><val>23.3445462171291</val><val>35.0938463038615</val></magnitude>
+    <node name="Two-component system">
+     <magnitude><val>23.5032017378703</val><val>23.3445462171291</val><val>35.0938463038615</val></magnitude>
+    </node>
+   </node>
+  </node>
+  <node name="Membrane transport">
+   <magnitude><val>78.3772340533164</val><val>82.3612034538357</val><val>101.905226392664</val></magnitude>
+   <node name="ABC transporters">
+    <magnitude><val>22.4911834622165</val><val>29.4838470774867</val><val>31.7073674455234</val></magnitude>
+    <node name="ABC transporters">
+     <magnitude><val>22.4911834622165</val><val>29.4838470774867</val><val>31.7073674455234</val></magnitude>
+    </node>
+   </node>
+   <node name="Phosphotransferase system (PTS)">
+    <magnitude><val>14.2261683759514</val><val>25.9515159288659</val><val>40.9645890904124</val></magnitude>
+    <node name="Phosphotransferase system (PTS)">
+     <magnitude><val>14.2261683759514</val><val>25.9515159288659</val><val>40.9645890904124</val></magnitude>
+    </node>
+   </node>
+   <node name="Bacterial secretion system">
+    <magnitude><val>41.6598822151485</val><val>26.9258404474831</val><val>29.2332698567281</val></magnitude>
+    <node name="Bacterial secretion system">
+     <magnitude><val>41.6598822151485</val><val>26.9258404474831</val><val>29.2332698567281</val></magnitude>
     </node>
    </node>
   </node>

@@ -1,0 +1,42 @@
+ 99.97	999484	999484	U	0	unclassified
+  0.03	287	0	R	1	root
+  0.03	287	0	R1	131567	  cellular organisms
+  0.03	287	0	D	2759	    Eukaryota
+  0.03	287	0	D1	33154	      Opisthokonta
+  0.03	287	0	K	33208	        Metazoa
+  0.03	287	0	K1	6072	          Eumetazoa
+  0.03	287	0	K2	33213	            Bilateria
+  0.03	287	0	K3	33511	              Deuterostomia
+  0.03	287	0	P	7711	                Chordata
+  0.03	287	0	P1	89593	                  Craniata
+  0.03	287	0	P2	7742	                    Vertebrata
+  0.03	287	0	P3	7776	                      Gnathostomata
+  0.03	287	0	P4	117570	                        Teleostomi
+  0.03	287	0	P5	117571	                          Euteleostomi
+  0.03	287	0	P6	8287	                            Sarcopterygii
+  0.03	287	0	P7	1338369	                              Dipnotetrapodomorpha
+  0.03	287	0	P8	32523	                                Tetrapoda
+  0.03	287	0	P9	32524	                                  Amniota
+  0.03	287	0	C	40674	                                    Mammalia
+  0.03	287	0	C1	32525	                                      Theria
+  0.03	287	0	C2	9347	                                        Eutheria
+  0.03	287	0	C3	1437010	                                          Boreoeutheria
+  0.03	287	201	C4	314146	                                            Euarchontoglires
+  0.01	74	0	C5	314147	                                              Glires
+  0.01	74	0	O	9989	                                                Rodentia
+  0.01	74	0	O1	1963758	                                                  Myomorpha
+  0.01	74	0	O2	337687	                                                    Muroidea
+  0.01	74	0	F	10066	                                                      Muridae
+  0.01	74	0	F1	39107	                                                        Murinae
+  0.01	74	0	G	10088	                                                          Mus
+  0.01	74	0	G1	862507	                                                            Mus
+  0.01	74	74	S	10090	                                                              Mus musculus
+  0.00	12	0	O	9443	                                              Primates
+  0.00	12	0	O1	376913	                                                Haplorrhini
+  0.00	12	0	O2	314293	                                                  Simiiformes
+  0.00	12	0	O3	9526	                                                    Catarrhini
+  0.00	12	0	O4	314295	                                                      Hominoidea
+  0.00	12	0	F	9604	                                                        Hominidae
+  0.00	12	0	F1	207598	                                                          Homininae
+  0.00	12	0	G	9605	                                                            Homo
+  0.00	12	12	S	9606	                                                              Homo sapiens
