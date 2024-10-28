@@ -4,7 +4,7 @@ channels:
   - bioconda
   - r
 dependencies:
-  - r-base>=4.1
+  - r-base
   - r-ggplot2
   - r-vegan
   - r-ape
