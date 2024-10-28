@@ -659,7 +659,7 @@ capture.output(
            transform="LOG",
            analysis_method="LM",
            min_prevalence = 0.4,
-           ), file="maaslin2_results/stdout.txt"
+           ), file="maaslin2_stdout.txt"
 )
 ```
 

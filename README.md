@@ -4,11 +4,9 @@ Katie McCauley
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ktmbiome-niaid/microbiome-analysis/HEAD?urlpath=rstudio)
 
-Date: Monday, November 6th, 2023
+Date: Friday, November 8th, 2024
 
 Time: 2-5 PM ET
-
-Zoom Link: https://nih.zoomgov.com/j/1608604895?pwd=RnBLbnVhc1hsZCsvVDdoek1FNVc0Zz09
 
 ---
 
