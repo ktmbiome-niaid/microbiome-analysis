@@ -6,9 +6,8 @@ ARG NB_USER
 ARG NB_UID
 
 ## Install Conda as well
-RUN --user root mkdir -p /opt/conda
-RUN --user root wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh -O /opt/conda/miniconda.sh \
-  && bash /opt/conda/miniconda.sh -b -p /opt/miniconda
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh -O miniconda.sh \
+  && bash miniconda.sh -b -p /opt/miniconda
 
 COPY --chown=${NB_USER} . ${HOME}
 
