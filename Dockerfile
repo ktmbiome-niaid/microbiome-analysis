@@ -5,10 +5,6 @@ FROM rocker/binder:4.3.3
 ARG NB_USER
 ARG NB_UID
 
-## Install Conda as well
-RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Linux-x86_64.sh -O miniconda.sh \
-  && bash miniconda.sh -b -p /opt/miniconda
-
 COPY --chown=${NB_USER} . ${HOME}
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -22,10 +18,5 @@ RUN echo "Checking for 'apt.txt'..." \
         ; fi
 USER ${NB_USER}
 
-## Add conda installations from environment.yml
-COPY environment.yml /tmp
-RUN if [-f environment.yml]; then . /opt/miniconda/bin/activate && conda env update --name base --file /tmp/environment.yml
-
 ## Run an install.R script, if it exists.
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
-
