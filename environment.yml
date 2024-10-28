@@ -5,7 +5,7 @@ channels:
   - r
 dependencies:
   - r-base
-  - r-rstudio
+  - rstudio
   - r-ggplot2
   - r-vegan
   - r-ape
