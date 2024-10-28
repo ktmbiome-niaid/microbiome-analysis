@@ -1,0 +1,14 @@
+name: microbiome-analysis-binder
+channels:
+  - conda-forge
+  - bioconda
+  - r
+dependencies:
+  - r-base>=4.1
+  - r-ggplot2
+  - r-vegan
+  - r-ape
+  - r-ggrepel
+  - r-picante
+  - bioconductor-phyloseq
+  - maaslin2
