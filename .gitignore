@@ -5,3 +5,4 @@
 .Rhistory
 data/*_raw/
 maaslin2_results/*
+maaslin2_stdout.txt
